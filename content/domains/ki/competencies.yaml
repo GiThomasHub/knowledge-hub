@@ -1,0 +1,503 @@
+# Kompetenzmatrix Domäne KI – das Credo als Datei.
+# Jede Lektion und jede Frage verweist auf mindestens eine Kompetenz.
+# Die Abdeckung (Lektionen, Fragen mit Status reviewed) berechnet scripts/build.py.
+- id: ki-kig-01
+  topic: ki-grundlagen
+  level: L1
+  can_do: Erklärt KI, Machine Learning, Deep Learning und Generative AI als verschachtelte Begriffe mit je einem Beispiel.
+  min_questions: 3
+- id: ki-kig-02
+  topic: ki-grundlagen
+  level: L1
+  can_do: Erklärt Token, Kontextfenster und Temperatur und schätzt grob ab, wie viel Text in ein Kontextfenster passt.
+  min_questions: 3
+- id: ki-kig-03
+  topic: ki-grundlagen
+  level: L2
+  can_do: Erklärt, warum LLMs halluzinieren, einen Wissensstichtag haben und Informationen in der Mitte langer Kontexte verlieren.
+  min_questions: 3
+- id: ki-kig-04
+  topic: ki-grundlagen
+  level: L2
+  can_do: Beschreibt Pretraining, Fine-Tuning und RLHF bzw. Constitutional AI in eigenen Worten.
+  min_questions: 3
+- id: ki-kig-05
+  topic: ki-grundlagen
+  level: L3
+  can_do: Wählt zwischen Prompting, RAG und Fine-Tuning anhand von Aktualität, Kosten und Verhaltensänderung.
+  min_questions: 3
+- id: ki-kig-06
+  topic: ki-grundlagen
+  level: L4
+  can_do: Erklärt einem Management in fünf Minuten, was ein LLM leisten kann, wo es versagt und woran man AI-Washing erkennt.
+  min_questions: 2
+- id: ki-prm-01
+  topic: prompting
+  level: L1
+  can_do: Strukturiert einen Prompt in Rolle, Kontext, Aufgabe, Constraints und Ausgabeformat.
+  min_questions: 3
+- id: ki-prm-02
+  topic: prompting
+  level: L2
+  can_do: Setzt Few-Shot-Beispiele inklusive Negativ- und Reasoning-Beispielen gezielt ein.
+  min_questions: 3
+- id: ki-prm-03
+  topic: prompting
+  level: L2
+  can_do: Grenzt Prompt-Teile mit XML-Tags ab und erzwingt strukturierte Ausgaben per Schema statt per Bitte.
+  min_questions: 3
+- id: ki-prm-04
+  topic: prompting
+  level: L3
+  can_do: Ordnet Kontext bewusst (stabiler Teil oben für Caching, kritische Anweisungen am Ende) und kompaktiert lange Verläufe.
+  min_questions: 3
+- id: ki-prm-05
+  topic: prompting
+  level: L3
+  can_do: Misst die Wirkung einer Prompt-Änderung mit einem kleinen Testset statt nach Bauchgefühl.
+  min_questions: 3
+- id: ki-prm-06
+  topic: prompting
+  level: L4
+  can_do: Definiert Prompt-Standards und eine Prompt-Bibliothek für ein Team.
+  min_questions: 2
+- id: ki-mod-01
+  topic: modelle-kosten
+  level: L1
+  can_do: Erklärt, wie sich API-Kosten aus Input- und Output-Token zusammensetzen.
+  min_questions: 3
+- id: ki-mod-02
+  topic: modelle-kosten
+  level: L2
+  can_do: Wählt pro Teilaufgabe ein passendes Modell (klein für Extraktion, gross für Synthese) und setzt max_tokens.
+  min_questions: 3
+- id: ki-mod-03
+  topic: modelle-kosten
+  level: L2
+  can_do: Nutzt Prompt Caching und Batch-Verarbeitung und kennt deren Bedingungen.
+  min_questions: 3
+- id: ki-mod-04
+  topic: modelle-kosten
+  level: L3
+  can_do: Plant Modell-Routing, Effort und Thinking für eine Pipeline mit Budgetgrenze.
+  min_questions: 3
+- id: ki-mod-05
+  topic: modelle-kosten
+  level: L4
+  can_do: Erstellt eine Kostenschätzung in CHF mit Szenarien, Hebeln und Abo-vs-API-Abwägung.
+  min_questions: 2
+- id: ki-agt-01
+  topic: agents
+  level: L1
+  can_do: Unterscheidet Chatbot, Workflow und Agent und erklärt die ReAct-Schleife.
+  min_questions: 3
+- id: ki-agt-02
+  topic: agents
+  level: L1
+  can_do: Erklärt «Agent = Modell + Harness» und welche Komponenten ein Harness hat.
+  min_questions: 3
+- id: ki-agt-03
+  topic: agents
+  level: L2
+  can_do: Baut einen Agenten mit Tools, Stopp-Kriterium, maximaler Schrittzahl und Budget.
+  min_questions: 3
+- id: ki-agt-04
+  topic: agents
+  level: L3
+  can_do: Wählt zwischen Prompt Chaining, Routing, Parallelisierung, Orchestrator-Worker und Evaluator-Optimizer.
+  min_questions: 3
+- id: ki-agt-05
+  topic: agents
+  level: L3
+  can_do: Trennt deterministische Berechnung von LLM-Interpretation und verhindert so Halluzinationen bei Zahlen.
+  min_questions: 3
+- id: ki-agt-06
+  topic: agents
+  level: L3
+  can_do: Entscheidet zwischen Direkt-SDK, LangChain, LangGraph und Agent SDK anhand der Ablaufform.
+  min_questions: 3
+- id: ki-agt-07
+  topic: agents
+  level: L4
+  can_do: Empfiehlt die einfachste tragfähige Architektur und benennt die Risiken autonomer Agenten (Ziele, Ressourcen, irreversible Aktionen).
+  min_questions: 2
+- id: ki-cc-01
+  topic: claude-code
+  level: L1
+  can_do: Startet Claude Code im richtigen Ordner und erklärt den Agentic Loop (Kontext holen, handeln, prüfen).
+  min_questions: 3
+- id: ki-cc-02
+  topic: claude-code
+  level: L1
+  can_do: Kennt die wichtigsten Befehle (/init, /clear, /compact, /context, /memory, /rewind) und Shortcuts.
+  min_questions: 3
+- id: ki-cc-03
+  topic: claude-code
+  level: L2
+  can_do: Schreibt eine schlanke CLAUDE.md und lagert Spezialfälle in Rules und Skills aus.
+  min_questions: 3
+- id: ki-cc-04
+  topic: claude-code
+  level: L2
+  can_do: Arbeitet nach Explore → Plan → Code → Commit und gibt Claude eine Möglichkeit zur Selbstprüfung.
+  min_questions: 3
+- id: ki-cc-05
+  topic: claude-code
+  level: L3
+  can_do: Erklärt den .claude-Ordner, Settings-Präzedenz und was committed vs. lokal gehört.
+  min_questions: 3
+- id: ki-cc-06
+  topic: claude-code
+  level: L3
+  can_do: Setzt Subagents und Kontext-Management ein, damit lange Sessions nicht degradieren.
+  min_questions: 3
+- id: ki-cc-07
+  topic: claude-code
+  level: L4
+  can_do: Konzipiert ein Claude-Code-Setup für ein Team inklusive Governance, Plugins und Kostenkontrolle.
+  min_questions: 2
+- id: ki-skp-01
+  topic: skills-plugins
+  level: L1
+  can_do: Unterscheidet Skill, Connector und Plugin und erklärt die Analogie Rezept, Lieferant, Bausatz.
+  min_questions: 3
+- id: ki-skp-02
+  topic: skills-plugins
+  level: L2
+  can_do: Schreibt einen Skill mit präziser Description, Prozess, Output-Format und Fehlerbehandlung.
+  min_questions: 3
+- id: ki-skp-03
+  topic: skills-plugins
+  level: L2
+  can_do: Erklärt Progressive Disclosure und warum Dateien im Skill nur geladen werden, wenn SKILL.md sie nennt.
+  min_questions: 3
+- id: ki-skp-04
+  topic: skills-plugins
+  level: L3
+  can_do: Diagnostiziert Under- und Overtriggering und optimiert Descriptions mit Trigger-Evals.
+  min_questions: 3
+- id: ki-skp-05
+  topic: skills-plugins
+  level: L3
+  can_do: Bündelt Skills, Agents, Hooks und MCP als Plugin und verteilt es über einen Marketplace.
+  min_questions: 3
+- id: ki-skp-06
+  topic: skills-plugins
+  level: L4
+  can_do: Baut eine Skill-Bibliothek als institutionelles Wissen einer Organisation auf und regelt Pflege und Sicherheit fremder Skills.
+  min_questions: 2
+- id: ki-mcp-01
+  topic: mcp-tools
+  level: L1
+  can_do: Erklärt Tool Use und MCP (Modell bittet um Aufruf, Harness führt aus).
+  min_questions: 3
+- id: ki-mcp-02
+  topic: mcp-tools
+  level: L2
+  can_do: Bindet MCP-Server mit passendem Scope ein und hält Secrets aus der Konfiguration.
+  min_questions: 3
+- id: ki-mcp-03
+  topic: mcp-tools
+  level: L3
+  can_do: Entwirft Tools mit aussagekräftigen Beschreibungen, wenigen mächtigen Aktionen und klaren Grenzen.
+  min_questions: 3
+- id: ki-mcp-04
+  topic: mcp-tools
+  level: L3
+  can_do: Hält den Kontext schlank (Tool Search, MCP nur im Subagenten).
+  min_questions: 3
+- id: ki-mcp-05
+  topic: mcp-tools
+  level: L4
+  can_do: Bewertet, welche Unternehmenssysteme per MCP angebunden werden dürfen und mit welchen Rechten.
+  min_questions: 2
+- id: ki-mem-01
+  topic: ai-memory
+  level: L1
+  can_do: Unterscheidet Kontextfenster (Arbeitsspeicher) und Langzeitgedächtnis (Festplatte).
+  min_questions: 3
+- id: ki-mem-02
+  topic: ai-memory
+  level: L1
+  can_do: Erklärt RAG als Open-Book-Prüfung und Embeddings als Landkarte der Bedeutungen.
+  min_questions: 3
+- id: ki-mem-03
+  topic: ai-memory
+  level: L2
+  can_do: Nutzt CLAUDE.md, Auto Memory und Projekt-Wissen gezielt und hält sie gepflegt.
+  min_questions: 3
+- id: ki-mem-04
+  topic: ai-memory
+  level: L3
+  can_do: Optimiert RAG mit Chunking, Metadaten-Filtern, Hybrid-Suche, Reranking und Contextual Retrieval.
+  min_questions: 3
+- id: ki-mem-05
+  topic: ai-memory
+  level: L3
+  can_do: Misst RAG-Qualität mit Faithfulness, Context Precision und Recall.
+  min_questions: 3
+- id: ki-mem-06
+  topic: ai-memory
+  level: L4
+  can_do: Wählt eine Wissensarchitektur (Projekt-Wissen, RAG, Vault, Graph) inklusive Pflegeprozess und Datenschutz.
+  min_questions: 2
+- id: ki-sec-01
+  topic: ai-security
+  level: L1
+  can_do: Erklärt, dass ein Agent mit den Rechten seines Benutzers läuft und cd keine Grenze ist.
+  min_questions: 3
+- id: ki-sec-02
+  topic: ai-security
+  level: L1
+  can_do: Nennt die Schutzschichten (Regeln, Modus, Sandbox, Hooks, MCP-Steuerung, Managed Settings, Container, Betriebssystem).
+  min_questions: 3
+- id: ki-sec-03
+  topic: ai-security
+  level: L2
+  can_do: Schreibt Permission-Regeln mit deny vor allow und kennt deren Grenzen bei Bash.
+  min_questions: 3
+- id: ki-sec-04
+  topic: ai-security
+  level: L2
+  can_do: Aktiviert die Bash-Sandbox fail-closed und prüft sie mit Gegenproben.
+  min_questions: 3
+- id: ki-sec-05
+  topic: ai-security
+  level: L2
+  can_do: Setzt Hooks als harte Leitplanke ein (Exit 2, onFailure block) und weiss, dass Exit 1 nicht blockt.
+  min_questions: 3
+- id: ki-sec-06
+  topic: ai-security
+  level: L3
+  can_do: Wählt pro Situation ein Profil (lesen, mittel, streng, isoliert) und begründet es.
+  min_questions: 3
+- id: ki-sec-07
+  topic: ai-security
+  level: L3
+  can_do: Erkennt Prompt Injection als Risiko und behandelt Modellantworten als untrusted Input.
+  min_questions: 3
+- id: ki-sec-08
+  topic: ai-security
+  level: L4
+  can_do: Klärt die Datenfrage (revDSG, USA-Transfer, Kontotyp, Berufsgeheimnis) und berät zu Restrisiken.
+  min_questions: 2
+- id: ki-scd-01
+  topic: secure-coding
+  level: L1
+  can_do: Nennt die häufigsten Schwachstellen (Injection, XSS, kaputte Zugriffskontrolle, geleakte Secrets).
+  min_questions: 3
+- id: ki-scd-02
+  topic: secure-coding
+  level: L2
+  can_do: Validiert Eingaben serverseitig und nutzt parametrisierte Abfragen.
+  min_questions: 3
+- id: ki-scd-03
+  topic: secure-coding
+  level: L2
+  can_do: Speichert Secrets ausserhalb des Codes und richtet Secret Scanning und Dependabot ein.
+  min_questions: 3
+- id: ki-scd-04
+  topic: secure-coding
+  level: L3
+  can_do: Führt ein Security Review nach Methode durch und priorisiert Funde nach Ausnutzbarkeit.
+  min_questions: 3
+- id: ki-scd-05
+  topic: secure-coding
+  level: L4
+  can_do: Definiert Mindeststandards und das Vorgehen bei einer gefundenen Lücke inklusive Meldepflichten in der Schweiz.
+  min_questions: 2
+- id: ki-evl-01
+  topic: evals
+  level: L1
+  can_do: Erklärt, warum LLM-Systeme gemessen werden müssen und was eine Eval ist.
+  min_questions: 3
+- id: ki-evl-02
+  topic: evals
+  level: L2
+  can_do: Baut ein Testset aus echten Fällen mit Referenzlösungen und Code-Gradern.
+  min_questions: 3
+- id: ki-evl-03
+  topic: evals
+  level: L3
+  can_do: Setzt LLM-as-Judge mit Rubrik und Kalibrierung ein und misst über mehrere Läufe (pass@k).
+  min_questions: 3
+- id: ki-evl-04
+  topic: evals
+  level: L3
+  can_do: Richtet Tracing für Kosten, Latenz und Fehler ein und achtet auf Datenschutz in Traces.
+  min_questions: 3
+- id: ki-evl-05
+  topic: evals
+  level: L4
+  can_do: Macht Qualität als Abnahmekriterium vertraglich nutzbar und etabliert Regression-Gates.
+  min_questions: 2
+- id: ki-dev-01
+  topic: dev-environment
+  level: L1
+  can_do: Unterscheidet Windows, WSL und Container und arbeitet im Linux-Dateisystem statt unter /mnt/c.
+  min_questions: 3
+- id: ki-dev-02
+  topic: dev-environment
+  level: L1
+  can_do: Startet VS Code richtig (code . aus WSL) und prüft die Remote-Anzeige.
+  min_questions: 3
+- id: ki-dev-03
+  topic: dev-environment
+  level: L2
+  can_do: Legt ein Python-Projekt mit uv, pyproject.toml, .venv und .gitignore an.
+  min_questions: 3
+- id: ki-dev-04
+  topic: dev-environment
+  level: L2
+  can_do: Trennt Konfiguration von Secrets (.env, .env.example) und kennt den Unterschied Bauzeit/Laufzeit.
+  min_questions: 3
+- id: ki-dev-05
+  topic: dev-environment
+  level: L3
+  can_do: Standardisiert Team-Umgebungen mit Devcontainer, Workspace-Settings und Vorlagen.
+  min_questions: 3
+- id: ki-git-01
+  topic: git-github
+  level: L1
+  can_do: Erklärt die vier Stationen einer Änderung (Arbeitsverzeichnis, Staging, Commit, Remote).
+  min_questions: 3
+- id: ki-git-02
+  topic: git-github
+  level: L2
+  can_do: Arbeitet mit Branch, Draft-PR, Review und Merge und löst Merge-Konflikte.
+  min_questions: 3
+- id: ki-git-03
+  topic: git-github
+  level: L2
+  can_do: Rettet Arbeit mit restore, revert, stash und reflog.
+  min_questions: 3
+- id: ki-git-04
+  topic: git-github
+  level: L3
+  can_do: Richtet Rulesets, CI und sichere GitHub Actions ein (minimale Rechte, Secrets, Pinning).
+  min_questions: 3
+- id: ki-git-05
+  topic: git-github
+  level: L4
+  can_do: Definiert einen Team-Workflow, in dem KI-Agenten nur Draft-PRs erstellen und Menschen mergen.
+  min_questions: 2
+- id: ki-ctr-01
+  topic: container
+  level: L1
+  can_do: Erklärt Image, Container, Bind Mount und Volume mit einer Analogie.
+  min_questions: 3
+- id: ki-ctr-02
+  topic: container
+  level: L2
+  can_do: Startet ein Projekt im Container und weiss, was down, Neustart und prune überlebt.
+  min_questions: 3
+- id: ki-ctr-03
+  topic: container
+  level: L2
+  can_do: Löst typische Fehler (0.0.0.0 statt 127.0.0.1, node_modules-Falle, fehlendes --build).
+  min_questions: 3
+- id: ki-ctr-04
+  topic: container
+  level: L3
+  can_do: Härtet Container (minimale Mounts, :ro, --network none, kein root, kein docker.sock).
+  min_questions: 3
+- id: ki-ctr-05
+  topic: container
+  level: L4
+  can_do: Empfiehlt, wann ein Devcontainer für KI-Agenten Pflicht ist, und benennt was er nicht schützt.
+  min_questions: 2
+- id: ki-aut-01
+  topic: automation
+  level: L1
+  can_do: Kennt periodische, aktive und reaktive Trigger und liest Cron-Ausdrücke.
+  min_questions: 3
+- id: ki-aut-02
+  topic: automation
+  level: L2
+  can_do: Richtet einen geplanten Lauf mit GitHub Actions oder Scheduled Task inklusive Secrets ein.
+  min_questions: 3
+- id: ki-aut-03
+  topic: automation
+  level: L2
+  can_do: Nutzt claude -p headless mit Ausgabeformat, Tool-Grenzen und Modus.
+  min_questions: 3
+- id: ki-aut-04
+  topic: automation
+  level: L3
+  can_do: 'Sichert unbeaufsichtigte Läufe ab: Budget, Abbruch, Idempotenz, Bericht, nur Draft-PRs.'
+  min_questions: 3
+- id: ki-aut-05
+  topic: automation
+  level: L4
+  can_do: Wählt die Betriebsform (lokal, CI, Managed Agents, Cloud Run) nach Laufzeit, Nutzerzahl und Compliance.
+  min_questions: 2
+- id: ki-lok-01
+  topic: lokale-llms
+  level: L1
+  can_do: Erklärt Gründe für lokale Modelle (Datenschutz, Kosten, Offline).
+  min_questions: 3
+- id: ki-lok-02
+  topic: lokale-llms
+  level: L2
+  can_do: Betreibt ein Modell mit Ollama und nutzt die OpenAI-kompatible API.
+  min_questions: 3
+- id: ki-lok-03
+  topic: lokale-llms
+  level: L3
+  can_do: Wählt Modellgrösse und Quantisierung anhand der VRAM-Faustregel.
+  min_questions: 3
+- id: ki-lok-04
+  topic: lokale-llms
+  level: L4
+  can_do: Berät lokal vs. Cloud und weiss, dass nur lokales Modell plus lokaler Harness wirklich privat ist.
+  min_questions: 2
+- id: ki-ml-01
+  topic: machine-learning
+  level: L1
+  can_do: Erklärt Supervised, Unsupervised, Self-Supervised und Reinforcement Learning.
+  min_questions: 3
+- id: ki-ml-02
+  topic: machine-learning
+  level: L2
+  can_do: Liest Metriken richtig und weiss, warum Accuracy bei unausgewogenen Klassen täuscht.
+  min_questions: 3
+- id: ki-ml-03
+  topic: machine-learning
+  level: L3
+  can_do: Erkennt Overfitting, Data Leakage (Zeitreihen chronologisch splitten) und Scheinkorrelationen.
+  min_questions: 3
+- id: ki-ml-04
+  topic: machine-learning
+  level: L4
+  can_do: Beurteilt, ob ein Kundenproblem eine Regel, klassisches ML oder GenAI braucht.
+  min_questions: 2
+- id: ki-ber-01
+  topic: ki-beratung
+  level: L1
+  can_do: Kennt die Produktlandschaft (Chat, Projekte, Claude Code, Cowork, API, Managed Agents) und wofür sie passt.
+  min_questions: 3
+- id: ki-ber-02
+  topic: ki-beratung
+  level: L2
+  can_do: Bewertet einen Use Case nach Nutzen, Machbarkeit, Datenlage und Risiko.
+  min_questions: 3
+- id: ki-ber-03
+  topic: ki-beratung
+  level: L3
+  can_do: Erstellt einen Business Case in CHF mit messbaren Metriken und Annahmen.
+  min_questions: 3
+- id: ki-ber-04
+  topic: ki-beratung
+  level: L3
+  can_do: Plant eine Einführung in Stufen (Quick Win, Team, Prozess, Plattform) mit Human-in-the-Loop.
+  min_questions: 3
+- id: ki-ber-05
+  topic: ki-beratung
+  level: L4
+  can_do: 'Etabliert KI-Governance: Datenklassifikation, Freigaben, Regulierung (revDSG, EU AI Act) und Verantwortlichkeiten.'
+  min_questions: 2
+- id: ki-ber-06
+  topic: ki-beratung
+  level: L4
+  can_do: 'Führt den Change: Champions, Schulung, Akzeptanz und Erfolgsmessung.'
+  min_questions: 2

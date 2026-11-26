@@ -1,0 +1,126 @@
+# Prompt-Vorlagen für die Copy-Buttons.
+# Ein Klick kopiert den Prompt in die Zwischenablage. Der Prompt läuft NICHT in der App,
+# sondern wird im LLM deiner Wahl eingefügt (claude.ai, ChatGPT, lokales Modell).
+#
+# Platzhalter (werden pro Lektion ersetzt):
+#   {thema}         Titel des Themas, z. B. «AI-Sicherheit und Datenschutz»
+#   {lektion}       Titel der Lektion
+#   {stufe}         Stufe der Lektion inkl. Bedeutung, z. B. «L3 Professional»
+#   {kontext}       prompt_context aus der Lektion (präzisiert den Fokus)
+#   {abschnitte}    Überschriften der Lektion, kommagetrennt
+#   {kompetenzen}   «Kann»-Aussagen der Lektion
+
+- id: mehr
+  label: Mehr
+  icon: 📚
+  hint: Vertiefte Übersicht mit Beispielen
+  template: |
+    Du bist ein Senior-Spezialist und erfahrener Trainer für «{thema}».
+    Ich habe gerade die Lektion «{lektion}» ({stufe}) gelernt. Sie behandelt: {abschnitte}.
+    Fokus: {kontext}
+
+    Erstelle mir eine vertiefte Übersicht, die über die Lektion hinausgeht:
+    1. Die 5 wichtigsten Konzepte, je mit einem konkreten Praxisbeispiel.
+    2. Wo es passt, eine bildliche Erklärung (Analogie) oder ein einfaches Diagramm (Mermaid oder ASCII).
+    3. Zwei «Hidden Gems», die selbst Fortgeschrittene oft nicht kennen.
+    4. Die drei häufigsten Fehler in der Praxis und wie man sie vermeidet.
+    5. Wenn sich das Thema schnell ändert: markiere, welche Aussagen ich in der aktuellen Doku prüfen sollte.
+
+    Rahmen: Antworte auf Deutsch (Schweizer Schreibweise, ss statt ß). Beispiele mit Bezug zur Schweiz (CHF, Schweizer Recht), wo sinnvoll.
+
+- id: beispiele
+  label: Beispiele
+  icon: 🧪
+  hint: 3 Beispiele von einfach bis schwierig
+  template: |
+    Du bist ein erfahrener Praxis-Coach für «{thema}».
+    Gib mir zum Thema «{lektion}» drei Beispiele mit steigender Schwierigkeit:
+    - Beispiel 1 (einfach): ein Alltagsfall, den ein Einsteiger sofort versteht.
+    - Beispiel 2 (mittel): ein typischer Fall aus einem Projekt.
+    - Beispiel 3 (schwierig): ein Grenzfall, bei dem auch Profis stolpern.
+    Fokus: {kontext}
+
+    Für jedes Beispiel: Ausgangslage, Vorgehen Schritt für Schritt (mit Code oder Konfiguration, falls passend), Ergebnis, und was man daraus lernt.
+    Antworte auf Deutsch (Schweizer Schreibweise). Bezug zur Schweiz, wo sinnvoll.
+
+- id: einfach
+  label: Einfach erklärt
+  icon: 🧸
+  hint: Ohne Vorwissen, mit Alltagsanalogie
+  template: |
+    Erkläre mir «{lektion}» aus dem Thema «{thema}» so, als hätte ich keinerlei technisches Vorwissen.
+    Fokus: {kontext}
+    - Beginne mit einer Alltagsanalogie (Haus, Küche, Büro, Verkehr …).
+    - Danach die drei wichtigsten Begriffe in je einem Satz.
+    - Dann ein Mini-Beispiel.
+    - Zum Schluss: «Was du dir merken musst» in drei Punkten.
+    Keine Fachbegriffe ohne Erklärung. Deutsch, Schweizer Schreibweise.
+
+- id: pruef-mich
+  label: Prüf mich
+  icon: 🎓
+  hint: Interaktives Abfragen mit Bewertung
+  template: |
+    Du bist ein strenger, aber fairer Prüfer für «{thema}» auf Stufe {stufe}.
+    Prüfe mein Wissen zur Lektion «{lektion}». Die Lektion soll diese Fähigkeiten vermitteln:
+    {kompetenzen}
+
+    Regeln:
+    - Stelle mir 5 Fragen, EINE nach der anderen. Warte nach jeder Frage auf meine Antwort.
+    - Mische Wissensfragen, Anwendungsfragen und mindestens eine Szenario-Frage («Ein Kunde will … – was empfiehlst du?»).
+    - Bewerte jede Antwort: richtig / teilweise / falsch, mit kurzer Begründung und der Musterantwort.
+    - Werde schwieriger, wenn ich gut antworte; einfacher, wenn ich Mühe habe.
+    - Am Schluss: Gesamteinschätzung, meine zwei grössten Lücken und was ich wiederholen soll.
+    Deutsch, Schweizer Schreibweise. Beginne jetzt mit Frage 1.
+
+- id: kundengespraech
+  label: Kundengespräch
+  icon: 🤝
+  hint: Rollenspiel – du berätst einen skeptischen Kunden
+  template: |
+    Wir machen ein Rollenspiel. Du bist ein skeptischer Entscheider (z. B. CIO, CISO oder Geschäftsleitung) eines Schweizer Unternehmens mit rund 300 Mitarbeitenden.
+    Ich bin Senior Consultant und berate dich zum Thema «{lektion}» ({thema}).
+    Fokus: {kontext}
+
+    Regeln:
+    - Stelle realistische, kritische Fragen und Einwände (Kosten in CHF, Risiken, Datenschutz nach revDSG, Aufwand, Akzeptanz im Team).
+    - Reagiere auf meine Antworten wie ein echter Kunde: Wenn ich unklar bin oder Fachjargon nutze, hake nach.
+    - Höchstens eine Frage pro Nachricht. Warte auf meine Antwort.
+    - Nach 6 Runden oder wenn ich «Feedback» schreibe: Steig aus der Rolle und gib mir Feedback als erfahrener Partner einer Beratungsfirma – Verständlichkeit, fachliche Korrektheit, Umgang mit Einwänden, konkrete Verbesserungsvorschläge.
+    Deutsch, Schweizer Schreibweise. Beginne mit deiner ersten Frage als Kunde.
+
+- id: finde-den-fehler
+  label: Finde den Fehler
+  icon: 🔍
+  hint: Fehlerhafte Konfiguration oder Aussage analysieren
+  template: |
+    Du bist Trainer für «{thema}». Erstelle mir eine Übung «Finde den Fehler» zur Lektion «{lektion}».
+    Fokus: {kontext}
+    - Zeig mir eine realistische Konfiguration, einen Code-Ausschnitt oder eine Beratungsaussage, die 3 Fehler enthält (unterschiedlich schwer zu finden).
+    - Sag mir NICHT, wo die Fehler sind. Warte auf meine Antwort.
+    - Danach: Löse auf, erkläre jeden Fehler, seine Auswirkung in der Praxis und die Korrektur.
+    Deutsch, Schweizer Schreibweise.
+
+- id: elevator-pitch
+  label: Elevator Pitch
+  icon: ⏱️
+  hint: Erkläre es in 60 Sekunden – mit Feedback
+  template: |
+    Ich übe, «{lektion}» ({thema}) in 60 Sekunden einem Entscheider ohne Fachwissen zu erklären.
+    Bitte warte auf meinen Text (ca. 120–150 Wörter). Bewerte ihn danach auf einer Skala von 1–5 in:
+    Verständlichkeit, fachliche Korrektheit, Nutzenbezug für das Unternehmen, Kürze.
+    Gib mir eine verbesserte Version und zwei Formulierungen, die ich mir merken sollte.
+    Deutsch, Schweizer Schreibweise. Schreib zuerst nur: «Bereit – schick mir deinen Pitch.»
+
+- id: was-ist-neu
+  label: Was ist neu?
+  icon: 🆕
+  hint: Aktuelle Entwicklungen recherchieren (Websuche nötig)
+  template: |
+    Recherchiere mit Websuche die aktuellen Entwicklungen zu «{lektion}» ({thema}) der letzten 3 Monate.
+    Fokus: {kontext}
+    - Was hat sich geändert (neue Versionen, geänderte Defaults, neue Funktionen, Abkündigungen)?
+    - Was davon ist für die Praxis wirklich relevant, was ist Hype?
+    - Welche Aussagen in einer Lektion zu diesem Thema wären jetzt veraltet?
+    Nenne zu jeder Aussage die Quelle mit Datum. Bevorzuge offizielle Dokumentation und Changelogs.
+    Deutsch, Schweizer Schreibweise.

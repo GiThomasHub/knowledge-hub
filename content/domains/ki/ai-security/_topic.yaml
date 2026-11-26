@@ -1,0 +1,13 @@
+id: ai-security
+title: AI-Sicherheit und Datenschutz
+icon: 🛡️
+volatility: hoch
+prerequisites:
+- claude-code
+summary: 'Agenten sicher betreiben: Schutzschichten, Permissions, Sandbox, Hooks, Container, Prompt Injection und Datenschutz nach Schweizer Recht.'
+goals:
+  L1: Erklärt, warum ein Agent mit deinen Rechten läuft und was das bedeutet.
+  L2: Konfiguriert Permission-Regeln, Modus und Sandbox und prüft sie mit Gegenproben.
+  L3: Wählt ein Schutzprofil pro Situation und kombiniert Schichten (Regeln, Sandbox, Hooks, Container).
+  L4: Berät eine Geschäftsleitung zu Restrisiken, revDSG und Kontotyp und empfiehlt ein Betriebsmodell.
+sources: Claude_Managed_Agents_Leitfaden, VSCode Terminal Docker, claude_code_masterclass; Skill ai-security-privacy

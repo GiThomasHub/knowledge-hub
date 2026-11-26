@@ -1,0 +1,13 @@
+id: secure-coding
+title: Sichere Programmierung
+icon: 🔐
+volatility: mittel
+prerequisites:
+- dev-environment
+summary: 'Code, der von aussen angreifbar ist: OWASP Top 10, Eingaben, Secrets, Abhängigkeiten, Review-Methode.'
+goals:
+  L1: Kennt die häufigsten Schwachstellen (Injection, XSS, geleakte Secrets).
+  L2: Validiert Eingaben, speichert Secrets richtig und richtet Scanner ein.
+  L3: Führt ein Security Review nach Methode durch und priorisiert Funde.
+  L4: Definiert Mindeststandards und das Vorgehen bei einer gefundenen Lücke inkl. Meldepflichten CH.
+sources: GitHub_GoogleCloud_Masterclass (Security), Github_TradingAgents (Kap. 10); Skill secure-coding

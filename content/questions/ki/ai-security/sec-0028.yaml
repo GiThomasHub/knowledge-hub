@@ -1,0 +1,24 @@
+id: sec-0028
+topic: ai-security
+competencies:
+- ki-sec-08
+level: L4
+type: multi
+question: Welche Punkte gehören zur Prüfung, bevor Personendaten an ein LLM eines US-Anbieters gehen? (Mehrere richtig)
+options:
+- Braucht das Modell die echten Daten überhaupt?
+- Transfergrundlage (DPF-Zertifizierung des Anbieters oder Standardvertragsklauseln im DPA)
+- Kommerzielles Konto mit DPA statt Konsumentenkonto
+- Ob der Anbieter ein grosses Kontextfenster hat
+- Datenminimierung und Zweckbindung nach revDSG
+answer:
+- 0
+- 1
+- 2
+- 4
+explanation: Die Kontextgrösse ist für die Datenschutzfrage irrelevant. Entscheidend sind Notwendigkeit, Minimierung, Zweck, Transfergrundlage und Vertragsbasis. Den DPF-Status prüft man vor jedem Projekt selbst.
+source: ai-security/datenfrage-schweiz#der-entscheidungsweg
+status: reviewed
+created: '2026-11-26'
+last_verified: '2026-11-26'
+author: claude-setup

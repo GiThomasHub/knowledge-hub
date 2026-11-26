@@ -1,0 +1,13 @@
+id: git-github
+title: Git und GitHub
+icon: 🌿
+volatility: tief
+prerequisites:
+- dev-environment
+summary: 'Versionskontrolle als Sicherheitsnetz: Commits, Branches, PRs, Reviews, Actions und Rettung.'
+goals:
+  L1: Erklärt Commit, Branch, Push/Pull und die vier Stationen einer Änderung.
+  L2: Arbeitet mit Branch → PR → Review → Merge und löst Konflikte.
+  L3: Richtet Rulesets, CI und sichere Actions ein und rettet verlorene Arbeit.
+  L4: Definiert den Git-Workflow für ein Team mit KI-Agenten als Mitarbeitern.
+sources: grundlagen/github_wsl_basics.md, github vscode.docx, GitHub_GoogleCloud_Masterclass; Skill github-workflow

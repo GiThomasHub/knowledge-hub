@@ -1,0 +1,13 @@
+id: skills-plugins
+title: Skills und Plugins
+icon: 🧩
+volatility: hoch
+prerequisites:
+- claude-code
+summary: 'Wiederverwendbares Wissen für Claude: SKILL.md, Progressive Disclosure, Triggering, Plugins und Marketplaces.'
+goals:
+  L1: Erklärt Skill, Connector und Plugin und deren Unterschied.
+  L2: Schreibt einen Skill mit guter Description und Referenzdateien.
+  L3: Testet Skills mit Evals, optimiert Triggering und bündelt sie als Plugin.
+  L4: Baut für eine Organisation eine Skill-Bibliothek als institutionelles Wissen auf.
+sources: Skills_Masterclass_v2_1, Masterclass_Claude_Skills_Plugins, agents_plugins_subagents_masterclass; Skill ai-engineering-advisor

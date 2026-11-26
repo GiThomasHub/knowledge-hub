@@ -1,0 +1,27 @@
+{
+  "type": "object",
+  "required": [
+    "term",
+    "definition"
+  ],
+  "properties": {
+    "term": {
+      "type": "string"
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "definition": {
+      "type": "string"
+    },
+    "lesson": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "glossary"
+}

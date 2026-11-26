@@ -1,0 +1,21 @@
+id: sec-0013
+topic: ai-security
+competencies:
+- ki-sec-04
+level: L2
+type: multi
+question: Welche Einstellungen machen die Sandbox fail-closed? (Mehrere richtig)
+options:
+- '`"failIfUnavailable": true`'
+- '`"allowUnsandboxedCommands": false`'
+- '`"enableWeakerNestedSandbox": true`'
+- '`"strictAllowlist": false`'
+answer:
+- 0
+- 1
+explanation: '`failIfUnavailable` verhindert den Start ohne funktionierende Sandbox, `allowUnsandboxedCommands: false` verbietet den Retry ohne Sandbox. Die beiden anderen schwächen den Schutz eher.'
+source: ai-security/sandbox#einrichten-in-vier-schritten
+status: reviewed
+created: '2026-11-26'
+last_verified: '2026-11-26'
+author: claude-setup

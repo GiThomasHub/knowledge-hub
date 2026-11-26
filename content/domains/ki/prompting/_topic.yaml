@@ -1,0 +1,13 @@
+id: prompting
+title: Prompt- und Context-Engineering
+icon: ✍️
+volatility: mittel
+prerequisites:
+- ki-grundlagen
+summary: 'Vom Satz zum strukturierten Prompt: Rolle, Kontext, Aufgabe, Beispiele, Format. Dazu Context Engineering, Prompt Caching und erzwungene Struktur.'
+goals:
+  L1: Schreibt Prompts mit Rolle, Kontext, Aufgabe, Constraints und Format.
+  L2: Nutzt Few-Shot, XML-Tags und strukturierte Ausgaben, um reproduzierbare Ergebnisse zu bekommen.
+  L3: Gestaltet Kontext bewusst (Reihenfolge, Caching, Kompaktierung) und misst, ob ein Prompt besser wurde.
+  L4: Definiert Prompt-Standards für ein Team und begründet, wann Prompting reicht und wann nicht.
+sources: KI-Engineering-Masterclass.docx, AI_Masterclass.docx; Skill llm-engineering

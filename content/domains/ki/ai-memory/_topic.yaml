@@ -1,0 +1,13 @@
+id: ai-memory
+title: Memory, RAG und Wissensbasen
+icon: 📚
+volatility: hoch
+prerequisites:
+- prompting
+summary: 'Wie KI sich erinnert: Kontext vs. Langzeitgedächtnis, Claude-Memory, RAG mit Hybrid-Suche und Reranking, Second Brain.'
+goals:
+  L1: Unterscheidet Kurzzeit- und Langzeitgedächtnis und erklärt RAG als Open-Book-Prüfung.
+  L2: Richtet CLAUDE.md, Auto Memory und ein einfaches RAG ein.
+  L3: Optimiert RAG mit Chunking, Hybrid-Suche, Reranking und misst die Qualität.
+  L4: Wählt für einen Kunden die passende Wissensarchitektur inklusive Pflege und Datenschutz.
+sources: KI-Engineering-Masterclass (Teil B, D), AI_Masterclass (III), Harness.docx (G); Skill ai-memory-knowledge

@@ -1,0 +1,20 @@
+id: sec-0022
+topic: ai-security
+competencies:
+- ki-sec-06
+level: L3
+type: single
+question: Du lässt `claude -p` in einer CI-Pipeline auf einem fremden Repo laufen. Was ist richtig?
+options:
+- Headless gibt es einen Vertrauensdialog, deshalb ist das unkritisch.
+- Ohne Vertrauensdialog laufen Repo-Hooks, der env-Block und .mcp.json-Server ohne Rückfrage – deshalb `--setting-sources user` oder `--bare`, Modus explizit (z. B. dontAsk), Budget und isolierte Umgebung.
+- '`--bare` lädt deine eigenen Fail-closed-Hooks automatisch mit.'
+- Der Standardmodus ist stabil, man muss ihn nicht setzen.
+answer:
+- 1
+explanation: Headless gibt es keinen Vertrauensdialog. `--bare` lädt auch die eigenen Hooks nicht – Grenzen müssen dann per `--settings` in Regeln und Sandbox stecken. Den Modus ausdrücklich setzen, er hat sich zwischen Versionen geändert.
+source: ai-security/sandbox-vs-permissions#sonderfall-unbeaufsichtigte-laeufe
+status: reviewed
+created: '2026-11-26'
+last_verified: '2026-11-26'
+author: claude-setup

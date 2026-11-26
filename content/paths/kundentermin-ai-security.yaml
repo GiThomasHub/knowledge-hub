@@ -1,0 +1,11 @@
+id: kundentermin-ai-security
+title: Vorbereitung Kundentermin «AI Security»
+description: In einer Woche sattelfest für ein Gespräch mit CISO oder Geschäftsleitung über den sicheren Einsatz von KI-Agenten.
+duration: 1 Woche
+steps:
+  - ai-security/ueberblick
+  - ai-security/permissions
+  - ai-security/sandbox
+  - ai-security/sandbox-vs-permissions
+  - container
+  - ki-beratung

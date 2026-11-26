@@ -1,0 +1,15 @@
+id: sec-0006
+topic: ai-security
+competencies:
+- ki-sec-02
+level: L2
+type: true_false
+question: Ein gut abgesicherter Devcontainer verhindert, dass sensible Daten aus dem gemounteten Projektordner an das Modell übertragen werden.
+answer:
+- 1
+explanation: Falsch. Keine Isolation ändert, was das Modell liest. Liest Claude eine Datei im gemounteten Ordner, geht ihr Inhalt an den Anbieter. Gegen Datenabfluss ans Modell hilft nur, die Daten gar nicht erst lesbar zu machen.
+source: ai-security/sandbox-vs-permissions#wer-deckt-was-ab
+status: reviewed
+created: '2026-11-26'
+last_verified: '2026-11-26'
+author: claude-setup

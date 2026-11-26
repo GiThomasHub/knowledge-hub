@@ -1,0 +1,20 @@
+id: sec-0014
+topic: ai-security
+competencies:
+- ki-sec-04
+level: L2
+type: single
+question: 'Du schreibst `"strictAllowlist": true` und `sandbox.credentials` in die `.claude/settings.json` deines Repos. Was ist das Problem?'
+options:
+- Kein Problem, das ist der empfohlene Ort.
+- Beide Schlüssel werden in Projekt-Settings ignoriert – sie wirken nur in User- oder Managed Settings oder per --settings.
+- strictAllowlist sperrt dann auch GitHub.
+- credentials gelten nur für Windows.
+answer:
+- 1
+explanation: Damit ein Repo den Schutz nicht aufweichen oder umleiten kann, ignoriert Claude Code diese Schlüssel aus Projekt- und Local-Settings. Sie gehören nach ~/.claude/settings.json oder in Managed Settings.
+source: ai-security/sandbox#einrichten-in-vier-schritten
+status: reviewed
+created: '2026-11-26'
+last_verified: '2026-11-26'
+author: claude-setup

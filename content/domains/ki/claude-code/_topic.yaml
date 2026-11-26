@@ -1,0 +1,13 @@
+id: claude-code
+title: Claude Code meistern
+icon: ⌨️
+volatility: hoch
+prerequisites:
+- agents
+summary: 'Claude Code vom ersten Start bis zum Profi-Setup: Agentic Loop, CLAUDE.md, der .claude-Ordner, Modi, Hooks, Subagents, Kontext-Management.'
+goals:
+  L1: Startet Claude Code im richtigen Ordner, kennt die wichtigsten Befehle und Modi.
+  L2: Pflegt CLAUDE.md, Regeln und Settings und arbeitet nach Explore → Plan → Code → Commit.
+  L3: Richtet Hooks, Subagents, Skills und MCP für ein Team-Projekt ein und hält den Kontext schlank.
+  L4: Konzipiert ein Claude-Code-Setup für ein Entwicklungsteam inklusive Governance.
+sources: claude_code_masterclass, Claude Folders.docx; Skill cc-project-structure

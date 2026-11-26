@@ -1,0 +1,37 @@
+{
+  "type": "object",
+  "required": [
+    "id",
+    "topic",
+    "level",
+    "can_do"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z]+-[a-z]+-\\d{2}$"
+    },
+    "topic": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "level": {
+      "enum": [
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ]
+    },
+    "can_do": {
+      "type": "string"
+    },
+    "min_questions": {
+      "type": "integer",
+      "minimum": 1
+    }
+  },
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "competency"
+}

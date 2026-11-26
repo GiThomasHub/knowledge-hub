@@ -1,0 +1,24 @@
+id: ki
+title: Künstliche Intelligenz
+icon: 🤖
+description: 'Vom Anfänger zum Senior Consultant: KI-Grundlagen, Engineering, Betrieb,
+  Sicherheit und Beratung.'
+topics:
+- ki-grundlagen
+- prompting
+- modelle-kosten
+- agents
+- claude-code
+- skills-plugins
+- mcp-tools
+- ai-memory
+- ai-security
+- secure-coding
+- evals
+- dev-environment
+- git-github
+- container
+- automation
+- lokale-llms
+- machine-learning
+- ki-beratung

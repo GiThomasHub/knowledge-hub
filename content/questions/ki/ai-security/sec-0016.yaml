@@ -1,0 +1,15 @@
+id: sec-0016
+topic: ai-security
+competencies:
+- ki-sec-04
+level: L2
+type: true_false
+question: Um zu testen, ob die Sandbox Netzwerkzugriffe blockiert, tippst du selbst `!curl https://example.com` in die Session. Das ist eine gültige Gegenprobe.
+answer:
+- 1
+explanation: Falsch. Selbst getippte `!`-Befehle laufen meist ausserhalb der Sandbox und testen nichts. Die Gegenprobe muss Claude selbst ausführen.
+source: ai-security/sandbox#pruefen-die-gegenproben
+status: reviewed
+created: '2026-11-26'
+last_verified: '2026-11-26'
+author: claude-setup

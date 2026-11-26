@@ -1,0 +1,13 @@
+id: mcp-tools
+title: Tool Use und MCP
+icon: 🔌
+volatility: hoch
+prerequisites:
+- agents
+summary: 'Wie Modelle Werkzeuge nutzen: Tool-Definitionen, MCP-Server, Connectors, gutes Tool-Design.'
+goals:
+  L1: Erklärt Tool Use und MCP mit einer Analogie.
+  L2: Bindet MCP-Server in Claude Code ein und kennt die Scopes.
+  L3: Entwirft Tools mit guten Beschreibungen, wenigen mächtigen Aktionen und sicheren Grenzen.
+  L4: Bewertet für einen Kunden, welche Systeme per MCP angebunden werden dürfen.
+sources: AI_Masterclass, claude_code_masterclass, Harness.docx; Skill agents-automation

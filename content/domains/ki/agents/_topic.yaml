@@ -1,0 +1,13 @@
+id: agents
+title: Agenten, Harness und Workflows
+icon: 🤖
+volatility: hoch
+prerequisites:
+- prompting
+summary: 'Was einen Agenten ausmacht: Modell plus Harness, ReAct-Schleife, Muster von Anthropic, Multi-Agent, Frameworks wie LangGraph.'
+goals:
+  L1: Unterscheidet Chatbot, Workflow und Agent und erklärt die ReAct-Schleife.
+  L2: Baut einen einfachen Agenten mit Tools, Stopp-Kriterium und Budget.
+  L3: Wählt das passende Muster (Chaining, Routing, Orchestrator-Worker, Evaluator-Optimizer) und Framework.
+  L4: Empfiehlt einem Kunden die einfachste Architektur, die das Problem löst, und begründet Risiken autonomer Agenten.
+sources: Harness.docx, ai_agent_masterclass, agents_plugins_subagents_masterclass, claude_agent_handbuch_market, Github_TradingAgents; Skill agents-automation

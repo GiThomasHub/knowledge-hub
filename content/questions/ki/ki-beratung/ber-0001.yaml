@@ -1,0 +1,20 @@
+id: ber-0001
+topic: ki-beratung
+competencies:
+- ki-ber-05
+level: L4
+type: single
+question: 'Ein Kunde sagt: «Wir nutzen Claude, das ist ja DSGVO-konform.» Was ist die beste Reaktion eines Senior Consultants?'
+options:
+- Zustimmen – Anthropic ist ein seriöser Anbieter.
+- 'Präzisieren: Für ein Schweizer Unternehmen gilt primär das revDSG, und Konformität hängt am konkreten Einsatz (Daten, Konto, Vertrag, Transfer), nicht am Werkzeug.'
+- Widersprechen – LLMs sind nie datenschutzkonform.
+- Auf die EU-KI-Verordnung verweisen und das Thema beenden.
+answer:
+- 1
+explanation: Konformität ist keine Eigenschaft eines Werkzeugs. Sie ergibt sich aus Datenklassen, Kontotyp, DPA, Transfergrundlage und den technischen Massnahmen im konkreten Einsatz.
+source: ai-security/datenfrage-schweiz#die-beratung-restrisiko-ehrlich-benennen
+status: reviewed
+created: '2026-11-26'
+last_verified: '2026-11-26'
+author: claude-setup

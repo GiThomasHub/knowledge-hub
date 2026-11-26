@@ -1,0 +1,14 @@
+id: ki-beratung
+title: KI-Beratung und Einführung
+icon: 🎯
+volatility: mittel
+prerequisites:
+- ki-grundlagen
+- ai-security
+summary: 'Die Senior-Disziplin: Use Cases bewerten, Business Case in CHF, Einführung in Stufen, Governance, Regulierung und Change.'
+goals:
+  L1: Kennt typische KI-Use-Cases und die Produktlandschaft (Chat, Code, Cowork, API, Managed Agents).
+  L2: Bewertet einen Use Case nach Nutzen, Machbarkeit, Risiko und Daten.
+  L3: Erstellt einen Business Case und einen Einführungsplan in Stufen mit Metriken.
+  L4: 'Führt eine KI-Einführung als Berater: Governance, Regulierung (revDSG, EU AI Act), Change und Erfolgsmessung.'
+sources: claude_financial_services_masterclass, Claude_Managed_Agents_Leitfaden, AI_Masterclass (VII, VIII)

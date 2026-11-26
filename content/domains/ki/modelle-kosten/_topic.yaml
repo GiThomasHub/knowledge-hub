@@ -1,0 +1,13 @@
+id: modelle-kosten
+title: Modellwahl, Aufwand und Kosten
+icon: 💰
+volatility: hoch
+prerequisites:
+- ki-grundlagen
+summary: Welches Modell für welche Aufgabe, wie viel Denkaufwand, und wie Kosten mit Caching, Batch und Routing sinken.
+goals:
+  L1: Kennt die Modellklassen (klein/schnell bis gross/stark) und wie Tokenkosten entstehen.
+  L2: Setzt max_tokens, wählt pro Aufgabe das passende Modell und nutzt Prompt Caching.
+  L3: Plant Modell-Routing, Effort/Thinking und Batch-Verarbeitung für eine Pipeline mit Budgetgrenze.
+  L4: Erstellt für einen Kunden eine Kostenschätzung in CHF mit Szenarien und Hebeln.
+sources: ai_agent_masterclass, claude_agent_handbuch, Claude_Managed_Agents_Leitfaden; Skill llm-engineering

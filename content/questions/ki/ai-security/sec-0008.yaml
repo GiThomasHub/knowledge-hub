@@ -1,0 +1,20 @@
+id: sec-0008
+topic: ai-security
+competencies:
+- ki-sec-03
+level: L2
+type: single
+question: Du schreibst `"Read(/secrets/**)"` als Deny in `~/.claude/settings.json`. Was sperrst du damit?
+options:
+- Den absoluten Ordner /secrets
+- Den Ordner secrets im aktuellen Projekt
+- Den Ordner ~/.claude/secrets
+- Gar nichts – die Syntax ist ungültig
+answer:
+- 2
+explanation: 'Ein führender einzelner Slash ist relativ zur Settings-Datei – in den User-Settings also ~/.claude. Für absolute Pfade braucht es zwei Slashes: `Read(//secrets/**)`.'
+source: ai-security/permissions#pfad-syntax-die-haeufigste-fehlerquelle
+status: reviewed
+created: '2026-11-26'
+last_verified: '2026-11-26'
+author: claude-setup

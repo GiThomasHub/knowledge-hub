@@ -1,0 +1,21 @@
+id: sec-0029
+topic: ai-security
+competencies:
+- ki-sec-08
+- ki-ber-05
+level: L4
+type: case
+question: 'Die Geschäftsleitung eines Schweizer KMU (Treuhand, 60 Mitarbeitende) fragt dich: «Dürfen wir KI für unsere Mandatsarbeit einsetzen – und wenn ja, wie?» Skizziere deine Antwort in Stichworten.'
+model_answer: '1) **Nutzen** benennen (z. B. Entwürfe, Recherchen, Auswertungen; Zeitgewinn in Stunden/CHF). 2) **Datenklassen** festlegen: öffentlich/intern erlaubt; Personendaten mit Auflagen; Mandatsgeheimnisse (Art. 321 StGB) nur nach Rechtsabklärung, anonymisiert oder lokal. 3) **Betriebsmodell:** kommerzielles Konto mit DPA (kein Pro/Max), zentrale Managed Settings, Profile je Situation, Schulung. Entwicklung mit synthetischen Daten, echte Daten lokal verarbeiten. 4) **Transfer:** DPF-Status prüfen, sonst SCC im DPA; ggf. Transfer-Folgenabschätzung. 5) **Restrisiko** offen nennen (Verarbeitung im Ausland, Prompt Injection nur begrenzbar) und **Verantwortung** regeln: Freigabeprozess, Inventar, periodische Neubeurteilung. Keine Rechtsberatung – Rechtsdienst/Datenschutzberatung einbeziehen.'
+rubric:
+- Beginnt mit Nutzen, nicht mit Technik
+- Unterscheidet Datenklassen inkl. Berufsgeheimnis
+- Fordert kommerzielles Konto/DPA und benennt die Transferfrage
+- Schlägt technische Umsetzung vor (synthetische Daten, Managed Settings)
+- Benennt Restrisiko und regelt Verantwortung, verweist auf Rechtsberatung
+explanation: 'Auf Senior-Stufe machst du die Geschäftsleitung entscheidungsfähig: Nutzen, Datenklassen, Betriebsmodell, Restrisiko und Verantwortung – statt ein pauschales Ja oder Nein.'
+source: ai-security/datenfrage-schweiz#die-beratung-restrisiko-ehrlich-benennen
+status: reviewed
+created: '2026-11-26'
+last_verified: '2026-11-26'
+author: claude-setup

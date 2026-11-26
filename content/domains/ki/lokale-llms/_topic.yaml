@@ -1,0 +1,13 @@
+id: lokale-llms
+title: Lokale LLMs
+icon: 🏠
+volatility: hoch
+prerequisites:
+- ki-grundlagen
+summary: 'Modelle auf eigener Hardware: Ollama, Quantisierung, VRAM-Mathematik und wann lokal wirklich privat ist.'
+goals:
+  L1: Erklärt, warum und wann lokale Modelle sinnvoll sind.
+  L2: Betreibt ein Modell mit Ollama und bindet die OpenAI-kompatible API an.
+  L3: Wählt Modell und Quantisierung passend zur Hardware.
+  L4: Berät, ob lokal oder Cloud – mit Kosten, Qualität und Datenschutz abgewogen.
+sources: Harness.docx (Teil C), ai_agent_masterclass (Weg 5)

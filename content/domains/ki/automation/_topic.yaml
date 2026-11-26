@@ -1,0 +1,13 @@
+id: automation
+title: Automatisierung und Betrieb
+icon: ⚙️
+volatility: hoch
+prerequisites:
+- agents
+summary: 'Agenten im Hintergrund: Cron und geplante Tasks, headless Claude, GitHub Actions, Managed Agents, Cloud-Deployment.'
+goals:
+  L1: Kennt die Trigger-Arten (periodisch, aktiv, reaktiv) und Cron-Syntax.
+  L2: Richtet einen geplanten Lauf mit GitHub Actions oder Scheduled Task ein.
+  L3: Sichert unbeaufsichtigte Läufe ab (Budget, Abbruch, Idempotenz, Bericht, nur Draft-PRs).
+  L4: Wählt für einen Kunden die Betriebsform (lokal, CI, Managed Agents, Cloud Run) begründet.
+sources: ai_agent_masterclass, claude_agent_handbuch, Claude_Managed_Agents_Leitfaden, GitHub_GoogleCloud_Masterclass; Skill agents-automation

@@ -1,0 +1,13 @@
+id: machine-learning
+title: Machine Learning für Berater
+icon: 📈
+volatility: tief
+prerequisites:
+- ki-grundlagen
+summary: 'Das Fundament unter der GenAI: Lernparadigmen, Algorithmen, Validierung und die typischen Fallen.'
+goals:
+  L1: Erklärt Supervised, Unsupervised und Reinforcement Learning.
+  L2: Liest Metriken richtig (Precision/Recall statt nur Accuracy).
+  L3: Erkennt Overfitting, Data Leakage und Scheinkorrelationen.
+  L4: Beurteilt, ob ein Kundenproblem ML, GenAI oder eine einfache Regel braucht.
+sources: Machine_Learning_Masterclass.docx

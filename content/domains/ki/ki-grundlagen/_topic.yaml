@@ -1,0 +1,12 @@
+id: ki-grundlagen
+title: KI- und LLM-Grundlagen
+icon: 🧠
+volatility: mittel
+prerequisites: []
+summary: 'Wie Sprachmodelle funktionieren: Token, Kontextfenster, Training und Inferenz, Halluzination, Alignment. Die Begriffe, ohne die kein Kundengespräch funktioniert.'
+goals:
+  L1: Erklärt KI, ML, Deep Learning und GenAI als verschachtelte Begriffe und kennt Token, Kontextfenster, Temperatur.
+  L2: Erkennt typische Modellfehler (Halluzination, veraltetes Wissen, Lost in the Middle) und weiss, woher sie kommen.
+  L3: Wählt zwischen Prompting, RAG und Fine-Tuning begründet und kennt die Grenzen jeder Variante.
+  L4: Erklärt einem Management ohne Fachjargon, was ein LLM kann und was nicht, und entlarvt AI-Washing.
+sources: AI_Masterclass.docx, Machine_Learning_Masterclass.docx, KI-Engineering-Masterclass.docx

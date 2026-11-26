@@ -1,0 +1,15 @@
+id: sec-0002
+topic: ai-security
+competencies:
+- ki-sec-01
+level: L1
+type: true_false
+question: Eine Rückfrage von Claude Code vor einer Aktion ist eine verlässliche Sicherheitsgrenze.
+answer:
+- 1
+explanation: 'Falsch. Rückfragen schützen gegen Versehen, sind aber keine Grenze: In langen Sessions klickt man routiniert «Ja», im Auto Mode entscheidet ein Klassifikator, unbeaufsichtigte Läufe haben niemanden, der fragt. Grenzen setzt nur technische Durchsetzung.'
+source: ai-security/ueberblick#was-claude-code-standardmaessig-darf
+status: reviewed
+created: '2026-11-26'
+last_verified: '2026-11-26'
+author: claude-setup

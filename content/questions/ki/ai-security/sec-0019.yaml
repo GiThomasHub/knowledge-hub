@@ -1,0 +1,24 @@
+id: sec-0019
+topic: ai-security
+competencies:
+- ki-sec-05
+level: L3
+type: multi
+question: Welche Aussagen über Hooks treffen zu? (Mehrere richtig)
+options:
+- Hooks laufen ausserhalb der Sandbox mit vollen Rechten.
+- Hook-Code aus einem fremden Repo ist fremder Code mit deinen Rechten.
+- Ein Hook ist eine unüberwindbare Wand, weil er jeden Befehlstext prüft.
+- Hooks greifen auch bei Tool-Aufrufen von Subagents.
+- Ein Deny aus einem PreToolUse-Hook gilt auch im Bypass-Modus.
+answer:
+- 0
+- 1
+- 3
+- 4
+explanation: Hooks prüfen Text – `eval`, Variablen oder Base64 umgehen Muster. Sie sind Leitplanken, keine Wände. Harte Grenzen gehören in Regeln, Sandbox und Container.
+source: ai-security/sandbox-vs-permissions#hooks-leitplanken-die-immer-greifen
+status: reviewed
+created: '2026-11-26'
+last_verified: '2026-11-26'
+author: claude-setup

@@ -1,0 +1,23 @@
+id: sec-0009
+topic: ai-security
+competencies:
+- ki-sec-03
+level: L2
+type: multi
+question: Welche Aussagen zu Permission-Regeln stimmen? (Mehrere richtig)
+options:
+- '`Write(pfad)`-Regeln matchen nie – für Schreibsperren nimmt man `Edit(pfad)`.'
+- Ein `Read`-Deny sperrt auch Edit und Write auf denselben Pfad.
+- '`Bash(curl *)` als Deny verhindert zuverlässig jeden Netzwerkzugriff.'
+- Deny-Regeln gelten auch im Bypass-Modus.
+- Ein `Read`-Deny verhindert auch `grep -r muster .` in der Shell.
+answer:
+- 0
+- 1
+- 3
+explanation: '`Bash(curl *)` trifft nur Befehle, die mit `curl ` beginnen (`/usr/bin/curl` oder `sh -c` umgehen es). Read-Denies wirken auf Datei-Tools und erkannte Lesebefehle wie `cat`, nicht auf `grep -r` oder Skripte – dafür braucht es die Sandbox.'
+source: ai-security/permissions#warum-bash-regeln-keine-grenze-sind
+status: reviewed
+created: '2026-11-26'
+last_verified: '2026-11-26'
+author: claude-setup

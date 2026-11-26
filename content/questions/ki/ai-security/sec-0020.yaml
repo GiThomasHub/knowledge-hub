@@ -1,0 +1,21 @@
+id: sec-0020
+topic: ai-security
+competencies:
+- ki-sec-06
+level: L3
+type: scenario
+situation: Eine Kollegin hat ein unbekanntes Open-Source-Repo gefunden und möchte, dass Claude Code die Abhängigkeiten installiert (`npm install`) und die Tests laufen lässt.
+question: Welches Profil passt?
+options:
+- lesen – mit `--restricted`
+- mittel – Regeln, Sandbox und Hooks auf dem Arbeitsrechner
+- streng – Managed Settings
+- isoliert – im Devcontainer mit Firewall oder in einer VM
+answer:
+- 3
+explanation: 'Fremder Code und unbekannte Pakete ausführen ist der Kernfall für «isoliert». Ein sinnvoller Ablauf: zuerst im Profil «lesen» verstehen, dann zum Ausführen in den Container wechseln.'
+source: ai-security/sandbox-vs-permissions#die-vier-profile
+status: reviewed
+created: '2026-11-26'
+last_verified: '2026-11-26'
+author: claude-setup

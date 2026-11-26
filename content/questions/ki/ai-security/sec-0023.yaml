@@ -1,0 +1,21 @@
+id: sec-0023
+topic: ai-security
+competencies:
+- ki-sec-06
+- ki-sec-02
+level: L3
+type: case
+question: Ein Entwicklerteam (8 Personen) einer Versicherung will Claude Code im Alltag einsetzen. Gelegentlich müssen Logs mit Kundennamen analysiert werden. Skizziere in Stichworten die Sicherheitskonfiguration (Profile, Schichten, Verteilung, Nachweis).
+model_answer: 'Profil **mittel** für den Alltag, **streng** für alles mit Kundendaten, **isoliert** für fremden Code. Schichten: Permission-Regeln (Deny für Secrets, Kundendaten-Ordner), Bash-Sandbox fail-closed mit denyRead und enger Domain-Liste, Hooks mit onFailure block als Zusatz, Auto/Bypass gesperrt. Verteilung über **Managed Settings** (IT, nicht änderbar). Kommerzielles Konto mit DPA. Logs mit Kundennamen nach Möglichkeit vorher pseudonymisieren; sonst nur im Profil streng. Nachweis per Gegenproben (/permissions, /status, cat ~/.ssh, curl) und regelmässigem Audit.'
+rubric:
+- Unterscheidet mindestens zwei Profile nach Situation
+- Nennt Regeln UND Sandbox (nicht nur eines)
+- Verteilt die Konfiguration zentral (Managed Settings)
+- Behandelt die Datenfrage (kommerzielles Konto, Pseudonymisierung)
+- Nennt einen Nachweis (Gegenproben/Audit)
+explanation: Ein Senior-Vorschlag kombiniert Schichten passend zur Situation, verteilt sie zentral und beweist die Wirkung – statt eine einzelne Massnahme als Lösung zu verkaufen.
+source: ai-security/sandbox-vs-permissions#die-vier-profile
+status: reviewed
+created: '2026-11-26'
+last_verified: '2026-11-26'
+author: claude-setup

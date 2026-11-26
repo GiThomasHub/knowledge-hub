@@ -1,0 +1,23 @@
+id: sec-0025
+topic: ai-security
+competencies:
+- ki-sec-07
+level: L3
+type: multi
+question: Das «tödliche Dreieck» beschreibt, wann Prompt Injection gefährlich wird. Welche drei Elemente gehören dazu?
+options:
+- Zugriff auf private Daten
+- Kontakt mit fremden Inhalten
+- Ein Weg nach draussen (Netzwerk, E-Mail, PR-Kommentar)
+- Ein grosses Kontextfenster
+- Ein teures Modell
+answer:
+- 0
+- 1
+- 2
+explanation: 'Fehlt eines der drei Elemente, läuft eine Injection ins Leere. Die wirksamste Abwehr ist strukturell: Ausgänge schliessen oder private Daten unerreichbar machen.'
+source: ai-security/ueberblick#prompt-injection-der-angriff-ueber-text
+status: reviewed
+created: '2026-11-26'
+last_verified: '2026-11-26'
+author: claude-setup

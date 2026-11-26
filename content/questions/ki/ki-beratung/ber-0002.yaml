@@ -1,0 +1,19 @@
+id: ber-0002
+topic: ki-beratung
+competencies:
+- ki-ber-05
+level: L4
+type: order
+question: Bring die Struktur eines Beratungsgesprächs mit der Geschäftsleitung zum KI-Einsatz in die empfohlene Reihenfolge.
+options:
+- Nutzen in CHF oder Stunden benennen
+- Datenklassen festlegen (erlaubt, mit Auflagen, verboten)
+- Betriebsmodell vorschlagen (Konto, Managed Settings, Profile, Schulung)
+- Restrisiko offen benennen
+- Entscheid und Verantwortung regeln (Freigabe, Überprüfung, Neubeurteilung)
+explanation: Mit dem Nutzen beginnen, damit die Diskussion nicht bei Risiken stecken bleibt; dann Daten, Betrieb, Restrisiko – und am Ende klare Verantwortung.
+source: ai-security/datenfrage-schweiz#die-beratung-restrisiko-ehrlich-benennen
+status: reviewed
+created: '2026-11-26'
+last_verified: '2026-11-26'
+author: claude-setup

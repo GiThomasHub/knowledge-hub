@@ -1,0 +1,19 @@
+id: sec-0015
+topic: ai-security
+competencies:
+- ki-sec-04
+level: L2
+type: order
+question: Bring die Schritte zum Einrichten der Sandbox in eine sinnvolle Reihenfolge.
+options:
+- bubblewrap und socat installieren, Claude Code neu starten
+- 'Sandbox fail-closed einschalten (failIfUnavailable, allowUnsandboxedCommands: false)'
+- Lesen einschränken (denyRead/allowRead)
+- Netz und Secrets begrenzen (allowedDomains, strictAllowlist, credentials)
+- Gegenproben durch Claude ausführen lassen
+explanation: Erst die Voraussetzungen, dann der wichtigste Schalter (fail-closed), dann Lese-, Netz- und Secret-Grenzen – und erst nach erfolgreichen Gegenproben ist das Setup «fertig».
+source: ai-security/sandbox#einrichten-in-vier-schritten
+status: reviewed
+created: '2026-11-26'
+last_verified: '2026-11-26'
+author: claude-setup

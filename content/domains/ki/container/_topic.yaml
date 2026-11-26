@@ -1,0 +1,13 @@
+id: container
+title: Docker und Container
+icon: 📦
+volatility: tief
+prerequisites:
+- dev-environment
+summary: Image, Container, Mounts, Volumes, Devcontainer und warum Isolation durch Unerreichbarkeit entsteht.
+goals:
+  L1: Erklärt Image, Container, Bind Mount und Volume mit einer Analogie.
+  L2: Startet Projekte im Container und weiss, was den Shutdown überlebt.
+  L3: Härtet Container (Mounts, Netz, User) und richtet Devcontainer ein.
+  L4: Empfiehlt, wann Container für KI-Agenten Pflicht sind, und benennt Restrisiken.
+sources: grundlagen/container.md, VSCode Terminal Docker.docx

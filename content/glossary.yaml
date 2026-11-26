@@ -1,0 +1,76 @@
+# Glossar – Begriffe sind in der Suche und als Tooltip in Lektionen verfügbar.
+# In einer Lektion verlinken: [[Begriff]] oder [[Begriff|angezeigter Text]].
+# lesson: wo der Begriff ausführlich erklärt wird (topic/slug#anker), optional.
+
+- term: Agent
+  definition: Ein LLM in einer Schleife mit Werkzeugen, Gedächtnis und Ziel. Es plant, handelt, prüft das Ergebnis und hört erst auf, wenn das Ziel erreicht oder ein Stopp-Kriterium erfüllt ist.
+- term: Harness
+  aliases: [Scaffold]
+  definition: Alles um das Modell herum, was es zum Agenten macht – Schleife, Werkzeuge, Kontextverwaltung, Gedächtnis, Berechtigungen. Claude Code ist der Harness rund um Claude.
+- term: ReAct
+  definition: Reason + Act. Die Grundschleife eines Agenten – überlegen, Werkzeug aufrufen, Ergebnis beobachten, erneut überlegen – bis eine Antwort ohne Werkzeugaufruf entsteht.
+- term: Token
+  definition: Die Texteinheit, in der ein Modell rechnet (ungefähr 4 Zeichen bzw. ¾ Wort im Englischen, im Deutschen etwas weniger). Kosten und Kontextgrenzen werden in Token gemessen.
+- term: Kontextfenster
+  aliases: [Context Window]
+  definition: Die maximale Menge an Token, die ein Modell in einem Aufruf sieht – Systemprompt, Verlauf, Dateien und Antwort zusammen. Das Arbeitsgedächtnis des Modells.
+- term: Halluzination
+  definition: Eine plausibel klingende, aber falsche Aussage des Modells. Entsteht, weil ein LLM wahrscheinliche Fortsetzungen erzeugt, nicht geprüfte Fakten.
+- term: Prompt Injection
+  definition: Angriff, bei dem Text aus einer fremden Quelle (Webseite, Datei, E-Mail) Anweisungen enthält, die das Modell befolgt, als kämen sie vom Nutzer.
+  lesson: ai-security/ueberblick
+- term: Permission-Regel
+  aliases: [Permissions]
+  definition: Eine Regel in settings.json (allow, ask, deny), die festlegt, welche Werkzeuge Claude Code ohne Rückfrage, mit Rückfrage oder gar nicht nutzen darf. Deny gewinnt immer.
+  lesson: ai-security/permissions
+- term: Sandbox
+  definition: Isolation auf Betriebssystemebene. Die Bash-Sandbox von Claude Code umschliesst Shell-Befehle samt Kindprozessen und begrenzt Schreibzugriff und Netzwerk.
+  lesson: ai-security/sandbox
+- term: Hook
+  definition: Ein Befehl, HTTP-Aufruf oder Prompt, der an einem festen Punkt im Lebenszyklus von Claude Code automatisch läuft. Ein PreToolUse-Hook mit Exit 2 blockiert einen Werkzeugaufruf.
+  lesson: ai-security/sandbox-vs-permissions
+- term: Managed Settings
+  definition: Zentral (z. B. in /etc/claude-code/) abgelegte Einstellungen mit höchster Priorität. Nur mit Administratorrechten änderbar und damit vor Repos und vor Claude selbst geschützt.
+  lesson: ai-security/sandbox-vs-permissions
+- term: Devcontainer
+  aliases: [Dev Container]
+  definition: Ein Docker-Container als vollständige Entwicklungsumgebung, beschrieben in .devcontainer/devcontainer.json. Isoliert den ganzen Prozess inklusive Claude Code.
+- term: MCP
+  aliases: [Model Context Protocol]
+  definition: Offener Standard, über den KI-Anwendungen Werkzeuge und Datenquellen anbinden – vergleichbar mit einer USB-Schnittstelle für KI-Tools.
+- term: Skill
+  definition: Ein Ordner mit einer SKILL.md (Name, Beschreibung, Anleitung) und optionalen Skripten oder Referenzen. Claude lädt ihn bei Bedarf und arbeitet dann nach dieser Anleitung.
+- term: Plugin
+  definition: Ein installierbares Paket, das Skills, Subagents, Hooks und MCP-Server bündelt und über einen Marketplace verteilt wird.
+- term: Subagent
+  definition: Eine spezialisierte Claude-Instanz mit eigenem, frischem Kontextfenster. Liefert nur das Ergebnis an die Hauptsession zurück und hält deren Kontext sauber.
+- term: CLAUDE.md
+  definition: Projektanweisungen, die Claude Code bei jeder Session lädt. Ein Wunsch an das Modell, keine durchgesetzte Regel – Regeln gehören in settings.json und Hooks.
+- term: RAG
+  aliases: [Retrieval-Augmented Generation]
+  definition: Vor dem Antworten werden passende Textstellen aus eigenen Dokumenten gesucht und dem Modell mitgegeben – eine Open-Book-Prüfung statt Antwort aus dem Gedächtnis.
+- term: Embedding
+  definition: Ein Zahlenvektor, der die Bedeutung eines Textes abbildet. Ähnliche Bedeutungen liegen im Vektorraum nahe beieinander – die Grundlage semantischer Suche.
+- term: Prompt Caching
+  definition: Ein unveränderter Prompt-Anfang (Systemprompt, grosses Dokument) wird zwischengespeichert und bei Folgeaufrufen deutlich günstiger und schneller verarbeitet.
+- term: Fail-closed
+  definition: Verhalten im Fehlerfall – blockieren statt durchlassen. Ein Sicherheitsmechanismus, der bei eigenem Ausfall alles erlaubt, ist fail-open und damit trügerisch.
+  lesson: ai-security/sandbox
+- term: revDSG
+  aliases: [DSG, Datenschutzgesetz]
+  definition: Das revidierte Schweizer Datenschutzgesetz, in Kraft seit 1. September 2023. Regelt unter anderem die Bekanntgabe von Personendaten ins Ausland.
+  lesson: ai-security/ueberblick
+- term: Bind Mount
+  definition: Ein Ordner des Rechners, der in einen Container eingeblendet wird. Keine Kopie – Änderungen im Container wirken sofort auf den echten Ordner.
+- term: Least Privilege
+  aliases: [Minimale Rechte]
+  definition: Grundsatz, einem Programm, Nutzer oder Agenten nur genau die Rechte zu geben, die er für seine Aufgabe braucht – nicht mehr.
+  lesson: ai-security/ueberblick
+- term: Few-Shot
+  definition: Technik, dem Modell im Prompt einige Beispiele (Eingabe → gewünschte Ausgabe) zu zeigen. Oft wirksamer als lange Beschreibungen.
+- term: Context Engineering
+  definition: Bewusstes Kuratieren dessen, was im Kontextfenster landet – welche Informationen, in welcher Reihenfolge, wann zusammengefasst oder ausgelagert.
+- term: LLM-as-Judge
+  definition: Ein Sprachmodell bewertet die Ausgabe eines anderen anhand einer Rubrik. Muss gegen menschliche Urteile kalibriert werden.
+- term: Leitner-System
+  definition: Karteikasten-Methode mit mehreren Fächern. Richtige Antworten wandern ein Fach weiter und kommen seltener, falsche zurück ins erste Fach.

@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "required": [
+    "id",
+    "label",
+    "icon",
+    "template"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "label": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "hint": {
+      "type": "string"
+    },
+    "template": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "prompt"
+}

@@ -1,0 +1,20 @@
+id: sec-0024
+topic: ai-security
+competencies:
+- ki-sec-07
+level: L1
+type: single
+question: Was ist Prompt Injection?
+options:
+- Ein Fehler, bei dem das Modell zu lange Antworten gibt.
+- Text aus einer fremden Quelle enthält Anweisungen, die das Modell befolgt, als kämen sie vom Nutzer.
+- Das Einschleusen von Schadcode in das Modellgewicht.
+- Ein Angriff auf die API-Schlüssel per Brute Force.
+answer:
+- 1
+explanation: Ein Agent kann nicht zuverlässig unterscheiden, ob eine Anweisung von dir stammt oder aus einer Webseite, Datei oder einem Issue, das er gerade liest. Fremde Inhalte sind deshalb untrusted Input.
+source: ai-security/ueberblick#prompt-injection-der-angriff-ueber-text
+status: reviewed
+created: '2026-11-26'
+last_verified: '2026-11-26'
+author: claude-setup

@@ -1,0 +1,11 @@
+id: einstieg-2-wochen
+title: Einstieg in 2 Wochen
+description: Vom ersten Prompt bis zum sicher eingerichteten Claude Code. Die Grundlage für alle weiteren Themen.
+duration: 2 Wochen, ca. 30 Minuten pro Tag
+steps:
+  - ki-grundlagen
+  - prompting
+  - dev-environment
+  - claude-code
+  - ai-security/ueberblick
+  - ai-security/permissions

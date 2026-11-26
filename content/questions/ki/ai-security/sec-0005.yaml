@@ -1,0 +1,20 @@
+id: sec-0005
+topic: ai-security
+competencies:
+- ki-sec-02
+level: L2
+type: single
+question: Welche Schicht umschliesst als einzige auch Hooks, lokale MCP-Server und selbst getippte `!`-Befehle?
+options:
+- Permission-Regeln
+- Bash-Sandbox
+- Managed Settings
+- Container oder VM
+answer:
+- 3
+explanation: Hooks, MCP-Server und `!`-Befehle laufen ausserhalb der Bash-Sandbox mit vollen Rechten; Regeln greifen dort nicht oder nur am Aufruf. Erst ein Container oder eine VM umschliesst den ganzen Prozess.
+source: ai-security/sandbox-vs-permissions#wer-deckt-was-ab
+status: reviewed
+created: '2026-11-26'
+last_verified: '2026-11-26'
+author: claude-setup

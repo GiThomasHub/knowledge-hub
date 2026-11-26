@@ -1,0 +1,20 @@
+id: sec-0007
+topic: ai-security
+competencies:
+- ki-sec-03
+level: L2
+type: single
+question: 'In den Settings stehen `deny: ["Read(./secrets/**)"]` und `allow: ["Read(./secrets/public.txt)"]`. Was passiert, wenn Claude `secrets/public.txt` lesen will?'
+options:
+- Erlaubt – die spezifischere Regel gewinnt.
+- Verboten – Deny wird zuerst geprüft, der erste Treffer entscheidet.
+- Rückfrage, weil sich die Regeln widersprechen.
+- Hängt vom Permission-Modus ab.
+answer:
+- 1
+explanation: Auswertung immer deny → ask → allow, erster Treffer entscheidet, Spezifität spielt keine Rolle. Ein breites Deny lässt sich durch kein engeres Allow aufbrechen.
+source: ai-security/permissions#die-auswertung-deny-ask-allow
+status: reviewed
+created: '2026-11-26'
+last_verified: '2026-11-26'
+author: claude-setup

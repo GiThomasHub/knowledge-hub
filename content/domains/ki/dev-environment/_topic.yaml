@@ -1,0 +1,12 @@
+id: dev-environment
+title: 'Entwicklungsumgebung: WSL, VS Code, Python'
+icon: 🧰
+volatility: tief
+prerequisites: []
+summary: 'Die Werkstatt: WSL 2, VS Code mit Remote-WSL, Projektstruktur, uv, Konfiguration und Secrets.'
+goals:
+  L1: Unterscheidet Windows, WSL und Container und arbeitet im richtigen Dateisystem.
+  L2: Legt ein Python-Projekt mit uv, pyproject.toml und .env sauber an.
+  L3: Standardisiert Umgebungen für ein Team (Devcontainer, Settings, Vorlagen).
+  L4: Empfiehlt eine Arbeitsplatz-Architektur für ein KI-Entwicklungsteam.
+sources: grundlagen/vs_code.md, VS-Code-Handbuch, VSCode Terminal Docker, github vscode.docx; Skill dev-environment

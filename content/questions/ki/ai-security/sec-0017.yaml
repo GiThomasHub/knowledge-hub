@@ -1,0 +1,20 @@
+id: sec-0017
+topic: ai-security
+competencies:
+- ki-sec-05
+level: L2
+type: single
+question: Ein PreToolUse-Hook soll das Lesen von `.env`-Dateien verhindern. Mit welchem Exit-Code muss das Skript enden, damit der Aufruf blockiert wird?
+options:
+- '0'
+- '1'
+- '2'
+- '127'
+answer:
+- 2
+explanation: Exit 2 blockiert und gibt stderr an Claude zurück. Jeder andere Code – auch 1 – blockiert nicht. Ein Sicherheits-Hook mit `exit 1` erzwingt nichts.
+source: ai-security/sandbox-vs-permissions#hooks-leitplanken-die-immer-greifen
+status: reviewed
+created: '2026-11-26'
+last_verified: '2026-11-26'
+author: claude-setup

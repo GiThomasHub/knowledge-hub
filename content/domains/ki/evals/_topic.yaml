@@ -1,0 +1,13 @@
+id: evals
+title: Evals und Observability
+icon: 📏
+volatility: hoch
+prerequisites:
+- prompting
+summary: 'Messen statt raten: Testsets, Grader, LLM-as-Judge, Regression und Tracing im Betrieb.'
+goals:
+  L1: Erklärt, warum ein LLM-System Tests braucht und was eine Eval ist.
+  L2: Baut ein kleines Testset mit Referenzlösungen und automatischem Grader.
+  L3: Setzt LLM-as-Judge kalibriert ein, misst über mehrere Läufe und richtet Tracing ein.
+  L4: Macht Qualität für einen Kunden messbar und als Abnahmekriterium vertraglich nutzbar.
+sources: KI-Engineering-Masterclass (B.7, C.3), Skills_Masterclass (11); Skill evals-observability

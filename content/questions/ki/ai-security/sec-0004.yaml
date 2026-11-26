@@ -1,0 +1,26 @@
+id: sec-0004
+topic: ai-security
+competencies:
+- ki-sec-02
+level: L1
+type: multi
+question: Welche der folgenden gehören zu den Schutzschichten beim Betrieb von Claude Code? (Mehrere richtig)
+options:
+- Permission-Regeln in settings.json
+- Bash-Sandbox
+- Hooks
+- Ein höflich formulierter Satz in CLAUDE.md
+- Container oder VM
+- Managed Settings
+answer:
+- 0
+- 1
+- 2
+- 4
+- 5
+explanation: CLAUDE.md ist ein Wunsch an das Modell, keine durchgesetzte Regel. Regeln, Sandbox, Hooks, MCP-Steuerung, Managed Settings, Container und Betriebssystem-Einstellungen werden von Claude Code bzw. dem System durchgesetzt.
+source: ai-security/ueberblick#die-acht-schutzschichten
+status: reviewed
+created: '2026-11-26'
+last_verified: '2026-11-26'
+author: claude-setup

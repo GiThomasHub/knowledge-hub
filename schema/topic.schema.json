@@ -1,0 +1,58 @@
+{
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "icon",
+    "volatility",
+    "summary",
+    "goals"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "volatility": {
+      "enum": [
+        "hoch",
+        "mittel",
+        "tief"
+      ]
+    },
+    "prerequisites": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+      }
+    },
+    "summary": {
+      "type": "string"
+    },
+    "goals": {
+      "type": "object",
+      "required": [
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "sources": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "topic"
+}
