@@ -1,0 +1,20 @@
+id: git-0006
+topic: git-github
+competencies:
+- ki-git-02
+level: L2
+type: order
+question: Bring den Weg einer Änderung nach main in die richtige Reihenfolge.
+options:
+- Branch von aktuellem main anlegen
+- Arbeiten und klein committen
+- Pushen und Draft-PR öffnen
+- CI abwarten und eigenen Diff lesen
+- Review durch eine Person
+- Merge durch einen Menschen, Branch löschen
+explanation: 'main bleibt lauffähig: Erst auf einem Branch arbeiten, dann als Draft-PR vorlegen, CI und eigener Blick, Review, und zuletzt der Merge durch einen Menschen.'
+source: git-github/branch-pr-review#der-ablauf-in-acht-befehlen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

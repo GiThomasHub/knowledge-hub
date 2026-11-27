@@ -1,0 +1,21 @@
+id: git-0007
+topic: git-github
+competencies:
+- ki-git-02
+level: L2
+type: scenario
+situation: PR A (feat/a → main) und PR B (feat/b → feat/a) hängen voneinander ab. A wurde per Squash in main gemergt. Danach zeigt B unerwartet Konflikte mit main.
+question: Was ist passiert, und wie geht es richtig weiter?
+options:
+- Squash hat für A einen neuen Commit erzeugt; B enthält noch die alten A-Commits. B auf main umstellen und mit rebase --onto nur die eigenen Commits übernehmen.
+- GitHub hat einen Fehler gemacht; B schliessen und neu erstellen.
+- B einfach in feat/a mergen, dann ist alles konsistent.
+- In B alle Konflikte mit «meins» lösen und force-pushen.
+answer:
+- 0
+explanation: 'Squash schreibt A als neuen Commit; Git sieht dieselben Änderungen zweimal. Richtig: B auf main umstellen und rebasen (git rebase --onto origin/main <letzter-A-commit> feat/b). B in feat/a zu mergen vertieft das Problem, und blind «meins» zu wählen verwirft womöglich Änderungen von main. Es ist kein GitHub-Fehler, sondern die Folge der Methode.'
+source: git-github/branch-pr-review#die-drei-merge-methoden
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

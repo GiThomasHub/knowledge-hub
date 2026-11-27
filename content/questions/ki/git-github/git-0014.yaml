@@ -1,0 +1,20 @@
+id: git-0014
+topic: git-github
+competencies:
+- ki-git-04
+level: L3
+type: single
+question: 'Was ist an `run: echo "${{ github.event.issue.title }}"` in einem Workflow gefährlich?'
+options:
+- Nichts, Anführungszeichen schützen ausreichend.
+- Der Titel wird vor dem Ausführen in den Befehl eingesetzt; ein präparierter Titel wird zu Shell-Code (Script Injection).
+- Es verbraucht unnötig Actions-Minuten.
+- Issue-Titel sind in Workflows nicht verfügbar.
+answer:
+- 1
+explanation: 'GitHub ersetzt den Ausdruck als Text, bevor die Shell läuft – ein Titel mit "; curl … | bash; " bricht aus den Anführungszeichen aus. Richtig ist die Übergabe über env: und die Nutzung als $VARIABLE. Mit Kosten hat das nichts zu tun, und Issue-Daten sind verfügbar.'
+source: git-github/repo-absichern-und-agenten#github-actions-absichern
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

@@ -1,0 +1,20 @@
+id: git-0015
+topic: git-github
+competencies:
+- ki-git-04
+level: L3
+type: single
+question: Warum pinnt man Fremd-Actions auf den vollen Commit-SHA statt auf ein Tag wie @v4?
+options:
+- Weil SHA-Pinning die Workflows schneller macht
+- Weil ein Tag jederzeit auf anderen Code verschoben werden kann; der SHA ist unveränderlich
+- Weil Tags in privaten Repos nicht funktionieren
+- Weil Dependabot keine Tags aktualisieren kann
+answer:
+- 1
+explanation: Ein kompromittiertes oder verschobenes Tag liefert plötzlich anderen Code – mit den Rechten und Secrets deines Workflows. Der SHA zeigt immer auf denselben Code. Geschwindigkeit und Plan spielen keine Rolle, und Dependabot kann sowohl Tags als auch SHAs aktualisieren.
+source: git-github/repo-absichern-und-agenten#github-actions-absichern
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

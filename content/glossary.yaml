@@ -4,6 +4,23 @@
 
 - term: Agent
   definition: Ein LLM in einer Schleife mit Werkzeugen, Gedächtnis und Ziel. Es plant, handelt, prüft das Ergebnis und hört erst auf, wenn das Ziel erreicht oder ein Stopp-Kriterium erfüllt ist.
+- term: Commit
+  definition: Ein gespeicherter Schnappschuss des Projekts mit Nachricht, Autor und Zeit. Liegt zunächst nur lokal und verlässt den Rechner erst mit git push.
+  lesson: git-github/grundlagen#die-vier-stationen
+- term: Staging Area
+  aliases: [Staging, Index]
+  definition: Zwischenbereich in Git, in dem mit git add vorgemerkt wird, was in den nächsten Commit kommt. Erlaubt saubere, thematische Commits.
+  lesson: git-github/grundlagen#die-vier-stationen
+- term: Pull Request
+  aliases: [PR, Draft-PR]
+  definition: Antrag auf GitHub, die Änderungen eines Branches in einen anderen (meist main) zu übernehmen – mit Diff, CI-Prüfung, Review und Merge. Ein Draft-PR ist ausdrücklich noch nicht zur Freigabe eingereicht.
+  lesson: git-github/branch-pr-review
+- term: Ruleset
+  definition: Serverseitige Regel auf GitHub für Branches oder Tags, z. B. PR-Pflicht, Pflicht-Checks und Verbot von Force-Push auf main. Wirkt für jeden Push, unabhängig von lokalen Einstellungen.
+  lesson: git-github/repo-absichern-und-agenten#das-ruleset-fuer-main
+- term: Reflog
+  definition: Protokoll jeder Bewegung von HEAD in einem lokalen Repo. Rettet scheinbar verlorene Commits nach reset, Rebase oder gelöschtem Branch.
+  lesson: git-github/rettung#verlorenes-wiederfinden-reflog
 - term: Harness
   aliases: [Scaffold]
   definition: Alles um das Modell herum, was es zum Agenten macht – Schleife, Werkzeuge, Kontextverwaltung, Gedächtnis, Berechtigungen. Claude Code ist der Harness rund um Claude.
