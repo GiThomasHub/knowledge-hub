@@ -242,7 +242,7 @@ const views = {
       <section class="hero"><h1>Vom Anfänger zum Senior Consultant</h1>
         <p class="summary">Lektionen mit Bildern und Hidden Gems, ein Fragekatalog mit Karteikasten und Prompts, mit denen du in jedem LLM tiefer gehst. Was ein Senior Consultant wissen muss, steht in der Kompetenzmatrix.</p>
         <div class="row"><a class="btn primary" href="#/daily">▶ Daily 5 ${due ? `(${due} fällig)` : ""}</a>${last ? `<a class="btn" href="#/l/${last[0]}">Weiterlesen: ${esc(S.site.lessons[last[0]]?.title || "")}</a>` : `<a class="btn" href="#/pfade">Lernpfad wählen</a>`}<a class="btn" href="#/pruefung">Prüfung</a></div></section>
-      <div class="grid" style="grid-template-columns:minmax(0,1fr) 360px">
+      <div class="home-grid">
         <div>${dom.map((d) => `<div class="section-title"><h2>${d.icon} ${esc(d.title)}</h2><a class="small" href="#/abdeckung">Abdeckung</a></div><div class="grid">${d.topics.map(topicCard).join("")}</div>`).join("")}</div>
         <aside><div class="card"><h3>Kompetenz-Radar</h3><p class="small muted">Je Thema 0–4 Stufen, gemessen an gemeisterten Fragen (Fach ≥ ${MASTERED_BOX}).</p><div class="radar-wrap">${radar(allT)}</div></div>
           <div class="card" style="margin-top:16px"><h3>Was ist neu</h3>${S.site.changelog.slice(0, 3).map((c) => `<p class="small"><strong>${esc(c.date)}</strong> · ${esc(c.title)}</p>`).join("") || '<p class="small muted">Noch keine Einträge.</p>'}<a class="small" href="#/neu">Alle Einträge</a></div>
