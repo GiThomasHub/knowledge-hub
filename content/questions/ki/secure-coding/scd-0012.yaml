@@ -1,0 +1,20 @@
+id: scd-0012
+topic: secure-coding
+competencies:
+- ki-scd-04
+level: L3
+type: single
+question: 'Ein Review findet: (A) SQL-Injection in einem öffentlichen Suchfeld, (B) fehlendes Rate-Limit auf dem Login, (C) XSS in einer Admin-Seite, die nur angemeldete Admins sehen. Wie ordnest du ein?'
+options:
+- Alle drei «hoch»
+- A hoch; C mittel (braucht besondere Bedingungen); B als fehlender Pflichtbaustein in einer getrennten Liste
+- B hoch, weil Login betroffen; A und C tief
+- Nur A melden, B und C weglassen
+answer:
+- 1
+explanation: A ist direkt aus dem Internet ausnutzbar mit Datenabfluss. C braucht einen angemeldeten Admin, ist aber erheblich. Fehlendes Rate-Limiting ist eine fehlende Härtung und gehört getrennt aufgeführt, nicht weggelassen.
+source: secure-coding/security-review#priorisieren
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

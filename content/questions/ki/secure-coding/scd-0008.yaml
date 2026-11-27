@@ -1,0 +1,18 @@
+id: scd-0008
+topic: secure-coding
+competencies:
+- ki-scd-03
+level: L2
+type: order
+question: Ein API-Schlüssel wurde versehentlich in ein öffentliches Repository gepusht. Bring die Schritte in die richtige Reihenfolge.
+options:
+- Schlüssel beim Anbieter widerrufen bzw. rotieren
+- Prüfen, ob der Schlüssel missbraucht wurde
+- Schlüssel aus der Git-Historie entfernen (z. B. git filter-repo)
+- 'Schutz verbessern: gitleaks als pre-commit, Push Protection aktivieren'
+explanation: Zuerst unschädlich machen, dann Schaden prüfen, dann aufräumen, dann Wiederholung verhindern. Löschen aus der Historie allein macht den Schlüssel nicht ungültig – er kann längst kopiert sein.
+source: secure-coding/secrets-und-lieferkette#secrets-richtig-ablegen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

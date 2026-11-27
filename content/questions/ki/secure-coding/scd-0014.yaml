@@ -1,0 +1,21 @@
+id: scd-0014
+topic: secure-coding
+competencies:
+- ki-scd-05
+level: L4
+type: case
+question: Ein Schweizer Online-Shop (KMU) stellt fest, dass über eine Lücke im Kundenkonto-Bereich zwei Tage lang Adressen und Bestellungen fremder Kunden abrufbar waren. Logs zeigen Zugriffe von unbekannten IP-Adressen. Skizziere das Vorgehen der nächsten Stunden und Tage inklusive rechtlicher Prüfpunkte.
+model_answer: '**Sofort:** Zeitpunkt der Entdeckung festhalten; Logs und Systemzustände sichern, bevor etwas geändert wird; Lücke eindämmen (Endpunkt sperren oder Fix als Hotfix), betroffene Sessions/Tokens ungültig machen, Secrets rotieren, falls betroffen; Umfang klären (welche Kunden, welche Daten, seit wann, welche Zugriffe). **Rechtlich (keine Rechtsberatung, Datenschutzverantwortliche beiziehen):** Art. 24 DSG prüfen – Adressen und Bestellungen vieler Kunden, aktiver Abruf durch Unbekannte → voraussichtlich hohes Risiko → Meldung an den EDÖB so rasch als möglich; Betroffene informieren, wenn zu ihrem Schutz nötig (z. B. Phishing-Warnung); Verletzung dokumentieren (mind. 2 Jahre); bei EU-Kunden DSGVO-Frist 72 Stunden prüfen; ISG trifft einen kleinen Shop in der Regel nicht. Strafanzeige bei der Kantonspolizei erwägen. **Danach:** Korrektur mit Regressionstest (fremde ID → 403/404), gleiche Lücke an anderen Endpunkten suchen, Nachbesprechung ohne Schuld, fehlende Bausteine (Zugriff pro
+  Objekt, Logging/Alarm) als Mindeststandard in CI und Definition of Done aufnehmen.'
+rubric:
+- 'Sofortmassnahmen in sinnvoller Reihenfolge: festhalten, sichern, eindämmen, rotieren, Umfang'
+- Art. 24 DSG mit Kriterium «voraussichtlich hohes Risiko» und Meldung an den EDÖB
+- Information Betroffener, Dokumentation, DSGVO bei EU-Bezug
+- Korrektur mit Regressionstest und Suche nach gleicher Lücke
+- Lessons learned als Mindeststandard; Hinweis keine Rechtsberatung
+explanation: Ein Senior-Vorgehen verbindet technische Sofortmassnahmen mit den rechtlichen Prüfpunkten und schliesst die Lücke dauerhaft über Standards und Tests.
+source: secure-coding/standards-und-vorfall#wenn-eine-luecke-gefunden-wird-die-ersten-stunden
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

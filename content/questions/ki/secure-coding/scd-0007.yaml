@@ -1,0 +1,20 @@
+id: scd-0007
+topic: secure-coding
+competencies:
+- ki-scd-02
+level: L2
+type: single
+question: Wie verhindert man in einer React-App am zuverlässigsten XSS bei Kommentaren von Nutzern?
+options:
+- Kommentare mit dangerouslySetInnerHTML ausgeben und vorher «<script>» entfernen
+- Kommentare als normalen Text über JSX ausgeben (automatische Kodierung), kein dangerouslySetInnerHTML mit Fremddaten, zusätzlich eine Content Security Policy
+- Kommentare in Base64 speichern
+- Nur Kommentare von angemeldeten Nutzern zulassen
+answer:
+- 1
+explanation: React kodiert Text automatisch; gefährlich wird es erst mit dangerouslySetInnerHTML. Eine Blocklist für «<script>» ist leicht zu umgehen, Base64 und Anmeldung verhindern XSS nicht.
+source: secure-coding/eingaben-und-injection#ausgabe-kodieren-gegen-xss
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

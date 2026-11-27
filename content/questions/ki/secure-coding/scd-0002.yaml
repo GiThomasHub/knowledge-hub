@@ -1,0 +1,21 @@
+id: scd-0002
+topic: secure-coding
+competencies:
+- ki-scd-01
+level: L1
+type: multi
+question: Welche Kategorien sind in den OWASP Top 10:2025 neu? (mehrere richtig)
+options:
+- Software Supply Chain Failures
+- Broken Access Control
+- Mishandling of Exceptional Conditions
+- Injection
+answer:
+- 0
+- 2
+explanation: Neu sind A03 Software Supply Chain Failures (Erweiterung der früheren «Vulnerable and Outdated Components») und A10 Mishandling of Exceptional Conditions. Broken Access Control bleibt auf Platz 1, Injection gab es schon.
+source: secure-coding/haeufigste-schwachstellen#owasp-top-10-2025
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

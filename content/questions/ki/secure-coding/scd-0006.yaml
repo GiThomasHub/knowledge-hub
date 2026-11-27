@@ -1,0 +1,21 @@
+id: scd-0006
+topic: secure-coding
+competencies:
+- ki-scd-02
+level: L2
+type: scenario
+situation: Ein Skript ruft subprocess.run(f"convert {name} out.png", shell=True) auf; name stammt aus einem Datei-Upload.
+question: Was ist das Problem und die Korrektur?
+options:
+- Kein Problem, convert ist ein harmloses Programm.
+- 'Command Injection: ein Dateiname wie «x; rm -rf ~» wird von der Shell ausgeführt. Korrektur: Argumentliste ohne Shell, z. B. subprocess.run(["convert", "--", name, "out.png"], check=True, timeout=30).'
+- Den Dateinamen in Anführungszeichen setzen reicht.
+- shell=True durch shell=False ersetzen und den f-String behalten.
+answer:
+- 1
+explanation: Mit shell=True interpretiert die Shell Sonderzeichen im Namen. Sicher ist eine Argumentliste ohne Shell mit Option-Ende «--». Anführungszeichen lassen sich umgehen, und ein f-String als einzelnes Argument ohne Shell funktioniert nicht wie gedacht.
+source: secure-coding/eingaben-und-injection#shell-code-deserialisierung
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

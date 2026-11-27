@@ -1,0 +1,23 @@
+id: scd-0009
+topic: secure-coding
+competencies:
+- ki-scd-03
+level: L2
+type: multi
+question: Welche Orte sind für Secrets geeignet? (mehrere richtig)
+options:
+- Eine nicht eingecheckte .env-Datei lokal, dazu .env.example mit Platzhaltern
+- Umgebungsvariablen des Servers
+- Ein Secret Manager der Cloud bzw. GitHub Actions Secrets
+- Eine config.py im Repository, weil das Repo privat ist
+- Ein Jupyter-Notebook, solange es nicht geteilt wird
+answer:
+- 0
+- 1
+- 2
+explanation: Secrets gehören ausserhalb des Codes. Private Repos werden geklont, geforkt und manchmal öffentlich; Notebooks landen schnell in Git oder Mails.
+source: secure-coding/secrets-und-lieferkette#secrets-richtig-ablegen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

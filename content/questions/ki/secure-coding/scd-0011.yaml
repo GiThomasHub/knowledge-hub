@@ -1,0 +1,19 @@
+id: scd-0011
+topic: secure-coding
+competencies:
+- ki-scd-04
+level: L3
+type: order
+question: Bring die Schritte eines methodischen Security Reviews in die richtige Reihenfolge.
+options:
+- 'Kontext erfassen: Frameworks, Auth, übliche Muster, Bedrohungsmodell'
+- Code mit den üblichen Mustern vergleichen und Abweichungen markieren
+- Für jeden Eingang den Datenfluss bis zur Senke verfolgen
+- Jeden Fund zu widerlegen versuchen, Konfidenz vergeben
+- Bericht mit Funden, fehlenden Bausteinen und nicht Geprüftem
+explanation: Erst verstehen, dann Abweichungen suchen, dann Datenfluss verfolgen, dann kritisch filtern und schliesslich ehrlich berichten.
+source: secure-coding/security-review#der-ablauf
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

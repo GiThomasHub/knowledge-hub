@@ -348,3 +348,29 @@
   definition: Herstellerneutraler Standard für Metriken, Logs und Traces. Für Sprachmodelle gibt es eigene GenAI-Konventionen; Claude Code kann Telemetrie nativ per OpenTelemetry exportieren.
   aliases: [OTel]
   lesson: evals/tracing-im-betrieb#claude-code-ueberwachen
+- term: OWASP Top 10
+  definition: Liste der zehn kritischsten Sicherheitsrisiken für Webanwendungen, herausgegeben vom Open Worldwide Application Security Project (OWASP). Ausgabe 2025 u. a. mit Broken Access Control auf Platz 1 und neu Software Supply Chain Failures und Mishandling of Exceptional Conditions.
+  lesson: secure-coding/haeufigste-schwachstellen#owasp-top-10-2025
+- term: SQL-Injection
+  definition: Angriff, bei dem eine Eingabe als Teil eines SQL-Befehls ausgeführt wird, z. B. ' OR 1=1--. Verhindert durch parametrisierte Abfragen, die Daten und Befehl trennen.
+  aliases: [Injection]
+  lesson: secure-coding/eingaben-und-injection#sql-nur-parametrisiert
+- term: Cross-Site Scripting
+  definition: Angriff, bei dem fremdes JavaScript über ungeprüft ausgegebene Eingaben im Browser anderer Nutzer läuft. Verhindert durch kontextgerechte Ausgabekodierung, Templates mit Auto-Escape und eine Content Security Policy.
+  aliases: [XSS]
+  lesson: secure-coding/eingaben-und-injection#ausgabe-kodieren-gegen-xss
+- term: IDOR
+  definition: Insecure Direct Object Reference – der Server liefert ein Objekt anhand einer ID aus, ohne zu prüfen, ob es der anfragenden Person gehört. In APIs auch BOLA genannt; häufigste Form kaputter Zugriffskontrolle.
+  aliases: [BOLA, Broken Access Control]
+  lesson: secure-coding/haeufigste-schwachstellen#vier-klassiker
+- term: Secret Scanning
+  definition: Automatische Suche nach Zugangsdaten wie API-Schlüsseln in Code und Commits. Mit Push Protection blockiert GitHub Pushes, die erkannte Secrets enthalten.
+  aliases: [Push Protection]
+  lesson: secure-coding/secrets-und-lieferkette#schutzschichten-gegen-leaks
+- term: Slopsquatting
+  definition: Angriff auf die Lieferkette, bei dem Angreifer Paketnamen registrieren, die Sprachmodelle fälschlich vorschlagen, und darin Schadcode verteilen.
+  lesson: secure-coding/secrets-und-lieferkette#die-lieferkette-absichern
+- term: Koordinierte Offenlegung
+  definition: Vorgehen, bei dem eine gemeldete Sicherheitslücke erst behoben und dann in Absprache mit der meldenden Person veröffentlicht wird, oft innert bis zu 90 Tagen.
+  aliases: [Coordinated Disclosure, Responsible Disclosure]
+  lesson: secure-coding/standards-und-vorfall#wenn-eine-luecke-gefunden-wird-die-ersten-stunden

@@ -1,0 +1,20 @@
+id: scd-0004
+topic: secure-coding
+competencies:
+- ki-scd-02
+level: L2
+type: single
+question: Welche Python-Zeile ist sicher gegen SQL-Injection?
+options:
+- cur.execute(f"SELECT * FROM users WHERE email = '{email}'")
+- cur.execute("SELECT * FROM users WHERE email = '" + email + "'")
+- cur.execute("SELECT * FROM users WHERE email = %s", (email,))
+- cur.execute("SELECT * FROM users WHERE email = '%s'" % email)
+answer:
+- 2
+explanation: Nur die parametrisierte Abfrage hält die Eingabe als Daten getrennt vom Befehl. f-Strings, String-Verkettung und %-Formatierung setzen die Eingabe direkt in den SQL-Text ein.
+source: secure-coding/eingaben-und-injection#sql-nur-parametrisiert
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session
