@@ -1,0 +1,21 @@
+id: mod-0015
+topic: modelle-kosten
+competencies:
+- ki-mod-05
+level: L4
+type: case
+question: Eine Schweizer Immobilienverwaltung (25 Mitarbeitende) will (a) Mieteranfragen automatisch einordnen und Antwortentwürfe erstellen lassen (ca. 2 500 Anfragen pro Monat) und (b) dass die Bewirtschafterinnen täglich mit Claude arbeiten. Erstelle die Struktur einer Kostenschätzung in CHF mit Szenarien, Hebeln und einer Empfehlung Abo vs. API.
+model_answer: '**Mengengerüst (a):** Einordnen 2 500/Monat auf Haiku 5.5 (z. B. 1 500 Tokens ein, 50 aus); Entwürfe für einen Teil (z. B. 1 500/Monat) auf Sonnet 5.5 mit gecachter Wissensbasis (Mietrecht-Merkblätter, Vorlagen) und kurzer frischer Eingabe; Ausgabe inkl. Denken. **Rechnung:** pro Fall Tokens × Preise pro Million, Summe in USD, Umrechnung zu rund 0.84 CHF/USD (Mitte Nov. 2026), vorsichtig mit 0.90. **Szenarien:** tief (halbe Menge), basis, hoch (doppelte Menge, grösseres Modell für Entwürfe); Zuschlag 20–30 % für Wiederholungen, Tests, Evals; MWST 8,1 % je nach Abrechnungsweg klären. **Getrennt ausweisen:** einmalige Entwicklung (Prompts, Schema, Anbindung), laufender Betrieb (Überwachung, Modellwechsel), menschliche Prüfung – meist grösser als die Tokenkosten. **Hebel:** Caching der Wissensbasis, Batch für nicht eilige Auswertungen, kleines Modell + Kaskade, Aufwand pro Rolle, Kontext kürzen. **Abo vs. API:** (b) Menschen im Alltag → Team-Plan pro Sitz (planbar, Verwaltung
+  zentral); (a) automatisierte Pipeline → API mit Budgetgrenze und Ausgabenlimit. **Messpunkt** nach einem Monat mit echten Zahlen.'
+rubric:
+- Mengengerüst pro Anwendungsfall mit Tokens, Modell, Caching und Batch
+- Rechnung in USD und Umrechnung in CHF mit Währungspuffer und MWST-Hinweis
+- Drei Szenarien und Zuschlag für Wiederholungen und Tests
+- Einmalige, laufende und Tokenkosten getrennt, Hebel benannt
+- Begründete Empfehlung Abo für Menschen, API für Automatisierung, Messpunkt
+explanation: Eine Senior-Schätzung ist nachvollziehbar, zeigt Bandbreiten statt einer Zahl und trennt Token- von Projekt- und Betriebskosten.
+source: modelle-kosten/kostenschaetzung-chf#schritt-1-mengengeruest-pro-anwendungsfall
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

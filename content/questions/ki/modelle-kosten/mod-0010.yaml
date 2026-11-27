@@ -1,0 +1,24 @@
+id: mod-0010
+topic: modelle-kosten
+competencies:
+- ki-mod-03
+level: L2
+type: multi
+question: Welche Aussagen zur Batch-Verarbeitung stimmen (Stand 27.11.2026)? (mehrere richtig)
+options:
+- Sie gibt 50 % Rabatt auf Ein- und Ausgabe.
+- Die meisten Batches sind in unter einer Stunde fertig, spätestens nach 24 Stunden.
+- Sie eignet sich für einen Live-Chat mit Kundinnen.
+- Ein Batch kann bis zu 100 000 Anfragen enthalten.
+- Sie lässt sich mit Prompt Caching kombinieren.
+answer:
+- 0
+- 1
+- 3
+- 4
+explanation: Batch halbiert die Kosten für nicht eilige Arbeit, hat ein Fenster von höchstens 24 Stunden und lässt sich mit Caching kombinieren. Für Live-Chats, bei denen jemand wartet, ist sie ungeeignet.
+source: modelle-kosten/caching-und-batch#batch-verarbeitung
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

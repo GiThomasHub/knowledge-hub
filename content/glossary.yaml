@@ -275,3 +275,18 @@
 - term: AI-Washing
   definition: Falsche oder irreführende Behauptungen über den Einsatz von KI, analog zu Greenwashing. Die US-Börsenaufsicht SEC hat dafür 2024 erstmals Bussen verhängt.
   lesson: ki-grundlagen/llm-fuers-management#ai-washing-erkennen
+- term: Aufwand (Effort)
+  definition: Einstellung, wie gründlich Claude an einer Antwort arbeitet – Denken, Prüfen, Werkzeugaufrufe – in den Stufen low, medium, high, xhigh und max. Ein Verhaltenssignal, kein festes Budget; der wichtigste Kostenregler nach der Modellwahl.
+  aliases: [Effort, Aufwandsstufe]
+  lesson: modelle-kosten/routing-aufwand-budget#aufwand-und-denken-in-kuerze
+- term: max_tokens
+  definition: Obergrenze, wie viele Tokens ein Modell in einer Antwort höchstens erzeugen darf – inklusive Denk-Tokens. Wird sie erreicht, endet die Antwort abgeschnitten mit stop_reason max_tokens.
+  lesson: modelle-kosten/modell-pro-aufgabe#max-tokens-die-obergrenze-der-ausgabe
+- term: Batch-Verarbeitung
+  definition: Asynchrone Verarbeitung vieler Anfragen auf einmal zu 50 % der normalen Preise. Die meisten Batches sind in unter einer Stunde fertig, spätestens nach 24 Stunden – geeignet für alles, was nicht sofort gebraucht wird.
+  aliases: [Batch API, Message Batches]
+  lesson: modelle-kosten/caching-und-batch#batch-verarbeitung
+- term: Modell-Routing
+  definition: Zuordnung jeder Aufgabe zur passenden Modellstufe – kleine Modelle für Einordnen und Extraktion, grosse für Planung und Urteile. Oft als Kaskade umgesetzt, bei der nur unsichere Fälle an ein grösseres Modell gehen.
+  aliases: [Kaskade, Routing]
+  lesson: modelle-kosten/routing-aufwand-budget#kaskade-statt-grossmodell-fuer-alles

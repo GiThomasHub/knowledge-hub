@@ -1,0 +1,24 @@
+id: mod-0017
+topic: modelle-kosten
+competencies:
+- ki-mod-05
+level: L4
+type: multi
+question: Was gehört in eine glaubwürdige Kostenschätzung für ein KI-Projekt? (mehrere richtig)
+options:
+- Drei Szenarien statt eines einzelnen Betrags
+- Ein Zuschlag für Wiederholungen, Tests und Evals
+- Nur die Tokenkosten, weil Entwicklung schwer zu schätzen ist
+- Ein Währungspuffer, weil die Preise in USD gelten
+- Ein Messpunkt nach dem Start, um die Schätzung anzupassen
+answer:
+- 0
+- 1
+- 3
+- 4
+explanation: Bandbreiten, Puffer, Währung und ein Messpunkt machen die Schätzung belastbar. Nur Tokenkosten zu zeigen ist irreführend, weil Entwicklung, Betrieb und Prüfung meist mehr kosten.
+source: modelle-kosten/kostenschaetzung-chf#schritt-3-szenarien-und-puffer
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

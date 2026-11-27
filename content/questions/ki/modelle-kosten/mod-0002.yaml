@@ -1,0 +1,24 @@
+id: mod-0002
+topic: modelle-kosten
+competencies:
+- ki-mod-01
+level: L1
+type: multi
+question: Was zählt bei einem Aufruf in einem laufenden Gespräch alles zu den Eingabe-Tokens? (mehrere richtig)
+options:
+- Der System-Prompt
+- Die Werkzeugdefinitionen
+- Der ganze bisherige Verlauf inklusive früherer Antworten
+- Die Denk-Tokens der aktuellen Antwort
+- Die neue Frage
+answer:
+- 0
+- 1
+- 2
+- 4
+explanation: 'Bei jedem Aufruf wird alles mitgeschickt: System-Prompt, Tools, Verlauf und Frage. Die Denk-Tokens der aktuellen Antwort erzeugt das Modell – sie zählen zur Ausgabe.'
+source: modelle-kosten/wie-kosten-entstehen#was-alles-zur-eingabe-zaehlt
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session
