@@ -1,0 +1,22 @@
+id: kig-0003
+topic: ki-grundlagen
+competencies:
+- ki-kig-01
+level: L1
+type: multi
+question: Welche Aussagen zu Training und Inferenz stimmen? (mehrere richtig)
+options:
+- Training passiert einmal bzw. periodisch und ist sehr teuer.
+- Inferenz passiert bei jeder Anfrage.
+- Wenn du mit Claude chattest, wird das Modell dabei laufend nachtrainiert.
+- Im Alltag steuerst du vor allem den Kontext zur Inferenzzeit.
+answer:
+- 0
+- 1
+- 3
+explanation: Training ist die teure Lernphase beim Anbieter, Inferenz die Antwort auf jede Anfrage. Während der Nutzung lernt das Modell nicht dazu – du beeinflusst Ergebnisse über Anweisungen, Dokumente und Werkzeuge im Kontext.
+source: ki-grundlagen/begriffslandkarte#training-und-inferenz
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

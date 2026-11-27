@@ -1,0 +1,18 @@
+id: kig-0001
+topic: ki-grundlagen
+competencies:
+- ki-kig-01
+level: L1
+type: order
+question: Ordne die Begriffe vom umfassendsten zum spezifischsten.
+options:
+- Künstliche Intelligenz
+- Machine Learning
+- Deep Learning
+- Generative AI
+explanation: 'Die Begriffe sind verschachtelt: KI umfasst ML, ML umfasst Deep Learning, und Generative AI ist ein Spezialfall von Deep Learning. Ein LLM wie Claude liegt ganz innen.'
+source: ki-grundlagen/begriffslandkarte#vier-kreise
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

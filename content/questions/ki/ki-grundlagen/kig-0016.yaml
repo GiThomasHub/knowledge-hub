@@ -1,0 +1,20 @@
+id: kig-0016
+topic: ki-grundlagen
+competencies:
+- ki-kig-05
+level: L3
+type: single
+question: Ein Team will, dass Antworten im unverwechselbaren Firmenton geschrieben werden. Was ist der richtige erste Schritt?
+options:
+- Sofort ein Modell fine-tunen
+- Im Prompt Ton beschreiben und zwei, drei gute Beispiele plus ein Negativbeispiel mitgeben – und mit einem Testset messen, ob das reicht
+- Eine RAG-Datenbank mit allen Briefen aufbauen
+- Auf ein grösseres Modell wechseln
+answer:
+- 1
+explanation: Ton ist Verhalten; zuerst Prompting mit Beispielen und Messung. Fine-Tuning kommt erst bei nachgewiesener Lücke in Frage. RAG liefert Wissen, nicht Stil, und ein grösseres Modell kennt den Firmenton auch nicht.
+source: ki-grundlagen/prompting-rag-finetuning#die-entscheidungsfragen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

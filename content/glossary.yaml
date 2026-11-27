@@ -30,12 +30,15 @@
   definition: Reason + Act. Die Grundschleife eines Agenten – überlegen, Werkzeug aufrufen, Ergebnis beobachten, erneut überlegen – bis eine Antwort ohne Werkzeugaufruf entsteht.
   lesson: agents/chatbot-workflow-agent#die-react-schleife
 - term: Token
-  definition: Die Texteinheit, in der ein Modell rechnet (ungefähr 4 Zeichen bzw. ¾ Wort im Englischen, im Deutschen etwas weniger). Kosten und Kontextgrenzen werden in Token gemessen.
+  definition: Die Texteinheit, in der ein Modell rechnet – meist ein Wortteil. Die Zerlegung hängt vom Modell ab; beim aktuellen Claude-Tokenizer entsprechen 1 Mio. Token rund 555 000 englischen Wörtern, Deutsch braucht mehr. Kosten und Kontextgrenzen werden in Token gemessen.
+  lesson: ki-grundlagen/token-und-kontext#token-die-waehrung-der-sprachmodelle
 - term: Kontextfenster
   aliases: [Context Window]
   definition: Die maximale Menge an Token, die ein Modell in einem Aufruf sieht – Systemprompt, Verlauf, Dateien und Antwort zusammen. Das Arbeitsgedächtnis des Modells.
+  lesson: ki-grundlagen/token-und-kontext#das-kontextfenster
 - term: Halluzination
   definition: Eine plausibel klingende, aber falsche Aussage des Modells. Entsteht, weil ein LLM wahrscheinliche Fortsetzungen erzeugt, nicht geprüfte Fakten.
+  lesson: ki-grundlagen/typische-fehler#halluzination-plausibel-statt-wahr
 - term: Prompt Injection
   definition: Angriff, bei dem Text aus einer fremden Quelle (Webseite, Datei, E-Mail) Anweisungen enthält, die das Modell befolgt, als kämen sie vom Nutzer.
   lesson: ai-security/ueberblick
@@ -227,3 +230,48 @@
 - term: Tool Search
   definition: Mechanismus in Claude Code, der Beschreibungen von MCP-Werkzeugen zurückstellt und erst bei Bedarf über ein Such-Werkzeug lädt. Spart Kontext bei vielen Servern; gesteuert über ENABLE_TOOL_SEARCH.
   lesson: mcp-tools/kontext-schlank#tool-search
+- term: Machine Learning
+  definition: Teilgebiet der KI, in dem Systeme Zusammenhänge aus Daten lernen, statt fest programmiert zu sein. Beispiele sind Spamfilter, Kreditscoring und Absatzprognosen.
+  aliases: [ML, Maschinelles Lernen]
+  lesson: ki-grundlagen/begriffslandkarte#vier-kreise
+- term: Deep Learning
+  definition: Teilgebiet des Machine Learning mit mehrschichtigen neuronalen Netzen, die sehr komplexe Muster in Bildern, Sprache oder Text lernen.
+  lesson: ki-grundlagen/begriffslandkarte#vier-kreise
+- term: Generative AI
+  definition: Deep-Learning-Modelle, die neue Inhalte erzeugen – Text, Bilder, Audio, Code –, meist auf Basis der Transformer-Architektur. Sprachmodelle wie Claude gehören dazu.
+  aliases: [GenAI, Generative KI]
+  lesson: ki-grundlagen/begriffslandkarte#vier-kreise
+- term: LLM
+  definition: Large Language Model – ein generatives Sprachmodell, das auf riesigen Textmengen trainiert wurde, das nächste Token vorherzusagen, und daraus Fähigkeiten wie Zusammenfassen, Übersetzen und Schreiben entwickelt.
+  aliases: [Large Language Model, Sprachmodell]
+  lesson: ki-grundlagen/begriffslandkarte#vier-kreise
+- term: Inferenz
+  definition: Die Anwendung eines fertig trainierten Modells auf eine neue Anfrage. Passiert bei jeder Nutzung und wird über den Kontext gesteuert, im Gegensatz zum einmaligen, teuren Training.
+  lesson: ki-grundlagen/begriffslandkarte#training-und-inferenz
+- term: Temperatur
+  definition: Früher üblicher Regler für den Zufall bei der Wahl des nächsten Tokens. In der Claude-API-Version 2026-10-21 nicht mehr zulässig; bei anderen Anbietern und lokalen Modellen weiterhin verbreitet.
+  aliases: [Temperature]
+  lesson: ki-grundlagen/token-und-kontext#temperatur
+- term: Wissensstichtag
+  definition: Zeitpunkt, bis zu dem das Wissen eines Modells reicht. Anthropic unterscheidet Training data cutoff und Reliable knowledge cutoff. Neuere Ereignisse kennt das Modell nicht.
+  aliases: [Knowledge Cutoff]
+  lesson: ki-grundlagen/typische-fehler#wissensstichtag
+- term: Lost in the Middle
+  definition: Effekt, dass Sprachmodelle Informationen in der Mitte langer Kontexte schlechter finden als am Anfang und am Ende.
+  lesson: ki-grundlagen/typische-fehler#lost-in-the-middle
+- term: Pretraining
+  definition: Erste, sehr aufwendige Trainingsphase eines Sprachmodells, in der es aus riesigen Textmengen lernt, das nächste Token vorherzusagen. Ergebnis ist ein Basismodell mit Sprach- und Weltwissen.
+  lesson: ki-grundlagen/wie-modelle-entstehen#die-phasen-im-ueberblick
+- term: Fine-Tuning
+  definition: Nachtraining eines Modells mit eigenen Beispielen, um Verhalten wie Stil, Format oder eine Spezialaufgabe zu prägen. Ungeeignet für sich ändernde Fakten.
+  lesson: ki-grundlagen/prompting-rag-finetuning#die-drei-wege-im-vergleich
+- term: RLHF
+  definition: Reinforcement Learning from Human Feedback – Menschen vergleichen Antworten, daraus entsteht ein Präferenzmodell, mit dem das Sprachmodell auf bevorzugte Antworten trainiert wird.
+  lesson: ki-grundlagen/wie-modelle-entstehen#die-phasen-im-ueberblick
+- term: Constitutional AI
+  definition: Trainingsverfahren von Anthropic, bei dem ein Modell Antworten anhand schriftlicher Prinzipien (Verfassung) kritisiert und überarbeitet und anschliessend mit KI-Feedback (RLAIF) trainiert wird.
+  aliases: [CAI]
+  lesson: ki-grundlagen/wie-modelle-entstehen#constitutional-ai-bei-claude
+- term: AI-Washing
+  definition: Falsche oder irreführende Behauptungen über den Einsatz von KI, analog zu Greenwashing. Die US-Börsenaufsicht SEC hat dafür 2024 erstmals Bussen verhängt.
+  lesson: ki-grundlagen/llm-fuers-management#ai-washing-erkennen

@@ -1,0 +1,24 @@
+id: kig-0019
+topic: ki-grundlagen
+competencies:
+- ki-kig-06
+level: L4
+type: multi
+question: Welche Fragen eignen sich, um AI-Washing bei einem Anbieter zu erkennen? (mehrere richtig)
+options:
+- Welche Technik genau steckt dahinter – Regeln, klassisches ML oder welches Sprachmodell?
+- Wie wurde die Qualität gemessen, auf welchen Daten, mit welcher Fehlerquote?
+- Können wir eine Demo mit unseren eigenen Daten sehen?
+- Wie viele Kunden nutzen das Produkt bereits?
+- Was passiert bei einem Fehler, und wer merkt ihn?
+answer:
+- 0
+- 1
+- 2
+- 4
+explanation: Technik, Messung, eigene Daten und Fehlerbehandlung prüfen die Substanz der KI-Behauptung. Kundenzahlen sagen etwas über Verbreitung, aber nichts darüber, ob die KI tut, was versprochen wird.
+source: ki-grundlagen/llm-fuers-management#ai-washing-erkennen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

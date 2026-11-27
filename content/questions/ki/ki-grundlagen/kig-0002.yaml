@@ -1,0 +1,20 @@
+id: kig-0002
+topic: ki-grundlagen
+competencies:
+- ki-kig-01
+level: L1
+type: single
+question: Welches Beispiel ist KI, aber kein Machine Learning?
+options:
+- Ein Spamfilter, der aus markierten Mails lernt
+- Ein Schachcomputer, der nur mit festen, von Menschen programmierten Regeln und Suche arbeitet
+- Ein Bilderkennungsmodell
+- Claude
+answer:
+- 1
+explanation: Machine Learning lernt aus Daten. Ein rein regelbasiertes System ist KI im weiten Sinn, aber kein ML. Spamfilter, Bilderkennung und Claude lernen alle aus Daten.
+source: ki-grundlagen/begriffslandkarte#vier-kreise
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

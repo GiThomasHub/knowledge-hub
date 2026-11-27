@@ -1,0 +1,21 @@
+id: kig-0010
+topic: ki-grundlagen
+competencies:
+- ki-kig-03
+level: L2
+type: scenario
+situation: Eine Nutzerin fragt Claude ohne Websuche nach dem aktuellen Stand eines Gesetzes, das im Oktober 2026 revidiert wurde. Das Modell hat einen Wissensstichtag im Juni 2026.
+question: Was ist am wahrscheinlichsten?
+options:
+- Claude kennt die Revision, weil Modelle laufend aktualisiert werden.
+- Claude beschreibt selbstsicher den alten Stand als aktuell – gegen hilft, den aktuellen Text mitzugeben oder die Websuche zu aktivieren.
+- Claude verweigert jede Antwort.
+- Claude sagt automatisch das Datum seines Wissensstands dazu.
+answer:
+- 1
+explanation: 'Neueres als der Stichtag kennt das Modell nicht, und veraltetes Wissen klingt nicht veraltet. Modelle werden nicht laufend nachtrainiert und nennen ihren Stand nicht von selbst. Abhilfe: aktuelle Fakten in den Kontext.'
+source: ki-grundlagen/typische-fehler#wissensstichtag
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session
