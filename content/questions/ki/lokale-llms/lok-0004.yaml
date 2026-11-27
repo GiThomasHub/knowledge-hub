@@ -1,0 +1,21 @@
+id: lok-0004
+topic: lokale-llms
+competencies:
+- ki-lok-01
+level: L1
+type: scenario
+situation: Ein Treuhandbüro möchte ein lokales Modell auf einem Laptop mit 16 GB Speicher einsetzen, und zwar als autonomen Agenten, der eigenständig mehrstufige Steuerberechnungen mit vielen Werkzeugaufrufen erstellt.
+question: Welche Einschätzung trifft am besten zu?
+options:
+- Ideal – lokale Modelle sind für mehrstufige Agenten besonders geeignet
+- Kritisch – ein Modell dieser Grösse ist bei langen Agenten-Abläufen meist überfordert; besser einfache, klar umrissene Aufgaben lokal und die anspruchsvolle Arbeit prüfen oder in der Cloud mit geklärter Datenfrage
+- Unproblematisch, solange das Modell in Q2 quantisiert wird
+- Nur eine Lizenzfrage, technisch gibt es keine Einschränkung
+answer:
+- 1
+explanation: Kleine lokale Modelle eignen sich für einfache Aufgaben, sind aber bei mehrstufigen Agenten mit vielen Werkzeugaufrufen meist überfordert. Starke Quantisierung wie Q2 verschlechtert gerade Reasoning zusätzlich, und die Lizenz ist nicht das Kernproblem.
+source: lokale-llms/warum-lokal#gruende-dagegen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

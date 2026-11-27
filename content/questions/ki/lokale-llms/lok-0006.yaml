@@ -1,0 +1,21 @@
+id: lok-0006
+topic: lokale-llms
+competencies:
+- ki-lok-02
+level: L2
+type: scenario
+situation: Auf einem Laptop mit 16 GB Grafikspeicher fasst ein lokales Modell über Ollama ein 60-seitiges Dokument zusammen. Die Zusammenfassung erwähnt nur Inhalte der letzten Seiten, Fehlermeldungen gibt es keine.
+question: Was ist die wahrscheinlichste Ursache und was hilft?
+options:
+- Das Modell ist defekt und muss neu geladen werden
+- Der Kontext-Standard liegt bei diesem Grafikspeicher bei rund 4 000 Tokens; der Rest wird still abgeschnitten. Kontextlänge erhöhen (z. B. OLLAMA_CONTEXT_LENGTH) und prüfen, ob es danach noch in den Speicher passt – oder das Dokument in Abschnitten verarbeiten
+- Die OpenAI-kompatible Schnittstelle unterstützt keine langen Texte
+- Temperatur auf 0 setzen
+answer:
+- 1
+explanation: Ollama wählt die Kontextlänge nach Grafikspeicher, unter 24 GiB sind es 4 000 Tokens. Längere Eingaben werden ohne Fehlermeldung gekürzt. Mehr Kontext braucht mehr Speicher, darum danach mit ollama ps prüfen. Ein defektes Modell, die Schnittstelle oder die Temperatur erklären das Muster nicht.
+source: lokale-llms/ollama-betreiben#die-schnittstellen-nutzen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

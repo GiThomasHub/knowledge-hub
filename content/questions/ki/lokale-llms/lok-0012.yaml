@@ -1,0 +1,24 @@
+id: lok-0012
+topic: lokale-llms
+competencies:
+- ki-lok-03
+level: L3
+type: multi
+question: Was muss in die Speicherrechnung für ein lokales Modell einfliessen? (mehrere richtig)
+options:
+- Die Gewichte nach Parameterzahl und Quantisierung
+- Der KV-Cache, der mit der Kontextlänge wächst
+- Eine Reserve von etwa 10–20 %
+- Bei MoE-Modellen nur die aktiven Parameter
+- Bei Apple Silicon, dass nicht der ganze gemeinsame Speicher der Grafikeinheit zur Verfügung steht
+answer:
+- 0
+- 1
+- 2
+- 4
+explanation: Gewichte, KV-Cache und Reserve gehören immer in die Rechnung; bei Apple Silicon behält das System einen Teil des Speichers. MoE-Modelle sparen Rechenzeit, nicht Speicher – alle Gewichte müssen geladen sein.
+source: lokale-llms/vram-und-quantisierung#das-kontextfenster-kostet-zusaetzlich
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

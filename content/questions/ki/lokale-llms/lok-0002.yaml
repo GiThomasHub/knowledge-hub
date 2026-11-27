@@ -1,0 +1,18 @@
+id: lok-0002
+topic: lokale-llms
+competencies:
+- ki-lok-01
+level: L1
+type: true_false
+question: Ein Modell, das als «Open-Weight» veröffentlicht ist, darf ohne Einschränkungen für jeden kommerziellen Zweck genutzt werden.
+options:
+- Wahr
+- Falsch
+answer:
+- 1
+explanation: Falsch. Offene Gewichte heissen nur, dass man das Modell herunterladen und selbst betreiben kann. Die Lizenzen von Llama, Qwen, Gemma und anderen unterscheiden sich, manche schränken bestimmte Nutzungen ein – vor dem Produktiveinsatz prüfen.
+source: lokale-llms/warum-lokal#gruende-dagegen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

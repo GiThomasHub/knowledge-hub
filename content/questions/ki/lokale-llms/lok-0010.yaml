@@ -1,0 +1,20 @@
+id: lok-0010
+topic: lokale-llms
+competencies:
+- ki-lok-03
+level: L3
+type: single
+question: Wie viel Speicher brauchen die Gewichte eines Modells mit 32 Milliarden Parametern ungefähr in Q4_K_M (rund 4,8 Bit pro Gewicht)?
+options:
+- Rund 8 GB
+- Rund 19–20 GB
+- Rund 64 GB
+- Rund 128 GB
+answer:
+- 1
+explanation: 32 × 4,8 ÷ 8 ≈ 19 GB. 64 GB wären es in FP16 (2 GB pro Milliarde Parameter), 8 GB reichen etwa für ein 14-Mrd.-Modell, und 128 GB entsprächen einer noch höheren Präzision als FP16.
+source: lokale-llms/vram-und-quantisierung#die-rechnung
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

@@ -1,0 +1,24 @@
+id: lok-0001
+topic: lokale-llms
+competencies:
+- ki-lok-01
+level: L1
+type: multi
+question: Welche Gründe sprechen typischerweise für ein lokal betriebenes Sprachmodell? (mehrere richtig)
+options:
+- Prompts und Dokumente verlassen das Gerät nicht
+- Keine Gebühren pro Token nach der Hardware-Investition
+- Betrieb ohne Internetverbindung
+- Lokale Modelle sind bei Coding-Agenten grundsätzlich besser als grosse Cloud-Modelle
+- Eine feste Modellversion, die sich nicht durch den Anbieter ändert
+answer:
+- 0
+- 1
+- 2
+- 4
+explanation: Datenschutz, Kosten bei hohen Mengen, Offline-Betrieb und Kontrolle über die Version sind die klassischen Gründe. Bei Coding-Agenten liegen die grossen Cloud-Modelle dagegen meist deutlich vorn – das ist ein Grund gegen, nicht für lokal.
+source: lokale-llms/warum-lokal#gruende-fuer-lokal
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

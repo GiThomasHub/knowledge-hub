@@ -1,0 +1,19 @@
+id: lok-0009
+topic: lokale-llms
+competencies:
+- ki-lok-02
+level: L2
+type: order
+question: Bring die Schritte, um Claude Code testweise gegen ein lokales Modell laufen zu lassen, in eine sinnvolle Reihenfolge.
+options:
+- Modell mit ollama pull herunterladen
+- Kontextlänge für Agenten auf mindestens 64 000 Tokens setzen und Ollama starten
+- ANTHROPIC_BASE_URL auf http://localhost:11434 und ANTHROPIC_AUTH_TOKEN setzen
+- Claude Code mit dem lokalen Modellnamen starten
+- Mit ollama ps prüfen, ob das Modell ganz auf der GPU läuft
+explanation: Erst muss das Modell vorhanden und der Server mit genügend Kontext gestartet sein. Dann wird Claude Code über die Umgebungsvariablen auf die Anthropic-kompatible Schnittstelle von Ollama umgelenkt und gestartet; zum Schluss zeigt ollama ps, ob Modell und Kontext in den Grafikspeicher passen.
+source: lokale-llms/ollama-betreiben#die-schnittstellen-nutzen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

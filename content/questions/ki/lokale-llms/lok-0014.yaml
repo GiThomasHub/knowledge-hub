@@ -1,0 +1,21 @@
+id: lok-0014
+topic: lokale-llms
+competencies:
+- ki-lok-04
+level: L4
+type: scenario
+situation: Eine Anwaltskanzlei nutzt ein lokales Llama-Modell über Ollama für Mandantenakten. Gleichzeitig greift eine Desktop-App mit Cloud-Modell per MCP auf denselben Aktenordner zu, und die Akten werden für die Suche bei einem Cloud-Dienst eingebettet.
+question: Wie beurteilst du die Aussage der Kanzlei «Unsere Akten bleiben im Haus, wir nutzen ja ein lokales Modell»?
+options:
+- Zutreffend, weil das Sprachmodell lokal rechnet
+- 'Unzutreffend: Über die Desktop-App mit Cloud-Modell und die Cloud-Embeddings verlassen Akteninhalte das Haus; wirklich privat ist es nur mit lokalem Modell, lokalem Harness und geprüften Nebenwegen'
+- Zutreffend, solange die Desktop-App verschlüsselt kommuniziert
+- Unzutreffend nur dann, wenn das Llama-Modell ein Cloud-Tag hat
+answer:
+- 1
+explanation: Ein lokales Modell schützt nur den Weg zu diesem Modell. Jede andere Verbindung – Harness mit Cloud-Modell, MCP, Embeddings, Telemetrie, Synchronisation – kann Daten nach aussen tragen. Verschlüsselung schützt den Transport, nicht vor dem Empfänger, und das Cloud-Tag ist nur einer von mehreren Nebenwegen.
+source: lokale-llms/lokal-oder-cloud#wann-ist-es-wirklich-lokal
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session
