@@ -1,0 +1,24 @@
+id: agt-0005
+topic: agents
+competencies:
+- ki-agt-02
+level: L1
+type: multi
+question: Welche Komponenten gehören zu einem Harness? (mehrere richtig)
+options:
+- Tool Registry
+- Context Manager
+- Die Modellgewichte
+- Permissions / Safety
+- Memory / State
+answer:
+- 0
+- 1
+- 3
+- 4
+explanation: 'Der Harness ist alles ausser dem Modell: Werkzeugverwaltung, Kontextpflege, Rechte, Gedächtnis, Ausführung, Prüfschleife, Orchestrierung. Die Modellgewichte sind das Modell selbst.'
+source: agents/harness#die-komponenten-eines-harness
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

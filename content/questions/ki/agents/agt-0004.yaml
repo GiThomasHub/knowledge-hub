@@ -1,0 +1,20 @@
+id: agt-0004
+topic: agents
+competencies:
+- ki-agt-02
+level: L1
+type: single
+question: 'Ein Modell antwortet: «Bitte rechnungen_suchen(status=offen) aufrufen.» Wer führt den Aufruf tatsächlich aus?'
+options:
+- Das Modell selbst
+- Der Harness, nachdem er Rechte und Regeln geprüft hat
+- Der Nutzer von Hand
+- Der Anbieter des Modells in seiner Cloud
+answer:
+- 1
+explanation: Ein Modell kann ein Werkzeug nur anfordern. Der Harness prüft Rechte und Hooks, führt aus und gibt das Ergebnis zurück in den Kontext. Darum gehören Grenzen in den Harness. Beim Anbieter läuft der Aufruf nur bei serverseitigen Werkzeugen, nicht bei eigenen.
+source: agents/harness#wie-ein-werkzeugaufruf-wirklich-ablaeuft
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

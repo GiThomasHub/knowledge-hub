@@ -1,0 +1,17 @@
+id: agt-0002
+topic: agents
+competencies:
+- ki-agt-01
+level: L1
+type: order
+question: Bring die Schritte einer Runde der ReAct-Schleife in die richtige Reihenfolge.
+options:
+- 'Reason: überlegen, was fehlt'
+- 'Act: ein Werkzeug aufrufen'
+- 'Observe: das Ergebnis lesen'
+explanation: Reason → Act → Observe, dann wieder Reason – bis eine Antwort ohne Werkzeugaufruf entsteht oder ein Stoppkriterium greift.
+source: agents/chatbot-workflow-agent#die-react-schleife
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

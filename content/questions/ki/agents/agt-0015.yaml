@@ -1,0 +1,21 @@
+id: agt-0015
+topic: agents
+competencies:
+- ki-agt-05
+level: L3
+type: scenario
+situation: Ein Sentiment-Analyst sollte per Werkzeug Reddit-Beiträge abrufen. Das Werkzeug hatte aber keinen echten Zugang zur Datenquelle. Im Bericht tauchten Zitate aus Beiträgen auf, die es nie gab.
+question: Was ist die beste Korrektur?
+options:
+- Im Prompt verbieten, Beiträge zu erfinden
+- Die Daten vor dem LLM-Aufruf per Skript holen und direkt in den Prompt einspeisen
+- Ein zweites Modell die Zitate bewerten lassen
+- Die Temperatur senken
+answer:
+- 1
+explanation: Werden die Daten deterministisch vorher geholt und mitgegeben, gibt es kein Werkzeug, das ins Leere greift, und keinen Raum für Erfindung. Ein Verbot im Prompt ist eine Bitte, ein zweites Modell kann erfundene Zitate nicht zuverlässig von echten unterscheiden, und die Temperatur ändert nichts an fehlenden Daten.
+source: agents/rechnen-vs-interpretieren#das-prinzip-in-vier-schichten
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

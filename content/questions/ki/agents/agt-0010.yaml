@@ -1,0 +1,20 @@
+id: agt-0010
+topic: agents
+competencies:
+- ki-agt-03
+level: L2
+type: single
+question: Welche Fehlermeldung eines Werkzeugs hilft einem Agenten am meisten?
+options:
+- Einen vollständigen Stacktrace
+- «Fehler 500»
+- '«Datum muss JJJJ-MM-TT sein, erhalten: 27.11.»'
+- Gar keine Meldung, nur ein leeres Ergebnis
+answer:
+- 2
+explanation: Eine Fehlermeldung als Anleitung sagt, was falsch war und wie es richtig geht – der Agent kann sich selbst korrigieren. Stacktraces füllen den Kontext mit Rauschen, ein Statuscode erklärt nichts, und ein leeres Ergebnis lädt zu Fehlschlüssen ein.
+source: agents/agent-bauen#gute-werkzeuge
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

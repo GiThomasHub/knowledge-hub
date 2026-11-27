@@ -1,0 +1,20 @@
+id: agt-0011
+topic: agents
+competencies:
+- ki-agt-04
+level: L3
+type: single
+question: Eine Änderung betrifft je nach Codebasis 3 oder 300 Dateien – welche genau, zeigt sich erst bei der Analyse. Welches Muster passt?
+options:
+- Prompt Chaining
+- Routing
+- Orchestrator-Worker
+- Voting
+answer:
+- 2
+explanation: Beim Orchestrator-Worker zerlegt der Orchestrator die Aufgabe erst zur Laufzeit und verteilt die Teile. Chaining setzt feste Schritte voraus, Routing ordnet Eingaben einer Kategorie zu, und Voting löst dieselbe Aufgabe mehrfach.
+source: agents/muster#die-fuenf-bausteine
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

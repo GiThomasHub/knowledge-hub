@@ -1,0 +1,21 @@
+id: agt-0021
+topic: agents
+competencies:
+- ki-agt-07
+- ki-agt-05
+level: L4
+type: case
+question: Eine Treuhandfirma möchte «einen KI-Agenten, der Kundenmails beantwortet und Belege verbucht». Skizziere die einfachste tragfähige Architektur, die Risiken und die Kontrollen.
+model_answer: '**Zerlegen:** Mail einordnen (Frage, Beleg, Reklamation) → Beleg auslesen → Buchung vorbereiten → Antwort entwerfen. **Stufe:** Schritte bekannt → **Workflow** (Routing + Kette mit Prüftoren), kein frei entscheidender Agent; ein Agent höchstens für einen klar abgegrenzten Pfad mit offener Recherche. **Rechnen trennen:** Beträge, MWST (8,1 %) und Rundung in Code, Modell extrahiert und formuliert; Ausgabe per Schema, Zahlenabgleich gegen den Beleg. **Risiken:** irreversible Buchung/Versand, Prompt Injection über Mailinhalte, falsche Zahlen, Datenschutz/Berufsgeheimnis, Kosten. **Kontrollen:** Buchung nur als Vorschlag, Antwort nur als Entwurf, Freigabe durch Fachperson; minimale Rechte, Mailinhalt als untrusted; Budget und Protokoll; Vertrag/DPA, Datenstandort, Pseudonymisierung. **Messen:** 50 anonymisierte Echtfälle als Testset, Freigabe- und Korrekturquote als Kennzahl; Autonomie nur erweitern, wo Messungen es stützen.'
+rubric:
+- Wählt begründet einen Workflow statt eines frei entscheidenden Agenten
+- Trennt Rechnen (Code) und Interpretieren (LLM) mit Zahlenabgleich
+- Benennt mindestens drei Risiken (irreversibel, Injection, Zahlen, Datenschutz, Kosten)
+- Setzt Entwurf/Vorschlag plus menschliche Freigabe ein
+- Definiert Messung (Testset, Kennzahlen) und schrittweise Erweiterung
+explanation: Ein Senior-Vorschlag zerlegt den Prozess, wählt die einfachste Stufe, macht Irreversibles reversibel und beweist die Qualität mit Messungen – statt das Etikett «Agent» zu verkaufen.
+source: agents/architektur-beraten#vom-risiko-zur-architektur-ein-beispiel
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

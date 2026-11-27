@@ -4,6 +4,7 @@
 
 - term: Agent
   definition: Ein LLM in einer Schleife mit Werkzeugen, Gedächtnis und Ziel. Es plant, handelt, prüft das Ergebnis und hört erst auf, wenn das Ziel erreicht oder ein Stopp-Kriterium erfüllt ist.
+  lesson: agents/chatbot-workflow-agent
 - term: Commit
   definition: Ein gespeicherter Schnappschuss des Projekts mit Nachricht, Autor und Zeit. Liegt zunächst nur lokal und verlässt den Rechner erst mit git push.
   lesson: git-github/grundlagen#die-vier-stationen
@@ -24,8 +25,10 @@
 - term: Harness
   aliases: [Scaffold]
   definition: Alles um das Modell herum, was es zum Agenten macht – Schleife, Werkzeuge, Kontextverwaltung, Gedächtnis, Berechtigungen. Claude Code ist der Harness rund um Claude.
+  lesson: agents/harness
 - term: ReAct
   definition: Reason + Act. Die Grundschleife eines Agenten – überlegen, Werkzeug aufrufen, Ergebnis beobachten, erneut überlegen – bis eine Antwort ohne Werkzeugaufruf entsteht.
+  lesson: agents/chatbot-workflow-agent#die-react-schleife
 - term: Token
   definition: Die Texteinheit, in der ein Modell rechnet (ungefähr 4 Zeichen bzw. ¾ Wort im Englischen, im Deutschen etwas weniger). Kosten und Kontextgrenzen werden in Token gemessen.
 - term: Kontextfenster
@@ -156,3 +159,18 @@
   aliases: [Claude Managed Agents]
   definition: Angebot von Anthropic, bei dem Schleife, Werkzeuge und eine abgeschottete Umgebung pro Session gehostet werden. Für Produkte mit vielen Nutzern und lange autonome Aufgaben.
   lesson: automation/betriebsform#managed-agents-genauer
+- term: Stoppkriterium
+  definition: Bedingung, bei der ein Agent aufhört – Ziel erreicht, maximale Schrittzahl, Budget oder Zeitlimit. Ohne Stoppkriterium endet ein Lauf erst im Timeout oder beim Budget-Ende.
+  lesson: agents/agent-bauen#zuerst-wann-hoert-der-agent-auf
+- term: Prompt Chaining
+  definition: Workflow-Muster, bei dem eine Aufgabe in feste Schritte zerlegt wird und jeder LLM-Aufruf das Ergebnis des vorherigen verarbeitet, mit Prüftoren im Code dazwischen.
+  lesson: agents/muster#die-fuenf-bausteine
+- term: Orchestrator-Worker
+  definition: Muster, bei dem ein Orchestrator eine Aufgabe zur Laufzeit in Teilaufgaben zerlegt, diese an Worker verteilt und die Ergebnisse zusammenführt.
+  lesson: agents/muster#die-fuenf-bausteine
+- term: Evaluator-Optimizer
+  definition: Muster, bei dem ein Aufruf ein Ergebnis erzeugt, ein zweiter es anhand klarer Kriterien bewertet und das Ergebnis überarbeitet wird, bis die Kriterien erfüllt sind oder N Runden erreicht sind.
+  lesson: agents/muster#die-fuenf-bausteine
+- term: LangGraph
+  definition: Framework, das Agenten-Abläufe als Graph aus Zustand, Knoten und Kanten modelliert. Erlaubt Schleifen, Verzweigungen, menschliche Freigaben und Checkpointing.
+  lesson: agents/frameworks#langchain-und-langgraph
