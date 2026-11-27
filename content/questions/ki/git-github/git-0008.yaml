@@ -1,0 +1,20 @@
+id: git-0008
+topic: git-github
+competencies:
+- ki-git-02
+level: L2
+type: single
+question: Du hast deinen eigenen Branch auf origin/main rebased und willst ihn neu pushen. Welcher Befehl ist der richtige?
+options:
+- git push --force
+- git push --force-with-lease
+- git push origin main --force
+- git pull, dann git push
+answer:
+- 1
+explanation: --force-with-lease bricht ab, wenn inzwischen jemand anderes auf den Branch gepusht hat, und schützt so fremde Arbeit. --force überschreibt sie stillschweigend. Force auf main ist tabu. Ein pull vor dem push würde die umgeschriebene Historie wieder mit der alten mischen.
+source: git-github/branch-pr-review#branch-aktuell-halten-und-konflikte-loesen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

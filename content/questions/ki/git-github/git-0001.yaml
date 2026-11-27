@@ -1,0 +1,18 @@
+id: git-0001
+topic: git-github
+competencies:
+- ki-git-01
+level: L1
+type: order
+question: Bring die vier Stationen einer Änderung in die richtige Reihenfolge.
+options:
+- Datei im Arbeitsverzeichnis bearbeiten und speichern
+- Mit git add in die Staging Area vormerken
+- Mit git commit als lokalen Commit festhalten
+- Mit git push auf GitHub hochladen
+explanation: Arbeitsverzeichnis → Staging → lokales Repository → Remote. Erst der Push verlässt den Rechner; vorher existiert der Commit nur lokal.
+source: git-github/grundlagen#die-vier-stationen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

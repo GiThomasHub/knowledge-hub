@@ -1,0 +1,20 @@
+id: git-0003
+topic: git-github
+competencies:
+- ki-git-01
+level: L1
+type: single
+question: Ein API-Token wurde versehentlich committet und gepusht. Was ist der wichtigste erste Schritt?
+options:
+- Die Datei löschen und einen neuen Commit pushen
+- Das Token beim Anbieter sofort sperren und neu ausstellen
+- Die Datei in .gitignore eintragen
+- Das Repo auf privat stellen
+answer:
+- 1
+explanation: Sobald gepusht, ist das Token in der Historie lesbar – ein neuer Commit entfernt es nur aus dem aktuellen Stand. .gitignore wirkt nicht rückwirkend, und auf privat stellen hilft nicht gegen alle, die es schon gesehen oder geklont haben. Nur Sperren macht das Token wertlos; danach kann man die Historie bereinigen.
+source: git-github/grundlagen#was-nie-in-git-gehoert
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

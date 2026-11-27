@@ -1,0 +1,21 @@
+id: git-0011
+topic: git-github
+competencies:
+- ki-git-03
+level: L2
+type: scenario
+situation: Nach einem missglückten git reset --hard sind deine letzten drei Commits scheinbar verschwunden. Sie waren nie gepusht.
+question: Wie kommst du an sie heran?
+options:
+- Gar nicht, sie waren ja nie auf GitHub.
+- git reflog zeigt die früheren Stände; mit git branch rettung HEAD@{n} sichern.
+- git stash pop
+- git pull von GitHub
+answer:
+- 1
+explanation: Der Reflog protokolliert jede Bewegung von HEAD, auch nach reset --hard, und hält Einträge standardmässig rund 90 Tage. stash enthält nur, was du dort abgelegt hast, und GitHub kennt die ungepushten Commits nicht.
+source: git-github/rettung#verlorenes-wiederfinden-reflog
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

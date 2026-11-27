@@ -1,0 +1,20 @@
+id: git-0010
+topic: git-github
+competencies:
+- ki-git-03
+level: L2
+type: single
+question: Ein fehlerhafter Commit ist bereits auf main gepusht, das Team hat schon darauf aufgebaut. Wie nimmst du ihn zurück?
+options:
+- git reset --hard HEAD~1 und force-pushen
+- 'git revert <sha>: ein neuer Gegen-Commit, die Historie bleibt'
+- git commit --amend
+- git restore .
+answer:
+- 1
+explanation: Auf geteilten Branches wird nicht umgeschrieben. revert erzeugt eine Berichtigung, die alle mit dem nächsten pull bekommen. reset plus Force-Push zerstört die Basis der anderen, amend schreibt ebenfalls um und betrifft nur den letzten eigenen Commit, restore verwirft nur lokale, nicht committete Änderungen.
+source: git-github/rettung#welcher-befehl-fuer-welche-lage
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session
