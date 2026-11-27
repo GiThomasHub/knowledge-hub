@@ -1,0 +1,20 @@
+id: evl-0007
+topic: evals
+competencies:
+- ki-evl-02
+level: L2
+type: single
+question: Ein Code-Grader vergleicht Beträge als Text. «CHF 12.50» besteht, «12.50 Fr.» fällt durch, obwohl beides richtig ist. Was ist die beste Korrektur?
+options:
+- Einen LLM-Judge für alle Beträge einsetzen
+- Vor dem Vergleich normalisieren (Zahl extrahieren, Format vereinheitlichen) und dann exakt vergleichen
+- Die Aufgabe streichen
+- Dem Modell im Prompt das Format «CHF 12.50» vorschreiben und nichts am Grader ändern
+answer:
+- 1
+explanation: Normalisieren macht den Code-Grader robust gegen gültige Varianten und bleibt deterministisch und billig. Ein Judge wäre teurer und unsicherer, und nur das Format vorzuschreiben lässt den zu starren Grader bestehen.
+source: evals/testset-und-grader#code-grader-zuerst
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

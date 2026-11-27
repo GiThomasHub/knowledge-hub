@@ -1,0 +1,24 @@
+id: evl-0004
+topic: evals
+competencies:
+- ki-evl-02
+level: L2
+type: multi
+question: Was gehört zu einem guten Testset? (mehrere richtig)
+options:
+- Aufgaben aus echten Fehlern und Support-Fällen
+- Zu jeder Aufgabe eine Referenzlösung
+- Fälle, in denen etwas passieren soll, und Fälle, in denen nicht
+- Möglichst dieselben Fälle wie die Beispiele im Prompt
+- Kategorie und Herkunft pro Aufgabe
+answer:
+- 0
+- 1
+- 2
+- 4
+explanation: Echte, ausgewogene Fälle mit Referenz und Metadaten machen das Testset aussagekräftig. Fälle aus dem Prompt würden nur Abschreiben messen.
+source: evals/testset-und-grader#aufgaben-sammeln
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

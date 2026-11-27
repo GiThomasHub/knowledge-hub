@@ -1,0 +1,20 @@
+id: evl-0013
+topic: evals
+competencies:
+- ki-evl-04
+level: L3
+type: single
+question: Was gilt für die OpenTelemetry-Telemetrie von Claude Code (Stand 27.11.2026)?
+options:
+- Prompts und Werkzeugdetails werden standardmässig vollständig exportiert.
+- Mit CLAUDE_CODE_ENABLE_TELEMETRY=1 und Exportern werden Metriken und Ereignisse exportiert; Prompt-Text und Werkzeugdetails sind standardmässig geschwärzt und nur mit OTEL_LOG_*-Variablen einschaltbar.
+- Telemetrie lässt sich nur über die .claude/settings.json im Repository einschalten.
+- Die Kostenwerte entsprechen genau der Rechnung.
+answer:
+- 1
+explanation: Telemetrie muss ausdrücklich eingeschaltet werden, Inhalte bleiben standardmässig geschwärzt. Die Kostenwerte sind Schätzungen, und organisationsweit steuert man das über Managed Settings, nicht über die Repo-Einstellungen.
+source: evals/tracing-im-betrieb#claude-code-ueberwachen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

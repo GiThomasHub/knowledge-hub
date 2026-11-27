@@ -1,0 +1,24 @@
+id: evl-0008
+topic: evals
+competencies:
+- ki-evl-03
+level: L3
+type: multi
+question: Welche Regeln machen einen LLM-Judge verlässlicher? (mehrere richtig)
+options:
+- Eine Dimension pro Judge-Aufruf
+- Binäre Rubrik mit klaren Ankern
+- Ausweg «Unbekannt», wenn Information fehlt
+- Dem Judge mitteilen, welche Antwort von der neuen Version stammt
+- Referenzantwort mitgeben
+answer:
+- 0
+- 1
+- 2
+- 4
+explanation: Getrennte Dimensionen, klare Rubrik, «Unbekannt» und eine Referenz stabilisieren das Urteil. Hinweise auf die neue Version verzerren es.
+source: evals/llm-judge-und-mehrere-laeufe#regeln-fuer-einen-verlaesslichen-judge
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

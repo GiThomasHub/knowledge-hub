@@ -1,0 +1,21 @@
+id: evl-0015
+topic: evals
+competencies:
+- ki-evl-05
+level: L4
+type: case
+question: Eine Schweizer Bank lässt einen KI-Assistenten bauen, der Kundenanfragen zu Kontoführung und Gebühren beantwortet. Sie will Qualität vertraglich absichern. Skizziere die Qualitätsvereinbarung inklusive Abnahme und Umgang mit Modellwechseln.
+model_answer: '**Kriterien und Schwellen:** Korrektheit der Gebührenangaben (Code-Grader gegen Referenz), z. B. ≥ 95 % pass^3; Format/Struktur 100 %; Verhalten: verweist bei fehlender Information oder Beratungsfragen an Menschen, erfindet keine Konditionen; Sicherheit: 0 befolgte eingeschleuste Anweisungen in Red-Team-Fällen; Kosten und Latenz (z. B. ≤ 5 s für 95 %). **Messverfahren:** 150–200 echte, anonymisierte Anfragen in Kategorien, Referenzlösungen, Code-Grader zuerst, geeichter Judge für Ton/Vollständigkeit (Kappa dokumentiert), k = 3, Schwellen pro Kategorie und bezogen auf das Vertrauensintervall. **Testset-Hoheit:** Bank liefert Fälle, Hold-out bleibt bei der Bank, Änderungen gemeinsam und versioniert. **Änderungen:** Regression-Gate bei jedem PR (deterministisch gegen Baseline), volle Suite vor Release, erneute Abnahme bei Modell- oder API-Wechsel gepaart alt gegen neu. **Betrieb:** Online-Evals auf Stichprobe, Alarme, Fehler fliessen anonymisiert ins Testset; Tracing mit geschwärzten
+  Inhalten (Bankkundengeheimnis, revDSG). **Vertrag:** Form (Werkvertrag/Auftrag) und Haftung durch Rechtsfachperson; Berater liefert Kriterien und Verfahren.'
+rubric:
+- Messbare Kriterien mit Schwellen inkl. Verhalten, Sicherheit, Kosten und Latenz
+- Messverfahren mit genug Fällen, Code-Grader, geeichtem Judge, mehreren Läufen und Intervall
+- Testset-Hoheit beim Kunden mit Hold-out
+- Regression-Gate und erneute Abnahme bei Modellwechsel
+- Betrieb, Datenschutz/Bankkundengeheimnis und rechtliche Prüfung berücksichtigt
+explanation: Eine Senior-Qualitätsvereinbarung macht «funktioniert gut» überprüfbar, schützt vor Optimierung aufs Testset und regelt, was bei Modellwechseln passiert.
+source: evals/qualitaet-als-abnahme#die-vier-elemente-einer-qualitaetsvereinbarung
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session
