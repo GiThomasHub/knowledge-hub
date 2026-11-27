@@ -1,0 +1,23 @@
+id: mem-0002
+topic: ai-memory
+competencies:
+- ki-mem-01
+level: L1
+type: multi
+question: 'Ordne richtig zu: Welche Beispiele sind prozedurales Gedächtnis? (mehrere richtig)'
+options:
+- Eine CLAUDE.md mit Projektregeln
+- Ein Skill mit einem Ablauf für Offerten
+- Das Protokoll der Sitzung von gestern
+- Die Notiz «Anna will knappe Antworten»
+- Eine Checkliste für Code-Reviews
+answer:
+- 0
+- 1
+- 4
+explanation: 'Prozedural ist Wissen darüber, wie man etwas tut: Regeln, Abläufe, Checklisten. Ein Sitzungsprotokoll ist episodisch, eine Präferenz semantisch.'
+source: ai-memory/kurz-und-langzeit#vier-gedaechtnistypen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

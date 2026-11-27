@@ -1,0 +1,20 @@
+id: mem-0005
+topic: ai-memory
+competencies:
+- ki-mem-02
+level: L1
+type: single
+question: Was leistet ein Embedding?
+options:
+- Es verschlüsselt Text, damit er anonym ist.
+- Es übersetzt Text in einen Zahlenvektor, bei dem ähnliche Bedeutungen nahe beieinander liegen.
+- Es fasst ein Dokument zusammen.
+- Es trainiert das Sprachmodell auf neue Dokumente.
+answer:
+- 1
+explanation: Embeddings sind eine Landkarte der Bedeutungen. Sie sind keine Verschlüsselung und nicht anonym, sie fassen nicht zusammen und trainieren kein Modell.
+source: ai-memory/rag-und-embeddings#embeddings-eine-landkarte-der-bedeutungen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

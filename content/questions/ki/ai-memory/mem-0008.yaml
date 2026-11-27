@@ -1,0 +1,21 @@
+id: mem-0008
+topic: ai-memory
+competencies:
+- ki-mem-03
+level: L2
+type: scenario
+situation: Ein Team hat entschieden, im Projekt Postgres statt MongoDB zu verwenden. Claude hat das im Auto Memory auf dem Laptop eines Entwicklers notiert. Ein Kollege arbeitet auf seinem Rechner mit Claude Code im selben Repository.
+question: Was ist das Problem, und was empfiehlst du?
+options:
+- Kein Problem, Auto Memory wird über Git geteilt.
+- Auto Memory ist maschinenlokal; der Kollege kennt den Entscheid nicht. Den Entscheid als Notiz ins Repository (z. B. docs/decisions/) und bei Bedarf eine Regel in die CLAUDE.md.
+- Der Kollege soll das Auto Memory per Mail erhalten.
+- Den Entscheid in jeder Sitzung neu erklären.
+answer:
+- 1
+explanation: Auto Memory liegt auf dem einzelnen Rechner und ist nicht im Repository. Projektentscheide gehören versioniert und für alle sichtbar ins Repo. Mailen oder wiederholtes Erklären skaliert nicht.
+source: ai-memory/claude-memory-pflegen#claude-code-im-detail
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

@@ -1,0 +1,24 @@
+id: mem-0009
+topic: ai-memory
+competencies:
+- ki-mem-03
+level: L2
+type: multi
+question: Welche Regeln halten Memory gesund? (mehrere richtig)
+options:
+- Was immer geladen wird, bleibt unter rund 200 Zeilen
+- Jeder Eintrag hat Datum und Quelle
+- Der Agent schreibt Bewährtes direkt in die CLAUDE.md, ohne Rückfrage
+- Ändert sich ein Fakt, wird er ersetzt statt ergänzt; die alte Fassung bleibt in Git
+- 'Regelmässig konsolidieren: Duplikate, Widersprüche, Veraltetes'
+answer:
+- 0
+- 1
+- 3
+- 4
+explanation: Kleiner Index, Datum und Quelle, Ersetzen mit Versionierung und Konsolidierung halten Memory nutzbar. Beförderungen in die CLAUDE.md schlägt der Agent vor; ein Mensch gibt sie frei – sonst können auch eingeschleuste Anweisungen zu Regeln werden.
+source: ai-memory/claude-memory-pflegen#pflege-damit-memory-besser-statt-nur-groesser-wird
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

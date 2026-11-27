@@ -76,8 +76,10 @@
 - term: RAG
   aliases: [Retrieval-Augmented Generation]
   definition: Vor dem Antworten werden passende Textstellen aus eigenen Dokumenten gesucht und dem Modell mitgegeben – eine Open-Book-Prüfung statt Antwort aus dem Gedächtnis.
+  lesson: ai-memory/rag-und-embeddings#wie-rag-ablaeuft
 - term: Embedding
   definition: Ein Zahlenvektor, der die Bedeutung eines Textes abbildet. Ähnliche Bedeutungen liegen im Vektorraum nahe beieinander – die Grundlage semantischer Suche.
+  lesson: ai-memory/rag-und-embeddings#embeddings-eine-landkarte-der-bedeutungen
 - term: Prompt Caching
   definition: Ein unveränderter Prompt-Anfang (Systemprompt, grosses Dokument) wird zwischengespeichert und bei Folgeaufrufen deutlich günstiger und schneller verarbeitet.
   lesson: prompting/kontext-gestalten#prompt-caching-stabiles-zuerst-spart-geld
@@ -290,3 +292,35 @@
   definition: Zuordnung jeder Aufgabe zur passenden Modellstufe – kleine Modelle für Einordnen und Extraktion, grosse für Planung und Urteile. Oft als Kaskade umgesetzt, bei der nur unsichere Fälle an ein grösseres Modell gehen.
   aliases: [Kaskade, Routing]
   lesson: modelle-kosten/routing-aufwand-budget#kaskade-statt-grossmodell-fuer-alles
+- term: Chunking
+  definition: Aufteilen von Dokumenten in Abschnitte (Chunks) für die Suche in einem RAG-System – idealerweise an Bedeutungsgrenzen wie Überschriften und Absätzen, mit etwas Überlappung und Metadaten.
+  aliases: [Chunk]
+  lesson: ai-memory/rag-optimieren#1-laden-und-chunking
+- term: Hybrid-Suche
+  definition: Kombination aus Vektorsuche (findet Bedeutung) und Volltextsuche wie BM25 (findet exakte Begriffe, Codes, Namen). In RAG-Systemen der Standard.
+  aliases: [Hybrid Search, BM25]
+  lesson: ai-memory/rag-optimieren#2-hybrid-suche
+- term: Reranking
+  definition: Zweite Suchstufe, in der ein Modell (Cross-Encoder) Frage und jeden Kandidaten zusammen liest und aus einer groben Vorauswahl die besten Treffer auswählt.
+  aliases: [Reranker]
+  lesson: ai-memory/rag-optimieren#3-reranking
+- term: Contextual Retrieval
+  definition: Von Anthropic beschriebene Technik, bei der jedem Abschnitt vor dem Indexieren ein kurzer Kontext aus dem Gesamtdokument vorangestellt wird. Senkt laut Anthropic fehlgeschlagene Suchen um 49 %, mit Reranking um 67 %.
+  lesson: ai-memory/rag-optimieren#4-contextual-retrieval
+- term: Vektordatenbank
+  definition: Datenbank, die Embeddings speichert und ähnliche Vektoren schnell findet – z. B. pgvector, Qdrant, Chroma. Ein abgeleiteter Index, der aus den Quelldokumenten neu erzeugt werden kann.
+  aliases: [Vector DB, Vektor-DB]
+  lesson: ai-memory/rag-optimieren#wo-der-index-liegt
+- term: Faithfulness
+  definition: Kennzahl für RAG-Systeme, ob jede Aussage einer Antwort durch die gefundenen Quellen gedeckt ist. Niedrige Werte zeigen, dass das Modell ergänzt oder erfindet.
+  lesson: ai-memory/rag-messen#die-vier-kennzahlen
+- term: Memory Poisoning
+  definition: Angriff, bei dem eine eingeschleuste Anweisung im Gedächtnis eines Agenten gespeichert wird und dadurch in jeder künftigen Sitzung wirkt.
+  lesson: ai-memory/claude-memory-pflegen#pflege-damit-memory-besser-statt-nur-groesser-wird
+- term: LLM Wiki
+  definition: Ansatz nach Andrej Karpathy, bei dem ein Sprachmodell aus Rohquellen ein verlinktes, gepflegtes Wiki schreibt (Abläufe Ingest, Query, Lint), sodass Wissen mit der Zeit wächst statt bei jeder Frage neu gesucht zu werden.
+  lesson: ai-memory/wissensarchitektur#das-gepflegte-wiki-wachsendes-wissen
+- term: GraphRAG
+  definition: RAG-Variante mit einem Wissensgraphen aus Entitäten und Beziehungen. Stark bei Fragen über Zusammenhänge und den ganzen Bestand; bei Detailfragen ist klassisches RAG oft besser.
+  aliases: [Knowledge Graph, Wissensgraph]
+  lesson: ai-memory/wissensarchitektur#die-vier-bausteine

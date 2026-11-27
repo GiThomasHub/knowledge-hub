@@ -1,0 +1,18 @@
+id: mem-0004
+topic: ai-memory
+competencies:
+- ki-mem-02
+level: L1
+type: order
+question: Bring die Schritte eines RAG-Systems in die richtige Reihenfolge.
+options:
+- Dokumente in Abschnitte (Chunks) teilen
+- Embeddings berechnen und Index speichern
+- Zur Frage die ähnlichsten Abschnitte suchen
+- Modell antwortet aus den Abschnitten mit Quellenangabe
+explanation: Erst wird indexiert (teilen, einbetten, speichern), dann bei jeder Frage gesucht und aus den Treffern mit Quellen geantwortet.
+source: ai-memory/rag-und-embeddings#wie-rag-ablaeuft
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session
