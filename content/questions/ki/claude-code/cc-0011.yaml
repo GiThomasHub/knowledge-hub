@@ -1,0 +1,18 @@
+id: cc-0011
+topic: claude-code
+competencies:
+- ki-cc-04
+level: L2
+type: order
+question: Bring den empfohlenen Ablauf für eine mittelgrosse Änderung in die richtige Reihenfolge.
+options:
+- Im Plan-Modus relevante Dateien lesen lassen
+- Einen Plan erstellen und mit Ctrl+G korrigieren
+- Plan umsetzen, Tests schreiben und laufen lassen
+- Commit mit beschreibender Nachricht und Draft-PR
+explanation: 'Explore → Plan → Code → Commit: erst verstehen, dann planen, dann umsetzen und prüfen, zuletzt sauber festhalten. So löst Claude das richtige Problem.'
+source: claude-code/arbeitsweise#explore-plan-code-commit
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

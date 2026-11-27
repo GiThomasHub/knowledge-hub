@@ -1,0 +1,23 @@
+id: cc-0016
+topic: claude-code
+competencies:
+- ki-cc-05
+level: L3
+type: multi
+question: Was gehört ins Repo, was bleibt lokal? Wähle alle Dateien, die committet werden sollen.
+options:
+- .claude/settings.json
+- .claude/settings.local.json
+- .claude/skills/review/SKILL.md
+- '.mcp.json mit "GITHUB_TOKEN": "${GITHUB_TOKEN}"'
+- CLAUDE.local.md
+answer:
+- 0
+- 2
+- 3
+explanation: Team-Standard, Skills und eine .mcp.json, die Secrets nur als Variable referenziert, gehören ins Repo. settings.local.json und CLAUDE.local.md sind persönliche Abweichungen und bleiben lokal.
+source: claude-code/claude-ordner#was-committet-wird-und-was-nicht
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

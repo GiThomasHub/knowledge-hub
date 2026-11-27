@@ -1,0 +1,20 @@
+id: cc-0018
+topic: claude-code
+competencies:
+- ki-cc-06
+level: L3
+type: single
+question: Ein eigener Review-Subagent soll garantiert keine Dateien ändern. Welche Konfiguration erreicht das?
+options:
+- 'Im Prompt: «Ändere niemals Dateien.»'
+- 'Im Frontmatter `tools: Read, Grep, Glob`'
+- 'permissionMode: auto'
+- 'model: haiku'
+answer:
+- 1
+explanation: Die tools-Liste nimmt dem Subagenten Write und Edit technisch weg. Eine Prompt-Anweisung ist nur Anleitung, der Auto-Modus erlaubt eher mehr als weniger, und das Modell bestimmt nicht die Rechte.
+source: claude-code/kontext-und-subagents#eigene-subagenten
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

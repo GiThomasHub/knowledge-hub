@@ -1,0 +1,19 @@
+id: cc-0014
+topic: claude-code
+competencies:
+- ki-cc-05
+level: L3
+type: order
+question: Ordne die Settings-Ebenen von der stärksten zur schwächsten.
+options:
+- Managed Settings
+- Kommandozeilen-Argumente
+- .claude/settings.local.json
+- .claude/settings.json
+- ~/.claude/settings.json
+explanation: Managed Settings der Organisation stehen über allem, dann gelten Argumente der aktuellen Session, dann persönliche Projekt-Overrides, dann der Team-Standard, zuletzt die persönlichen globalen Einstellungen.
+source: claude-code/claude-ordner#wer-gewinnt-die-rangordnung
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

@@ -1,0 +1,18 @@
+id: cc-0003
+topic: claude-code
+competencies:
+- ki-cc-01
+level: L1
+type: true_false
+question: Wenn du Claude Code mit `cd ~/projekte/app && claude` startest, kann es keine Dateien ausserhalb von ~/projekte/app lesen.
+options:
+- Wahr
+- Falsch
+answer:
+- 1
+explanation: 'Falsch. Der Startordner ist eine Schreibgrenze, keine Lesegrenze: Nach einer Rückfrage kann Claude auch ausserhalb lesen, etwa ~/.ssh, und es läuft mit deinen Benutzerrechten. Echte Grenzen setzen Deny-Regeln, die Sandbox oder ein Container.'
+source: claude-code/agentic-loop#der-erste-start
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

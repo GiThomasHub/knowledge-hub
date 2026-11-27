@@ -1,0 +1,23 @@
+id: cc-0019
+topic: claude-code
+competencies:
+- ki-cc-06
+level: L3
+type: multi
+question: Welche Massnahmen halten eine lange Session leistungsfähig? (mehrere richtig)
+options:
+- /clear zwischen Aufgaben, die nichts miteinander zu tun haben
+- /compact mit Fokus nach einem abgeschlossenen Teilschritt
+- Alle verfügbaren MCP-Server aktivieren, damit Claude flexibel ist
+- /btw für Nebenfragen
+- Nach jeder Antwort die ganze Codebasis erneut lesen lassen
+answer:
+- 0
+- 1
+- 3
+explanation: Abräumen, gezielt verdichten und Nebenfragen aus dem Verlauf halten verringern den Kontext. Viele MCP-Server bringen viele Werkzeugdefinitionen in den Kontext, und erneutes Lesen der ganzen Codebasis füllt ihn zusätzlich.
+source: claude-code/kontext-und-subagents#gegensteuern
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

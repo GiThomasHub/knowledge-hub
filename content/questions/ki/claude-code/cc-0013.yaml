@@ -1,0 +1,21 @@
+id: cc-0013
+topic: claude-code
+competencies:
+- ki-cc-04
+level: L2
+type: scenario
+situation: Du hast Claude dreimal korrigiert, und es macht beim Datumsformat immer wieder denselben Fehler.
+question: Was ist laut Best Practices das beste Vorgehen?
+options:
+- Ein viertes Mal deutlicher korrigieren
+- /clear und mit einem besseren Startauftrag neu beginnen, der das Gelernte enthält
+- In den Auto-Modus wechseln
+- Die Session mit /compact verdichten und weitermachen
+answer:
+- 1
+explanation: Nach mehr als zwei erfolglosen Korrekturen ist der Kontext voller gescheiterter Ansätze. Eine frische Session mit präzisem Auftrag schlägt fast immer die lange. Der Auto-Modus ändert nichts an der Qualität, und /compact trägt die gescheiterten Versuche in die Zusammenfassung mit.
+source: claude-code/arbeitsweise#korrigieren-oder-neu-beginnen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

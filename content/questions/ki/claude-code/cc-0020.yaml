@@ -1,0 +1,21 @@
+id: cc-0020
+topic: claude-code
+competencies:
+- ki-cc-07
+level: L4
+type: scenario
+situation: Ein Unternehmen will verhindern, dass irgendjemand im Team Claude Code mit --dangerously-skip-permissions startet oder Regeln lokal aufweicht. Bisher steht ein entsprechender Hinweis in der Team-CLAUDE.md.
+question: Welche Lösung ist richtig?
+options:
+- Den Hinweis in der CLAUDE.md verstärken
+- Managed Settings mit permissions.disableBypassPermissionsMode "disable" und allowManagedPermissionRulesOnly, verteilt per Datei, MDM oder Konsole; Wirkung mit /status prüfen
+- Jeder trägt die Regel in seine ~/.claude/settings.json ein
+- Eine Deny-Regel in der .claude/settings.json des Repos
+answer:
+- 1
+explanation: Nur Managed Settings stehen über allen anderen Ebenen und lassen sich nicht lokal überschreiben; /status zeigt, ob sie geladen sind. Die CLAUDE.md ist Anleitung, persönliche Settings kann jeder ändern, und eine Projekt-Deny-Regel verhindert den Bypass-Start nicht und lässt sich lokal ergänzen.
+source: claude-code/team-setup#governance-was-niemand-aufweichen-darf
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

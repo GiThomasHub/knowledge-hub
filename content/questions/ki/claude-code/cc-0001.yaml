@@ -1,0 +1,17 @@
+id: cc-0001
+topic: claude-code
+competencies:
+- ki-cc-01
+level: L1
+type: order
+question: Bring die Phasen des Agentic Loop in die richtige Reihenfolge für eine Runde.
+options:
+- 'Kontext holen: Dateien lesen, suchen, Tests ausführen'
+- 'Handeln: Code ändern, Befehle ausführen'
+- 'Prüfen: Tests erneut laufen lassen und Ausgabe lesen'
+explanation: Claude holt zuerst Kontext, handelt dann und prüft das Ergebnis. Ist es noch nicht gut, beginnt die nächste Runde – so lange, bis die Aufgabe erledigt ist.
+source: claude-code/agentic-loop#der-agentic-loop
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session
