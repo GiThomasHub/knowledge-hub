@@ -1,0 +1,20 @@
+id: dev-0001
+topic: dev-environment
+competencies:
+- ki-dev-01
+level: L1
+type: single
+question: Im Ubuntu-Terminal unter WSL sind npm install und git status extrem langsam, Datei-Watcher reagieren nicht. pwd zeigt /mnt/c/Users/anna/projekte/app. Was ist zu tun?
+options:
+- Mehr RAM in .wslconfig zuweisen
+- Das Projekt nach ~/projekte kopieren und dort arbeiten
+- Git neu installieren
+- VS Code als Administrator starten
+answer:
+- 1
+explanation: /mnt/c ist die Windows-Platte, jeder Zugriff läuft über eine Übersetzungsschicht; Watcher bekommen Änderungen oft nicht mit. Im Linux-Dateisystem (~) ist alles schnell. Mehr RAM, eine Git-Neuinstallation oder Adminrechte ändern nichts am Weg über die Windows-Grenze.
+source: dev-environment/vier-welten#wo-deine-dateien-wirklich-liegen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

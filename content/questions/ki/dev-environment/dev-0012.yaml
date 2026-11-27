@@ -1,0 +1,21 @@
+id: dev-0012
+topic: dev-environment
+competencies:
+- ki-dev-04
+level: L2
+type: multi
+question: Wo darf ein API-Key hinein, ohne dass er im Ergebnis mitreist? (mehrere richtig)
+options:
+- docker run --env-file .env beim Start des Containers
+- COPY .env . im Dockerfile
+- Ein Repository-Secret in GitHub Actions
+- ARG API_KEY im Dockerfile mit --build-arg
+answer:
+- 0
+- 2
+explanation: '--env-file und CI-Secrets übergeben den Wert zur Laufzeit. COPY und ARG wirken zur Bauzeit: Der Wert steckt danach im Image bzw. in dessen Build-Historie und reist mit jedem Push mit. Braucht der Build selbst ein Secret, nimmt man Build-Secrets (RUN --mount=type=secret).'
+source: dev-environment/config-und-secrets#bauzeit-und-laufzeit
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

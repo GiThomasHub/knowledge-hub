@@ -74,3 +74,18 @@
   definition: Ein Sprachmodell bewertet die Ausgabe eines anderen anhand einer Rubrik. Muss gegen menschliche Urteile kalibriert werden.
 - term: Leitner-System
   definition: Karteikasten-Methode mit mehreren Fächern. Richtige Antworten wandern ein Fach weiter und kommen seltener, falsche zurück ins erste Fach.
+- term: WSL
+  aliases: [WSL 2, Windows Subsystem for Linux]
+  definition: Ein echtes Linux, das unter Windows in einer schlanken virtuellen Maschine läuft. Projekte gehören in dessen Dateisystem (~/…), nicht unter /mnt/c.
+  lesson: dev-environment/vier-welten
+- term: uv
+  definition: Schnelles Python-Werkzeug, das Python-Versionen, virtuelle Umgebungen, Abhängigkeiten und Lock-Datei in einem verwaltet und pyenv, venv, pip und pip-tools ersetzt.
+  lesson: dev-environment/python-projekt-uv
+- term: Lock-Datei
+  aliases: [Lockfile, uv.lock]
+  definition: Datei mit den exakten Versionen aller direkten und indirekten Abhängigkeiten. Wird committet und macht Installationen auf allen Rechnern identisch.
+  lesson: dev-environment/python-projekt-uv#der-alltag-mit-uv
+- term: Umgebungsvariable
+  aliases: [Environment Variable]
+  definition: Ein benannter Wert, den das Betriebssystem einem Programm beim Start mitgibt. Der übliche Weg, Konfiguration und Secrets zur Laufzeit zu übergeben, statt sie in den Code zu schreiben.
+  lesson: dev-environment/config-und-secrets#vier-schichten

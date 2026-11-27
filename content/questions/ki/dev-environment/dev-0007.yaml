@@ -1,0 +1,23 @@
+id: dev-0007
+topic: dev-environment
+competencies:
+- ki-dev-03
+level: L2
+type: multi
+question: Welche Dateien eines uv-Projekts gehören ins Git? (mehrere richtig)
+options:
+- pyproject.toml
+- uv.lock
+- .python-version
+- .venv/
+- .env
+answer:
+- 0
+- 1
+- 2
+explanation: pyproject.toml ist die Quelle, uv.lock hält die exakten Versionen, .python-version die Python-Version – zusammen machen sie das Projekt reproduzierbar. .venv/ erzeugt uv auf jedem Rechner selbst, und .env enthält lokale Werte und Secrets.
+source: dev-environment/python-projekt-uv#wie-ein-projekt-aussieht
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

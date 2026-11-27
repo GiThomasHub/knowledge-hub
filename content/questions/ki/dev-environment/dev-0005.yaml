@@ -1,0 +1,20 @@
+id: dev-0005
+topic: dev-environment
+competencies:
+- ki-dev-02
+level: L1
+type: single
+question: VS Code zeigt unten links keine Remote-Anzeige, das Terminal ist PowerShell. Was bedeutet das?
+options:
+- VS Code arbeitet im Windows-Haus; Linux-Werkzeuge und -Dateien sind nicht direkt im Einsatz.
+- VS Code ist korrekt mit WSL verbunden.
+- VS Code läuft in einem Container.
+- Die WSL-Erweiterung ist beschädigt.
+answer:
+- 0
+explanation: 'Ohne Anzeige «WSL: Ubuntu» oder «Dev Container» läuft VS Code unter Windows. Für Linux-Projekte heisst das: falsches Terminal, falscher Interpreter, langsamer Dateizugriff. Lösung: aus der Ubuntu-Shell code . oder «Connect to WSL». Eine beschädigte Erweiterung ist möglich, aber nicht die naheliegende Ursache.'
+source: dev-environment/vs-code-mit-wsl#vs-code-ist-eine-fernbedienung
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

@@ -1,0 +1,20 @@
+id: dev-0008
+topic: dev-environment
+competencies:
+- ki-dev-03
+level: L2
+type: single
+question: Welcher Befehl gehört in die CI und in den Container, damit dort exakt die getesteten Versionen installiert werden?
+options:
+- pip install -r requirements.txt
+- uv sync
+- uv sync --locked
+- uv lock --upgrade
+answer:
+- 2
+explanation: --locked bricht ab, wenn uv.lock nicht zur pyproject.toml passt, statt den Lock still anzupassen. uv sync ohne Flag darf den Lock aktualisieren, uv lock --upgrade holt bewusst neue Versionen, und requirements.txt ist eine zweite, leicht abweichende Quelle.
+source: dev-environment/python-projekt-uv#der-alltag-mit-uv
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session
