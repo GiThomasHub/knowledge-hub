@@ -1,0 +1,18 @@
+id: evl-0017
+topic: evals
+competencies:
+- ki-evl-05
+level: L4
+type: order
+question: Bring die Schritte eines Regression-Gates für einen Pull Request in die richtige Reihenfolge.
+options:
+- Pull Request ändert Prompt, Modell oder Werkzeuge
+- Schnelle, deterministische Regression-Suite läuft gegen die gespeicherte Baseline
+- 'Bei Verschlechterung: blockieren, Transkripte lesen, korrigieren'
+- 'Ohne Verschlechterung: Merge durch einen Menschen'
+explanation: Jede relevante Änderung läuft automatisch gegen die Baseline. Verschlechterungen blockieren; gemerged wird erst nach bestandener Suite – und durch einen Menschen.
+source: evals/qualitaet-als-abnahme#regression-gates
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

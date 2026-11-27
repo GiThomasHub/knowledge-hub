@@ -1,0 +1,24 @@
+id: evl-0012
+topic: evals
+competencies:
+- ki-evl-04
+level: L3
+type: multi
+question: Was gehört pro Modellaufruf in einen Trace? (mehrere richtig)
+options:
+- Modell, Prompt-Version und Aufwand
+- Tokens inklusive Cache lesen und Cache schreiben
+- Latenz und stop_reason
+- Immer der vollständige Prompt mit allen Kundendaten
+- Validierungsergebnis und Werkzeugaufrufe
+answer:
+- 0
+- 1
+- 2
+- 4
+explanation: Technische Metadaten machen Läufe nachvollziehbar. Inhalte werden nur bewusst und datenschutzkonform gespeichert – nicht standardmässig mit allen Kundendaten.
+source: evals/tracing-im-betrieb#was-pro-aufruf-festhalten
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

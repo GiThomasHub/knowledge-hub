@@ -1,0 +1,21 @@
+id: evl-0010
+topic: evals
+competencies:
+- ki-evl-03
+level: L3
+type: scenario
+situation: Ein Team setzt einen Judge ein, der 95 % der Antworten mit «bestanden» bewertet. Eine Fachperson bewertet 50 derselben Antworten blind; Judge und Fachperson stimmen nur in 33 Fällen überein.
+question: Was folgt daraus?
+options:
+- Die 95 % sind belastbar, die Fachperson ist zu streng.
+- Der Judge ist nicht kalibriert – Uneinigkeiten lesen, Rubrik schärfen (z. B. binär mit Ankern, Referenz), erneut messen, bis die Übereinstimmung (z. B. Cohen's Kappa) brauchbar ist.
+- Einfach einen zweiten Judge dazunehmen und den Durchschnitt bilden.
+- Auf Judges verzichten und nur noch Gefühl verwenden.
+answer:
+- 1
+explanation: '33 von 50 ist eine schwache Übereinstimmung; die 95 % sind nicht belastbar. Kalibrierung heisst: Abweichungen lesen und die Rubrik verbessern. Ein zweiter ungeeichter Judge löst das Grundproblem nicht.'
+source: evals/llm-judge-und-mehrere-laeufe#kalibrierung-gegen-menschen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

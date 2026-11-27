@@ -120,6 +120,7 @@
   lesson: prompting/kontext-gestalten#reihenfolge-was-wohin-gehoert
 - term: LLM-as-Judge
   definition: Ein Sprachmodell bewertet die Ausgabe eines anderen anhand einer Rubrik. Muss gegen menschliche Urteile kalibriert werden.
+  lesson: evals/llm-judge-und-mehrere-laeufe#regeln-fuer-einen-verlaesslichen-judge
 - term: Leitner-System
   definition: Karteikasten-Methode mit mehreren Fächern. Richtige Antworten wandern ein Fach weiter und kommen seltener, falsche zurück ins erste Fach.
 - term: WSL
@@ -324,3 +325,26 @@
   definition: RAG-Variante mit einem Wissensgraphen aus Entitäten und Beziehungen. Stark bei Fragen über Zusammenhänge und den ganzen Bestand; bei Detailfragen ist klassisches RAG oft besser.
   aliases: [Knowledge Graph, Wissensgraph]
   lesson: ai-memory/wissensarchitektur#die-vier-bausteine
+- term: Eval
+  definition: Test für ein KI-System aus Aufgabe, Grader und Ergebnis. Misst, wie oft ein System eine Aufgabe besteht – vor dem Einsatz und bei jeder Änderung.
+  aliases: [Evaluation, Evals]
+  lesson: evals/warum-evals#die-drei-bausteine-einer-eval
+- term: Grader
+  definition: Logik, die ein Ergebnis bewertet – per Code (Vergleich, Schema, Test, Endzustand), per Modell mit Rubrik oder durch einen Menschen.
+  lesson: evals/testset-und-grader#code-grader-zuerst
+- term: pass@k
+  definition: Wahrscheinlichkeit, dass mindestens einer von k Versuchen gelingt. Gegenstück pass^k misst, dass alle k Versuche gelingen – das ehrlichere Mass für Verlässlichkeit.
+  aliases: [pass^k]
+  lesson: evals/llm-judge-und-mehrere-laeufe#mehrere-laeufe-pass-k-und-pass-k
+- term: Regression-Gate
+  definition: Automatische Prüfung bei jeder Änderung (z. B. Pull Request), ob eine Regression-Suite gegenüber der gespeicherten Baseline schlechter wird; Verschlechterungen blockieren den Merge.
+  aliases: [Regressionstest]
+  lesson: evals/qualitaet-als-abnahme#regression-gates
+- term: Observability
+  definition: Nachvollziehbarkeit eines Systems im Betrieb durch Traces, Metriken und Logs – bei LLM-Systemen u. a. Tokens, Kosten, Latenz, Abbruchgründe und Werkzeugaufrufe pro Aufruf.
+  aliases: [Tracing, Beobachtbarkeit]
+  lesson: evals/tracing-im-betrieb#was-pro-aufruf-festhalten
+- term: OpenTelemetry
+  definition: Herstellerneutraler Standard für Metriken, Logs und Traces. Für Sprachmodelle gibt es eigene GenAI-Konventionen; Claude Code kann Telemetrie nativ per OpenTelemetry exportieren.
+  aliases: [OTel]
+  lesson: evals/tracing-im-betrieb#claude-code-ueberwachen

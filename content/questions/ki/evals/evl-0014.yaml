@@ -1,0 +1,21 @@
+id: evl-0014
+topic: evals
+competencies:
+- ki-evl-04
+level: L3
+type: scenario
+situation: Ein Entwickler schickt alle Prompts und Antworten eines Kundensupport-Assistenten (mit Namen, Adressen, Vertragsdetails) ungefiltert an einen US-SaaS-Tracing-Dienst, ohne Löschfrist.
+question: Was ist das Problem, und was empfiehlst du?
+options:
+- Kein Problem, Traces sind technische Daten.
+- 'Traces sind eine Datensammlung mit Personendaten: Inhalte standardmässig schwärzen, nur Metadaten speichern, Inhalte nur begründet und kurz aufbewahren, Vertrag und Datenstandort prüfen oder selbst betreiben (z. B. Langfuse).'
+- Die Traces verschlüsseln reicht.
+- Tracing abschalten.
+answer:
+- 1
+explanation: Unter dem revDSG braucht diese Datensammlung Zweck, Vertrag, Zugriffsregeln und Frist. Verschlüsselung allein löst Zweck und Aufbewahrung nicht, und ganz ohne Tracing fehlt die Nachvollziehbarkeit.
+source: evals/tracing-im-betrieb#alarme-und-der-weg-zurueck-ins-testset
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

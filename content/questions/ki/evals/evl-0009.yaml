@@ -1,0 +1,20 @@
+id: evl-0009
+topic: evals
+competencies:
+- ki-evl-03
+level: L3
+type: single
+question: Ein System löst eine Aufgabe in 75 % der Läufe. Wie hoch ist ungefähr pass^3, also die Chance, dass drei Läufe hintereinander alle gelingen?
+options:
+- 98 %
+- 75 %
+- 42 %
+- 25 %
+answer:
+- 2
+explanation: 0,75 × 0,75 × 0,75 ≈ 0,42. 98 % wäre pass@3 (mindestens einer gelingt). Für Kundenkontakt zählt pass^k, weil es jedes Mal stimmen muss.
+source: evals/llm-judge-und-mehrere-laeufe#mehrere-laeufe-pass-k-und-pass-k
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

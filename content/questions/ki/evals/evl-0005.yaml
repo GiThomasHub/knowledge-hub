@@ -1,0 +1,21 @@
+id: evl-0005
+topic: evals
+competencies:
+- ki-evl-02
+level: L2
+type: scenario
+situation: Eine Aufgabe im Testset wird über alle Modelle, Prompts und Läufe hinweg nie bestanden (0 %).
+question: Was ist der wahrscheinlichste Grund und das richtige Vorgehen?
+options:
+- Das System ist unfähig – Aufgabe aus dem Testset streichen.
+- Die Aufgabe oder der Grader ist vermutlich kaputt – Referenzlösung durch alle Grader laufen lassen und Transkripte lesen.
+- Mehr Läufe pro Aufgabe machen.
+- Ein grösseres Modell nehmen.
+answer:
+- 1
+explanation: 0 % über alle Varianten deutet meist auf eine kaputte Aufgabe oder einen zu starren Grader hin. Die Referenzlösung muss alle Grader bestehen; Transkripte zeigen, wo es hakt. Mehr Läufe oder ein grösseres Modell ändern an einem Grader-Fehler nichts.
+source: evals/testset-und-grader#typische-fallen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session
