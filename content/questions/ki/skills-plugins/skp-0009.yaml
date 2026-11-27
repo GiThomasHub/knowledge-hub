@@ -1,0 +1,17 @@
+id: skp-0009
+topic: skills-plugins
+competencies:
+- ki-skp-03
+level: L2
+type: order
+question: Bring die Ladestufen eines Skills in die Reihenfolge, in der sie in den Kontext kommen.
+options:
+- name und description – immer, für alle Skills
+- Inhalt der SKILL.md – wenn der Skill ausgelöst wird
+- Dateien aus references/ oder Ergebnisse aus scripts/ – wenn SKILL.md darauf verweist und sie gebraucht werden
+explanation: 'Progressive Disclosure: Zuerst nur die Visitenkarte, dann die Anleitung, dann bei Bedarf die Zusatzdateien. Darum kosten viele installierte Skills wenig Kontext.'
+source: skills-plugins/progressive-disclosure#die-drei-stufen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

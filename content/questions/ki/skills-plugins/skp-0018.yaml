@@ -1,0 +1,20 @@
+id: skp-0018
+topic: skills-plugins
+competencies:
+- ki-skp-05
+level: L3
+type: single
+question: Alle, die im Repository einer Firma arbeiten, sollen automatisch das Plugin `treuhand-plugin` aus dem Marketplace `firma-tools` bekommen. Wo konfigurierst du das?
+options:
+- In der CLAUDE.md des Repos
+- In .claude/settings.json des Repos mit extraKnownMarketplaces und enabledPlugins
+- In einem Ordner .claude/plugins/treuhand-plugin im Repo
+- In der README.md
+answer:
+- 1
+explanation: extraKnownMarketplaces registriert den Marketplace, enabledPlugins aktiviert das Plugin – das wirkt in Ordnern, denen die Person vertraut. CLAUDE.md ist eine Anweisung ans Modell, keine Konfiguration, und einen Ordner .claude/plugins durchsucht Claude Code nicht.
+source: skills-plugins/plugins-und-marketplaces#ans-team-verteilen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

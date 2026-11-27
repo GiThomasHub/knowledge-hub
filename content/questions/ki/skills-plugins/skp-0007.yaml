@@ -1,0 +1,21 @@
+id: skp-0007
+topic: skills-plugins
+competencies:
+- ki-skp-02
+level: L2
+type: scenario
+situation: Ein Team hat einen Skill `deploy`, der Änderungen auf den Produktionsserver bringt. Claude soll ihn nie von sich aus starten, sondern nur, wenn jemand ausdrücklich /deploy tippt.
+question: Welches Frontmatter-Feld setzt du?
+options:
+- 'user-invocable: false'
+- 'disable-model-invocation: true'
+- 'context: fork'
+- 'paths: ["deploy/**"]'
+answer:
+- 1
+explanation: 'disable-model-invocation: true bedeutet, dass nur ein Mensch den Skill auslösen kann. user-invocable: false bewirkt das Gegenteil (nur Claude), context: fork lässt ihn als Subagent laufen, und paths schränkt das automatische Laden auf Dateien ein, verhindert es aber nicht.'
+source: skills-plugins/skill-schreiben#frontmatter-felder-in-claude-code
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

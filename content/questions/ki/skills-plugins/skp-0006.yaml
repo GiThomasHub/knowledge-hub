@@ -1,0 +1,24 @@
+id: skp-0006
+topic: skills-plugins
+competencies:
+- ki-skp-02
+level: L2
+type: multi
+question: Was gehört in den Body einer guten SKILL.md? (mehrere richtig)
+options:
+- Der Ablauf als nummerierte Schritte
+- Ein festgelegtes Output-Format, bei Bedarf mit Vorlage
+- Was zu tun ist, wenn Daten fehlen oder ein Skript scheitert
+- Die aktuellen Preise des Anbieters mit Stand-Datum, damit Claude nicht nachschlagen muss
+- Begründungen, warum ein Schritt so gemacht wird
+answer:
+- 0
+- 1
+- 2
+- 4
+explanation: Prozess, Format, Fehlerbehandlung und Begründungen machen einen Skill verlässlich. Zeitabhängige Fakten wie Preise veralten still; sie werden zur Laufzeit nachgeschlagen oder in einem klar markierten Block gepflegt.
+source: skills-plugins/skill-schreiben#der-body-prozess-format-fehlerfaelle
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

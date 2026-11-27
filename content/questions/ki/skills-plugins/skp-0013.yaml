@@ -1,0 +1,24 @@
+id: skp-0013
+topic: skills-plugins
+competencies:
+- ki-skp-04
+level: L3
+type: multi
+question: Was gehört zu einem guten Trigger-Eval? (mehrere richtig)
+options:
+- 8–15 realistische Anfragen, bei denen der Skill laden soll
+- 8–15 Anfragen, bei denen er nicht laden soll – vor allem Nachbarfälle anderer Skills
+- Möglichst kurze Anfragen wie «Lies diese Datei», damit das Ergebnis eindeutig ist
+- Jede Anfrage mehrmals laufen lassen
+- Test in der Umgebung, in der auch alle anderen Skills installiert sind
+answer:
+- 0
+- 1
+- 3
+- 4
+explanation: Ausgewogene, realistische Fälle, mehrere Durchläufe und die echte Umgebung machen das Ergebnis aussagekräftig. Einschritt-Anfragen lösen nie einen Skill aus und würden einen funktionierenden Skill als kaputt erscheinen lassen.
+source: skills-plugins/triggering-und-evals#ein-trigger-eval-bauen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

@@ -1,0 +1,21 @@
+id: skp-0012
+topic: skills-plugins
+competencies:
+- ki-skp-04
+level: L3
+type: scenario
+situation: 'Ein Offerten-Skill lädt zuverlässig bei «Erstelle eine Offerte», aber nie bei «Was würde eine Lohnbuchhaltung für 12 Leute kosten?». Die Description lautet: «Offerten-Generator für Treuhand.»'
+question: Welche Diagnose und Massnahme passen?
+options:
+- Overtriggering – Description kürzen
+- Undertriggering – Auslöser in Alltagssprache ergänzen («Angebot», «Kostenvoranschlag», «was würde das kosten») und mit einem Trigger-Eval nachmessen
+- Der Skill-Inhalt ist schlecht – Ablauf neu schreiben
+- Das Modell ist zu klein – auf ein grösseres wechseln
+answer:
+- 1
+explanation: Der Skill lädt zu selten, weil die Description nur den Fachbegriff kennt. Abhilfe sind zusätzliche Auslöser in der Sprache der Nutzer, überprüft mit einem Trigger-Eval. Der Inhalt spielt für das Laden keine Rolle, und ein Modellwechsel behebt eine zu enge Description nicht.
+source: skills-plugins/triggering-und-evals#die-zwei-fehlerbilder
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session
