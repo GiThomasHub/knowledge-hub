@@ -1,0 +1,23 @@
+id: cc-0008
+topic: claude-code
+competencies:
+- ki-cc-03
+level: L2
+type: multi
+question: Was gehört in eine Projekt-CLAUDE.md? (mehrere richtig)
+options:
+- Der Befehl, um einen einzelnen Test zu starten
+- Die Regel, Beträge immer als Decimal in CHF zu führen
+- Eine Beschreibung jeder Datei im Projekt
+- «Schreibe sauberen, lesbaren Code»
+- Die Branch- und PR-Konvention des Teams
+answer:
+- 0
+- 1
+- 4
+explanation: 'Hinein gehört, was Claude ohne die Zeile falsch machen würde: nicht erratbare Befehle, projektspezifische Regeln, Team-Konventionen. Dateibeschreibungen kann Claude aus dem Code ablesen, und Selbstverständliches verbraucht nur Kontext.'
+source: claude-code/claude-md#was-hineingehoert-und-was-nicht
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

@@ -1,0 +1,20 @@
+id: cc-0021
+topic: claude-code
+competencies:
+- ki-cc-07
+level: L4
+type: case
+question: Eine Software-Firma (25 Entwickler, Team-Plan) will Claude Code einführen. Die IT verlangt Schutz von Secrets und Kundendaten, die Geschäftsleitung Kostenkontrolle, die Teams einheitliche Arbeitsweise. Skizziere Setup und Rollout in Stichworten.
+model_answer: '**Bausteine mit je einer Aufgabe:** Team-CLAUDE.md (< 200 Zeilen: Befehle, Konventionen, Git-Regeln), .claude/rules/ pro Bereich mit paths, Skills für wiederkehrende Abläufe (z. B. /fix-issue), Review-Subagent mit tools: Read, Grep, Glob, Hooks für Formatierung und Schutz von .env, MCP nur nötige Server, Secrets als ${VAR}. **Governance:** Managed Settings mit Deny-Regeln für ~/.ssh, .env, Kundendaten-Ordner, disableBypassPermissionsMode, ggf. allowManagedPermissionRulesOnly und Entscheidung zum Auto-Modus; Managed-CLAUDE.md für Firmenstandards; Prüfung per /status. **Verteilung:** Plugin aus freigegebenem Marketplace statt kopierter .claude/-Ordner. **Kosten:** Pilot mit 3–5 Personen als Basislinie, /usage und Spend-Report, Kontext schlank (Skills, Subagenten, /clear), Modell pro Aufgabe. **Agenten in CI:** nur Branches und Draft-PRs, Mensch merged. **Rollout:** Pilot → Standard → Governance → Automatisierung → monatliche Pflege.'
+rubric:
+- Ordnet Bausteinen klare Aufgaben zu (CLAUDE.md, Rules, Skills, Subagenten, Hooks)
+- Sicherheit über Managed Settings mit Deny-Regeln und gesperrtem Bypass
+- Verteilung über Plugins oder zentrale Vorlagen statt Kopien
+- 'Kosten: Pilot/Basislinie, Messung (/usage, Spend-Report), Kontext-Hebel'
+- Agenten nur Draft-PRs, Rollout in Etappen
+explanation: Ein Senior-Konzept trennt Anleitung und Durchsetzung, verteilt zentral, misst Kosten vor dem Budgetieren und führt in Etappen ein – statt jeden selbst konfigurieren zu lassen.
+source: claude-code/team-setup#rollout-in-etappen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

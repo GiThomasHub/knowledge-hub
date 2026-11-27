@@ -123,3 +123,21 @@
   aliases: [Environment Variable]
   definition: Ein benannter Wert, den das Betriebssystem einem Programm beim Start mitgibt. Der übliche Weg, Konfiguration und Secrets zur Laufzeit zu übergeben, statt sie in den Code zu schreiben.
   lesson: dev-environment/config-und-secrets#vier-schichten
+- term: Agentic Loop
+  aliases: [Agenten-Schleife]
+  definition: Die Arbeitsschleife eines Agenten wie Claude Code – Kontext holen, handeln, Ergebnis prüfen – die so lange wiederholt wird, bis die Aufgabe erledigt ist.
+  lesson: claude-code/agentic-loop#der-agentic-loop
+- term: Plan-Modus
+  aliases: [Plan Mode]
+  definition: Rechte-Modus von Claude Code, in dem Claude nur liest und einen Plan erstellt, aber nichts ändert. Erster Schritt von Explore → Plan → Code → Commit.
+  lesson: claude-code/befehle-und-modi#die-rechte-modi
+- term: Auto-Modus
+  aliases: [Auto Mode]
+  definition: Rechte-Modus von Claude Code, in dem ein separates Klassifikator-Modell die Aktionen prüft und nur Riskantes blockiert. Seit v2.1.283 Standard in Terminal und VS Code (Stand 27.11.2026).
+  lesson: claude-code/befehle-und-modi#die-rechte-modi
+- term: Auto Memory
+  definition: Notizen, die Claude Code selbst pro Projekt in ~/.claude/projects/<projekt>/memory/ führt. Die ersten 200 Zeilen bzw. 25 KB von MEMORY.md werden bei jedem Start geladen.
+  lesson: claude-code/claude-md#auto-memory-was-claude-sich-selbst-merkt
+- term: Checkpoint
+  definition: Automatischer Sicherungspunkt von Claude Code vor Dateiänderungen. Mit Esc Esc oder /rewind lassen sich Gespräch und Code zurücksetzen. Erfasst keine Änderungen durch Bash-Befehle und ersetzt Git nicht.
+  lesson: claude-code/befehle-und-modi#tastenkuerzel-und-eingaben

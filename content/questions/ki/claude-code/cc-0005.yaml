@@ -1,0 +1,20 @@
+id: cc-0005
+topic: claude-code
+competencies:
+- ki-cc-02
+level: L1
+type: single
+question: In welchem Rechte-Modus liest Claude nur und erstellt einen Plan, ohne etwas zu ändern?
+options:
+- acceptEdits
+- plan
+- auto
+- dontAsk
+answer:
+- 1
+explanation: Im Plan-Modus liest Claude und plant, ändert aber nichts – ideal zum Erkunden. acceptEdits erlaubt Dateiänderungen ohne Rückfrage, auto lässt fast alles mit Hintergrundprüfung zu, und dontAsk erlaubt nur vorab freigegebene Werkzeuge.
+source: claude-code/befehle-und-modi#die-rechte-modi
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

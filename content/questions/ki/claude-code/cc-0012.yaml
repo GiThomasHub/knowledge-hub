@@ -1,0 +1,20 @@
+id: cc-0012
+topic: claude-code
+competencies:
+- ki-cc-04
+level: L2
+type: single
+question: Welcher Auftrag nutzt den grössten Hebel für ein korrektes Ergebnis?
+options:
+- «Behebe den Login-Fehler.»
+- «Nach Session-Timeout schlägt der Login fehl. Prüfe src/auth/, vor allem Token-Refresh. Schreibe zuerst einen fehlschlagenden Test, dann den Fix.»
+- «Mach den Login robuster und besser.»
+- «Schau dir den ganzen Code an und finde alle Fehler.»
+answer:
+- 1
+explanation: Der Auftrag nennt Symptom, Ort und einen Prüfschritt (fehlschlagender Test), an dem Claude den Erfolg selbst messen kann. Die anderen sind vage oder unbegrenzt und führen zu Korrekturschleifen oder endloser Exploration.
+source: claude-code/arbeitsweise#der-groesste-hebel-ein-pruefschritt
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

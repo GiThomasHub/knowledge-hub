@@ -1,0 +1,21 @@
+id: cc-0006
+topic: claude-code
+competencies:
+- ki-cc-02
+level: L1
+type: multi
+question: Was stimmt zu Esc, Esc Esc und Checkpoints? (mehrere richtig)
+options:
+- Esc stoppt Claude sofort, der Kontext bleibt erhalten.
+- Esc Esc öffnet das Menü zum Zurückspulen von Gespräch und/oder Code.
+- Checkpoints erfassen auch Änderungen, die ein Bash-Befehl gemacht hat.
+- Checkpoints ersetzen Git.
+answer:
+- 0
+- 1
+explanation: Esc unterbricht ohne Kontextverlust, Esc Esc bzw. /rewind setzt auf einen Checkpoint zurück. Checkpoints erfassen aber nur Änderungen über Claudes Datei-Werkzeuge, nicht über Bash, und ersetzen Git deshalb nicht.
+source: claude-code/befehle-und-modi#tastenkuerzel-und-eingaben
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session
