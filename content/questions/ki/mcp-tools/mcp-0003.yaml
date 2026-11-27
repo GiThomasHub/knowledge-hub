@@ -1,0 +1,23 @@
+id: mcp-0003
+topic: mcp-tools
+competencies:
+- ki-mcp-01
+level: L1
+type: multi
+question: Welche Aussagen zu MCP stimmen? (mehrere richtig)
+options:
+- MCP ist ein offener Standard, damit ein Server von vielen KI-Anwendungen genutzt werden kann.
+- Ein MCP-Server kann Tools, Resources und Prompts anbieten.
+- Ein Connector in der Claude-App ist technisch meist ein MCP-Server.
+- Ein lokaler MCP-Server läuft in einer Sandbox ohne Zugriff auf deine Dateien.
+- MCP funktioniert nur mit Claude.
+answer:
+- 0
+- 1
+- 2
+explanation: MCP ist offen und anwendungsübergreifend; Server bieten Tools, Resources und Prompts; Connectors sind MCP-Server per Klick. Ein lokaler Server läuft dagegen als Prozess mit deinen Rechten, ausserhalb der Bash-Sandbox – und MCP ist gerade nicht an Claude gebunden.
+source: mcp-tools/tool-use-und-mcp#mcp-ein-stecker-fuer-alle
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

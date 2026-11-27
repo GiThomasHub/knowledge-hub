@@ -1,0 +1,19 @@
+id: mcp-0001
+topic: mcp-tools
+competencies:
+- ki-mcp-01
+level: L1
+type: order
+question: Bring die Schritte eines Werkzeugaufrufs (Client-Tool) in die richtige Reihenfolge.
+options:
+- Anwendung schickt Anfrage mit Werkzeugliste ans Modell
+- Modell antwortet mit stop_reason tool_use und Name plus Eingaben
+- Anwendung führt den Code des Werkzeugs aus
+- Anwendung schickt das Ergebnis als tool_result zurück
+- Modell antwortet abschliessend oder bittet um den nächsten Aufruf
+explanation: Das Modell bittet, die Anwendung handelt. Die Schleife läuft so lange, bis das Modell ohne weiteren Werkzeugwunsch antwortet.
+source: mcp-tools/tool-use-und-mcp#wie-ein-werkzeugaufruf-ablaeuft
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session
