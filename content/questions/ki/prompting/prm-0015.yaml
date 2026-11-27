@@ -1,0 +1,20 @@
+id: prm-0015
+topic: prompting
+competencies:
+- ki-prm-04
+level: L3
+type: single
+question: Ein Agent sprengt bei langen Aufgaben das Kontextfenster, weil alte Log-Ausgaben mitgeschleppt werden. Was ist der empfohlene erste Hebel?
+options:
+- Den ganzen Verlauf zusammenfassen lassen
+- Alte Werkzeug-Ergebnisse durch kurze Platzhalter ersetzen (maskieren) und nur bei Bedarf neu abrufen
+- Den Verlauf vorne abschneiden (Sliding Window)
+- Auf ein Modell mit grösserem Kontextfenster wechseln
+answer:
+- 1
+explanation: Maskieren ist billig, verliert keine eigenen Überlegungen und schnitt in Messungen oft gleich gut oder besser ab als Zusammenfassen. Vorne abschneiden zerstört den Cache, ein grösseres Fenster verschiebt das Problem nur, und Zusammenfassen kommt erst danach.
+source: prompting/kontext-gestalten#weniger-hinlegen-die-hebel-in-reihenfolge
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

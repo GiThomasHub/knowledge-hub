@@ -1,0 +1,22 @@
+id: prm-0007
+topic: prompting
+competencies:
+- ki-prm-02
+level: L2
+type: multi
+question: Welche Aussagen zu Reasoning- und Negativbeispielen stimmen? (mehrere richtig)
+options:
+- Ein Reasoning-Beispiel zeigt Eingabe, eine kurze Überlegung und die Ausgabe.
+- Bei Modellen mit adaptivem Denken sollten Reasoning-Beispiele möglichst lange Rechenwege enthalten.
+- Ein Negativbeispiel mit Begründung kann eine Grenze schärfer ziehen als viele Regeln.
+- Reasoning-Beispiele lehren die Entscheidungsregel, nicht nur die Form.
+answer:
+- 0
+- 2
+- 3
+explanation: Reasoning-Beispiele zeigen das Wie, Negativbeispiele schärfen Grenzen. Weil aktuelle Modelle selbst überlegen, bleiben die gezeigten Überlegungen kurz – lange Rechenwege helfen dann nicht.
+source: prompting/beispiele#reasoning-beispiele-das-wie-zeigen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

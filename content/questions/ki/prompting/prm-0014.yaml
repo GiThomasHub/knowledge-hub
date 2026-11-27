@@ -1,0 +1,19 @@
+id: prm-0014
+topic: prompting
+competencies:
+- ki-prm-04
+level: L3
+type: order
+question: Bring die Teile einer Anfrage in die empfohlene Reihenfolge von oben nach unten.
+options:
+- Werkzeug-Definitionen
+- System-Prompt mit festen Regeln
+- Lange Dokumente
+- Bisheriger Gesprächsverlauf
+- Aktuelle Frage und kritische Formatanweisungen
+explanation: Stabiles zuerst (Werkzeuge, System), dann das Material, dann der Verlauf, ganz unten das Veränderliche. Das stützt den Cache und stellt Frage und kritische Anweisungen dorthin, wo sie am stärksten beachtet werden.
+source: prompting/kontext-gestalten#reihenfolge-was-wohin-gehoert
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

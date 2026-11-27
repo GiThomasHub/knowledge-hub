@@ -1,0 +1,23 @@
+id: prm-0010
+topic: prompting
+competencies:
+- ki-prm-03
+level: L2
+type: multi
+question: Welche Vorteile bringen XML-Tags im Prompt? (mehrere richtig)
+options:
+- Anweisungen, Dokumente und Beispiele sind klar voneinander getrennt.
+- Teile lassen sich austauschen, ohne den Rest umzuschreiben.
+- Sie garantieren Schutz vor Prompt Injection.
+- Eine Antwort in einem Tag wie <antwort> lässt sich per Code sicher herausziehen.
+- Es gibt feste Tag-Namen, auf die Claude trainiert ist und die man verwenden muss.
+answer:
+- 0
+- 1
+- 3
+explanation: Tags trennen, machen austauschbar und erleichtern die Weiterverarbeitung. Gegen Prompt Injection sind sie nur eine erste Schicht, kein vollständiger Schutz. Feste, vorgeschriebene Tag-Namen gibt es nicht – sprechend und einheitlich sollen sie sein.
+source: prompting/xml-und-struktur#warum-tags-helfen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

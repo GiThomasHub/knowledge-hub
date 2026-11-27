@@ -1,0 +1,21 @@
+id: prm-0011
+topic: prompting
+competencies:
+- ki-prm-03
+level: L2
+type: scenario
+situation: Ein Vertragsauszug wird per Schema extrahiert. Das Feld kuendigungsfrist_tage ist gültig (90), im Vertrag stehen aber 30 Tage.
+question: Was lernst du daraus?
+options:
+- Das Schema ist falsch definiert.
+- Ein Schema garantiert Form und Wertebereich, nicht die Richtigkeit – es braucht zusätzlich Validatoren, Fundstellen und Prüfung gegen die Quelle.
+- Structured Outputs funktionieren nicht zuverlässig.
+- Man sollte das Feld als float statt int definieren.
+answer:
+- 1
+explanation: 'Das Schema hat seinen Job gemacht: Die Form stimmt. Inhaltliche Richtigkeit braucht Geschäftsregeln, Fundstellen und Vergleich mit der Quelle. Der Datentyp ändert daran nichts.'
+source: prompting/xml-und-struktur#antworte-in-json-ist-kein-vertrag
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session
