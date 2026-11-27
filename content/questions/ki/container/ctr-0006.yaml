@@ -1,0 +1,19 @@
+id: ctr-0006
+topic: container
+competencies:
+- ki-ctr-02
+level: L2
+type: order
+question: Bring die Schritte vom Bauplan zum laufenden Container in die richtige Reihenfolge.
+options:
+- Dockerfile schreiben
+- docker build ausführen
+- Image liegt lokal vor
+- docker run bzw. «Reopen in Container»
+- Container läuft mit beschreibbarer Schicht über dem Image
+explanation: Aus dem Dockerfile (Text) baut docker build ein Image. Aus dem Image startet docker run oder die Dev-Containers-Extension einen Container, über den Docker eine flüchtige, beschreibbare Schicht legt.
+source: container/grundbausteine#die-drei-grundbausteine
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

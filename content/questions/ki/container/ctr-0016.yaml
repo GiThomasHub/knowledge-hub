@@ -1,0 +1,20 @@
+id: ctr-0016
+topic: container
+competencies:
+- ki-dev-05
+level: L3
+type: single
+question: Wie bekommt `git push` per SSH im Devcontainer Zugriff, ohne dass der private Schlüssel im Container liegt?
+options:
+- ~/.ssh read-only in den Container mounten
+- 'SSH-Agent-Forwarding: der Agent läuft in WSL, der Container darf nur anfragen'
+- Den Schlüssel per COPY ins Image legen und danach löschen
+- Einen GitHub-Benutzernamen in der .gitconfig hinterlegen
+answer:
+- 1
+explanation: Beim Agent-Forwarding bleibt der Schlüssel in WSL; der Container bekommt nur Zugang zum laufenden Agenten (prüfen mit ssh-add -l). Auch read-only liegt der Schlüssel beim Mount lesbar im Container. Per COPY bleibt er in einer Image-Schicht. Die .gitconfig enthält Name und E-Mail, keine Zugangsdaten.
+source: container/devcontainer#zugangsdaten-was-hinein-darf
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

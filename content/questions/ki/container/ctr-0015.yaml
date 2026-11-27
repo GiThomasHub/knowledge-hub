@@ -1,0 +1,20 @@
+id: ctr-0015
+topic: container
+competencies:
+- ki-ctr-02
+level: L2
+type: single
+question: Wozu dient im Devcontainer ein Docker-Volume auf /home/vscode/.claude?
+options:
+- Damit Claude Code Zugriff auf alle Projekte des Hosts hat
+- Damit Login und Einstellungen von Claude Code ein «Rebuild Container» überleben
+- Damit die SSH-Schlüssel des Hosts im Container verfügbar sind
+- Damit Claude Code schneller startet
+answer:
+- 1
+explanation: Ein Rebuild wirft den Container samt beschreibbarer Schicht weg; ein Volume bleibt. Darum landet der Login dort. Zugriff auf andere Projekte wäre das Gegenteil von Isolation, SSH-Schlüssel gehören nie in den Container (Agent-Forwarding stattdessen), und mit der Startzeit hat das Volume nichts zu tun.
+source: container/devcontainer#eine-vorlage-zeile-fuer-zeile
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

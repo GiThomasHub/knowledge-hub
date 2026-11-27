@@ -1,0 +1,21 @@
+id: ctr-0014
+topic: container
+competencies:
+- ki-ctr-05
+- ki-ctr-04
+level: L4
+type: case
+question: Eine Agentur will Claude Code nachts unbeaufsichtigt Abhängigkeits-Updates in Kundenprojekten machen lassen (npm install, Tests, Branch mit Änderungen). Skizziere in Stichworten die Container-Architektur und benenne die Restrisiken.
+model_answer: 'Ein Devcontainer **pro Kundenprojekt** (Trennung der Kunden). Nur der Projektordner als Bind Mount, Referenzdaten :ro, kein Home, kein ~/.ssh, **nie docker.sock**. remoteUser ohne root, damit --dangerously-skip-permissions überhaupt läuft. **Egress-Firewall** nach Vorbild init-firewall.sh (nur npm-Registry, GitHub, Claude-API). Git-Zugriff über repo-gebundenes, kurzlebiges Token oder Agent-Forwarding; Agent erstellt nur **Branch und Draft-PR**, Mensch merged. Login als Volume pro Projekt. **Restrisiken:** Agent kann das eingehängte Projekt verändern (Netz: Git, Review); alles im Container Erreichbare inkl. Claude-Zugangsdaten kann bei bösartigen Paketen abfliessen, soweit die Firewall es zulässt; geteilter Kern – Container ist eine Schicht, keine Garantie.'
+rubric:
+- Trennt Kunden durch einen Container pro Projekt
+- Minimale Mounts, kein docker.sock, keine Host-Secrets
+- Nicht-root-Benutzer und Egress-Firewall
+- Ergebnis nur als Branch/Draft-PR, Mensch merged
+- Benennt mindestens zwei Restrisiken (Projektordner veränderbar, Abfluss erreichbarer Zugangsdaten, geteilter Kern)
+explanation: Ein Senior-Vorschlag kombiniert Isolation, Netzbegrenzung und einen menschlichen Freigabeschritt – und verkauft den Container nicht als Allheilmittel, sondern nennt ehrlich, was er nicht abdeckt.
+source: container/haerten-und-ki-agenten#ki-agenten-im-container
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

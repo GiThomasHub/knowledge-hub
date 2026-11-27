@@ -1,0 +1,23 @@
+id: ctr-0010
+topic: container
+competencies:
+- ki-ctr-04
+level: L3
+type: multi
+question: Welche Massnahmen härten einen Container, in dem ein Agent Daten konvertiert, die er nur lesen muss? (mehrere richtig)
+options:
+- Datenordner mit :ro mounten
+- --network none, wenn kein Internet nötig ist
+- Das ganze Home mounten, damit alle Werkzeuge verfügbar sind
+- Als normaler Benutzer statt root laufen
+- /var/run/docker.sock mounten, damit der Agent Hilfscontainer starten kann
+answer:
+- 0
+- 1
+- 3
+explanation: :ro, kein Netz und kein root nehmen dem Prozess genau das weg, was er nicht braucht. Das ganze Home zu mounten öffnet das Fenster in jedes Zimmer und macht den Container nutzlos. docker.sock gibt die Steuerung über Docker selbst und ist der Standardweg aus dem Container heraus.
+source: container/haerten-und-ki-agenten#fuenf-handgriffe-zum-haerten
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session
