@@ -1,0 +1,21 @@
+id: agt-0003
+topic: agents
+competencies:
+- ki-agt-01
+level: L1
+type: scenario
+situation: Eingehende Support-Mails sollen in drei Kategorien eingeordnet und je mit einer passenden Vorlage beantwortet werden. Die Kategorien und Vorlagen sind bekannt.
+question: Welche Stufe passt am besten?
+options:
+- Ein frei entscheidender Agent mit Zugriff auf alle Systeme
+- 'Ein Workflow: Routing auf die Kategorie, dann feste Schritte mit Vorlage'
+- Ein Multi-Agent-System mit je einem Agenten pro Kategorie
+- Gar keine KI, nur Regeln
+answer:
+- 1
+explanation: Die Schritte sind bekannt, nur die Kategorie variiert – das ist Routing plus Kette, also ein Workflow. Ein Agent oder gar Multi-Agent bringt hier Kosten und Unvorhersehbarkeit ohne Mehrwert. Reine Regeln scheitern meist an der Vielfalt natürlicher Sprache beim Einordnen.
+source: agents/chatbot-workflow-agent#wann-lohnt-sich-ein-agent
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

@@ -1,0 +1,20 @@
+id: agt-0018
+topic: agents
+competencies:
+- ki-agt-06
+level: L3
+type: single
+question: Eine interne App soll einen Agenten enthalten, der in einem Repository Dateien liest, Befehle ausführt, Subagenten nutzt und über Hooks abgesichert ist. Was liegt am nächsten?
+options:
+- Messages API mit selbst gebauten Datei-Werkzeugen
+- Claude Agent SDK
+- CrewAI
+- LlamaIndex
+answer:
+- 1
+explanation: Das Agent SDK bringt die Bausteine von Claude Code – Datei- und Shell-Werkzeuge, Subagenten, Hooks, Rechte – als Bibliothek mit. Selbst bauen ginge, ist aber viel Aufwand. CrewAI ist auf Rollen-Teams ausgerichtet, LlamaIndex auf Dokument- und RAG-Pipelines.
+source: agents/frameworks#claude-agent-sdk
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

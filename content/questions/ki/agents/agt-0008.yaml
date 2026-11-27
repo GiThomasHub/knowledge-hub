@@ -1,0 +1,20 @@
+id: agt-0008
+topic: agents
+competencies:
+- ki-agt-03
+level: L2
+type: single
+question: 'In einer eigenen Schleife mit der Messages API: Woran erkennt dein Code, dass das Modell ein Werkzeug aufrufen will?'
+options:
+- Am Wort «Werkzeug» im Antworttext
+- An stop_reason == "tool_use" und Blöcken vom Typ tool_use
+- An einer HTTP-Statusmeldung 202
+- Daran, dass die Antwort leer ist
+answer:
+- 1
+explanation: Die API meldet über stop_reason und tool_use-Blöcke (mit id, name und input), dass ein Werkzeug gewünscht ist. Das Ergebnis geht als tool_result mit derselben tool_use_id zurück. Text zu parsen ist unzuverlässig, und Statuscodes oder leere Antworten signalisieren das nicht.
+source: agents/agent-bauen#variante-a-eigene-schleife-mit-der-messages-api
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

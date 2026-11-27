@@ -1,0 +1,20 @@
+id: agt-0019
+topic: agents
+competencies:
+- ki-agt-06
+level: L3
+type: single
+question: Warum rät Anthropic zur Vorsicht beim frühen Einsatz von Agenten-Frameworks?
+options:
+- Frameworks sind grundsätzlich unsicher.
+- Sie erzeugen Abstraktionsschichten, die Prompts und Antworten verdecken, das Debuggen erschweren und zu unnötiger Komplexität verleiten.
+- Sie funktionieren nur mit Modellen anderer Anbieter.
+- Sie sind immer teurer im Betrieb.
+answer:
+- 1
+explanation: Der Punkt ist Transparenz und Komplexität, nicht grundsätzliche Unsicherheit oder Kosten. Anthropic empfiehlt, mit direkten API-Aufrufen zu beginnen und zu verstehen, was ein Framework darunter tut.
+source: agents/frameworks#die-weiteren
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

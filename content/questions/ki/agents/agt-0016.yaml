@@ -1,0 +1,18 @@
+id: agt-0016
+topic: agents
+competencies:
+- ki-agt-05
+level: L3
+type: true_false
+question: Wenn die Ausgabe eines Modells ein gültiges Pydantic-Schema erfüllt, sind die darin genannten Zahlen korrekt.
+options:
+- Wahr
+- Falsch
+answer:
+- 1
+explanation: Falsch. Ein Schema garantiert Form und Wertebereich, nicht inhaltliche Richtigkeit. Erst der Abgleich jeder genannten Zahl mit den Quelldaten bzw. den berechneten Kennzahlen stellt sicher, dass sie stimmt.
+source: agents/rechnen-vs-interpretieren#ausgaben-per-schema-erzwingen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session
