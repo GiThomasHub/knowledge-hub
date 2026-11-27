@@ -1,0 +1,20 @@
+id: mcp-0006
+topic: mcp-tools
+competencies:
+- ki-mcp-02
+level: L2
+type: single
+question: Ein Server `docs` ist im Scope user und im Scope project unterschiedlich definiert. Welche Definition verwendet Claude Code?
+options:
+- Die aus dem Scope user
+- Die aus dem Scope project – und zwar den ganzen Eintrag, ohne Felder zu mischen
+- Eine Mischung aus beiden
+- Keine, es gibt einen Fehler
+answer:
+- 1
+explanation: Der Vorrang lautet local, project, user, Plugin, claude.ai-Connector. Die gewinnende Quelle liefert den ganzen Eintrag; Felder werden nicht zwischen Scopes gemischt.
+source: mcp-tools/mcp-einbinden#die-drei-scopes
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

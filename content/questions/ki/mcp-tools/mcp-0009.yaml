@@ -1,0 +1,24 @@
+id: mcp-0009
+topic: mcp-tools
+competencies:
+- ki-mcp-03
+level: L3
+type: multi
+question: Was macht eine gute Tool-Beschreibung aus? (mehrere richtig)
+options:
+- Wofür das Tool da ist und wann man es nicht nutzt
+- Bedeutung jedes Parameters mit Beispielwerten und Einheiten
+- Der Hinweis, welches andere Tool in Nachbarfällen zuständig ist
+- Möglichst kurz, damit Kontext gespart wird – der Name sagt genug
+- Grenzen wie maximale Trefferzahl
+answer:
+- 0
+- 1
+- 2
+- 4
+explanation: Das Modell sieht nur die Beschreibung; sie muss Zweck, Abgrenzung, Parameter und Grenzen erklären wie für eine neue Kollegin. Ein Name allein reicht nicht – genau daran scheitern Tool-Wahl und Parameter.
+source: mcp-tools/tools-entwerfen#namen-beschreibungen-parameter
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

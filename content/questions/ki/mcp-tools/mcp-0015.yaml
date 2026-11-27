@@ -1,0 +1,21 @@
+id: mcp-0015
+topic: mcp-tools
+competencies:
+- ki-mcp-05
+level: L4
+type: case
+question: Eine Schweizer Krankenkasse will einen Agenten, der Kundenanfragen aus dem Ticketsystem beantwortet. Gewünscht sind MCP-Anbindungen an Ticketsystem, CRM (Versichertendaten), E-Mail-Versand und Websuche. Bewerte die Anbindungen und schlage Durchsetzung vor.
+model_answer: '**Bewertung je System (Daten, Wirkung, Ort, Herkunft, Identität):** Ticketsystem – Personendaten und fremde Texte, lesen und Entwurf kommentieren, offizieller Server, Service-Konto: lesen erlaubt, Kommentare als Entwurf mit Freigabe. CRM – besonders schützenswerte Gesundheitsdaten, eigener eng geschnittener Server mit Service-Konto: nur gezielte Lesetools (Policenstatus), keine Diagnosen, kein Schreiben. E-Mail-Versand – Kanal nach aussen: kein direktes Senden, nur Entwürfe, Versand durch Menschen. Websuche – fremde Inhalte: nicht im selben Agenten wie CRM-Zugriff. **Gefährliche Kombination** private Daten + fremde Inhalte + Sendekanal vermeiden: Recherche-Agent ohne CRM, Antwort-Agent ohne Web und ohne Senden. **Durchsetzung:** managed-mcp.json bzw. allowedMcpServers mit allowManagedMcpServersOnly in Managed Settings, Berechtigungsregeln pro Tool (lesen allow, kommentieren ask, alles andere deny), ide-Server sperren, Autorisierung und Limits im Code, Protokollierung. **Datenfrage:**
+  revDSG und Gesundheitsdaten – Auftragsbearbeitung, Datenstandort, Bekanntgabe ins Ausland klären, Pseudonymisierung prüfen; ohne Klärung kein Anschluss des CRM.'
+rubric:
+- Bewertet jedes System nach Daten, Wirkung, Ort, Herkunft und Identität
+- Erkennt und entschärft die Kombination aus privaten Daten, fremden Inhalten und Sendekanal
+- Schreibende und sendende Aktionen nur als Entwurf oder mit Freigabe
+- Technische Durchsetzung über Managed Settings und Regeln pro Tool statt Prompt
+- Datenschutz (revDSG, Gesundheitsdaten, Ausland) als Voraussetzung
+explanation: Ein Senior-Vorschlag bewertet pro System, trennt die gefährliche Kombination auf und setzt die Entscheidung technisch durch – mit Gesundheitsdaten als besonders schützenswerte Personendaten im Blick.
+source: mcp-tools/anbindung-bewerten#die-fuenf-bewertungsfragen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

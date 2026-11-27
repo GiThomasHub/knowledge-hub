@@ -1,0 +1,20 @@
+id: mcp-0016
+topic: mcp-tools
+competencies:
+- ki-mcp-05
+level: L4
+type: single
+question: Eine Firma will, dass auf allen Rechnern ausschliesslich zentral freigegebene MCP-Server laden – auch keine Plugin-Server und keine claude.ai-Connectors. Was ist das passende Mittel?
+options:
+- Eine Regel in der CLAUDE.md jedes Projekts
+- deniedMcpServers in den User-Settings jedes Mitarbeitenden
+- managed-mcp.json in den Managed Settings – lädt exklusiv die dort definierten Server
+- allowedMcpServers unter dem Schlüssel sandbox
+answer:
+- 2
+explanation: managed-mcp.json gibt exklusive Kontrolle und unterdrückt auch Plugin-Server und Connectors. CLAUDE.md ist keine Durchsetzung, User-Settings sind änderbar, und allowedMcpServers unter sandbox wird ignoriert – der Schlüssel gehört auf die oberste Ebene.
+source: mcp-tools/anbindung-bewerten#durchsetzen-statt-hoffen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

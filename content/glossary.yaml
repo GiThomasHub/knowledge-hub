@@ -59,6 +59,7 @@
 - term: MCP
   aliases: [Model Context Protocol]
   definition: Offener Standard, über den KI-Anwendungen Werkzeuge und Datenquellen anbinden – vergleichbar mit einer USB-Schnittstelle für KI-Tools.
+  lesson: mcp-tools/tool-use-und-mcp#mcp-ein-stecker-fuer-alle
 - term: Skill
   definition: Ein Ordner mit einer SKILL.md (Name, Beschreibung, Anleitung) und optionalen Skripten oder Referenzen. Claude lädt ihn bei Bedarf und arbeitet dann nach dieser Anleitung.
   lesson: skills-plugins/skill-connector-plugin#die-drei-im-vergleich
@@ -213,3 +214,16 @@
 - term: Description (Skill)
   definition: Feld im Frontmatter einer SKILL.md, das sagt, was ein Skill tut und wann er gebraucht wird. Claude sieht vor dem Laden nur Name und Description und entscheidet daran, ob der Skill passt.
   lesson: skills-plugins/skill-schreiben#die-description-visitenkarte-und-tuersteher
+- term: Tool Use
+  definition: Fähigkeit eines Modells, Werkzeuge zu nutzen. Das Modell antwortet mit einer strukturierten Bitte (tool_use), die Anwendung führt den Aufruf aus und gibt das Ergebnis (tool_result) zurück.
+  aliases: [Function Calling, Werkzeugnutzung]
+  lesson: mcp-tools/tool-use-und-mcp#wie-ein-werkzeugaufruf-ablaeuft
+- term: MCP-Server
+  definition: Programm, das über das Model Context Protocol Tools, Resources und Prompts bereitstellt. Läuft lokal als Prozess (stdio, mit den Rechten des Nutzers) oder entfernt über HTTP.
+  lesson: mcp-tools/tool-use-und-mcp#mcp-ein-stecker-fuer-alle
+- term: MCP-Scope
+  definition: Geltungsbereich eines MCP-Servers in Claude Code – local (nur du, dieses Projekt), project (.mcp.json, ganzes Team) oder user (du, alle Projekte). Bei gleichem Namen gilt local vor project vor user.
+  lesson: mcp-tools/mcp-einbinden#die-drei-scopes
+- term: Tool Search
+  definition: Mechanismus in Claude Code, der Beschreibungen von MCP-Werkzeugen zurückstellt und erst bei Bedarf über ein Such-Werkzeug lädt. Spart Kontext bei vielen Servern; gesteuert über ENABLE_TOOL_SEARCH.
+  lesson: mcp-tools/kontext-schlank#tool-search

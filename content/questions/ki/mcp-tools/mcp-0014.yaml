@@ -1,0 +1,23 @@
+id: mcp-0014
+topic: mcp-tools
+competencies:
+- ki-mcp-04
+level: L3
+type: multi
+question: Welche Aussagen zu Ausgabegrenzen von MCP-Werkzeugen in Claude Code stimmen (Stand 27.11.2026)? (mehrere richtig)
+options:
+- Ab 10 000 Tokens Ausgabe gibt es eine Warnung.
+- Die Grenze liegt standardmässig bei 25 000 Tokens und ist mit MAX_MCP_OUTPUT_TOKENS anpassbar.
+- Textergebnisse über 50 000 Zeichen werden in eine Datei geschrieben.
+- Es gibt keine Grenze, solange Tool Search aktiv ist.
+- Die beste Lösung bei grossen Antworten ist, die Grenze möglichst hoch zu setzen.
+answer:
+- 0
+- 1
+- 2
+explanation: Warnung ab 10 000, Grenze 25 000 Tokens, grosse Texte in eine Datei. Tool Search betrifft Beschreibungen, nicht Antworten. Statt die Grenze hochzusetzen, sollte das Tool gefilterte, paginierte Antworten liefern.
+source: mcp-tools/kontext-schlank#ausgabegrenzen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

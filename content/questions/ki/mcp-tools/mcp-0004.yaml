@@ -1,0 +1,20 @@
+id: mcp-0004
+topic: mcp-tools
+competencies:
+- ki-mcp-02
+level: L2
+type: single
+question: Du willst einen Sentry-MCP-Server so einbinden, dass alle im Projektteam ihn automatisch bekommen. Welcher Befehl passt?
+options:
+- claude mcp add --transport http sentry https://mcp.sentry.dev/mcp
+- claude mcp add --transport http sentry --scope project https://mcp.sentry.dev/mcp
+- claude mcp add --transport http sentry --scope user https://mcp.sentry.dev/mcp
+- Den Server in die CLAUDE.md schreiben
+answer:
+- 1
+explanation: Der Scope project schreibt eine .mcp.json ins Projekt, die über Git geteilt wird. Ohne --scope landet der Server im Scope local (nur du, nur dieses Projekt), user gilt nur für dich in allen Projekten, und die CLAUDE.md ist keine MCP-Konfiguration.
+source: mcp-tools/mcp-einbinden#die-drei-scopes
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

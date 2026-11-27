@@ -1,0 +1,21 @@
+id: mcp-0005
+topic: mcp-tools
+competencies:
+- ki-mcp-02
+level: L2
+type: scenario
+situation: 'In der .mcp.json eines Repos steht: "headers": { "Authorization": "Bearer ghp_a1b2c3..." }. Das Repo ist privat.'
+question: Was empfiehlst du?
+options:
+- Nichts – das Repo ist ja privat.
+- Token sofort widerrufen, durch ${GITHUB_TOKEN} oder OAuth über /mcp ersetzen und Secret Scanning aktivieren.
+- Die Datei in .gitignore aufnehmen, Token behalten.
+- Den Token base64-kodieren.
+answer:
+- 1
+explanation: Ein Secret im Repo gilt als kompromittiert – Repos werden geklont, geforkt und manchmal öffentlich. Widerrufen, durch Umgebungsvariable oder OAuth ersetzen. .gitignore lässt den Token in der Git-Geschichte, und base64 ist keine Verschlüsselung.
+source: mcp-tools/mcp-einbinden#secrets-aus-der-konfiguration-halten
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

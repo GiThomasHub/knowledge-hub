@@ -1,0 +1,21 @@
+id: mcp-0010
+topic: mcp-tools
+competencies:
+- ki-mcp-03
+level: L3
+type: scenario
+situation: 'Ein Mail-Tool hat in der Beschreibung: «Darf nur Entwürfe anlegen, niemals senden.» Technisch kann es senden. Der Agent liest Kundenmails.'
+question: Wie bewertest du das?
+options:
+- Ausreichend, Claude hält sich an Beschreibungen.
+- Unzureichend – eine Bitte ist keine Grenze. Senden muss im Code des Tools unmöglich sein oder ein separates Tool mit Freigabe (ask) sein.
+- Ausreichend, wenn zusätzlich destructiveHint gesetzt ist.
+- Unzureichend, die Beschreibung muss in Grossbuchstaben stehen.
+answer:
+- 1
+explanation: Eine Prompt Injection in einer gelesenen Mail kann die Bitte aushebeln. Annotations wie destructiveHint sind nur Hinweise an den Client. Grenzen gehören in den Code bzw. in getrennte Tools mit Berechtigungsregeln; Grossbuchstaben ändern daran nichts.
+source: mcp-tools/tools-entwerfen#antworten-und-fehler
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

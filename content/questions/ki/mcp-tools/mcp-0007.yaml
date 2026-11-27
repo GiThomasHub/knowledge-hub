@@ -1,0 +1,18 @@
+id: mcp-0007
+topic: mcp-tools
+competencies:
+- ki-mcp-02
+level: L2
+type: true_false
+question: In einem Lauf mit `claude -p` fragt Claude Code immer nach, bevor Server aus der .mcp.json eines Projekts geladen werden.
+options:
+- Wahr
+- Falsch
+answer:
+- 1
+explanation: Falsch. Die Freigabe-Rückfrage gibt es in interaktiven Sessions. In claude -p, im Agent SDK und in Cloud-Sessions werden Projekt-Server ohne Rückfrage geladen – in fremden Repos also Vorsicht.
+source: mcp-tools/mcp-einbinden#die-drei-scopes
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

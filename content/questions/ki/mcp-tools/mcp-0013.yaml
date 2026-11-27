@@ -1,0 +1,21 @@
+id: mcp-0013
+topic: mcp-tools
+competencies:
+- ki-mcp-04
+level: L3
+type: scenario
+situation: Nur Browser-Tests brauchen den Playwright-MCP-Server. Er ist im Scope user eingebunden, und seine Werkzeuge belegen in jeder Session Kontext.
+question: Was ist die sauberste Lösung?
+options:
+- MAX_MCP_OUTPUT_TOKENS erhöhen
+- Einen Subagenten browser-tester anlegen, der Playwright über mcpServers im Frontmatter mitbringt, und den Server aus dem Scope user entfernen
+- Den Server in den Scope project verschieben
+- Tool Search abschalten
+answer:
+- 1
+explanation: Ein im Subagenten definierter Server verbindet sich nur für dessen Lauf; die Hauptsession sieht die Werkzeuge nie. Eine höhere Ausgabegrenze vergrössert das Problem, project teilt es nur mit dem Team, und ohne Tool Search würden die Definitionen erst recht vorab geladen.
+source: mcp-tools/kontext-schlank#mcp-server-nur-im-subagenten
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session
