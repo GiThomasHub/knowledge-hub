@@ -1,0 +1,20 @@
+id: prm-0012
+topic: prompting
+competencies:
+- ki-prm-03
+level: L2
+type: single
+question: Wie sollte ein Geldbetrag in einem Pydantic-Schema für eine Extraktion typisiert sein?
+options:
+- 'betrag: float'
+- 'betrag_chf: Decimal'
+- 'betrag: str'
+- 'betrag: int'
+answer:
+- 1
+explanation: Decimal vermeidet Rundungsfehler, und die Einheit im Feldnamen verhindert Verwechslungen. float rundet binär, str verlagert das Parsen ins Ungewisse, und int verliert die Rappen.
+source: prompting/xml-und-struktur#typen-die-fehler-verhindern
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

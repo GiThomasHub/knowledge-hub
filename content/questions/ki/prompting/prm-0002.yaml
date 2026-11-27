@@ -1,0 +1,20 @@
+id: prm-0002
+topic: prompting
+competencies:
+- ki-prm-01
+level: L1
+type: single
+question: 'Ein Prompt lautet: «Fasse den Vertrag zusammen.» Welche Ergänzung verbessert das Ergebnis am wahrscheinlichsten am meisten?'
+options:
+- «Du bist der weltbeste Vertragsjurist.»
+- «Die Geschäftsleitung entscheidet morgen in fünf Minuten, ob wir kündigen – nenne Laufzeit, Kündigungsfrist und Kosten.»
+- '«WICHTIG: Sei sehr genau!»'
+- «Antworte bitte freundlich.»
+answer:
+- 1
+explanation: Kontext (für wen, wozu) und eine präzise Aufgabe steuern Detailtiefe und Auswahl. Eine Superlativ-Rolle bringt messbar wenig, «sei genau» ist nicht prüfbar, und Freundlichkeit ändert nichts am Inhalt.
+source: prompting/anatomie#die-fuenf-hebel
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

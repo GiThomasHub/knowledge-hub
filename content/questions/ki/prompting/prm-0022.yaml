@@ -1,0 +1,24 @@
+id: prm-0022
+topic: prompting
+competencies:
+- ki-prm-06
+level: L4
+type: multi
+question: Was gehört zu einem tragfähigen Freigabeprozess für Produktions-Prompts? (mehrere richtig)
+options:
+- Ablage im Git neben dem Code
+- Ein Snapshot-Test des zusammengesetzten Prompts
+- Freigabe per Bauchgefühl der Autorin
+- Pull Request mit gepaartem Testset-Ergebnis
+- Eine verantwortliche Person je Prompt
+answer:
+- 0
+- 1
+- 3
+- 4
+explanation: Versionierung, Snapshot, gemessene Freigabe und klare Verantwortung machen Änderungen nachvollziehbar und sicher. Eine Freigabe nach Bauchgefühl ist genau das, was ein Standard ersetzen soll.
+source: prompting/prompt-standards-team#bibliothek-und-freigabe
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

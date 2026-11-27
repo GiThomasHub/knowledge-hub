@@ -1,0 +1,18 @@
+id: prm-0016
+topic: prompting
+competencies:
+- ki-prm-04
+level: L3
+type: true_false
+question: Ein mit 5 Minuten Lebensdauer zwischengespeichertes Präfix lohnt sich bereits, wenn es nur ein einziges Mal wiederverwendet wird.
+options:
+- Wahr
+- Falsch
+answer:
+- 0
+explanation: 'Wahr. Schreiben kostet das 1,25-Fache, Lesen höchstens das 0,1-Fache des Eingabepreises: 1,25 + 0,1 ist weniger als zweimal voll bezahlen (2,0).'
+source: prompting/kontext-gestalten#prompt-caching-stabiles-zuerst-spart-geld
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

@@ -1,0 +1,23 @@
+id: prm-0003
+topic: prompting
+competencies:
+- ki-prm-01
+level: L1
+type: multi
+question: Welche Formulierungen sind gute Einschränkungen im Sinne der Lektion? (mehrere richtig)
+options:
+- «Höchstens 120 Wörter.»
+- «Mach es kurz.»
+- «Wenn die Information nicht im Text steht, antworte ‹nicht gefunden›.»
+- «Nur Fakten aus den beigefügten Dokumenten.»
+- «Sei kreativ, aber nicht zu sehr.»
+answer:
+- 0
+- 2
+- 3
+explanation: Gute Einschränkungen sind prüfbar und erlauben Unsicherheit. «Kurz» und «nicht zu kreativ» lassen sich nicht überprüfen und lassen dem Modell zu viel Spielraum.
+source: prompting/anatomie#was-gute-anweisungen-ausmacht
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

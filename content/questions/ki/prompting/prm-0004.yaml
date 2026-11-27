@@ -1,0 +1,18 @@
+id: prm-0004
+topic: prompting
+competencies:
+- ki-prm-01
+level: L1
+type: true_false
+question: Was für viele Anfragen gleich bleibt (Rolle, Regeln, Format), gehört eher in den System-Prompt; die konkrete Frage gehört in den User-Prompt.
+options:
+- Wahr
+- Falsch
+answer:
+- 0
+explanation: Wahr. Stabiles oben, Veränderliches unten – das macht Prompts übersichtlich und erlaubt, den stabilen Teil per Prompt Caching günstig wiederzuverwenden.
+source: prompting/anatomie#system-prompt-und-user-prompt
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

@@ -1,0 +1,21 @@
+id: prm-0021
+topic: prompting
+competencies:
+- ki-prm-06
+level: L4
+type: scenario
+situation: In der Prompt-Bibliothek eines Kunden findest du viele Produktions-Prompts mit `temperature=0` «für Determinismus» und vorausgefüllten Assistenten-Antworten, die JSON erzwingen sollen. Das Team plant den Wechsel auf die neue API-Version und ein neues Modell.
+question: Was empfiehlst du?
+options:
+- Nichts ändern – bewährte Prompts nicht anfassen
+- 'Vor dem Wechsel: Sampling-Parameter und Prefill entfernen, Struktur per Schema erzwingen, und das Testset mit altem und neuem Setup gepaart vergleichen'
+- Nur die Temperatur auf 0.1 erhöhen
+- Alle Prompts von Grund auf neu schreiben, ohne zu testen
+answer:
+- 1
+explanation: In API-Version 2026-10-21 führen temperature, top_p und top_k zu einem Fehler, und Prefill wird von den neuesten Modellen abgelehnt. Verlässlichkeit kommt aus Schemas und Tests; der Wechsel wird mit dem Testset abgesichert. Nichts ändern führt zu Fehlern, eine andere Temperatur ebenso, und Neuschreiben ohne Test ist riskant.
+source: prompting/prompt-standards-team#pflege-prompts-veralten
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

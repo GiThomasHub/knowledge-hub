@@ -1,0 +1,24 @@
+id: prm-0018
+topic: prompting
+competencies:
+- ki-prm-05
+level: L3
+type: multi
+question: Was gehört zu einem guten kleinen Testset für einen Prompt? (mehrere richtig)
+options:
+- Echte Eingaben, am besten aus realen Fehlern und Grenzfällen
+- Fälle, in denen etwas passieren soll, und Fälle, in denen es nicht passieren soll
+- Dieselben Fälle wie die Few-Shot-Beispiele im Prompt
+- Wo möglich eine Referenzlösung
+- Kategorien, damit Ergebnisse pro Kategorie ausgewiesen werden können
+answer:
+- 0
+- 1
+- 3
+- 4
+explanation: Echte, ausgewogene Fälle mit Referenz und Kategorien machen das Testset aussagekräftig. Testfälle als Beispiele im Prompt würden nur messen, ob das Modell abschreiben kann.
+source: prompting/prompts-testen#in-fuenf-schritten-zur-messung
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

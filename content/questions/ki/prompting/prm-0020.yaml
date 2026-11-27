@@ -1,0 +1,21 @@
+id: prm-0020
+topic: prompting
+competencies:
+- ki-prm-06
+level: L4
+type: case
+question: Eine Schweizer Treuhandfirma mit 40 Mitarbeitenden nutzt Claude, aber jede Person mit eigenen Prompts. Für die Mandantenkorrespondenz soll ein Standard her; zusätzlich gibt es eine interne Anwendung, die Belege per API klassifiziert. Skizziere Standards, Bibliothek, Freigabe und Verteilung.
+model_answer: '**Zwei Welten trennen:** Arbeits-Prompts für die Korrespondenz (leichtgewichtig) und Produktions-Prompts für die Beleg-Klassifizierung (streng). **Vorlage** je Prompt: Zweck, Prompt mit Rolle/Kontext/Aufgabe/Einschränkungen/Format, 1–3 verschiedene Beispiele inkl. Negativbeispiel, Testfälle (getrennt von den Beispielen), Besitzerin, Version, Änderungsprotokoll. **Bibliothek:** Korrespondenz-Vorlagen als Skill bzw. in Projekt-Anweisungen; Klassifizierungs-Prompts im Git neben dem Code, gebaut von einer Funktion mit einheitlichen Tags, Snapshot-Test, Ausgabe per Schema erzwungen. **Freigabe:** Änderungen an Produktions-Prompts nur per Pull Request mit gepaartem Testset-Ergebnis (20–50 echte, anonymisierte Belege, Ergebnis pro Kategorie); Arbeits-Prompts prüft die Besitzerin an einigen Fällen. **Datenschutz:** Beispiele anonymisieren oder erfinden (revDSG, Berufsgeheimnis), keine Mandantendaten in der Bibliothek. **Pflege:** Testset bei jedem Modellwechsel laufen lassen, veraltete
+  Muster (temperature, Prefill, Superlativ-Rollen) entfernen, vierteljährliche Durchsicht.'
+rubric:
+- Trennt Arbeits- und Produktions-Prompts mit unterschiedlicher Strenge
+- Vorlage mit Zweck, fünf Hebeln, Beispielen, Testfällen, Besitzerin und Version
+- Freigabe mit gemessenem, gepaartem Testset-Ergebnis
+- Verteilung über Skills/Projekt-Anweisungen bzw. Git mit Snapshot-Test
+- Anonymisierung der Beispiele und Pflege bei Modellwechsel
+explanation: Ein Senior-Vorschlag unterscheidet nach Fehlerfolge, macht Änderungen messbar und schützt Mandantendaten.
+source: prompting/prompt-standards-team#zwei-welten-zwei-regeln
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

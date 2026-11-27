@@ -1,0 +1,20 @@
+id: prm-0019
+topic: prompting
+competencies:
+- ki-prm-05
+level: L3
+type: single
+question: Du prüfst, ob die Antwort die richtige Kategorie aus fünf festen Werten enthält. Welcher Prüfer ist angemessen?
+options:
+- Ein Modell als Prüfer (LLM-as-Judge) mit ausführlicher Rubrik
+- Ein einfacher Code-Vergleich mit der Referenz
+- Eine Fachperson für jeden Fall
+- Gar keiner – Kategorien sind immer richtig
+answer:
+- 1
+explanation: 'Code zuerst: Ein Vergleich mit der Referenz ist schnell, billig und reproduzierbar. Ein Modell-Prüfer ist für Ton oder Vollständigkeit gedacht, Menschen zum Eichen – beides wäre hier unnötig teuer.'
+source: prompting/prompts-testen#pruefer-so-einfach-wie-moeglich
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

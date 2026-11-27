@@ -74,6 +74,7 @@
   definition: Ein Zahlenvektor, der die Bedeutung eines Textes abbildet. Ähnliche Bedeutungen liegen im Vektorraum nahe beieinander – die Grundlage semantischer Suche.
 - term: Prompt Caching
   definition: Ein unveränderter Prompt-Anfang (Systemprompt, grosses Dokument) wird zwischengespeichert und bei Folgeaufrufen deutlich günstiger und schneller verarbeitet.
+  lesson: prompting/kontext-gestalten#prompt-caching-stabiles-zuerst-spart-geld
 - term: Fail-closed
   definition: Verhalten im Fehlerfall – blockieren statt durchlassen. Ein Sicherheitsmechanismus, der bei eigenem Ausfall alles erlaubt, ist fail-open und damit trügerisch.
   lesson: ai-security/sandbox
@@ -105,8 +106,10 @@
   lesson: ai-security/ueberblick
 - term: Few-Shot
   definition: Technik, dem Modell im Prompt einige Beispiele (Eingabe → gewünschte Ausgabe) zu zeigen. Oft wirksamer als lange Beschreibungen.
+  lesson: prompting/beispiele#wie-gute-beispiele-aussehen
 - term: Context Engineering
   definition: Bewusstes Kuratieren dessen, was im Kontextfenster landet – welche Informationen, in welcher Reihenfolge, wann zusammengefasst oder ausgelagert.
+  lesson: prompting/kontext-gestalten#reihenfolge-was-wohin-gehoert
 - term: LLM-as-Judge
   definition: Ein Sprachmodell bewertet die Ausgabe eines anderen anhand einer Rubrik. Muss gegen menschliche Urteile kalibriert werden.
 - term: Leitner-System
@@ -174,3 +177,20 @@
 - term: LangGraph
   definition: Framework, das Agenten-Abläufe als Graph aus Zustand, Knoten und Kanten modelliert. Erlaubt Schleifen, Verzweigungen, menschliche Freigaben und Checkpointing.
   lesson: agents/frameworks#langchain-und-langgraph
+- term: System-Prompt
+  definition: Der dauerhafte Teil der Anweisungen an ein Modell – Rolle, Regeln, Format, festes Wissen. Bleibt über viele Anfragen gleich; die konkrete Aufgabe steht im User-Prompt.
+  aliases: [Systemprompt, System Prompt]
+  lesson: prompting/anatomie#system-prompt-und-user-prompt
+- term: Self-Consistency
+  definition: Technik, dieselbe Frage mehrmals zu stellen und die häufigste Antwort zu nehmen. Wirksam bei vergleichbaren Antworten wie Kategorien oder Zahlen; Kosten steigen mit der Zahl der Durchläufe.
+  lesson: prompting/beispiele#mehrfach-fragen-self-consistency
+- term: Structured Outputs
+  definition: API-Funktion, bei der die Anfrage ein JSON-Schema enthält und die Antwort garantiert diesem Schema entspricht. Erzwingt die Form, nicht die inhaltliche Richtigkeit.
+  aliases: [Strukturierte Ausgabe]
+  lesson: prompting/xml-und-struktur#antworte-in-json-ist-kein-vertrag
+- term: Context Rot
+  definition: Beobachtung, dass ein Modell Details schlechter findet und nutzt, je voller das Kontextfenster ist. Grund, nur das Nötige in den Kontext zu legen.
+  lesson: prompting/kontext-gestalten
+- term: Snapshot-Test
+  definition: Test, der ein erzeugtes Ergebnis – etwa einen zusammengesetzten Prompt – als Datei festhält und bei jeder Änderung den Unterschied zeigt. Macht unbeabsichtigte Änderungen und Cache-Brüche sichtbar.
+  lesson: prompting/prompt-standards-team#bibliothek-und-freigabe
