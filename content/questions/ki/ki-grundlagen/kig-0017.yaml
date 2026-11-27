@@ -1,0 +1,23 @@
+id: kig-0017
+topic: ki-grundlagen
+competencies:
+- ki-kig-05
+level: L3
+type: multi
+question: Welche Aussagen zu Fine-Tuning stimmen? (mehrere richtig)
+options:
+- Es eignet sich für Stil, Format und eng umrissenes Spezialverhalten.
+- Das eingebackene Wissen veraltet mit jeder Änderung.
+- Es liefert automatisch Quellenangaben.
+- Es lohnt sich eher bei engen, stabilen Aufgaben mit hohem Volumen.
+- Es verhindert Halluzinationen zuverlässig.
+answer:
+- 0
+- 1
+- 3
+explanation: Fine-Tuning passt für Verhalten und lohnt sich bei engen, stabilen, häufigen Aufgaben. Es liefert keine Quellen und verhindert Halluzinationen nicht.
+source: ki-grundlagen/prompting-rag-finetuning#die-drei-wege-im-vergleich
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

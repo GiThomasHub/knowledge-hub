@@ -1,0 +1,18 @@
+id: kig-0012
+topic: ki-grundlagen
+competencies:
+- ki-kig-04
+level: L2
+type: order
+question: Bring die Phasen, in denen ein Assistenzmodell wie Claude entsteht, in die richtige Reihenfolge.
+options:
+- 'Pretraining: nächstes Token auf riesigen Textmengen vorhersagen'
+- Basismodell, das Texte fortsetzt
+- Supervised Fine-Tuning mit Beispielen guter Antworten
+- RLHF bzw. Constitutional AI zum Schärfen des Verhaltens
+explanation: Pretraining liefert Sprache und Wissen im Basismodell. Fine-Tuning bringt Anweisungsbefolgung, RLHF und Constitutional AI schärfen Hilfsbereitschaft, Ehrlichkeit und Sicherheit.
+source: ki-grundlagen/wie-modelle-entstehen#die-phasen-im-ueberblick
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

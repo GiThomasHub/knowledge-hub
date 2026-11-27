@@ -1,0 +1,20 @@
+id: kig-0006
+topic: ki-grundlagen
+competencies:
+- ki-kig-02
+level: L1
+type: single
+question: 'Ein Entwickler setzt in einer Anfrage an die Claude-API-Version 2026-10-21 `temperature: 0`, um verlässliche Ergebnisse zu bekommen. Was passiert (Stand 27.11.2026)?'
+options:
+- Die Antworten werden deterministisch.
+- Die Anfrage wird mit einem Fehler abgelehnt; Verlässlichkeit kommt stattdessen aus klaren Prompts, Schemas und Tests.
+- Der Wert wird ignoriert, die Anfrage läuft normal.
+- Die Antworten werden kreativer.
+answer:
+- 1
+explanation: In API-Version 2026-10-21 führen temperature, top_p und top_k zu einem Fehler – auch mit früheren Standardwerten. Das Konzept Temperatur bleibt bei anderen Anbietern relevant, bei Claude ersetzen Schemas, Validierung und Tests diesen Regler.
+source: ki-grundlagen/token-und-kontext#temperatur
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

@@ -1,0 +1,24 @@
+id: kig-0009
+topic: ki-grundlagen
+competencies:
+- ki-kig-03
+level: L2
+type: multi
+question: Welche Massnahmen senken das Risiko von Halluzinationen wirksam? (mehrere richtig)
+options:
+- Quellen mitgeben und Antworten nur aus diesen Quellen verlangen
+- Zitate oder Fundstellen verlangen
+- «Nicht gefunden» als Antwort ausdrücklich erlauben
+- Den Prompt mit «Halluziniere nicht!» beginnen
+- Zahlen von Werkzeugen oder Code berechnen lassen
+answer:
+- 0
+- 1
+- 2
+- 4
+explanation: Belege, Überprüfbarkeit, ein erlaubter Ausweg und Werkzeuge für Fakten helfen. Eine blosse Aufforderung, nicht zu halluzinieren, ändert nichts an der Ursache.
+source: ki-grundlagen/typische-fehler#halluzination-plausibel-statt-wahr
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

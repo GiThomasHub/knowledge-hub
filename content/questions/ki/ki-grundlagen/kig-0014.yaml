@@ -1,0 +1,18 @@
+id: kig-0014
+topic: ki-grundlagen
+competencies:
+- ki-kig-04
+level: L2
+type: true_false
+question: Post-Training wie RLHF eignet sich gut, um einem Modell sich häufig ändernde Fakten wie Preislisten beizubringen.
+options:
+- Wahr
+- Falsch
+answer:
+- 1
+explanation: Falsch. Post-Training verändert vor allem Verhalten (Stil, Ton, Grenzen). Sich ändernde Fakten gehören zur Inferenzzeit in den Kontext, per Prompt oder RAG.
+source: ki-grundlagen/wie-modelle-entstehen#constitutional-ai-bei-claude
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

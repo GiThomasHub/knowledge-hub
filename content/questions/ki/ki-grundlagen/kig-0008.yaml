@@ -1,0 +1,20 @@
+id: kig-0008
+topic: ki-grundlagen
+competencies:
+- ki-kig-03
+level: L2
+type: single
+question: Warum halluzinieren Sprachmodelle?
+options:
+- Weil sie absichtlich täuschen
+- Weil sie das plausibelste nächste Token vorhersagen – bei dünner Datenlage entsteht eine flüssige, aber ungedeckte Fortsetzung
+- Weil das Kontextfenster zu klein ist
+- Weil sie im Internet falsche Seiten lesen
+answer:
+- 1
+explanation: 'Halluzination folgt aus der Funktionsweise: Plausibilität statt geprüfter Wahrheit. Absicht gibt es nicht, ein grosses Fenster verhindert es nicht, und ohne Suchwerkzeug liest das Modell gar nicht im Internet.'
+source: ki-grundlagen/typische-fehler#halluzination-plausibel-statt-wahr
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

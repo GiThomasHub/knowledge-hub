@@ -1,0 +1,21 @@
+id: kig-0018
+topic: ki-grundlagen
+competencies:
+- ki-kig-06
+level: L4
+type: case
+question: 'Die Geschäftsleitung eines Schweizer KMU (Treuhand, 40 Mitarbeitende) bittet dich um ein Fünf-Minuten-Briefing: Was kann ein LLM für uns, wo liegen die Grenzen, und wie fangen wir an? Zusätzlich liegt ein Angebot eines Anbieters vor, der «proprietäre KI für vollautomatische Buchhaltung» verspricht. Skizziere Briefing und Bewertung des Angebots.'
+model_answer: '**Briefing:** (1) Ein LLM ist ein sehr fähiger, aber unzuverlässiger Assistent für Sprache – es formuliert das Plausibelste. (2) Stark bei Text: Mandantenmails entwerfen, Belege und Verträge zusammenfassen, Informationen aus Dokumenten herausziehen, Rückfragen vorbereiten. (3) Grenzen: erfindet plausible Details, kennt Neues nach dem Wissensstichtag nicht, rechnet unzuverlässig, trägt keine Verantwortung; Mandantendaten unter revDSG und Berufsgeheimnis. (4) Einsatz: Entwurf statt Entscheid, Quellen mitgeben, Fachperson prüft, Beträge per Software statt Modell. (5) Start: Pilot in sechs Wochen mit einem Anwendungsfall, Testset aus echten (anonymisierten) Fällen, Zielwert, Datenfrage geklärt. **Angebot prüfen (AI-Washing):** Welche Technik genau und welches Modell? Was macht die KI, was Regeln und Menschen? Wie gemessen, welche Fehlerquote? Was passiert bei Fehlern, wer haftet? Wo laufen die Daten (Land, Unterauftragnehmer)? Demo mit eigenen Belegen. «Vollautomatisch» bei Buchhaltung
+  ist ein Warnzeichen, weil Beträge und Verantwortung Prüfung brauchen.'
+rubric:
+- 'Zutreffendes Bild ohne Fachjargon: fähig, aber unzuverlässig'
+- Konkrete Stärken und Grenzen mit Bezug zum Treuhand-Alltag
+- Einsatzmuster Entwurf statt Entscheid, Prüfung, Messung
+- Pilot mit Testset und geklärter Datenfrage (revDSG, Berufsgeheimnis)
+- Prüffragen gegen AI-Washing auf das Angebot angewendet
+explanation: Ein Senior-Briefing verbindet ein ehrliches Bild der Technik mit einem messbaren Einstieg und prüft Anbieterversprechen kritisch.
+source: ki-grundlagen/llm-fuers-management#das-fuenf-minuten-briefing
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

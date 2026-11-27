@@ -1,0 +1,21 @@
+id: kig-0005
+topic: ki-grundlagen
+competencies:
+- ki-kig-02
+level: L1
+type: scenario
+situation: Eine Kundin will einen 300-seitigen deutschen Geschäftsbericht in einer Anfrage analysieren lassen. Ein Modell hat ein Fenster von 200 000 Tokens, ein anderes von 1 Million Tokens.
+question: Was ist die beste grobe Einschätzung?
+options:
+- Passt in beide, ein Buch hat nur etwa 30 000 Tokens.
+- 300 Seiten mit je rund 450 Wörtern ergeben grob 250 000–350 000 Tokens auf Deutsch – das passt in das 1-Mio.-Fenster, nicht sicher in das mit 200 000.
+- Passt in keines, Bücher sind immer zu gross.
+- Die Seitenzahl spielt keine Rolle, Modelle lesen PDFs ohne Tokens.
+answer:
+- 1
+explanation: Rund 135 000 Wörter ergeben auf Deutsch grob 250 000–350 000 Tokens. Für exakte Zahlen zählt man mit der Token-Zählung der API. Auch PDFs werden in Tokens umgerechnet.
+source: ki-grundlagen/token-und-kontext#das-kontextfenster
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session
