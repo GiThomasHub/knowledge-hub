@@ -1,0 +1,20 @@
+id: aut-0009
+topic: automation
+competencies:
+- ki-aut-03
+level: L2
+type: single
+question: Warum empfiehlt die Doku `--bare` für Skripte und CI?
+options:
+- Weil es die Antworten kürzer macht
+- Weil dann keine Hooks, Skills, Plugins, MCP-Server, Auto Memory oder CLAUDE.md aus Umgebung und Projekt geladen werden und das Ergebnis auf jeder Maschine gleich ist
+- Weil es ein günstigeres Modell wählt
+- Weil es den Abo-Login nutzt
+answer:
+- 1
+explanation: Ohne --bare lädt claude -p alles wie eine interaktive Session – und führt sogar Projekt-Hooks und .mcp.json-Server eines nie geprüften Ordners aus. --bare liest nichts davon; Nötiges gibt man ausdrücklich mit. Im Bare-Modus gilt nur ANTHROPIC_API_KEY, kein Abo-Login, und das Modell ändert sich nicht.
+source: automation/headless#rechte-ohne-mensch
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

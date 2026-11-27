@@ -1,0 +1,21 @@
+id: aut-0003
+topic: automation
+competencies:
+- ki-aut-01
+level: L1
+type: scenario
+situation: 'Ein Team will einen Bericht jeden Morgen um 07:00 Zürcher Zeit. In GitHub Actions steht `cron: "0 7 * * *"` ohne Zeitzonenangabe.'
+question: Was passiert?
+options:
+- Der Bericht kommt immer um 07:00 Zürcher Zeit.
+- Der Bericht kommt im Winter um 08:00 und im Sommer um 09:00 Zürcher Zeit, weil GitHub standardmässig UTC verwendet.
+- Der Workflow wird abgelehnt, weil die Zeitzone fehlt.
+- Der Bericht kommt um 06:00 Zürcher Zeit.
+answer:
+- 1
+explanation: Ohne Zeitzone rechnet GitHub Actions in UTC. 07:00 UTC entspricht 08:00 MEZ (Winter) bzw. 09:00 MESZ (Sommer). Für 07:00 in Zürich bräuchte es 0 6 im Winter bzw. 0 5 im Sommer oder eine Zeitzonenangabe, wo der Planer sie unterstützt.
+source: automation/trigger-und-cron#zeitzonen-und-sommerzeit
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

@@ -1,0 +1,22 @@
+id: aut-0012
+topic: automation
+competencies:
+- ki-aut-04
+level: L3
+type: multi
+question: Welche Fehlerbilder deuten auf einen fehlenden Schutz hin? (mehrere richtig)
+options:
+- Der Lauf hängt jedes Mal bis zum Timeout
+- CI ist grün, obwohl der Agent abgebrochen hat
+- Ein Issue-Text mit «ignoriere alle Regeln» wurde befolgt
+- Der Bericht nennt Kosten und offene Punkte
+answer:
+- 0
+- 1
+- 2
+explanation: Hängen bis zum Timeout zeigt fehlende Grenzen, grüne CI trotz Abbruch zeigt Erfolgsauswertung über Text statt Exit-Code und Felder, ein befolgter Issue-Text zeigt fehlenden Schutz gegen Prompt Injection. Ein Bericht mit Kosten und offenen Punkten ist erwünscht.
+source: automation/unbeaufsichtigt-absichern#fehlerbilder
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

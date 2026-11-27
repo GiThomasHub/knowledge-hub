@@ -1,0 +1,21 @@
+id: aut-0010
+topic: automation
+competencies:
+- ki-aut-04
+level: L3
+type: scenario
+situation: Ein nächtlicher Lauf öffnet einen PR auf Branch `weekly/inhalte`. Nach einem Runner-Absturz startet GitHub den Job neu. Am Morgen gibt es zwei fast identische PRs.
+question: Welche Massnahmen machen den Lauf idempotent? Wähle die beste Kombination.
+options:
+- Ein grösseres Modell verwenden
+- Branch-Name mit Datum, vor dem Öffnen prüfen, ob es den PR schon gibt, und concurrency im Workflow
+- Den Lauf seltener planen
+- Den PR direkt mergen, dann gibt es keine Duplikate
+answer:
+- 1
+explanation: Ein eindeutiger Name pro Zeitraum, die Prüfung auf vorhandene Ergebnisse und gesperrte Gleichzeitigkeit sorgen dafür, dass ein zweiter Lauf nichts doppelt tut. Modellgrösse und Planungsrhythmus ändern daran nichts, und direktes Mergen verletzt die Regel «nur Draft-PRs».
+source: automation/unbeaufsichtigt-absichern#idempotenz-zweimal-laufen-einmal-wirken
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

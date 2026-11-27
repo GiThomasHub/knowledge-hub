@@ -1,0 +1,21 @@
+id: aut-0014
+topic: automation
+competencies:
+- ki-aut-05
+- ki-aut-04
+level: L4
+type: case
+question: Eine Versicherung will einen Agenten, der eingehende Schadensmeldungen (mit Personendaten) vorprüft und eine Einschätzung für die Sachbearbeitung erstellt. Skizziere Betriebsform, Absicherung und Begründung.
+model_answer: '**Betriebsform:** eigene Cloud (z. B. Container-Dienst mit Warteschlange) in einer Region Schweiz/EU, angebunden an das Schadenssystem; Agent über API bzw. Agent SDK; alternativ Managed Agents nur nach Prüfung von Vertrag, Datenstandort und Pseudonymisierung. **Ablauf:** reaktiv (neue Meldung → Queue → Verarbeitung), Ergebnis als **Vorschlag** im Fallsystem, Sachbearbeitung entscheidet. **Absicherung:** minimale Werkzeuge (lesen im Fall, schreiben nur Vorschlagsfeld), Grenzen (Schritte, Budget, Timeout), strukturierte Ausgabe mit Schema, Beträge/Fristen im Code berechnet, Meldungsinhalt als untrusted (Prompt Injection), Secrets im Secret Manager, Limits und Budget-Alarme, Protokoll pro Fall, Idempotenz (Fall-ID). **Compliance:** revDSG, Vertrag mit Anbieter (DPA), Pseudonymisierung wo möglich, Zugriff nur für Berechtigte. **Begründung:** Personendaten und Nachvollziehbarkeit dominieren; eigener Betrieb lohnt sich trotz Aufwand.'
+rubric:
+- Wählt Betriebsform begründet nach Compliance und Datenstandort
+- Reaktiver Ablauf mit Ergebnis als Vorschlag statt Entscheid
+- Grenzen, minimale Werkzeuge, strukturierte Ausgabe, Idempotenz
+- Prompt Injection und Secrets adressiert
+- Datenschutz Schweiz (revDSG, Vertrag, Pseudonymisierung) berücksichtigt
+explanation: Ein Senior-Vorschlag leitet die Betriebsform aus Daten, Nutzern und Compliance ab und macht den unbeaufsichtigten Teil begrenzt, prüfbar und umkehrbar.
+source: automation/betriebsform#die-sechs-entscheidungsfragen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

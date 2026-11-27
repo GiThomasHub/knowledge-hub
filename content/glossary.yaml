@@ -144,6 +144,21 @@
 - term: Checkpoint
   definition: Automatischer Sicherungspunkt von Claude Code vor Dateiänderungen. Mit Esc Esc oder /rewind lassen sich Gespräch und Code zurücksetzen. Erfasst keine Änderungen durch Bash-Befehle und ersetzt Git nicht.
   lesson: claude-code/befehle-und-modi#tastenkuerzel-und-eingaben
+- term: Cron
+  aliases: [Cron-Ausdruck]
+  definition: Zeitplan-Schreibweise mit fünf Feldern (Minute, Stunde, Tag, Monat, Wochentag), z. B. «17 6 * * 1» für jeden Montag um 06:17. Viele Planer rechnen in UTC.
+  lesson: automation/trigger-und-cron#cron-lesen
+- term: Headless
+  aliases: [claude -p, Headless-Modus]
+  definition: Betrieb eines Agenten ohne Dialog – ein Auftrag, ein maschinenlesbares Ergebnis, dann Ende. Bei Claude Code mit claude -p, ideal für Skripte und CI.
+  lesson: automation/headless
+- term: Idempotenz
+  definition: Eigenschaft eines Laufs, beim Wiederholen keinen zusätzlichen Effekt zu haben – ein zweiter Lauf erzeugt keine doppelten PRs, Mails oder Buchungen.
+  lesson: automation/unbeaufsichtigt-absichern#idempotenz-zweimal-laufen-einmal-wirken
+- term: Managed Agents
+  aliases: [Claude Managed Agents]
+  definition: Angebot von Anthropic, bei dem Schleife, Werkzeuge und eine abgeschottete Umgebung pro Session gehostet werden. Für Produkte mit vielen Nutzern und lange autonome Aufgaben.
+  lesson: automation/betriebsform#managed-agents-genauer
 - term: Stoppkriterium
   definition: Bedingung, bei der ein Agent aufhört – Ziel erreicht, maximale Schrittzahl, Budget oder Zeitlimit. Ohne Stoppkriterium endet ein Lauf erst im Timeout oder beim Budget-Ende.
   lesson: agents/agent-bauen#zuerst-wann-hoert-der-agent-auf

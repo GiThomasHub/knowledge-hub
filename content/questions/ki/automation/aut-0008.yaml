@@ -1,0 +1,20 @@
+id: aut-0008
+topic: automation
+competencies:
+- ki-aut-03
+level: L2
+type: single
+question: Welche Kombination passt für einen gesperrten CI-Lauf, der nur lesen und analysieren soll?
+options:
+- '`--dangerously-skip-permissions`'
+- '`--allowedTools "Read,Grep,Glob" --permission-mode dontAsk --max-turns 15 --max-budget-usd 2`'
+- '`--permission-mode acceptEdits`'
+- Gar keine Optionen, Claude fragt ja nach
+answer:
+- 1
+explanation: Freigegebene Lese-Werkzeuge plus dontAsk lehnen alles andere ab; Schritte und Budget sind begrenzt. Bypass hebt alle Prüfungen auf, acceptEdits erlaubt Dateiänderungen, und headless kann niemand Rückfragen beantworten.
+source: automation/headless#rechte-ohne-mensch
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session
