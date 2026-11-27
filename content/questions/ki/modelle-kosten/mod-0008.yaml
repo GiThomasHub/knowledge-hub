@@ -1,0 +1,18 @@
+id: mod-0008
+topic: modelle-kosten
+competencies:
+- ki-mod-02
+level: L2
+type: true_false
+question: Bei Claude Haiku 5.5 steigen alle Preise einer Anfrage auf das Fünffache, wenn der Prompt mehr als 100 000 Tokens umfasst (Stand 27.11.2026).
+options:
+- Wahr
+- Falsch
+answer:
+- 0
+explanation: Wahr. Bis 100 000 Tokens Prompt gelten 0.10/0.50 USD pro Million, darüber 0.50/2.50 USD. Bei kleinen Modellen lohnt es sich deshalb, den Prompt kurz zu halten.
+source: modelle-kosten/modell-pro-aufgabe#max-tokens-die-obergrenze-der-ausgabe
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

@@ -1,0 +1,18 @@
+id: mod-0013
+topic: modelle-kosten
+competencies:
+- ki-mod-04
+level: L3
+type: order
+question: Bring die Schritte einer Kaskade für eingehende Anfragen in die richtige Reihenfolge.
+options:
+- Regel-Vorfilter prüft, ob der Fall eindeutig ist
+- Kleines Modell bearbeitet die übrigen Fälle
+- Prüfung (Schema, Regeln, geeichte Konfidenz) erkennt unsichere Ergebnisse
+- Nur unsichere Fälle gehen an ein grösseres Modell oder höheren Aufwand
+explanation: Billiges zuerst, teuer nur, wo nötig. Voraussetzung ist eine verlässliche Prüfung, die unsichere Fälle erkennt.
+source: modelle-kosten/routing-aufwand-budget#kaskade-statt-grossmodell-fuer-alles
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

@@ -1,0 +1,21 @@
+id: mod-0014
+topic: modelle-kosten
+competencies:
+- ki-mod-04
+level: L3
+type: scenario
+situation: Ein Agent läuft über Nacht in eine Schleife und verbraucht in sechs Stunden das Monatsbudget. Die Budgetprüfung im Code schlägt erst an, nachdem ein Aufruf die Grenze überschritten hat, und gibt nur eine Warnung aus.
+question: Wie sollte die Budgetgrenze stattdessen gebaut sein?
+options:
+- Warnung per Mail am Monatsende
+- Vor jedem Aufruf Kosten schätzen (Eingabe-Tokens + max_tokens × Preise), bei Überschreitung hart und sichtbar stoppen, zusätzlich Ausgabenlimit im Konto und Alarm bei wachsendem Kontext
+- Bei Budgetende automatisch auf ein kleineres Modell wechseln und weiterlaufen
+- Die Grenze einfach verdoppeln
+answer:
+- 1
+explanation: Eine Grenze muss vorher greifen und sichtbar stoppen; ein Kontolimit und Alarme sind die zweite Linie. Stilles Weiterlaufen mit schlechterem Modell verschleiert das Problem, und eine höhere Grenze verschiebt es nur.
+source: modelle-kosten/routing-aufwand-budget#budgetgrenze
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

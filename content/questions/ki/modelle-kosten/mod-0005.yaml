@@ -1,0 +1,20 @@
+id: mod-0005
+topic: modelle-kosten
+competencies:
+- ki-mod-02
+level: L2
+type: single
+question: Welche Zuordnung von Aufgabe zu Modellstufe ist am sinnvollsten?
+options:
+- Mails in drei Kategorien einordnen → Opus 5.5
+- Felder aus Rechnungen herausziehen → Haiku 5.5 mit erzwungenem Schema
+- Schlussurteil zu widersprüchlichen Gutachten → Haiku 5.5
+- Routing jeder Anfrage → Fable 5.2
+answer:
+- 1
+explanation: Extraktion mit Schema ist eine typische Aufgabe für das kleine Modell. Einordnen und Routing brauchen kein grosses Modell, ein Schlussurteil bei widersprüchlichen Quellen dagegen schon.
+source: modelle-kosten/modell-pro-aufgabe#welche-aufgabe-auf-welche-stufe
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

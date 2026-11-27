@@ -1,0 +1,18 @@
+id: mod-0003
+topic: modelle-kosten
+competencies:
+- ki-mod-01
+level: L1
+type: true_false
+question: Wenn das Denken eines Modells in der Antwort ausgeblendet wird, werden die Denk-Tokens nicht verrechnet.
+options:
+- Wahr
+- Falsch
+answer:
+- 1
+explanation: Falsch. Denk-Tokens werden wie Ausgabe abgerechnet, auch wenn das Denken ausgeblendet oder nur zusammengefasst angezeigt wird. Die tatsächlichen Zahlen stehen im Feld usage.
+source: modelle-kosten/wie-kosten-entstehen#was-alles-zur-ausgabe-zaehlt
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

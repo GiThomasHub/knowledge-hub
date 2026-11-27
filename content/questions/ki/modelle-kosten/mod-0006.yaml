@@ -1,0 +1,21 @@
+id: mod-0006
+topic: modelle-kosten
+competencies:
+- ki-mod-02
+level: L2
+type: scenario
+situation: Ein Kritiker-Schritt auf Sonnet 5.5 mit Aufwand medium übersieht regelmässig Sonderfälle, die in den Unterlagen klar beschrieben sind. Das Wissen ist vorhanden, die Prüfung bleibt oberflächlich.
+question: Was ist der erste sinnvolle Schritt?
+options:
+- Auf Opus 5.5 wechseln
+- Den Aufwand für diese Rolle auf high erhöhen und mit echten Fällen vergleichen
+- max_tokens halbieren
+- Den globalen Aufwand für alle Rollen auf max setzen
+answer:
+- 1
+explanation: Oberflächliches Arbeiten bei vorhandenem Wissen spricht für mehr Aufwand vor einem Modellwechsel. Ein globaler Wechsel verteuert alle Rollen, und ein kleineres max_tokens verschlechtert eher.
+source: modelle-kosten/modell-pro-aufgabe#welche-aufgabe-auf-welche-stufe
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

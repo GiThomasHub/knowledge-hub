@@ -1,0 +1,20 @@
+id: mod-0001
+topic: modelle-kosten
+competencies:
+- ki-mod-01
+level: L1
+type: single
+question: Eine Anfrage an Claude Sonnet 5.5 (2 USD Eingabe, 10 USD Ausgabe pro Million Tokens) hat 10 000 Eingabe- und 2 000 Ausgabe-Tokens. Was kostet sie?
+options:
+- 0.012 USD
+- 0.040 USD
+- 0.120 USD
+- 0.024 USD
+answer:
+- 1
+explanation: 10 000 × 2 / 1 000 000 = 0.02 USD Eingabe, 2 000 × 10 / 1 000 000 = 0.02 USD Ausgabe, zusammen 0.04 USD. Die anderen Werte entstehen, wenn man Ein- und Ausgabepreis vertauscht oder einen Teil vergisst.
+source: modelle-kosten/wie-kosten-entstehen#die-formel
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

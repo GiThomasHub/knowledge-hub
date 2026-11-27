@@ -1,0 +1,20 @@
+id: mod-0011
+topic: modelle-kosten
+competencies:
+- ki-mod-03
+level: L2
+type: single
+question: Ein Präfix wird mit 5 Minuten Lebensdauer geschrieben (1,25×) und danach zweimal gelesen (je 0,1×). Wie viel kostet das im Vergleich dazu, das Präfix dreimal voll zu bezahlen (3,0×)?
+options:
+- Gleich viel
+- 1,45× statt 3,0× – also gut die Hälfte gespart
+- Mehr, weil Schreiben teurer ist
+- 0,3× statt 3,0×
+answer:
+- 1
+explanation: 1,25 + 0,1 + 0,1 = 1,45 gegenüber 3,0. Caching lohnt sich ab der ersten Wiederverwendung. 0,3× würde das einmalige Schreiben vergessen.
+source: modelle-kosten/caching-und-batch#prompt-caching
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

@@ -1,0 +1,20 @@
+id: mod-0004
+topic: modelle-kosten
+competencies:
+- ki-mod-01
+level: L1
+type: single
+question: Warum wird ein Agent mit 40 Schritten pro Schritt teurer, obwohl jeder einzelne Auftrag kurz ist?
+options:
+- Weil das Modell mit der Zeit müde wird
+- Weil bei jedem Schritt der ganze bisherige Verlauf inklusive Werkzeugergebnisse erneut als Eingabe mitgeschickt wird
+- Weil die Preise pro Token steigen
+- Weil Ausgabe-Tokens sich ansammeln und erst am Ende verrechnet werden
+answer:
+- 1
+explanation: Der Verlauf wächst und wird jedes Mal neu bezahlt. Die Preise pro Token bleiben gleich, Ermüdung gibt es nicht, und Ausgabe wird pro Aufruf verrechnet.
+source: modelle-kosten/wie-kosten-entstehen#was-alles-zur-eingabe-zaehlt
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session
