@@ -1,0 +1,24 @@
+id: scd-0016
+topic: secure-coding
+competencies:
+- ki-scd-05
+level: L4
+type: multi
+question: Welche Elemente machen Mindeststandards für sicheren Code im Team wirksam? (mehrere richtig)
+options:
+- Wenige, prüfbare Pflichtbausteine statt eines langen Prosa-Leitfadens
+- Scanner und Secret Scanning in der CI, die bei hohen Funden blockieren
+- Negativtests für Zugriff und Eingaben
+- Ein jährliches Sicherheitsseminar als einzige Massnahme
+- Eine Definition of Done mit «keine offenen Funde hoch»
+answer:
+- 0
+- 1
+- 2
+- 4
+explanation: Durchgesetzte, prüfbare Standards wirken; ein Seminar allein ändert den Code nicht. Die Bausteine lassen sich auch in CLAUDE.md und eigenen Prüfbefehlen verankern.
+source: secure-coding/standards-und-vorfall#mindeststandards-fuer-das-team
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

@@ -1,0 +1,20 @@
+id: scd-0015
+topic: secure-coding
+competencies:
+- ki-scd-05
+level: L4
+type: single
+question: Wann muss ein Verantwortlicher nach Art. 24 DSG eine Verletzung der Datensicherheit dem EDÖB melden (Stand 27.11.2026)?
+options:
+- Bei jeder Verletzung, innert 72 Stunden
+- Wenn sie voraussichtlich zu einem hohen Risiko für die Persönlichkeit oder Grundrechte der Betroffenen führt – so rasch als möglich
+- Nur wenn mehr als 1000 Personen betroffen sind
+- Nie, Meldungen sind freiwillig
+answer:
+- 1
+explanation: Massstab ist das voraussichtlich hohe Risiko; die Frist lautet «so rasch als möglich». Die 72 Stunden stammen aus der DSGVO, eine feste Personenzahl gibt es nicht.
+source: secure-coding/standards-und-vorfall#recht-in-der-schweiz-stand-27-11-2026
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

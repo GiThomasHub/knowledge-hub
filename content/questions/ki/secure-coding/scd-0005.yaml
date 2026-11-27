@@ -1,0 +1,24 @@
+id: scd-0005
+topic: secure-coding
+competencies:
+- ki-scd-02
+level: L2
+type: multi
+question: Was gehört zu einer wirksamen Eingabevalidierung? (mehrere richtig)
+options:
+- Prüfung auf dem Server
+- Schema mit Typ, Länge, Wertebereich und Format
+- Allowlist erlaubter Werte statt Blocklist verbotener Muster
+- Prüfung nur im Browser, damit der Server entlastet wird
+- Unbekannte Felder ablehnen
+answer:
+- 0
+- 1
+- 2
+- 4
+explanation: Serverseitige Schema-Validierung mit Allowlist und Ablehnung unbekannter Felder ist wirksam. Prüfungen nur im Browser lassen sich mit direkten Requests umgehen.
+source: secure-coding/eingaben-und-injection#eingaben-validieren
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

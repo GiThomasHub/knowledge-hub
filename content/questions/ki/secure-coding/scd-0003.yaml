@@ -1,0 +1,18 @@
+id: scd-0003
+topic: secure-coding
+competencies:
+- ki-scd-01
+level: L1
+type: true_false
+question: Code, den ein KI-Assistent wie Claude geschrieben hat, braucht keine eigene Sicherheitsprüfung, weil die Modelle auf sicheren Code trainiert sind.
+options:
+- Wahr
+- Falsch
+answer:
+- 1
+explanation: Falsch. KI-generierter Code kann dieselben Lücken enthalten wie menschlicher Code, und Modelle schlagen gelegentlich Paketnamen vor, die es nicht gibt. Er wird genauso mit Scannern, Tests und Review geprüft.
+source: secure-coding/haeufigste-schwachstellen#owasp-top-10-2025
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

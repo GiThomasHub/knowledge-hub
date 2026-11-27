@@ -1,0 +1,23 @@
+id: scd-0013
+topic: secure-coding
+competencies:
+- ki-scd-04
+level: L3
+type: multi
+question: Welche Aussagen zu /security-review in Claude Code stimmen? (mehrere richtig)
+options:
+- Es prüft die offenen Änderungen des aktuellen Branches.
+- Es schliesst u. a. fehlendes Rate-Limiting und veraltete Bibliotheken bewusst aus.
+- Laut Anthropic ist die Methode gegen Prompt Injection gehärtet und auch für fremde Pull Requests ohne Freigabe geeignet.
+- Es ersetzt Scanner wie CodeQL und Negativtests.
+- Es sollte mit Scannern und Tests kombiniert werden.
+answer:
+- 0
+- 1
+- 4
+explanation: Der Befehl prüft den Diff und filtert Härtungsthemen bewusst heraus. Laut Anthropic ist er nicht gegen Prompt Injection gehärtet, und er ersetzt weder Scanner noch Tests.
+source: secure-coding/security-review#security-review-in-claude-code
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session
