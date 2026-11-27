@@ -85,8 +85,9 @@ a.card:hover { transform: translateY(-2px); border-color: var(--accent); }
 
 /* Lesson */
 .lesson-layout { display: grid; grid-template-columns: minmax(0, 1fr) 230px; gap: 40px; }
-@media (max-width: 960px) { .lesson-layout { grid-template-columns: 1fr; } .toc { display: none; } }
-.lesson-body { max-width: 760px; }
+@media (max-width: 960px) { .lesson-layout { grid-template-columns: minmax(0, 1fr); } .toc { display: none; } }
+.lesson-body { max-width: 760px; min-width: 0; }
+.lesson-body img { max-width: 100%; height: auto; }
 .toc { position: sticky; top: 80px; align-self: start; font-size: .86rem; border-left: 2px solid var(--border); padding-left: 14px; max-height: calc(100vh - 100px); overflow-y: auto; }
 .toc a { display: block; color: var(--muted); text-decoration: none; padding: 3px 0; }
 .toc a.l3 { padding-left: 12px; font-size: .82rem; }
@@ -168,3 +169,18 @@ input[type=email], input[type=number], select { font: inherit; padding: 8px 12px
 .news-item { margin-bottom: 20px; }
 .nav-lessons { display: flex; justify-content: space-between; gap: 10px; margin-top: 40px; flex-wrap: wrap; }
 .check-read { margin-top: 30px; }
+
+/* Seite nie seitwärts verschiebbar; nur Tabellen/Diagramme scrollen lokal oder im Vollbild */
+html, body { overflow-x: clip; max-width: 100%; }
+main { min-width: 0; }
+.zoomable { margin: 1em 0; max-width: 100%; }
+.zoomable table, .zoomable pre.mermaid { margin: 0; max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.zoomable pre.mermaid { cursor: zoom-in; }
+.zoom-bar { display: flex; justify-content: flex-end; margin-bottom: 2px; }
+.zoom-bar button { padding: 2px 8px; font-size: .8rem; color: var(--muted); }
+.zoom-overlay { position: fixed; inset: 0; z-index: 100; background: var(--bg); display: flex; flex-direction: column; }
+.zoom-toolbar { display: flex; gap: 8px; padding: 10px 12px; border-bottom: 1px solid var(--border); background: var(--surface); flex-wrap: wrap; }
+.zoom-body { flex: 1; overflow: auto; padding: 12px; touch-action: pan-x pan-y pinch-zoom; -webkit-overflow-scrolling: touch; }
+.zoom-content { margin: 0; width: max-content; max-width: none; background: var(--surface); }
+.zoom-content svg { display: block; }
+body.noscroll { overflow: hidden; }

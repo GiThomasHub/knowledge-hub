@@ -297,6 +297,7 @@ const views = {
       box.innerHTML = `<h3 style="margin-top:0">✅ Selbstcheck</h3>`; const c = document.createElement("div"); box.appendChild(c);
       runQuiz(c, qs, { title: "Selbstcheck" });
     });
+    enhanceZoomables(app);
     if (app.querySelector(".mermaid")) renderMermaid();
     if (anchor) document.getElementById(anchor)?.scrollIntoView(); else window.scrollTo({ top: 0 });
   },
@@ -384,6 +385,39 @@ const views = {
   },
   notfound() { app.innerHTML = `<h1>Nicht gefunden</h1><p><a href="#/">Zur Startseite</a></p>`; },
 };
+
+// ---------------------------------------------------------------- Tabellen/Diagramme: lokal scrollbar + Vollbild mit Zoom
+function enhanceZoomables(root) {
+  root.querySelectorAll(".content table, .content pre.mermaid").forEach((el) => {
+    if (el.closest(".zoomable")) return;
+    const w = document.createElement("div"); w.className = "zoomable";
+    el.parentNode.insertBefore(w, el); w.appendChild(el);
+    const bar = document.createElement("div"); bar.className = "zoom-bar";
+    bar.innerHTML = `<button type="button" class="ghost small" aria-label="Vergrössern">⤢ Vergrössern</button>`;
+    bar.firstChild.onclick = () => openZoom(el);
+    w.insertBefore(bar, el);
+    if (el.matches("pre.mermaid")) el.addEventListener("click", () => { if (el.querySelector("svg")) openZoom(el); });
+  });
+}
+function openZoom(el) {
+  const ov = document.createElement("div"); ov.className = "zoom-overlay"; ov.setAttribute("role", "dialog"); ov.setAttribute("aria-modal", "true");
+  const clone = el.cloneNode(true); clone.removeAttribute("id"); clone.classList.add("zoom-content");
+  const svg = clone.querySelector("svg"); let base = 0;
+  if (svg) { const vb = (svg.getAttribute("viewBox") || "").split(/[ ,]+/).map(Number); base = vb[2] || svg.getBoundingClientRect().width || 600; svg.removeAttribute("height"); svg.style.maxWidth = "none"; svg.style.width = base + "px"; }
+  let scale = svg ? Math.min(1, (window.innerWidth - 24) / base) : 1;
+  const apply = () => { if (svg) svg.style.width = base * scale + "px"; else clone.style.zoom = scale; };
+  const tb = document.createElement("div"); tb.className = "zoom-toolbar";
+  tb.innerHTML = `<button type="button" data-z="out" aria-label="Verkleinern">−</button><button type="button" data-z="in" aria-label="Vergrössern">+</button><button type="button" data-z="fit">Anpassen</button><button type="button" class="primary" data-z="close">Schliessen</button>`;
+  const body = document.createElement("div"); body.className = "zoom-body"; body.appendChild(clone);
+  ov.append(tb, body); document.body.appendChild(ov); document.body.classList.add("noscroll"); apply();
+  const close = () => { ov.remove(); document.body.classList.remove("noscroll"); document.removeEventListener("keydown", onKey); };
+  const onKey = (e) => { if (e.key === "Escape") close(); };
+  document.addEventListener("keydown", onKey);
+  tb.onclick = (e) => { const z = e.target.dataset?.z; if (!z) return;
+    if (z === "close") return close();
+    if (z === "in") scale = Math.min(scale * 1.25, 4); else if (z === "out") scale = Math.max(scale / 1.25, 0.3); else scale = svg ? Math.min(1, (window.innerWidth - 24) / base) : 1;
+    apply(); };
+}
 
 // ---------------------------------------------------------------- Mermaid (nur laden, wenn gebraucht)
 let mermaidMod = null;
