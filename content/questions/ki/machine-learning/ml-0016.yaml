@@ -1,0 +1,22 @@
+id: ml-0016
+topic: machine-learning
+competencies:
+- ki-ml-04
+level: L4
+type: case
+question: Eine Schweizer Regionalbank will Kleinkreditanträge «mit KI» schneller entscheiden. Vorhanden sind 15 Jahre Antragsdaten mit Rückzahlungsverlauf, dazu Freitext-Begründungen der Antragsteller. Die Geschäftsleitung erwartet «99 % Genauigkeit». Erarbeite eine Empfehlung.
+model_answer: '**Problem schärfen:** Ziel ist eine Kategorie (Ausfall ja/nein) bzw. eine Ausfallwahrscheinlichkeit; harte Vorgaben (Mindestalter, Kreditfähigkeitsprüfung, interne Limiten) bleiben **Regeln** als Leitplanken. **Technik:** Kern ist ein **klassisches Modell** auf den Tabellendaten (Basislinie logistische Regression, dann Gradient Boosting); ein Sprachmodell kann aus den Freitexten strukturierte Merkmale ziehen, entscheidet aber nicht. **Validierung:** chronologisch teilen (ältere Jahre Training, jüngste Periode Test), Vorverarbeitung in der Pipeline, auf Leakage prüfen (keine Felder, die erst nach dem Entscheid entstehen). **Metriken statt «99 %»:** Ausfälle sind selten, Accuracy täuscht; Precision und Recall für «Ausfall», Fehlerkosten in CHF (Ausfallverlust gegen entgangene Marge abgelehnter guter Kunden), Schwellenwert danach wählen. **Fairness und Recht:** Fehlerraten pro Untergruppe auswerten; bei ausschliesslich automatisierten Entscheiden mit erheblicher Wirkung Informationspflicht
+  nach Art. 21 DSG und Möglichkeit der Überprüfung durch einen Menschen – darum Ablehnungen und Grenzfälle durch Kreditfachleute entscheiden lassen; Datenschutzverantwortliche beiziehen (keine Rechtsberatung). **Betrieb:** Modell und Daten versionieren, Drift überwachen (z. B. Zinsumfeld), Nachtrainieren planen. **Erwartung managen:** Erfolg ist eine schnellere, nachvollziehbare Entscheidung mit gleicher oder besserer Ausfallquote, nicht eine Accuracy-Zahl.'
+rubric:
+- Regeln als Leitplanke, klassisches ML als Kern, GenAI nur für Freitext-Merkmale
+- Chronologischer Split und Leakage-Prüfung
+- 'Accuracy-Erwartung korrigiert: Precision/Recall, Fehlerkosten in CHF, Schwellenwert'
+- Fairness pro Untergruppe und Art. 21 DSG mit menschlicher Überprüfung
+- Betrieb mit Versionierung, Drift-Überwachung und Nachtrainieren
+- Erwartungsmanagement gegenüber der Geschäftsleitung
+explanation: Eine Senior-Empfehlung wählt das Werkzeug passend zu Daten und Risiko, ersetzt die Marketingzahl durch geschäftsrelevante Metriken und deckt Fairness, Recht und Betrieb ab.
+source: machine-learning/regel-ml-oder-genai#was-neben-der-technik-entscheidet
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

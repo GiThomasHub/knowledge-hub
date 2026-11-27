@@ -1,0 +1,21 @@
+id: ml-0015
+topic: machine-learning
+competencies:
+- ki-ml-04
+level: L4
+type: scenario
+situation: Ein Energieversorger möchte für jeden seiner 200 000 Kunden monatlich die Wahrscheinlichkeit eines Anbieterwechsels berechnen. Es gibt zehn Jahre Vertrags-, Verbrauchs- und Kündigungsdaten in Tabellenform. Ein Berater schlägt vor, jeden Kunden einzeln von einem Sprachmodell beurteilen zu lassen.
+question: Wie beurteilst du den Vorschlag?
+options:
+- Gut – Sprachmodelle sind für jede Vorhersage die modernste Lösung
+- 'Ungeeignet als Kernlösung: Für strukturierte Daten mit vielen bekannten Ergebnissen ist ein klassisches Modell (z. B. Gradient Boosting) meist genauer, günstiger, stabiler und besser erklärbar; ein Sprachmodell kann allenfalls Freitext wie Beschwerden in Merkmale übersetzen'
+- Gut, aber nur mit einem lokalen Modell
+- Ungeeignet, weil Kündigungen grundsätzlich nicht vorhersagbar sind
+answer:
+- 1
+explanation: Tabellendaten, viele gelabelte Fälle und hohes Volumen sprechen klar für klassisches ML gegen eine Basislinie. Ein Sprachmodell pro Kunde wäre teurer, schwankender und schwer zu validieren; sinnvoll ist es höchstens für Freitext-Merkmale. Ob lokal oder Cloud ändert daran nichts, und Kündigungsrisiken sind mit solchen Daten gut modellierbar.
+source: machine-learning/regel-ml-oder-genai#das-entscheidungsraster
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

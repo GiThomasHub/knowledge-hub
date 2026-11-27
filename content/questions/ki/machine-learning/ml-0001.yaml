@@ -1,0 +1,20 @@
+id: ml-0001
+topic: machine-learning
+competencies:
+- ki-ml-01
+level: L1
+type: single
+question: Eine Versicherung hat 50 000 abgeschlossene Schadenfälle mit dem Vermerk «Betrug ja/nein» und will neue Fälle automatisch einschätzen. Welches Lernparadigma passt?
+options:
+- Supervised Learning (Klassifikation)
+- Unsupervised Learning (Clustering)
+- Reinforcement Learning
+- Self-Supervised Learning
+answer:
+- 0
+explanation: Es gibt viele Beispiele mit bekannter Antwort, und vorhergesagt wird eine Kategorie – das ist Klassifikation im Supervised Learning. Clustering sucht Gruppen ohne Labels, Reinforcement Learning lernt aus Belohnungen in einer Umgebung, und Self-Supervised gewinnt das Label aus den Rohdaten selbst.
+source: machine-learning/lernparadigmen#die-lernparadigmen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

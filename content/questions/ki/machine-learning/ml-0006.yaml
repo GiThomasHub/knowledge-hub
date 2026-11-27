@@ -1,0 +1,20 @@
+id: ml-0006
+topic: machine-learning
+competencies:
+- ki-ml-02
+level: L2
+type: single
+question: Ein Betrugsmodell meldet 2 000 Transaktionen als verdächtig, davon sind 400 tatsächlich Betrug. Insgesamt gab es 500 Betrugsfälle. Wie hoch sind Precision und Recall?
+options:
+- Precision 80 %, Recall 20 %
+- Precision 20 %, Recall 80 %
+- Precision 25 %, Recall 40 %
+- Precision 20 %, Recall 25 %
+answer:
+- 1
+explanation: Precision = 400 ÷ 2 000 = 20 % der Alarme stimmen. Recall = 400 ÷ 500 = 80 % der echten Fälle wurden gefunden. Wer die beiden Werte vertauscht oder die falschen Nenner nimmt, kommt auf die anderen Zahlen.
+source: machine-learning/metriken-lesen#die-konfusionsmatrix
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

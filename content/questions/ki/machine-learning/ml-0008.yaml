@@ -1,0 +1,24 @@
+id: ml-0008
+topic: machine-learning
+competencies:
+- ki-ml-02
+level: L2
+type: multi
+question: Was gehört in einen aussagekräftigen Bericht über ein Klassifikationsmodell bei seltenen Ereignissen? (mehrere richtig)
+options:
+- Precision und Recall pro Klasse
+- Vergleich mit einer einfachen Basislinie
+- Auswertung nach Untergruppen
+- Nur die Gesamt-Accuracy, weil sie am leichtesten zu verstehen ist
+- Übersetzung der Fehlerarten in Kosten
+answer:
+- 0
+- 1
+- 2
+- 4
+explanation: Precision und Recall pro Klasse, eine Basislinie, Untergruppen und Fehlerkosten machen die Zahlen interpretierbar. Die Gesamt-Accuracy allein täuscht gerade bei seltenen Ereignissen.
+source: machine-learning/metriken-lesen#metriken-fuer-zahlen-regression
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

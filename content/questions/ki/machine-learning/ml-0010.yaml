@@ -1,0 +1,20 @@
+id: ml-0010
+topic: machine-learning
+competencies:
+- ki-ml-03
+level: L3
+type: single
+question: Ein Modell erreicht 98 % im Training und 61 % im Test. Welche Massnahme passt am besten?
+options:
+- Ein noch komplexeres Modell wählen
+- Das Modell vereinfachen oder regularisieren und mit Cross-Validation prüfen
+- Den Testsatz so lange anpassen, bis er dem Training ähnlicher ist
+- Mehr Merkmale hinzufügen
+answer:
+- 1
+explanation: Der grosse Abstand zwischen Training und Test ist das Zeichen von Overfitting. Vereinfachen, Regularisierung und Cross-Validation helfen. Ein komplexeres Modell oder mehr Merkmale verstärken das Auswendiglernen eher, und ein angepasster Testsatz zerstört die ehrliche Schätzung.
+source: machine-learning/overfitting-und-leakage#overfitting-und-underfitting
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session
