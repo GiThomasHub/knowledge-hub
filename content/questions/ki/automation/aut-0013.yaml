@@ -1,0 +1,21 @@
+id: aut-0013
+topic: automation
+competencies:
+- ki-aut-05
+level: L4
+type: scenario
+situation: Ein Treuhandbüro will jeden Morgen einen personalisierten Marktbericht per Mail an 30 Mitarbeitende. Kein Rechner soll dafür laufen; Kundendaten sind nicht enthalten.
+question: Welche Betriebsform passt am besten?
+options:
+- Claude Code im Terminal auf dem Laptop der Teamleiterin
+- Claude Desktop Scheduled Task
+- Managed Agents, ausgelöst durch einen Cloud Scheduler, oder eine Claude Cloud Scheduled Task mit Mail-Connector
+- Eine VM, auf der jemand täglich einen Befehl tippt
+answer:
+- 2
+explanation: Kein Rechner soll laufen, es gibt mehrere Empfänger und keine besonders sensiblen Daten – ein verwalteter Cloud-Betrieb passt. Terminal und Desktop-Aufgaben brauchen einen laufenden Rechner, und eine manuelle VM ist keine Automatisierung.
+source: automation/betriebsform#drei-beispiele
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

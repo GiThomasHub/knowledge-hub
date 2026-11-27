@@ -1,0 +1,20 @@
+id: aut-0005
+topic: automation
+competencies:
+- ki-aut-02
+level: L2
+type: single
+question: Welche Aussage zu Claude Cloud Scheduled Tasks stimmt (Stand 27.11.2026)?
+options:
+- Sie laufen nur, solange dein Laptop eingeschaltet ist.
+- Sie laufen in Anthropics Cloud, mindestens stündlich, und während des Laufs gibt es keine Freigabe-Rückfragen.
+- Sie können jede Minute laufen.
+- Sie sind nur im Enterprise-Plan verfügbar.
+answer:
+- 1
+explanation: Cloud Scheduled Tasks (früher Routines) laufen in der Cloud, auch wenn dein Rechner aus ist, mit einem Mindestintervall von einer Stunde und ohne Rückfragen während des Laufs. Verfügbar sind sie in Pro, Max, Team und Enterprise. An den Rechner gebunden sind die Desktop-Aufgaben.
+source: automation/geplante-laeufe#weg-2-claude-cloud-scheduled-tasks
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

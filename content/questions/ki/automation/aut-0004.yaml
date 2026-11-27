@@ -1,0 +1,24 @@
+id: aut-0004
+topic: automation
+competencies:
+- ki-aut-02
+level: L2
+type: multi
+question: Was gehört in einen guten GitHub-Actions-Workflow für einen wöchentlichen Agenten-Lauf? (mehrere richtig)
+options:
+- '`workflow_dispatch` zusätzlich zum Zeitplan'
+- '`timeout-minutes` für den Job'
+- Der API-Key direkt im YAML, damit er sicher gefunden wird
+- '`permissions` nur so weit wie nötig'
+- '`concurrency`, damit nie zwei Läufe gleichzeitig arbeiten'
+answer:
+- 0
+- 1
+- 3
+- 4
+explanation: Ein Knopf zum Testen, eine harte Zeitgrenze, minimale Rechte und gesperrte Gleichzeitigkeit machen den Lauf testbar und sicher. Der Schlüssel gehört in die Repo-Secrets, nie ins YAML.
+source: automation/geplante-laeufe#weg-1-github-actions-mit-der-claude-code-action
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

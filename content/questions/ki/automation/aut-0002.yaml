@@ -1,0 +1,23 @@
+id: aut-0002
+topic: automation
+competencies:
+- ki-aut-01
+level: L1
+type: multi
+question: 'Ordne richtig zu: Welche Auslöser sind reaktiv? (mehrere richtig)'
+options:
+- Ein neuer Pull Request wird geöffnet
+- Jeden Montag um 06:17
+- Ein Kommentar mit @claude in einem Issue
+- Jemand klickt «Run workflow»
+- Eine neue Datei landet in einem Cloud-Bucket
+answer:
+- 0
+- 2
+- 4
+explanation: 'Reaktiv heisst: ein Ereignis löst aus – PR, Kommentar, neue Datei. «Montags um 06:17» ist periodisch, «Run workflow» ist ein aktiver, bewusster Auslöser.'
+source: automation/trigger-und-cron#drei-arten-von-triggern
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

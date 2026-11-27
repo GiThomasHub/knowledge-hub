@@ -1,0 +1,20 @@
+id: aut-0006
+topic: automation
+competencies:
+- ki-aut-02
+level: L2
+type: single
+question: 'Warum gehört in den Prompt eines geplanten Laufs die Zeile «Wenn nichts zu tun ist: nur kurzer Bericht, kein PR»?'
+options:
+- Damit der Lauf schneller startet
+- Weil ein Agent mit Verbesserungsauftrag sonst fast immer etwas findet – notfalls Unnötiges – und PRs ohne Mehrwert erzeugt
+- Weil GitHub sonst den Workflow deaktiviert
+- Weil der Prompt sonst zu kurz ist
+answer:
+- 1
+explanation: Ohne ausdrückliche Regel für den Leerfall produziert der Agent Beschäftigung und PR-Flut. Mit Startzeit, Deaktivierung oder Prompt-Länge hat die Zeile nichts zu tun.
+source: automation/geplante-laeufe#der-prompt-fuer-einen-geplanten-lauf
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session
