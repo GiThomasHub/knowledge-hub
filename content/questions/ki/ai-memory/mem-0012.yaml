@@ -1,0 +1,24 @@
+id: mem-0012
+topic: ai-memory
+competencies:
+- ki-mem-04
+level: L3
+type: multi
+question: Ein RAG-System liefert seit einem Wechsel des Embedding-Modells deutlich schlechtere Treffer, ohne Fehlermeldung. Welche Ursachen kommen in Frage? (mehrere richtig)
+options:
+- Der alte Index wurde nicht neu eingebettet – Frage und Index nutzen verschiedene Modelle.
+- Das neue Modell erwartet Präfixe wie «query:» und «passage:», die fehlen.
+- Die Chunks sind länger als die maximale Eingabelänge und werden still abgeschnitten.
+- Das Sprachmodell für die Antwort ist zu klein.
+- Das Distanzmass passt nicht zur Normalisierung des neuen Modells.
+answer:
+- 0
+- 1
+- 2
+- 4
+explanation: Alles sind typische stille Embedding-Fehler. Das Antwortmodell beeinflusst nicht, welche Abschnitte gefunden werden.
+source: ai-memory/rag-optimieren#4-contextual-retrieval
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

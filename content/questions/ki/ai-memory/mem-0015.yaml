@@ -1,0 +1,24 @@
+id: mem-0015
+topic: ai-memory
+competencies:
+- ki-mem-05
+level: L3
+type: multi
+question: Was gehört in ein gutes RAG-Testset? (mehrere richtig)
+options:
+- Echte Fragen aus Tickets, Mails und Gesprächen
+- Zu jeder Frage die Soll-Quellen
+- Fragen, auf die es im Bestand keine Antwort gibt
+- Nur Fragen, die das System heute schon gut beantwortet
+- Kategorien, um Ergebnisse pro Bereich zu sehen
+answer:
+- 0
+- 1
+- 2
+- 4
+explanation: Echte Fragen, Soll-Quellen, Negativfälle und Kategorien machen das Testset aussagekräftig. Nur einfache Fälle würden Schwächen verstecken.
+source: ai-memory/rag-messen#das-testset
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

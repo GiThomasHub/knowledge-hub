@@ -1,0 +1,20 @@
+id: mem-0017
+topic: ai-memory
+competencies:
+- ki-mem-06
+level: L4
+type: case
+question: Eine Schweizer Anwaltskanzlei (30 Personen) will, dass Claude (a) interne Vorlagen und Checklisten kennt (ca. 60 Dokumente), (b) aus 15 000 Mandatsakten ähnliche frühere Fälle findet und (c) Erkenntnisse aus abgeschlossenen Mandaten dauerhaft sammelt. Schlage eine Wissensarchitektur inklusive Pflege und Datenschutz vor.
+model_answer: '**(a) Vorlagen/Checklisten:** Projektwissen bzw. Skills, mit Prompt Caching – keine Suchinfrastruktur nötig. **(b) Mandatsakten:** RAG mit Hybrid-Suche (Vektor + BM25 für Aktenzeichen, Namen, Artikel), Reranking, Metadaten (Mandat, Rechtsgebiet, Datum, Berechtigung) für Filter und Zitate; Contextual Retrieval; Testset mit echten Fragen und Soll-Quellen, Kennzahlen Recall, Precision, Faithfulness. **(c) Erkenntnisse:** gepflegtes Wiki als Markdown in Git (Lektionen, Muster, Entscheide), Ingest nach Mandatsabschluss, Agent schlägt vor, verantwortliche Person gibt frei, regelmässige Konsolidierung. Graph erst bei gemessenem Bedarf. **Datenschutz/Berufsgeheimnis:** Zweck und Minimierung, Zugriff nach Mandatsberechtigung (Filter), Löschfristen inkl. Index und Embeddings, lokale Embeddings und Speicher in CH/EU prüfen, Datenstandort des Sprachmodells und Vertrag klären, keine besonders schützenswerten Daten ins Wiki. **Eigentümer** pro Bereich, Messung nach Einführung.'
+rubric:
+- Passender Baustein je Bedarf (Projektwissen, RAG, Wiki) statt einer Einheitslösung
+- RAG mit Hybrid, Reranking, Metadaten und Testset
+- Pflegeprozess mit Eigentümer, Freigabe und Konsolidierung
+- 'Datenschutz und Berufsgeheimnis: Zugriff, Löschen inkl. Embeddings, Datenstandort'
+- Eskalation (z. B. Graph) nur bei gemessenem Bedarf
+explanation: Ein Senior-Vorschlag wählt pro Bedarf den einfachsten tragfähigen Baustein, plant die Pflege und behandelt Berufsgeheimnis und revDSG von Anfang an.
+source: ai-memory/wissensarchitektur#die-vier-bausteine
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

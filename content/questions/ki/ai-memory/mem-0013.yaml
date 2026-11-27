@@ -1,0 +1,18 @@
+id: mem-0013
+topic: ai-memory
+competencies:
+- ki-mem-04
+level: L3
+type: order
+question: Bring die Schritte einer optimierten Abfrage in die richtige Reihenfolge.
+options:
+- Hybrid-Suche holt grob die Top ~50
+- Metadaten-Filter grenzen ein (z. B. nur gültige Reglemente)
+- Reranker wählt die besten ~5
+- Modell antwortet mit Quellen
+explanation: Erst breit suchen, dann filtern, dann mit dem langsameren, genaueren Reranker verdichten, und erst dann antworten.
+source: ai-memory/rag-optimieren#die-pipeline-mit-ihren-hebeln
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

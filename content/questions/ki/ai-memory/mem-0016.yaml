@@ -1,0 +1,21 @@
+id: mem-0016
+topic: ai-memory
+competencies:
+- ki-mem-05
+level: L3
+type: scenario
+situation: Nach der Einführung von Reranking steigt der Durchschnitt von 82 % auf 85 %. In der Kategorie «Tabellen in PDFs» liegt das System aber nur bei 40 %.
+question: Was folgt daraus?
+options:
+- Alles gut, der Durchschnitt ist gestiegen.
+- Die Schwachstelle liegt vermutlich beim Laden und Chunking von Tabellen – dort ansetzen und mit demselben Testset nachmessen.
+- Das Reranking rückgängig machen.
+- Auf ein grösseres Sprachmodell wechseln.
+answer:
+- 1
+explanation: Ergebnisse pro Kategorie zeigen, wo der Hebel liegt. Zerrissene Tabellen sind ein typisches Lade- und Chunking-Problem, das weder Reranking noch ein grösseres Modell löst.
+source: ai-memory/rag-messen#mit-dem-testset-optimieren
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session
