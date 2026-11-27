@@ -1,0 +1,24 @@
+id: agt-0007
+topic: agents
+competencies:
+- ki-agt-03
+level: L2
+type: multi
+question: Welche Stoppkriterien gehören in jeden Agenten? (mehrere richtig)
+options:
+- Ziel erreicht (prüfbar)
+- Maximale Schrittzahl
+- Budget
+- Zeitlimit
+- Die Zufriedenheit des Modells mit seiner Antwort
+answer:
+- 0
+- 1
+- 2
+- 3
+explanation: Ein prüfbares Ziel ist der Normalfall; Schrittzahl, Budget und Zeit sind die harten Ausgänge gegen Schleifen, Kosten und hängende Werkzeuge. «Zufrieden» ist kein prüfbares Kriterium.
+source: agents/agent-bauen#zuerst-wann-hoert-der-agent-auf
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

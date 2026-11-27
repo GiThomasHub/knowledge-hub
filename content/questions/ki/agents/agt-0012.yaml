@@ -1,0 +1,20 @@
+id: agt-0012
+topic: agents
+competencies:
+- ki-agt-04
+level: L3
+type: single
+question: Ein Evaluator-Optimizer übersetzt Texte und prüft gegen ein Fachglossar. Was muss unbedingt eingebaut sein?
+options:
+- Ein grösseres Modell für den Erzeuger
+- Ein Abbruch nach N Runden ohne Fortschritt
+- Dass der Erzeuger sich im selben Aufruf selbst bewertet
+- Dass der Bewerter keine Kriterien bekommt, um unvoreingenommen zu sein
+answer:
+- 1
+explanation: Ohne Bremse poliert das System endlos. Der Bewerter braucht klare Kriterien und ist ein eigener Aufruf; Selbstbewertung im selben Aufruf bringt wenig. Ein grösseres Modell kann helfen, ersetzt aber die Abbruchbedingung nicht.
+source: agents/muster#die-details-die-den-unterschied-machen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

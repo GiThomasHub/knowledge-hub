@@ -1,0 +1,22 @@
+id: agt-0013
+topic: agents
+competencies:
+- ki-agt-04
+level: L3
+type: multi
+question: Wann sind mehrere Agenten sinnvoll? (mehrere richtig)
+options:
+- Die Aufgabe zerfällt in unabhängige Teile, die parallel laufen können
+- Ein Befund soll von einem unabhängigen Prüfer widerlegt werden
+- Alle Teilaufgaben hängen eng zusammen und jeder muss alles wissen
+- Die Aufgabe ist für einen einzelnen Kontext zu gross
+answer:
+- 0
+- 1
+- 3
+explanation: Parallelität, unabhängige Prüfung und zu grosse Aufgaben sprechen für mehrere Agenten. Bei eng gekoppelten Teilen ist ein einzelner Agent mit gutem Kontext besser und billiger – Multi-Agent-Läufe kosten ein Vielfaches.
+source: agents/muster#mehrere-agenten-wann-ja-wann-nein
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session
