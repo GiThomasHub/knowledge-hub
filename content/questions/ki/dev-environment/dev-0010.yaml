@@ -1,0 +1,20 @@
+id: dev-0010
+topic: dev-environment
+competencies:
+- ki-dev-04
+level: L2
+type: single
+question: Was gehört in die `.env.example`?
+options:
+- Eine Kopie der .env mit allen echten Werten
+- Alle Variablennamen mit Kommentar und Platzhalter, ohne echte Secrets
+- Nur die Secrets, damit man sie nicht vergisst
+- Gar nichts, sie ist veraltet
+answer:
+- 1
+explanation: .env.example wird committet und zeigt Team und Agenten, welche Variablen nötig sind – ohne Werte. Echte Werte oder Secrets darin wären im Git veröffentlicht. Jede neue Variable kommt immer auch in die .env.example.
+source: dev-environment/config-und-secrets#env-und-env-example
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

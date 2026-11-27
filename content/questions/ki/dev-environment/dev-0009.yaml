@@ -1,0 +1,21 @@
+id: dev-0009
+topic: dev-environment
+competencies:
+- ki-dev-03
+level: L2
+type: scenario
+situation: Auf einem frischen Ubuntu tippt ein Kollege `pip install httpx` und erhält «externally-managed-environment».
+question: Was ist die richtige Reaktion?
+options:
+- pip install --break-system-packages httpx
+- sudo pip install httpx
+- Im Projekt uv add httpx verwenden; für globale Werkzeuge uv tool install
+- Ubuntu neu installieren
+answer:
+- 2
+explanation: Ubuntu schützt sein System-Python (PEP 668), damit Pakete das Betriebssystem nicht beschädigen. Projektpakete gehören in die Projektumgebung (uv add), Werkzeuge in eigene Umgebungen (uv tool install). --break-system-packages und sudo pip umgehen den Schutz und erzeugen genau das Problem, vor dem er warnt.
+source: dev-environment/python-projekt-uv#typische-fehler
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

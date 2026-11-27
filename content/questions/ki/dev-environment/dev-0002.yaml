@@ -1,0 +1,20 @@
+id: dev-0002
+topic: dev-environment
+competencies:
+- ki-dev-01
+level: L1
+type: single
+question: Du tippst `docker ps` und bekommst «command not found». Was ist die wahrscheinlichste erste Ursache?
+options:
+- Docker ist defekt und muss neu installiert werden.
+- Du bist im falschen Gebäude, z. B. in PowerShell statt in der Ubuntu-Shell.
+- Der Befehl heisst unter Linux anders.
+- Docker braucht immer sudo.
+answer:
+- 1
+explanation: Docker wohnt im Linux-Anbau (WSL). In PowerShell ist der Befehl oft nicht vorhanden. Erst wenn du sicher im richtigen Terminal bist, lohnt die Suche nach anderen Ursachen. Der Befehl heisst überall gleich, und eine fehlende Gruppe docker führt zu «permission denied», nicht zu «not found».
+source: dev-environment/vier-welten#hauptgebaeude-anbau-schreibtisch-pavillon
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

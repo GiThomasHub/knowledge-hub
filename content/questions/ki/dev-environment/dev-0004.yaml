@@ -1,0 +1,18 @@
+id: dev-0004
+topic: dev-environment
+competencies:
+- ki-dev-02
+level: L1
+type: order
+question: Bring das Startritual für ein Linux-Projekt in VS Code in die richtige Reihenfolge.
+options:
+- Ubuntu-Terminal öffnen
+- cd ~/projekte/app
+- code . eingeben
+- 'Unten links prüfen, ob «WSL: Ubuntu» steht'
+explanation: Erst ins Linux, dann in den Projektordner, dann VS Code von dort starten – so verbindet es sich mit WSL. Die Kontrolle unten links bestätigt, dass Terminal, Dateien und Erweiterungen im Linux laufen.
+source: dev-environment/vs-code-mit-wsl#das-startritual
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

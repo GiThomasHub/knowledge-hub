@@ -1,0 +1,20 @@
+id: dev-0014
+topic: dev-environment
+competencies:
+- ki-dev-05
+level: L3
+type: single
+question: Ein Teil des Teams nutzt nicht VS Code, und KI-Agenten schreiben Dateien ganz ohne Editor. Wie stellst du trotzdem einheitliche Zeilenenden und Einrückung sicher?
+options:
+- .vscode/settings.json reicht aus
+- .editorconfig für Editoren und .gitattributes mit eol=lf für das Repo
+- Allen dieselbe VS-Code-Version vorschreiben
+- Nach jedem Commit manuell prüfen
+answer:
+- 1
+explanation: .editorconfig wird von den meisten Editoren gelesen, und .gitattributes normalisiert Zeilenenden beim Commit – unabhängig davon, wer oder was die Datei geschrieben hat. .vscode/ wirkt nur in VS Code, eine Versionsvorschrift löst das Problem nicht, und manuelles Prüfen skaliert nicht.
+source: dev-environment/team-standards#editor-unabhaengig-editorconfig-und-gitattributes
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

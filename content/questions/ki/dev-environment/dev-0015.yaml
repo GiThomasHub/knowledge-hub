@@ -1,0 +1,21 @@
+id: dev-0015
+topic: dev-environment
+competencies:
+- ki-dev-05
+level: L3
+type: case
+question: Ein Beratungsteam (6 Personen, Windows-Laptops, teils Mac) startet jeden Monat zwei neue Python-Projekte mit Claude Code. Onboarding dauert zwei Tage, CI ist oft «nur bei mir» rot. Skizziere einen Standardisierungsplan in Etappen.
+model_answer: '**Etappe 1 (diese Woche):** in alle aktiven Repos `.editorconfig`, `.gitattributes` (eol=lf), `.vscode/settings.json` (Formatierer, Interpreter `${workspaceFolder}/.venv`), `extensions.json`; `pyproject.toml` + `uv.lock` + `.python-version` committen; CI mit `uv sync --locked` und **demselben** Lint-Befehl wie lokal (pre-commit). **Etappe 2 (diesen Monat):** Projektvorlage per Skript (Struktur, `.env.example`, `.gitignore`), Prüfskript für Abweichungen (Projekt unter /mnt/c, `.env` im Git, fehlender Lock). Windows: Projekte in WSL. **Etappe 3 (Quartal):** gemeinsames Basis-Image + `devcontainer.json` pro Projekt, damit Windows und Mac identisch sind und Claude Code isoliert läuft. **Messbar:** frischer Klon + 2 Befehle läuft auf fremdem Rechner; Onboarding < 2 h. Persönliches (Theme, Kürzel) bleibt in User-Settings, Settings Sync.'
+rubric:
+- Gliedert in Etappen mit steigendem Aufwand
+- Lock-Datei und uv sync --locked in CI
+- Editor-unabhängige Dateien (.editorconfig, .gitattributes)
+- Vorlage und/oder Prüfskript für neue Projekte
+- Devcontainer für heterogene Rechner und Agenten
+- Messbares Ziel (frischer Klon läuft, Onboarding-Zeit)
+explanation: Ein Senior-Plan beginnt mit billigen Massnahmen mit grosser Wirkung, macht den Erfolg messbar und setzt den Devcontainer dort ein, wo heterogene Rechner und KI-Agenten ihn rechtfertigen.
+source: dev-environment/team-standards#drei-stufen-der-standardisierung
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session
