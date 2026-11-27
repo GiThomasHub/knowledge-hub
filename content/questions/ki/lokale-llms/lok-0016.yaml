@@ -1,0 +1,22 @@
+id: lok-0016
+topic: lokale-llms
+competencies:
+- ki-lok-04
+level: L4
+type: case
+question: 'Eine Schweizer Arztpraxisgruppe (12 Standorte) will Sprechstundennotizen automatisch in strukturierte Berichte überführen. Die IT-Leitung sagt: «Gesundheitsdaten dürfen nicht in die Cloud, also machen wir alles lokal.» Erarbeite eine Empfehlung mit Entscheidungsgrundlage.'
+model_answer: '**Ausgangslage klären:** Gesundheitsdaten sind besonders schützenswerte Personendaten nach revDSG, zudem gilt das Berufsgeheimnis; Datenschutzverantwortliche beiziehen (keine Rechtsberatung). Ein Cloud-Verbot kann intern gesetzt sein – dann ist die Frage, wie gut lokal reicht. **Qualität messen:** Testset mit 30–50 anonymisierten bzw. synthetischen Notizen und Referenzberichten; lokales Modell (z. B. 14–32 Mrd. Parameter in Q4_K_M) gepaart mit einer Cloud-Referenz vergleichen, Fehlerarten auswerten. **Hardware rechnen:** Gewichte nach Faustregel plus KV-Cache für die Notizlänge plus Reserve; zentraler Server statt Laptops pro Standort; ganz im Grafikspeicher, sonst zu langsam. **Wirklich lokal:** nicht nur das Modell – auch Harness/Anwendung, Spracherkennung, Embeddings, Telemetrie, Fehlerberichte und Synchronisation prüfen; keine Ollama-Cloud-Modelle, Cloud-Funktionen abschalten; Server nur intern mit Anmeldung, TLS und Protokollierung. **Gesamtkosten in CHF über 3 Jahre:**
+  Hardware, Strom, Betrieb, Personal, Ausfallsicherheit gegenüber einer Cloud-Variante mit Vertrag, Datenstandort und ohne Training. **Mischform prüfen:** lokal für Notizen mit Patientenbezug, Cloud nur für nicht personenbezogene Aufgaben oder nach lokaler Pseudonymisierung. **Ergebnis:** einseitige Entscheidungsvorlage; Berichte bleiben Entwürfe, die die Ärztin oder der Arzt prüft und freigibt.'
+rubric:
+- Datenklasse richtig eingeordnet (besonders schützenswert, Berufsgeheimnis) mit Hinweis auf Fachperson
+- Qualität mit Testset gegen Cloud-Referenz gemessen statt angenommen
+- Hardware mit VRAM-Faustregel inkl. Kontext und zentralem Betrieb begründet
+- 'Alle Datenwege geprüft: nur lokales Modell plus lokaler Harness ist privat'
+- Gesamtkosten über mehrere Jahre in CHF und Mischform erwogen
+- Menschliche Prüfung der Berichte vorgesehen
+explanation: Ein Senior-Vorschlag nimmt die Datenschutzvorgabe ernst, ersetzt aber Annahmen durch Messung und Rechnung und prüft alle Datenwege – nicht nur das Modell.
+source: lokale-llms/lokal-oder-cloud#die-vier-kriterien
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

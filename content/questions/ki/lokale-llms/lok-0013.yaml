@@ -1,0 +1,20 @@
+id: lok-0013
+topic: lokale-llms
+competencies:
+- ki-lok-03
+level: L3
+type: single
+question: Warum gilt Q4_K_M als übliche Standard-Empfehlung für lokale Modelle?
+options:
+- Weil es die beste Qualität aller Stufen liefert
+- Weil es rund drei Viertel Speicher gegenüber FP16 spart und dabei nur wenig Qualität verliert
+- Weil es nur auf Apple Silicon läuft
+- Weil Q8 und FP16 von Ollama nicht unterstützt werden
+answer:
+- 1
+explanation: Q4_K_M ist der Kompromiss aus grosser Speicherersparnis und geringem Qualitätsverlust. Die beste Qualität liefern höhere Präzisionen wie Q8 oder FP16, die Ollama ebenfalls unterstützt; an Apple Silicon ist die Stufe nicht gebunden.
+source: lokale-llms/vram-und-quantisierung#quantisierungsstufen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

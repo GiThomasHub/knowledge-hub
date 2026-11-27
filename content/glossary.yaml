@@ -374,3 +374,28 @@
   definition: Vorgehen, bei dem eine gemeldete Sicherheitslücke erst behoben und dann in Absprache mit der meldenden Person veröffentlicht wird, oft innert bis zu 90 Tagen.
   aliases: [Coordinated Disclosure, Responsible Disclosure]
   lesson: secure-coding/standards-und-vorfall#wenn-eine-luecke-gefunden-wird-die-ersten-stunden
+- term: Open-Weight-Modell
+  definition: Sprachmodell, dessen Gewichte frei heruntergeladen und auf eigener Hardware betrieben werden können. Die Lizenzbedingungen unterscheiden sich je nach Modell.
+  aliases: [Open-Weight, offenes Modell]
+  lesson: lokale-llms/warum-lokal
+- term: Ollama
+  definition: Verbreitete Runtime, um Sprachmodelle lokal zu betreiben. Stellt auf localhost:11434 eine OpenAI- und eine Anthropic-kompatible Schnittstelle bereit.
+  lesson: lokale-llms/ollama-betreiben
+- term: VRAM
+  definition: Grafikspeicher einer GPU. Bestimmt, welches lokale Modell samt Kontext schnell läuft; bei Apple Silicon übernimmt der gemeinsame Arbeitsspeicher (Unified Memory) diese Rolle.
+  aliases: [Grafikspeicher]
+  lesson: lokale-llms/vram-und-quantisierung#die-rechnung
+- term: Quantisierung
+  definition: Speichern der Modellgewichte mit weniger Bits pro Gewicht. Q8 halbiert, Q4 viertelt den Speicherbedarf gegenüber FP16; Q4_K_M gilt als guter Kompromiss.
+  aliases: [Q4_K_M]
+  lesson: lokale-llms/vram-und-quantisierung#quantisierungsstufen
+- term: GGUF
+  definition: Dateiformat für lokale Sprachmodelle, das llama.cpp und Ollama verwenden; enthält die Gewichte in einer bestimmten Quantisierungsstufe.
+  lesson: lokale-llms/vram-und-quantisierung#quantisierungsstufen
+- term: KV-Cache
+  definition: Zwischenspeicher eines Sprachmodells für jedes Token im Kontext. Wächst mit der Kontextlänge und braucht bei lokalen Modellen zusätzlichen Grafikspeicher.
+  lesson: lokale-llms/vram-und-quantisierung#das-kontextfenster-kostet-zusaetzlich
+- term: Mixture of Experts
+  definition: Modellaufbau, bei dem pro Token nur ein Teil der Parameter (einige «Experten») rechnet. Spart Rechenzeit, aber nicht Speicher, weil alle Gewichte geladen sein müssen.
+  aliases: [MoE]
+  lesson: lokale-llms/vram-und-quantisierung

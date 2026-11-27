@@ -1,0 +1,23 @@
+id: lok-0008
+topic: lokale-llms
+competencies:
+- ki-lok-02
+level: L2
+type: multi
+question: Ein Team möchte einen Ollama-Server für mehrere Personen im Büronetz bereitstellen. Welche Massnahmen sind sinnvoll? (mehrere richtig)
+options:
+- OLLAMA_HOST=0.0.0.0 setzen und den Port ins Internet freigeben
+- Ollama auf 127.0.0.1 lassen und einen Reverse Proxy mit Anmeldung und TLS davorschalten
+- Modelle nur aus vertrauenswürdigen Quellen laden
+- Modell-Tag und Ollama-Version festhalten
+- Auf Anmeldung verzichten, weil Ollama eigene Benutzerkonten verwaltet
+answer:
+- 1
+- 2
+- 3
+explanation: Ollama hat keine eingebaute Anmeldung; offen im Netz kann jeder es nutzen und Modelle laden oder löschen. Darum bleibt der Server lokal gebunden und ein Proxy mit Anmeldung und TLS steht davor. Vertrauenswürdige Quellen und festgehaltene Versionen sichern Betrieb und Reproduzierbarkeit.
+source: lokale-llms/ollama-betreiben#sicher-betreiben
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

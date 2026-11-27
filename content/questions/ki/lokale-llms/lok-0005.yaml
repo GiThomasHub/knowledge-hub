@@ -1,0 +1,20 @@
+id: lok-0005
+topic: lokale-llms
+competencies:
+- ki-lok-02
+level: L2
+type: single
+question: Ein Python-Programm nutzt die OpenAI-Bibliothek. Was ist die kleinste Änderung, damit es ein lokales Ollama-Modell anspricht?
+options:
+- Die Bibliothek durch ein Ollama-eigenes SDK ersetzen
+- Die Basis-URL auf http://localhost:11434/v1 setzen und den Modellnamen anpassen; der API-Schlüssel ist ein beliebiger Platzhalter
+- Einen echten OpenAI-Schlüssel hinterlegen, Ollama leitet weiter
+- Das Programm in einem Docker-Container starten
+answer:
+- 1
+explanation: Ollama bietet eine OpenAI-kompatible Schnittstelle unter /v1; es genügt, die Basis-URL und den Modellnamen zu ändern. Ein Umbau auf ein anderes SDK ist nicht nötig, ein echter OpenAI-Schlüssel wird nicht verwendet, und ein Container ändert nichts an der Adresse.
+source: lokale-llms/ollama-betreiben#die-schnittstellen-nutzen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session
