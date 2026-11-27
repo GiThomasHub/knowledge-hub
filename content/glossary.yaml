@@ -61,8 +61,10 @@
   definition: Offener Standard, über den KI-Anwendungen Werkzeuge und Datenquellen anbinden – vergleichbar mit einer USB-Schnittstelle für KI-Tools.
 - term: Skill
   definition: Ein Ordner mit einer SKILL.md (Name, Beschreibung, Anleitung) und optionalen Skripten oder Referenzen. Claude lädt ihn bei Bedarf und arbeitet dann nach dieser Anleitung.
+  lesson: skills-plugins/skill-connector-plugin#die-drei-im-vergleich
 - term: Plugin
   definition: Ein installierbares Paket, das Skills, Subagents, Hooks und MCP-Server bündelt und über einen Marketplace verteilt wird.
+  lesson: skills-plugins/plugins-und-marketplaces#aufbau-eines-plugins
 - term: Subagent
   definition: Eine spezialisierte Claude-Instanz mit eigenem, frischem Kontextfenster. Liefert nur das Ergebnis an die Hauptsession zurück und hält deren Kontext sauber.
 - term: CLAUDE.md
@@ -194,3 +196,20 @@
 - term: Snapshot-Test
   definition: Test, der ein erzeugtes Ergebnis – etwa einen zusammengesetzten Prompt – als Datei festhält und bei jeder Änderung den Unterschied zeigt. Macht unbeabsichtigte Änderungen und Cache-Brüche sichtbar.
   lesson: prompting/prompt-standards-team#bibliothek-und-freigabe
+- term: Connector
+  definition: Verbindung von Claude zu einem externen Dienst wie Gmail, Google Drive oder GitHub, technisch meist über MCP. Gibt Zugang zu Daten und Aktionen, aber kein Vorgehen.
+  aliases: [Konnektor]
+  lesson: skills-plugins/skill-connector-plugin#die-drei-im-vergleich
+- term: Progressive Disclosure
+  definition: Ladeprinzip von Skills in drei Stufen – Name und Description immer, der Inhalt der SKILL.md beim Auslösen, Zusatzdateien nur bei Bedarf. Hält den Kontext trotz vieler Skills klein.
+  lesson: skills-plugins/progressive-disclosure#die-drei-stufen
+- term: Marketplace
+  definition: Katalog von Plugins, meist ein Git-Repository mit der Datei .claude-plugin/marketplace.json. Wird mit /plugin marketplace add registriert; Plugins daraus installiert man mit /plugin install name@marketplace.
+  aliases: [Plugin-Marketplace]
+  lesson: skills-plugins/plugins-und-marketplaces#ein-eigener-marketplace
+- term: Trigger-Eval
+  definition: Test, ob ein Skill bei den richtigen Anfragen lädt und bei den falschen nicht. Besteht aus Soll- und Nicht-Soll-Anfragen; gemessen werden Auslösequote (Recall) und Fehlauslösung.
+  lesson: skills-plugins/triggering-und-evals#ein-trigger-eval-bauen
+- term: Description (Skill)
+  definition: Feld im Frontmatter einer SKILL.md, das sagt, was ein Skill tut und wann er gebraucht wird. Claude sieht vor dem Laden nur Name und Description und entscheidet daran, ob der Skill passt.
+  lesson: skills-plugins/skill-schreiben#die-description-visitenkarte-und-tuersteher

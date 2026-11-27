@@ -1,0 +1,23 @@
+id: skp-0002
+topic: skills-plugins
+competencies:
+- ki-skp-01
+level: L1
+type: multi
+question: Welche Aussagen stimmen? (mehrere richtig)
+options:
+- Ein Plugin kann mehrere Skills und Connectors enthalten.
+- Ein Skill funktioniert nur, wenn er in einem Plugin steckt.
+- Ein Skill kann Werkzeuge eines Connectors nutzen.
+- Ein Skill trainiert Claude dauerhaft auf deine Firma.
+- Connectors funktionieren auch ohne Skill.
+answer:
+- 0
+- 2
+- 4
+explanation: Plugins bündeln, Skills können Connector-Werkzeuge nutzen, Connectors arbeiten auch allein. Skills lassen sich einzeln installieren, und sie sind kein Training – sie werden gelesen, wenn sie gebraucht werden.
+source: skills-plugins/skill-connector-plugin#wie-sie-zusammenspielen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

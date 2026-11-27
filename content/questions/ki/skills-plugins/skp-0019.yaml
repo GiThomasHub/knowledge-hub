@@ -1,0 +1,21 @@
+id: skp-0019
+topic: skills-plugins
+competencies:
+- ki-skp-06
+level: L4
+type: case
+question: Eine Schweizer Anwaltskanzlei (60 Personen) will das Vorgehen ihrer besten Anwältinnen bei Vertragsprüfung, Mandatsbriefen und Fristenkontrolle in Claude verfügbar machen. Einige Mitarbeitende haben bereits Skills aus dem Internet installiert. Skizziere Aufbau, Pflege und Sicherheit einer Skill-Bibliothek.
+model_answer: '**Erfassen:** Häufigste Aufgaben sammeln (was wird Claude immer wieder erklärt?), pro Aufgabe einen Skill mit präziser Description, Ablauf, Output-Format und Fehlerbehandlung; Stil als Regeln plus anonymisierte Musterbeispiele und Vorlagen, keine echten Mandatsdaten (Berufsgeheimnis, revDSG). **Qualität:** Trigger-Eval (Soll/Nicht-Soll inkl. Nachbarfälle) und Qualitäts-Eval mit und ohne Skill; Fristenberechnung als Skript statt als Text. **Verteilung:** als Plugin in einem internen Marketplace; in Claude Code per Managed Settings aktiviert, in der App fürs Konto bereitgestellt. **Pflege:** ein Eigentümer pro Skill, Katalog mit Nutzung und Learnings, verweisen statt kopieren, Review-Rhythmus mit Draft-PR und menschlichem Merge, ungenutzte Skills nach 90 Tagen schärfen oder entfernen. **Sicherheit:** nur freigegebene Marketplaces (strictKnownMarketplaces), fremde Skills vor Aufnahme wie Code prüfen (Skripte, Hooks, MCP, !`befehl`), Versionen fixieren, bereits installierte Fremd-Skills
+  inventarisieren und ersetzen oder freigeben; wo nötig disableSkillShellExecution.'
+rubric:
+- Wissen als Skills mit Description, Ablauf, Format und anonymisierten Beispielen erfassen
+- Trigger- und Qualitäts-Evals vorsehen
+- Verteilung über Plugin und Marketplace pro Oberfläche
+- 'Pflege: Eigentümer, Katalog, Nutzung, Review mit menschlicher Freigabe'
+- 'Sicherheit fremder Skills: Quellen einschränken, prüfen wie Code, Versionen fixieren, Datenschutz'
+explanation: Ein Senior-Vorschlag verbindet Wissenserfassung, Messbarkeit, Verteilung, Pflege und Sicherheit – und nimmt Berufsgeheimnis und revDSG ernst.
+source: skills-plugins/skill-bibliothek#die-bibliothek-pflegen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

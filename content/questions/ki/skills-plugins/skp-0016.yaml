@@ -1,0 +1,19 @@
+id: skp-0016
+topic: skills-plugins
+competencies:
+- ki-skp-05
+level: L3
+type: order
+question: Bring die Schritte in Reihenfolge, um ein selbst gebautes Plugin über einen eigenen Marketplace an Kollegen zu verteilen.
+options:
+- Plugin mit plugin.json und Komponenten bauen
+- Lokal mit claude --plugin-dir testen
+- Plugin in einem Repository mit .claude-plugin/marketplace.json auflisten
+- Kollegen führen /plugin marketplace add firma/firma-tools aus
+- Kollegen installieren mit /plugin install name@firma-tools
+explanation: Erst bauen und lokal testen, dann im Marketplace katalogisieren. Nutzer registrieren den Marketplace und installieren daraus. Für ein ganzes Repo-Team geht der letzte Teil auch automatisch über extraKnownMarketplaces und enabledPlugins.
+source: skills-plugins/plugins-und-marketplaces#ein-eigener-marketplace
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

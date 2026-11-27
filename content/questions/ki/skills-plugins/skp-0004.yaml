@@ -1,0 +1,18 @@
+id: skp-0004
+topic: skills-plugins
+competencies:
+- ki-skp-01
+level: L1
+type: true_false
+question: Plugins lassen sich im Chat auf claude.ai grundsätzlich nicht verwenden (Stand 27.11.2026).
+options:
+- Wahr
+- Falsch
+answer:
+- 1
+explanation: Falsch. Plugins lassen sich im Chat nutzen; ihre Skills, Befehle und Connectors funktionieren dort. Nur Hooks und Subagents laufen im Chat nicht. Ältere Anleitungen behaupten noch das Gegenteil.
+source: skills-plugins/skill-connector-plugin#wo-was-laeuft-stand-27-11-2026
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

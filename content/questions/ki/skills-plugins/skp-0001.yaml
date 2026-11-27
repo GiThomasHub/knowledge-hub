@@ -1,0 +1,20 @@
+id: skp-0001
+topic: skills-plugins
+competencies:
+- ki-skp-01
+level: L1
+type: single
+question: 'In der Küchen-Analogie: Was entspricht einem Connector?'
+options:
+- Dem Rezept, das beschreibt, wie ein Gericht gelingt
+- Dem Lieferanten, der die echten Zutaten bringt
+- Dem Bausatz im Karton mit allem drin
+- Dem Koch selbst
+answer:
+- 1
+explanation: Ein Connector verbindet Claude per MCP mit Daten und Werkzeugen wie Gmail, Drive oder GitHub – er liefert die Zutaten. Das Rezept ist der Skill, der Bausatz das Plugin, der Koch ist Claude.
+source: skills-plugins/skill-connector-plugin#die-drei-im-vergleich
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

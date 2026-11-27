@@ -1,0 +1,20 @@
+id: skp-0005
+topic: skills-plugins
+competencies:
+- ki-skp-02
+level: L2
+type: single
+question: Welche Description ist für einen Offerten-Skill am besten?
+options:
+- «Hilft bei Offerten.»
+- «Offerten-Skill. IMMER VERWENDEN!»
+- «Erstellt Offerten für Treuhand-Mandate nach Firmenvorlage. Use when the user asks for an Offerte, ein Angebot, einen Kostenvoranschlag oder ‹was würde das kosten› für Buchhaltung, Lohn oder Steuern.»
+- «Dieser Skill enthält unsere gesamte Preisliste und alle Vorlagen.»
+answer:
+- 2
+explanation: Eine gute Description sagt was und wann, mit konkreten Auslösern in der Sprache der Nutzer. «Hilft bei Offerten» ist zu vage, Grossbuchstaben ersetzen keine Auslöser, und eine Inhaltsangabe sagt nicht, wann der Skill passt.
+source: skills-plugins/skill-schreiben#die-description-visitenkarte-und-tuersteher
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

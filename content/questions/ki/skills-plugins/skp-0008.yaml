@@ -1,0 +1,20 @@
+id: skp-0008
+topic: skills-plugins
+competencies:
+- ki-skp-02
+level: L2
+type: single
+question: Ein Skill `review` liegt sowohl in `~/.claude/skills/` als auch im Projekt unter `.claude/skills/`. Welcher läuft bei /review in Claude Code (laut Doku, Stand 27.11.2026)?
+options:
+- Der Projekt-Skill, weil er spezifischer ist
+- Der persönliche Skill – Enterprise vor persönlich, persönlich vor Projekt
+- Beide nacheinander
+- Keiner, Claude Code meldet einen Konflikt
+answer:
+- 1
+explanation: 'Die Doku legt fest: Enterprise vor persönlich, persönlich vor Projekt. Die Intuition «spezifischer gewinnt» stimmt bei Skills nicht. Beide nacheinander oder eine Fehlermeldung gibt es nicht; nur Plugin-Skills umgehen Konflikte über ihren Namensraum.'
+source: skills-plugins/skill-schreiben#frontmatter-felder-in-claude-code
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

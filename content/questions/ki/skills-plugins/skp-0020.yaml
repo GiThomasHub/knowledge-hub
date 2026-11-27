@@ -1,0 +1,24 @@
+id: skp-0020
+topic: skills-plugins
+competencies:
+- ki-skp-06
+level: L4
+type: multi
+question: Ein Mitarbeiter will ein populäres Plugin aus einem fremden GitHub-Marketplace für das ganze Team installieren. Welche Prüfungen sind vor der Freigabe sinnvoll? (mehrere richtig)
+options:
+- SKILL.md-Dateien, Skripte, Hooks und MCP-Konfiguration lesen
+- Prüfen, ob Skills Befehle per !`befehl` einspielen und was diese tun
+- Eine feste Version bzw. einen festen Commit übernehmen
+- Auf die Zahl der GitHub-Sterne vertrauen und ohne Durchsicht freigeben
+- Den Marketplace nur über Managed Settings freigeben
+answer:
+- 0
+- 1
+- 2
+- 4
+explanation: Skripte, Hooks, MCP-Server und Befehlseinspielungen laufen mit den Rechten der Nutzer; darum wie fremden Code prüfen, Versionen fixieren und Quellen zentral steuern. Beliebtheit ersetzt keine Prüfung.
+source: skills-plugins/skill-bibliothek#fremde-skills-und-plugins-sicher-einsetzen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session
