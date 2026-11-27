@@ -5,6 +5,12 @@ Wissensdatenbank und Fragekatalog, die aus einem Anfänger einen Senior Consulta
 
 Sprache: Deutsch, Schweizer Schreibweise (ss statt ß), Datumsformat im Text TT.MM.JJJJ, in YAML ISO (JJJJ-MM-TT). Beispiele mit Bezug zur Schweiz (CHF, revDSG), wo sinnvoll.
 
+## Git-Regeln (immer, auch in interaktiven Sitzungen)
+
+- **Nie direkt auf `main` pushen, nie selbst mergen.** Jede Änderung geht über einen eigenen Branch und einen **Draft-PR**. Gemerged wird nur vom Menschen.
+- Nur committen und pushen, wenn der Mensch darum gebeten hat. Eine Fehlermeldung oder ein Screenshot ist noch keine Bitte, zu pushen.
+- Gilt auch für kleine Korrekturen und auch, wenn kein Branch-Schutz auf GitHub eingerichtet ist. Im Zweifel fragen.
+
 ## Befehle
 
 - `python scripts/build.py --check --report` – validieren, Abdeckung und Review-Warteschlange anzeigen (vor jedem Commit)
@@ -42,7 +48,7 @@ Vollständige Anleitung: `CONTRIBUTING.md`. Kurzfassung:
 
 ## Leitplanken für unbeaufsichtigte Läufe (Wochen-Tasks)
 
-1. **Nie auf `main` pushen, nie mergen.** Immer eigener Branch `weekly/<art>-JJJJ-MM-TT` und **Draft-PR**.
+1. Git-Regeln oben gelten. Branch-Name: `weekly/<art>-JJJJ-MM-TT`, immer **Draft-PR**.
 2. Höchstens **ein** PR pro Lauf. Höchstens 3 Lektionen geändert/neu und 10 neue Fragen pro Lauf.
 3. Vor dem PR: `python scripts/build.py --check --report` muss fehlerfrei sein.
 4. Keine Änderungen an `src/`, `scripts/`, `schema/`, `.github/` oder `supabase/` – Inhalte only. Vorschläge dafür in die PR-Beschreibung.
