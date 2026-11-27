@@ -1,0 +1,20 @@
+id: ctr-0012
+topic: container
+competencies:
+- ki-ctr-04
+level: L3
+type: single
+question: Im Dockerfile steht `COPY .env .` und direkt danach `RUN rm .env`. Ist das Secret damit aus dem Image verschwunden?
+options:
+- Ja, die Datei ist im fertigen Image gelöscht.
+- Nein, sie bleibt in der Schicht von COPY erhalten und reist mit jedem Push mit.
+- Ja, sofern das Image mit --no-cache gebaut wird.
+- Nein, aber nur, wenn das Image in eine öffentliche Registry gepusht wird.
+answer:
+- 1
+explanation: Jede Anweisung ist eine eigene Schicht. Das rm in der nächsten Schicht blendet die Datei nur aus; in der früheren Schicht steckt sie weiter. --no-cache ändert daran nichts. Und das Secret ist auch in einer privaten Registry und lokal auslesbar. Secrets gehören zur Laufzeit hinein, nicht ins Image; .dockerignore verhindert das Kopieren.
+source: container/haerten-und-ki-agenten#fuenf-handgriffe-zum-haerten
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

@@ -1,0 +1,23 @@
+id: ctr-0004
+topic: container
+competencies:
+- ki-ctr-02
+level: L2
+type: multi
+question: Du hast eine Postgres-Datenbank mit einem Named Volume für das Datenverzeichnis. Nach welchen Aktionen sind die Daten noch da? (mehrere richtig)
+options:
+- docker compose down
+- Neustart des PCs
+- docker system prune -a
+- docker compose down -v
+- docker volume rm dbdaten
+answer:
+- 0
+- 1
+- 2
+explanation: Ein Volume bleibt, bis du es ausdrücklich löschst. down entfernt nur den Container, ein Neustart stoppt nur, prune -a lässt Volumes stehen. down -v und docker volume rm löschen das Volume bewusst – danach sind die Daten weg.
+source: container/alltag-und-fehler#was-ueberlebt-was
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

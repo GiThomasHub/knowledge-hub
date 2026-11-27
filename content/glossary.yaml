@@ -52,6 +52,7 @@
 - term: Devcontainer
   aliases: [Dev Container]
   definition: Ein Docker-Container als vollständige Entwicklungsumgebung, beschrieben in .devcontainer/devcontainer.json. Isoliert den ganzen Prozess inklusive Claude Code.
+  lesson: container/devcontainer
 - term: MCP
   aliases: [Model Context Protocol]
   definition: Offener Standard, über den KI-Anwendungen Werkzeuge und Datenquellen anbinden – vergleichbar mit einer USB-Schnittstelle für KI-Tools.
@@ -79,6 +80,22 @@
   lesson: ai-security/ueberblick
 - term: Bind Mount
   definition: Ein Ordner des Rechners, der in einen Container eingeblendet wird. Keine Kopie – Änderungen im Container wirken sofort auf den echten Ordner.
+  lesson: container/grundbausteine#daten-hinein-und-heraus-bind-mount-und-volume
+- term: Image
+  aliases: [Docker-Image, Container-Image]
+  definition: Ein aus dem Dockerfile gebautes, unveränderliches Abbild mit Betriebssystem-Grundlage, Programmen und Konfiguration. Aus einem Image lassen sich beliebig viele Container starten.
+  lesson: container/grundbausteine#die-drei-grundbausteine
+- term: Layer
+  aliases: [Schicht]
+  definition: Eine einzelne, gecachte Schicht eines Images. Jede Dockerfile-Anweisung erzeugt eine; unveränderte Schichten werden beim nächsten Build wiederverwendet.
+  lesson: container/grundbausteine#schichten-layers
+- term: Volume
+  aliases: [Named Volume]
+  definition: Ein von Docker verwalteter Speicherbereich ausserhalb des Containers. Überlebt das Löschen des Containers und wird erst mit «down -v» oder «docker volume rm» entfernt.
+  lesson: container/alltag-und-fehler#was-ueberlebt-was
+- term: Port-Mapping
+  definition: Verbindung eines Ports auf dem Host mit einem Port im Container (-p 8080:80, links Host, rechts Container). Wirkt nur, wenn die App im Container auf 0.0.0.0 lauscht.
+  lesson: container/alltag-und-fehler#die-fuenf-abendkiller
 - term: Least Privilege
   aliases: [Minimale Rechte]
   definition: Grundsatz, einem Programm, Nutzer oder Agenten nur genau die Rechte zu geben, die er für seine Aufgabe braucht – nicht mehr.

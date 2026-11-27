@@ -1,0 +1,20 @@
+id: ctr-0008
+topic: container
+competencies:
+- ki-ctr-03
+level: L2
+type: single
+question: Nach `npm install` im Container mit Bind Mount `.:/app` meldet Node «invalid ELF header». Das node_modules auf dem Host stammt von Windows. Was ist der saubere Fix?
+options:
+- node_modules auf dem Host löschen und unter Windows neu installieren
+- Ein Named Volume auf /app/node_modules zusätzlich zum Bind Mount
+- Den Bind Mount durch COPY . . im Dockerfile ersetzen
+- Das Image auf Windows-Container umstellen
+answer:
+- 1
+explanation: 'Bei überlappenden Mounts gewinnt der spezifischere Pfad: /app kommt vom Bind Mount (Code live editierbar), /app/node_modules vom Volume (Linux-Pakete). Unter Windows neu installieren erzeugt wieder Windows-Binaries. COPY . . nimmt dir das Live-Editieren. Windows-Container lösen das Problem nicht, sondern schaffen neue.'
+source: container/alltag-und-fehler#2-invalid-elf-header-bei-node
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session
