@@ -6,15 +6,15 @@ level: L2
 type: single
 question: Ein Agent soll einen Termin im Kalender anlegen. Wie prüft ein guter Grader das?
 options:
-- Er prüft, ob der Agent genau die erwarteten Werkzeuge in der erwarteten Reihenfolge aufgerufen hat.
-- Er prüft im Kalender, ob der Termin mit den richtigen Daten tatsächlich existiert.
-- Er prüft, ob der Agent «erledigt» geschrieben hat.
+- Er prüft, ob die erwarteten Werkzeuge in der erwarteten Reihenfolge aufgerufen wurden.
+- Er prüft im Kalender, ob der Termin mit den richtigen Daten existiert.
+- Er prüft, ob der Agent am Schluss «erledigt» geschrieben hat.
 - Er lässt den Agenten selbst bewerten, ob es geklappt hat.
 answer:
 - 1
 explanation: Bewertet wird das Ergebnis, nicht der Weg – und nicht die Behauptung. Es gibt oft mehrere richtige Wege, und «erledigt» oder eine Selbstbewertung belegen nichts.
 source: evals/testset-und-grader#code-grader-zuerst
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

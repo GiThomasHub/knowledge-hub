@@ -6,15 +6,15 @@ level: L2
 type: single
 question: Was ist das Besondere an Constitutional AI im Vergleich zu klassischem RLHF?
 options:
-- Es verzichtet ganz auf Training.
-- Ein Modell bewertet und überarbeitet Antworten anhand schriftlicher Prinzipien (Selbstkritik, dann RL from AI Feedback), statt jeden Fall von Menschen bewerten zu lassen.
-- Es trainiert das Modell auf Gesetzestexte.
-- Es ist eine Methode, um Wissen aktuell zu halten.
+- Es kommt ganz ohne Training aus, nur mit Regeln im Prompt.
+- Ein Modell kritisiert und überarbeitet Antworten anhand schriftlicher Prinzipien.
+- Es trainiert das Modell gezielt auf Gesetzestexte und Verfassungen.
+- Es ist eine Methode, um das Faktenwissen des Modells aktuell zu halten.
 answer:
 - 1
-explanation: 'Constitutional AI nutzt eine schriftliche Verfassung: erst Selbstkritik und Überarbeitung, dann RLAIF. Es ist Training, hat nichts mit Gesetzestexten als Trainingsmaterial zu tun und hält kein Faktenwissen aktuell.'
+explanation: 'Constitutional AI nutzt eine schriftliche Verfassung: erst Selbstkritik und Überarbeitung, dann Reinforcement Learning from AI Feedback (RLAIF) – statt jeden Fall von Menschen bewerten zu lassen. Es ist Training, nutzt keine Gesetzestexte als Trainingsmaterial und hält kein Faktenwissen aktuell.'
 source: ki-grundlagen/wie-modelle-entstehen#constitutional-ai-bei-claude
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

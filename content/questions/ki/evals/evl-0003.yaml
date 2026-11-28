@@ -6,15 +6,15 @@ level: L1
 type: single
 question: Was ist der Unterschied zwischen Capability- und Regression-Evals?
 options:
-- Capability prüft Kosten, Regression prüft Qualität.
-- Capability misst, was das System noch nicht kann (Quote anfangs tief); Regression sichert, was es schon kann (Ziel nahe 100 %).
-- Es gibt keinen Unterschied.
-- Regression-Evals laufen nur einmal vor dem Start.
+- Capability-Evals prüfen Kosten, Regression-Evals prüfen Qualität.
+- Capability misst Neues (Quote anfangs tief), Regression sichert Bestehendes.
+- Es gibt keinen Unterschied, die Begriffe sind gleichbedeutend.
+- Regression-Evals laufen nur einmal, kurz vor dem Produktivstart.
 answer:
 - 1
 explanation: Capability-Evals zeigen Fortschritt, Regression-Evals verhindern Rückschritte. Was die Capability-Suite zuverlässig besteht, wandert in die Regression-Suite, die bei jeder Änderung läuft.
 source: evals/warum-evals#zwei-arten-von-evals
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

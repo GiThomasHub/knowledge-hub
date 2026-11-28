@@ -17,7 +17,7 @@ answer:
 - 3
 explanation: Ollama hat keine eingebaute Anmeldung; offen im Netz kann jeder es nutzen und Modelle laden oder löschen. Darum bleibt der Server lokal gebunden und ein Proxy mit Anmeldung und TLS steht davor. Vertrauenswürdige Quellen und festgehaltene Versionen sichern Betrieb und Reproduzierbarkeit.
 source: lokale-llms/ollama-betreiben#sicher-betreiben
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

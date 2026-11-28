@@ -7,15 +7,15 @@ level: L1
 type: single
 question: Eine Anleitung empfiehlt `git config --global credential.helper store`, weil das Token dann «verschlüsselt» gespeichert werde. Was stimmt?
 options:
-- Stimmt, Git verschlüsselt das Token mit dem SSH-Key.
-- Das Token liegt im Klartext in ~/.git-credentials; besser gh auth setup-git oder SSH.
-- Stimmt, aber nur unter Windows.
-- store speichert das Token nur im Arbeitsspeicher.
+- Stimmt – Git verschlüsselt das Token mit dem SSH-Key.
+- Falsch – es liegt im Klartext in ~/.git-credentials.
+- Stimmt – allerdings nur unter Windows.
+- Falsch – store hält das Token nur im Arbeitsspeicher.
 answer:
 - 1
-explanation: store schreibt Benutzername und Token unverschlüsselt in ~/.git-credentials – lesbar für jedes Programm mit deinen Rechten, auch für einen KI-Agenten. Nur im Arbeitsspeicher hält es cache. Sicherer sind gh auth setup-git oder SSH mit ssh-agent.
+explanation: store schreibt Benutzername und Token unverschlüsselt in ~/.git-credentials – lesbar für jedes Programm mit deinen Rechten, auch für einen KI-Agenten. Nur im Arbeitsspeicher hält es der Helper cache. Sicherer sind gh auth setup-git oder SSH mit ssh-agent.
 source: git-github/einrichten-wsl#ssh-key
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

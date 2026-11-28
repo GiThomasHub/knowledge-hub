@@ -14,7 +14,7 @@ answer:
 - 0
 explanation: Cloud-Modelle tragen «cloud» im Namen und verlangen eine Anmeldung bei ollama.com; sie werden über dieselbe lokale Oberfläche aufgerufen. Geschwindigkeit ist kein verlässliches Merkmal, und GGUF ist das Dateiformat lokaler Modelle.
 source: lokale-llms/ollama-betreiben#lokal-oder-doch-cloud
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

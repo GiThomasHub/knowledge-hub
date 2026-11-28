@@ -8,14 +8,14 @@ situation: In einem privaten Repo im GitHub-Free-Plan soll ein Claude-Agent wöc
 question: Welche Empfehlung ist fachlich am besten?
 options:
 - Die Regel in der CLAUDE.md fett schreiben, dann hält sich der Agent daran.
-- Ein Ruleset anlegen – im Free-Plan ist das für private Repos aber nicht verfügbar. Darum lokale Sperren (pre-commit no-commit-to-branch, Claude-Hook gegen Push auf main) plus Regel; oder Repo öffentlich machen bzw. Plan upgraden.
+- Technisch sperren – im Free-Plan ohne Ruleset lokal per Hook und pre-commit.
 - Dem Agenten das Git-Recht ganz entziehen und alles von Hand machen.
-- Nichts ändern, ein Direkt-Push ist mit revert schnell rückgängig gemacht.
+- Nichts ändern – ein Direkt-Push ist mit revert schnell rückgängig gemacht.
 answer:
 - 1
-explanation: Eine Anweisung ist ein Versprechen und wurde hier ausgelegt. Erst eine technische Sperre hält. Rulesets für private Repos gibt es erst ab Pro/Team; ohne sie bleiben lokale Sperren plus Regel. Dem Agenten alles zu entziehen verschenkt den Nutzen, und revert behebt nur das Symptom.
+explanation: Eine Anweisung ist ein Versprechen und wurde hier ausgelegt; erst eine technische Sperre hält. Rulesets für private Repos gibt es erst ab Pro/Team. Ohne sie bleiben lokale Sperren (pre-commit no-commit-to-branch, Claude-Hook gegen Push auf main) plus Regel – oder das Repo öffentlich machen bzw. den Plan upgraden. Dem Agenten alles zu entziehen verschenkt den Nutzen, und revert behebt nur das Symptom.
 source: git-github/repo-absichern-und-agenten#versprechen-oder-mauer
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

@@ -12,7 +12,7 @@ options:
 - RLHF bzw. Constitutional AI zum Schärfen des Verhaltens
 explanation: Pretraining liefert Sprache und Wissen im Basismodell. Fine-Tuning bringt Anweisungsbefolgung, RLHF und Constitutional AI schärfen Hilfsbereitschaft, Ehrlichkeit und Sicherheit.
 source: ki-grundlagen/wie-modelle-entstehen#die-phasen-im-ueberblick
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

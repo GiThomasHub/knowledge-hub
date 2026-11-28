@@ -6,15 +6,15 @@ level: L4
 type: single
 question: Ein Lieferant schlägt als Abnahmekriterium «mindestens 92 % korrekte Antworten auf 30 Testfällen, die wir zusammenstellen» vor. Was ist die stärkste Kritik?
 options:
-- 92 % ist zu hoch.
-- 30 Fälle sind für eine Schwelle von 92 % zu wenig (rund ± 15 Prozentpunkte Unsicherheit), und das Testset sollte vom Kunden stammen, mit Hold-out.
-- Es fehlen Kosten in USD.
-- Die Abnahme sollte ohne Testset per Demo erfolgen.
+- 92 % ist als Schwelle zu hoch angesetzt.
+- 30 Fälle sind zu wenig, und das Testset sollte vom Kunden stammen.
+- Es fehlen die Kosten in USD pro Anfrage.
+- Die Abnahme sollte ohne Testset per Live-Demo erfolgen.
 answer:
 - 1
-explanation: Kleine Stichprobe und Testset in der Hand des Lieferanten machen die Abnahme wenig aussagekräftig und anfällig für Optimierung auf genau diese Fälle. Eine Demo ersetzt kein Messverfahren.
+explanation: Bei 30 Fällen und rund 92 % liegt die Unsicherheit bei etwa ± 10 Prozentpunkten (28 von 30 richtig ergibt ein 95-%-Intervall von etwa 79 % bis 98 %) – die Schwelle lässt sich so nicht seriös prüfen. Stellt der Lieferant das Testset selbst zusammen, lädt das zur Optimierung auf genau diese Fälle ein; besser stammt es vom Kunden, mit Hold-out. Eine Demo ersetzt kein Messverfahren.
 source: evals/qualitaet-als-abnahme#schwellen-ehrlich-setzen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

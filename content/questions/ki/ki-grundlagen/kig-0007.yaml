@@ -12,7 +12,7 @@ answer:
 - 0
 explanation: Wahr. Lange Komposita, Umlaute und Zahlenformate werden oft in mehrere Tokens zerlegt. Die genaue Zahl hängt vom Tokenizer des Modells ab.
 source: ki-grundlagen/token-und-kontext#token-die-waehrung-der-sprachmodelle
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

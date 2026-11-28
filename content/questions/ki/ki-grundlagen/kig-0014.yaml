@@ -12,7 +12,7 @@ answer:
 - 1
 explanation: Falsch. Post-Training verändert vor allem Verhalten (Stil, Ton, Grenzen). Sich ändernde Fakten gehören zur Inferenzzeit in den Kontext, per Prompt oder RAG.
 source: ki-grundlagen/wie-modelle-entstehen#constitutional-ai-bei-claude
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

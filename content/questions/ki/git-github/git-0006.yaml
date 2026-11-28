@@ -14,7 +14,7 @@ options:
 - Merge durch einen Menschen, Branch löschen
 explanation: 'main bleibt lauffähig: Erst auf einem Branch arbeiten, dann als Draft-PR vorlegen, CI und eigener Blick, Review, und zuletzt der Merge durch einen Menschen.'
 source: git-github/branch-pr-review#der-ablauf-in-acht-befehlen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

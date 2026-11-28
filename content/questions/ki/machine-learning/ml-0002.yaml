@@ -7,14 +7,14 @@ type: single
 question: Wie wird ein Sprachmodell wie Claude im Vortraining hauptsächlich trainiert?
 options:
 - Menschen labeln jeden Satz von Hand als richtig oder falsch
-- 'Self-Supervised: Das Modell sagt das nächste Token voraus, das Label steckt im Text selbst'
-- Unsupervised mit k-Means-Clustering
+- 'Self-Supervised: Es sagt das nächste Token im Text voraus'
+- Unsupervised mit k-Means-Clustering der Texte
 - Ausschliesslich mit Reinforcement Learning
 answer:
 - 1
 explanation: Im Vortraining lernt das Modell aus riesigen Textmengen, das jeweils nächste Token vorherzusagen; die richtige Antwort steht bereits im Text. Von Hand gelabelte Beispiele und Reinforcement Learning (z. B. RLHF) kommen erst in späteren Phasen, und k-Means spielt dabei keine Rolle.
 source: machine-learning/lernparadigmen#die-lernparadigmen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

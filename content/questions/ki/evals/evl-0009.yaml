@@ -14,7 +14,7 @@ answer:
 - 2
 explanation: 0,75 × 0,75 × 0,75 ≈ 0,42. 98 % wäre pass@3 (mindestens einer gelingt). Für Kundenkontakt zählt pass^k, weil es jedes Mal stimmen muss.
 source: evals/llm-judge-und-mehrere-laeufe#mehrere-laeufe-pass-k-und-pass-k
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

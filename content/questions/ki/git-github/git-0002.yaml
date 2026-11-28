@@ -12,7 +12,7 @@ answer:
 - 1
 explanation: Falsch. Ein Commit liegt nur im lokalen .git-Ordner. Erst git push lädt ihn auf GitHub hoch. Geht der Rechner vorher kaputt, ist der Commit weg.
 source: git-github/grundlagen#die-vier-stationen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

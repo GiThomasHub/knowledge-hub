@@ -6,15 +6,15 @@ level: L1
 type: single
 question: Woraus besteht eine Eval?
 options:
-- Aus einem Prompt und einem Modell
-- Aus einer Aufgabe, einem Grader und einem Ergebnis (Quote)
-- Aus einem Dashboard mit Kosten
-- Aus einer Umfrage bei den Nutzern
+- Aus einem Prompt, einem Modell und einer Temperatur
+- Aus Aufgabe, Grader und Ergebnis (Quote)
+- Aus einem Dashboard mit Kosten und Latenz
+- Aus einer Umfrage bei den Nutzerinnen und Nutzern
 answer:
 - 1
 explanation: 'Eine Eval ist ein Test: Aufgabe mit Erfolgskriterium, Grader, der das Ergebnis bewertet, und die daraus entstehende Quote. Dashboards gehören zur Observability, Umfragen ergänzen, ersetzen aber keine Messung.'
 source: evals/warum-evals#die-drei-bausteine-einer-eval
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

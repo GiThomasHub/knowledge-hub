@@ -12,7 +12,7 @@ answer:
 - 1
 explanation: Falsch. Offene Gewichte heissen nur, dass man das Modell herunterladen und selbst betreiben kann. Die Lizenzen von Llama, Qwen, Gemma und anderen unterscheiden sich, manche schränken bestimmte Nutzungen ein – vor dem Produktiveinsatz prüfen.
 source: lokale-llms/warum-lokal#gruende-dagegen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

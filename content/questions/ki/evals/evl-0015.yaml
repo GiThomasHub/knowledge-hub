@@ -15,7 +15,7 @@ rubric:
 - Betrieb, Datenschutz/Bankkundengeheimnis und rechtliche Prüfung berücksichtigt
 explanation: Eine Senior-Qualitätsvereinbarung macht «funktioniert gut» überprüfbar, schützt vor Optimierung aufs Testset und regelt, was bei Modellwechseln passiert.
 source: evals/qualitaet-als-abnahme#die-vier-elemente-einer-qualitaetsvereinbarung
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

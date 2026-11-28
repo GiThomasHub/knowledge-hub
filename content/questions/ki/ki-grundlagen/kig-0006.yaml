@@ -6,15 +6,15 @@ level: L1
 type: single
 question: 'Ein Entwickler setzt in einer Anfrage an die Claude-API-Version 2026-10-21 `temperature: 0`, um verlässliche Ergebnisse zu bekommen. Was passiert (Stand 27.11.2026)?'
 options:
-- Die Antworten werden deterministisch.
-- Die Anfrage wird mit einem Fehler abgelehnt; Verlässlichkeit kommt stattdessen aus klaren Prompts, Schemas und Tests.
-- Der Wert wird ignoriert, die Anfrage läuft normal.
-- Die Antworten werden kreativer.
+- Die Antworten werden vollständig deterministisch.
+- Die Anfrage wird mit einem Fehler abgelehnt.
+- Der Wert wird still ignoriert, die Anfrage läuft normal.
+- Die Antworten werden kreativer und vielfältiger.
 answer:
 - 1
-explanation: In API-Version 2026-10-21 führen temperature, top_p und top_k zu einem Fehler – auch mit früheren Standardwerten. Das Konzept Temperatur bleibt bei anderen Anbietern relevant, bei Claude ersetzen Schemas, Validierung und Tests diesen Regler.
+explanation: In API-Version 2026-10-21 führen temperature, top_p und top_k zu einem Fehler – auch mit früheren Standardwerten. Verlässlichkeit kommt stattdessen aus klaren Prompts, Schemas, Validierung und Tests. Das Konzept Temperatur bleibt bei anderen Anbietern und lokalen Modellen relevant.
 source: ki-grundlagen/token-und-kontext#temperatur
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

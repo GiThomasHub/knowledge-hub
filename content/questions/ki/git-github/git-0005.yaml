@@ -8,14 +8,14 @@ type: single
 question: 'Shell-Skripte aus deinem Repo scheitern unter Linux mit `/usr/bin/env: ''bash\r''`. Was löst das dauerhaft für alle im Team?'
 options:
 - Jede Person setzt core.autocrlf true
-- Eine .gitattributes mit * text=auto eol=lf im Repo, danach git add --renormalize .
+- Eine .gitattributes mit eol=lf im Repo
 - Die Skripte unter Windows neu speichern
 - core.fileMode false setzen
 answer:
 - 1
-explanation: Das \r stammt von CRLF-Zeilenenden. core.autocrlf ist nur eine persönliche Einstellung (und true wäre unter Linux falsch); erst die .gitattributes im Repo gilt für alle. Neu speichern unter Windows erzeugt wieder CRLF, und fileMode betrifft Dateirechte, nicht Zeilenenden.
+explanation: Das \r stammt von CRLF-Zeilenenden. core.autocrlf ist nur eine persönliche Einstellung (und true wäre unter Linux falsch); erst eine .gitattributes im Repo (z. B. * text=auto eol=lf, danach git add --renormalize .) gilt für alle. Neu speichern unter Windows erzeugt wieder CRLF, und fileMode betrifft Dateirechte, nicht Zeilenenden.
 source: git-github/einrichten-wsl#zeilenenden-das-unsichtbare-problem
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

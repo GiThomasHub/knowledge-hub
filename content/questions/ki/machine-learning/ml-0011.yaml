@@ -17,7 +17,7 @@ answer:
 - 2
 explanation: In allen drei ersten Fällen fliessen Informationen ins Training, die zum Vorhersagezeitpunkt nicht vorlägen. Cross-Validation innerhalb der Trainingsdaten und ein chronologischer Split sind dagegen korrekte Vorgehensweisen.
 source: machine-learning/overfitting-und-leakage#data-leakage-die-unsichtbare-falle
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

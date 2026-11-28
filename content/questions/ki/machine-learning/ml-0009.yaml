@@ -7,15 +7,15 @@ type: scenario
 situation: Ein Modell sagt den Tagesumsatz von Filialen voraus. Die Daten der letzten drei Jahre wurden zufällig in 80 % Training und 20 % Test aufgeteilt. Der Test zeigt einen sehr kleinen Fehler, im ersten Live-Monat liegen die Prognosen aber deutlich daneben.
 question: Was ist die wahrscheinlichste Ursache?
 options:
-- Underfitting, das Modell ist zu einfach
-- Data Leakage durch zufälliges Mischen einer Zeitreihe – das Modell hat im Training Nachbartage aus der Zukunft gesehen; chronologisch teilen
-- Der Testsatz war mit 20 % zu klein
-- Die Metrik war falsch, R² statt RMSE
+- Underfitting – das Modell ist für die Daten zu einfach
+- Data Leakage – eine Zeitreihe wurde zufällig statt chronologisch geteilt
+- Der Testsatz war mit 20 % zu klein für eine Aussage
+- Die Metrik war falsch gewählt, R² statt RMSE
 answer:
 - 1
 explanation: Bei Zeitreihen landen durch zufälliges Mischen zeitlich benachbarte Tage in Training und Test; der Test ist dadurch künstlich gut. Underfitting würde schon im Test schlecht aussehen, die Testgrösse erklärt den Einbruch nicht, und die Wahl der Metrik ändert das Muster nicht.
 source: machine-learning/overfitting-und-leakage#data-leakage-die-unsichtbare-falle
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session
