@@ -1,0 +1,24 @@
+id: ber-0012
+topic: ki-beratung
+competencies:
+- ki-ber-03
+level: L3
+type: multi
+question: Welche Positionen gehören zu den Kosten eines Business Case für eine KI-Einführung mit Firmenlizenzen? (mehrere richtig)
+options:
+- Lizenzen pro Person und Monat
+- Schulungszeit der Teilnehmenden
+- Interne Betreuung durch Champions und Pflege von Projekten und Skills
+- Klärung von Governance und Datenschutz
+- Nur die Lizenzkosten, alles andere ist ohnehin Arbeitszeit
+answer:
+- 0
+- 1
+- 2
+- 3
+explanation: Neben Lizenzen kosten Schulung, laufende Betreuung und Governance Zeit und Geld. Wer nur die Lizenz rechnet, unterschätzt die Kosten und überschätzt die Rendite.
+source: ki-beratung/business-case-chf#die-bausteine
+status: reviewed
+created: '2026-11-28'
+last_verified: '2026-11-28'
+author: claude-session

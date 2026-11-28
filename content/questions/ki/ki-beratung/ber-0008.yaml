@@ -1,0 +1,21 @@
+id: ber-0008
+topic: ki-beratung
+competencies:
+- ki-ber-02
+level: L2
+type: scenario
+situation: In einem Workshop wählt die Geschäftsleitung als ersten Use Case einen Agenten, der alle Kundenanfragen selbständig beantwortet und Gutschriften auslöst. Die Kundendaten liegen verstreut in drei Systemen.
+question: Wie gehst du vor?
+options:
+- Zustimmen – ein ambitioniertes Projekt motiviert alle am meisten
+- Als strategisch einordnen, aber mit einem Quick Win beginnen
+- Ablehnen – KI ist für Kundenanfragen grundsätzlich ungeeignet
+- Zuerst alle drei Systeme durch eine neue Plattform ersetzen
+answer:
+- 1
+explanation: Hoher Nutzen, aber tiefe Machbarkeit, schwierige Datenlage und hohes Risiko machen den Agenten zum strategischen Projekt. Ein Quick Win – z. B. Antwortentwürfe mit menschlicher Freigabe – schafft Erfahrung und Vertrauen für später. Kundenanfragen sind kein grundsätzlich ungeeigneter Bereich, und ein Systemersatz ist unverhältnismässig.
+source: ki-beratung/use-case-bewerten#das-portfolio
+status: reviewed
+created: '2026-11-28'
+last_verified: '2026-11-28'
+author: claude-session

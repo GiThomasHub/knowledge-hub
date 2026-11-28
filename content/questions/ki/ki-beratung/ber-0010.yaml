@@ -1,0 +1,21 @@
+id: ber-0010
+topic: ki-beratung
+competencies:
+- ki-ber-03
+level: L3
+type: scenario
+situation: Ein Business Case weist einen Nutzen von CHF 400 000 pro Jahr aus. Grundlage ist die Annahme, dass alle 80 Mitarbeitenden ab dem ersten Monat täglich eine Stunde sparen. Eine Basislinie wurde nicht erhoben.
+question: Was ist die wichtigste Verbesserung?
+options:
+- Den Stundensatz erhöhen, damit der Nutzen noch überzeugender wirkt
+- Szenarien mit realistischer Nutzung, Annahmen offen, Basislinie messen
+- Den Business Case weglassen, weil sich KI-Nutzen nicht messen lässt
+- Die Lizenzkosten nachverhandeln, das verbessert die Rendite am meisten
+answer:
+- 1
+explanation: Die Rechnung unterstellt volle Nutzung ab Tag eins und hat keine Basislinie. Drei Szenarien mit realistischer Nutzungsquote, offen ausgewiesene Annahmen, eine Messung der heutigen Zeit pro Fall vor dem Start und das Ersetzen der Annahmen durch Messwerte nach dem Pilot machen sie belastbar. Ein höherer Stundensatz verschleiert das Problem, Nutzen lässt sich sehr wohl messen, und die Lizenz ist selten der entscheidende Hebel.
+source: ki-beratung/business-case-chf#messgroessen-festlegen-vor-dem-start
+status: reviewed
+created: '2026-11-28'
+last_verified: '2026-11-28'
+author: claude-session

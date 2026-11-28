@@ -1,0 +1,20 @@
+id: ber-0009
+topic: ki-beratung
+competencies:
+- ki-ber-03
+level: L3
+type: single
+question: 25 Personen sparen je 1,5 Stunden pro Woche, die Nutzungsquote liegt bei 60 %, gerechnet wird mit 44 Arbeitswochen und CHF 90 pro Stunde. Wie hoch ist der jährliche Zeitnutzen?
+options:
+- CHF 148 500
+- CHF 89 100
+- CHF 53 460
+- CHF 2 025
+answer:
+- 1
+explanation: 25 × 1,5 × 0,6 × 44 × 90 = CHF 89 100. Ohne die Nutzungsquote ergäben sich CHF 148 500, mit doppelt angewendeter Quote rund CHF 53 460; CHF 2 025 entspricht nur einer einzigen Woche.
+source: ki-beratung/business-case-chf#ein-durchgerechnetes-beispiel
+status: reviewed
+created: '2026-11-28'
+last_verified: '2026-11-28'
+author: claude-session

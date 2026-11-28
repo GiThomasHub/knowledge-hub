@@ -1,0 +1,20 @@
+id: ber-0006
+topic: ki-beratung
+competencies:
+- ki-ber-02
+level: L2
+type: single
+question: Welcher Use Case ist als erster Quick Win am besten geeignet?
+options:
+- Ein Agent, der Steuererklärungen selbständig bei der Behörde einreicht
+- Protokollentwürfe, die die verantwortliche Person vor dem Versand prüft
+- Rabatte nach einer festen Staffel für alle Mandate berechnen
+- Automatische Kündigung von Verträgen bei Zahlungsverzug
+answer:
+- 1
+explanation: Protokollentwürfe sind häufig, textlastig, leicht prüfbar und risikoarm. Das automatische Einreichen und Kündigen hat hohe Fehlerfolgen ohne Prüfung, und eine feste Rabattstaffel braucht gar keine KI.
+source: ki-beratung/use-case-bewerten#ein-beispiel-treuhandbuero-mit-40-mitarbeitenden
+status: reviewed
+created: '2026-11-28'
+last_verified: '2026-11-28'
+author: claude-session

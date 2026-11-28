@@ -1,0 +1,24 @@
+id: ber-0007
+topic: ki-beratung
+competencies:
+- ki-ber-02
+level: L2
+type: multi
+question: Welche Gründe schliessen einen Use Case vorerst aus? (mehrere richtig)
+options:
+- Fehler wären nicht erkennbar und würden viel kosten
+- Die Datenklasse erlaubt den Einsatz nicht, und keine Lösung ist in Sicht
+- Niemand im Fachbereich übernimmt die Verantwortung für die Ergebnisse
+- Die Aufgabe ist textlastig und kommt täglich vor
+- Eine feste Regel löst die Aufgabe zuverlässiger
+answer:
+- 0
+- 1
+- 2
+- 4
+explanation: Unsichtbare teure Fehler, verbotene Datenklassen, fehlende Verantwortung und eine ausreichende Regel sind Ausschlussgründe. Textlastig und häufig spricht dagegen gerade für einen Use Case.
+source: ki-beratung/use-case-bewerten#ausschlussgruende
+status: reviewed
+created: '2026-11-28'
+last_verified: '2026-11-28'
+author: claude-session

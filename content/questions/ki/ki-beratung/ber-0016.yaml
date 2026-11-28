@@ -1,0 +1,21 @@
+id: ber-0016
+topic: ki-beratung
+competencies:
+- ki-ber-05
+level: L4
+type: scenario
+situation: Ein Zürcher Personaldienstleister will mit einem KI-System Bewerbungen für Stellen bei Kunden in Deutschland vorsortieren. Die Geschäftsleitung meint, als Schweizer Firma betreffe sie der EU AI Act nicht.
+question: Wie beurteilst du das (Stand 28.11.2026)?
+options:
+- Zutreffend – der AI Act gilt nur für Firmen mit Sitz in der EU
+- Unzutreffend – Einsatz in der EU zählt; Hochrisiko ab 2. Dezember 2027
+- Zutreffend – solange ein Schweizer Konto und Server genutzt werden
+- Unzutreffend – die Hochrisiko-Pflichten gelten schon seit 2024
+answer:
+- 1
+explanation: Massgebend ist, wo das System eingesetzt wird und wo seine Ergebnisse verwendet werden, nicht der Firmensitz. Personalauswahl gehört zu den Hochrisiko-Bereichen, deren Pflichten durch den Digital Omnibus auf den 2. Dezember 2027 verschoben wurden. Dazu gelten revDSG und Art. 21 DSG; Fachpersonen beiziehen. Der Konto- oder Serverstandort ändert daran nichts.
+source: ki-beratung/governance-und-regulierung#der-eu-ai-act-fuer-schweizer-unternehmen
+status: reviewed
+created: '2026-11-28'
+last_verified: '2026-11-28'
+author: claude-session

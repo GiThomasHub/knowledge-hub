@@ -1,0 +1,20 @@
+id: ber-0003
+topic: ki-beratung
+competencies:
+- ki-ber-01
+level: L1
+type: single
+question: Ein Unternehmen will einen Prüfprozess, der jede Nacht mehrere Stunden selbständig mit Werkzeugen arbeitet, ohne dass ein Rechner im Büro laufen muss. Welches Produkt passt am besten?
+options:
+- Claude-App mit einem Projekt
+- Managed Agents
+- Claude in Chrome
+- Ein privates Pro-Konto
+answer:
+- 1
+explanation: Managed Agents ist ein fertiger Agenten-Rahmen in verwalteter Infrastruktur, gedacht für lange, asynchrone Aufgaben und zeitgesteuerte Läufe. Die Claude-App und Claude in Chrome werden von Menschen interaktiv genutzt, und ein Privatkonto ist für Firmenprozesse ungeeignet.
+source: ki-beratung/produktlandschaft#managed-agents-in-einem-satz
+status: reviewed
+created: '2026-11-28'
+last_verified: '2026-11-28'
+author: claude-session

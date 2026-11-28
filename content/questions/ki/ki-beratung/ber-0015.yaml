@@ -1,0 +1,24 @@
+id: ber-0015
+topic: ki-beratung
+competencies:
+- ki-ber-04
+level: L3
+type: multi
+question: Was gehört in den Rahmen eines guten Piloten? (mehrere richtig)
+options:
+- Feste Dauer und definierte Teilnehmende, auch konstruktive Skeptiker
+- Basislinie der heutigen Zeit pro Fall
+- Messgrössen mit Zielwerten und ein Abbruchkriterium
+- Möglichst nur begeisterte Nutzerinnen und Nutzer
+- Abschluss mit Entscheid am Gate
+answer:
+- 0
+- 1
+- 2
+- 4
+explanation: Dauer, Teilnehmende, Basislinie, Messgrössen, Abbruchkriterium und ein Gate-Entscheid machen den Piloten aussagekräftig. Nur Begeisterte zu wählen, liefert zu gute Werte und überhört die Einwände des Rollouts.
+source: ki-beratung/einfuehrung-in-stufen#der-pilot
+status: reviewed
+created: '2026-11-28'
+last_verified: '2026-11-28'
+author: claude-session

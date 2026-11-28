@@ -1,0 +1,18 @@
+id: ber-0013
+topic: ki-beratung
+competencies:
+- ki-ber-04
+level: L3
+type: order
+question: Bring die vier Stufen einer KI-Einführung in die empfohlene Reihenfolge.
+options:
+- Quick Win mit wenigen Power-Usern und einem Use Case
+- Team mit Firmenkonto, Projekten, Skills und Schulung
+- Prozess mit API oder Managed Agents und Anbindung an Systeme
+- Plattform mit eigenen Agenten und firmenweiter Governance
+explanation: 'Jede Stufe baut auf den Erfahrungen und Regeln der vorherigen auf: zuerst Erfahrung im Kleinen, dann Breite im Team, dann Integration in Prozesse und zuletzt die Plattform für die ganze Organisation.'
+source: ki-beratung/einfuehrung-in-stufen#die-vier-stufen
+status: reviewed
+created: '2026-11-28'
+last_verified: '2026-11-28'
+author: claude-session

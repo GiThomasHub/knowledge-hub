@@ -1,0 +1,21 @@
+id: ber-0005
+topic: ki-beratung
+competencies:
+- ki-ber-01
+level: L1
+type: scenario
+situation: Ein Verband mit 15 Mitarbeitenden möchte, dass alle schneller Mitgliederanfragen beantworten, gestützt auf die eigenen Reglemente. Die IT schlägt vor, mit der API einen eigenen Chatbot zu entwickeln.
+question: Was empfiehlst du als ersten Schritt?
+options:
+- Den API-Chatbot entwickeln, weil er am flexibelsten ist
+- Zuerst Team-Konto mit Projekt für die Reglemente, erst später bauen
+- Managed Agents einsetzen, weil es die neueste Technik ist
+- Jede Person nutzt ein eigenes Free-Konto, das kostet nichts
+answer:
+- 1
+explanation: 'Benutzen vor Bauen: Ein Projekt mit den Reglementen löst die Aufgabe in Tagen. Ein API-Chatbot oder Managed Agents lohnen sich erst bei vielen Nutzenden und Einbettung in eigene Systeme. Private Free-Konten sind für Vereinsdaten ungeeignet.'
+source: ki-beratung/produktlandschaft#die-landschaft-im-ueberblick
+status: reviewed
+created: '2026-11-28'
+last_verified: '2026-11-28'
+author: claude-session
