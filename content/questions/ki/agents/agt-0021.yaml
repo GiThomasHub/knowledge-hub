@@ -15,7 +15,7 @@ rubric:
 - Definiert Messung (Testset, Kennzahlen) und schrittweise Erweiterung
 explanation: Ein Senior-Vorschlag zerlegt den Prozess, wählt die einfachste Stufe, macht Irreversibles reversibel und beweist die Qualität mit Messungen – statt das Etikett «Agent» zu verkaufen.
 source: agents/architektur-beraten#vom-risiko-zur-architektur-ein-beispiel
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

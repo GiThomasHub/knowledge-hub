@@ -6,15 +6,15 @@ level: L2
 type: single
 question: Ein CI-Skript ruft `claude -p` mit `--output-format json --json-schema …` auf und liest danach `.structured_output.findings`. Was muss das Skript zusätzlich prüfen?
 options:
-- Nichts, das Schema garantiert das Feld.
-- Den Exit-Code und ob `structured_output` überhaupt vorhanden ist – es fehlt z. B. bei Ablehnung oder Abbruch
-- Ob die Antwort das Wort «erfolgreich» enthält
-- Ob die Ausgabe länger als 100 Zeichen ist
+- Nichts – das Schema garantiert, dass das Feld immer vorhanden ist.
+- Den Exit-Code und ob structured_output überhaupt vorhanden ist.
+- Ob die Antwort irgendwo das Wort «erfolgreich» enthält.
+- Ob die Ausgabe länger als 100 Zeichen ist, sonst ist sie leer.
 answer:
 - 1
 explanation: Laut Doku fehlt structured_output, wenn ein Lauf ohne gültige strukturierte Ausgabe endet. Ohne Prüfung meldet das Skript fälschlich «0 Funde». Textsuche und Länge sind keine Erfolgskriterien.
 source: automation/headless#ausgabe-fuer-programme
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

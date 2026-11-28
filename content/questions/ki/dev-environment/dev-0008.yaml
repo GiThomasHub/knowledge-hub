@@ -14,7 +14,7 @@ answer:
 - 2
 explanation: --locked bricht ab, wenn uv.lock nicht zur pyproject.toml passt, statt den Lock still anzupassen. uv sync ohne Flag darf den Lock aktualisieren, uv lock --upgrade holt bewusst neue Versionen, und requirements.txt ist eine zweite, leicht abweichende Quelle.
 source: dev-environment/python-projekt-uv#der-alltag-mit-uv
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

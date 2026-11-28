@@ -14,7 +14,7 @@ answer:
 - 1
 explanation: Schleifen, Zustand und Freigaben sind genau die Stärke von LangGraph (StateGraph, Conditional Edges, Checkpointer). Eine lineare Kette kennt keine Zyklen, ein einzelner Aufruf keine Schleife, und DSPy optimiert Prompts, steuert aber keine Abläufe.
 source: agents/frameworks#langchain-und-langgraph
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

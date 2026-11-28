@@ -6,15 +6,15 @@ level: L1
 type: single
 question: Du bist mitten in einem grossen Refactoring, der Kontext wird knapp, die Aufgabe ist aber noch nicht fertig. Welcher Befehl passt?
 options:
-- /clear
-- /compact Behalte geänderte Dateien und Testbefehle
-- /init
-- /memory
+- /clear, um mit leerem Kontext weiterzuarbeiten
+- /compact mit Fokus auf geänderte Dateien und Tests
+- /init, um eine neue CLAUDE.md für den Rest zu erzeugen
+- /memory, um den Verlauf ins Gedächtnis zu verschieben
 answer:
 - 1
 explanation: /compact fasst den Verlauf zusammen und behält mit Fokus die Essenz – richtig innerhalb derselben Aufgabe. /clear verwirft alles und eignet sich für den Themenwechsel, /init erzeugt eine CLAUDE.md, /memory zeigt Anweisungsdateien.
 source: claude-code/befehle-und-modi#die-wichtigsten-slash-befehle
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

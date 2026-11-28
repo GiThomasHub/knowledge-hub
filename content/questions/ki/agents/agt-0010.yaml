@@ -14,7 +14,7 @@ answer:
 - 2
 explanation: Eine Fehlermeldung als Anleitung sagt, was falsch war und wie es richtig geht – der Agent kann sich selbst korrigieren. Stacktraces füllen den Kontext mit Rauschen, ein Statuscode erklärt nichts, und ein leeres Ergebnis lädt zu Fehlschlüssen ein.
 source: agents/agent-bauen#gute-werkzeuge
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

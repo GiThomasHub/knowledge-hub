@@ -7,15 +7,15 @@ type: scenario
 situation: Ein Agent mit dem Claude Agent SDK soll nachts unbeaufsichtigt Code lesen und einen Bericht schreiben. Gesetzt ist nur allowed_tools=["Read", "Grep", "Glob"].
 question: Was fehlt, damit er wirklich nur liest und nicht endlos läuft?
 options:
-- Nichts, allowed_tools begrenzt die Werkzeuge bereits.
-- permission_mode="dontAsk" (alles nicht Freigegebene wird abgelehnt) sowie max_turns und max_budget_usd
-- Ein freundlicher Hinweis im system_prompt
-- permission_mode="bypassPermissions"
+- Nichts – allowed_tools begrenzt die verfügbaren Werkzeuge bereits abschliessend.
+- permission_mode="dontAsk" sowie Grenzen mit max_turns und max_budget_usd
+- Ein deutlicher Hinweis im system_prompt, nur zu lesen und rechtzeitig aufzuhören
+- permission_mode="bypassPermissions", damit nachts keine Rückfrage blockiert
 answer:
 - 1
 explanation: allowed_tools ist eine Vorab-Freigabe, keine Werkzeugliste; andere Werkzeuge bleiben verfügbar und unterliegen dem Rechte-Modus. Ohne Mensch lehnt dontAsk alles Nicht-Freigegebene ab. max_turns und max_budget_usd sind aus, solange sie nicht gesetzt sind. Ein Prompt-Hinweis ist keine Grenze, und bypassPermissions wäre das Gegenteil.
 source: agents/agent-bauen#variante-b-claude-agent-sdk
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

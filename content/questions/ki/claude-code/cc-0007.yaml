@@ -14,7 +14,7 @@ answer:
 - 1
 explanation: Projekt- und lokale Settings können sich nicht selbst bypassPermissions oder auto geben; bei bypassPermissions startet die Session laut Doku in Manual. So schützt Claude Code vor präparierten Repos. Wer einen anderen Standard will, setzt ihn in ~/.claude/settings.json.
 source: claude-code/befehle-und-modi#die-rechte-modi
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

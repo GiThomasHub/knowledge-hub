@@ -14,7 +14,7 @@ answer:
 - 1
 explanation: .env.example wird committet und zeigt Team und Agenten, welche Variablen nötig sind – ohne Werte. Echte Werte oder Secrets darin wären im Git veröffentlicht. Jede neue Variable kommt immer auch in die .env.example.
 source: dev-environment/config-und-secrets#env-und-env-example
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

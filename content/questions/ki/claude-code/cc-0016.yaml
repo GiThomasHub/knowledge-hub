@@ -17,7 +17,7 @@ answer:
 - 3
 explanation: Team-Standard, Skills und eine .mcp.json, die Secrets nur als Variable referenziert, gehören ins Repo. settings.local.json und CLAUDE.local.md sind persönliche Abweichungen und bleiben lokal.
 source: claude-code/claude-ordner#was-committet-wird-und-was-nicht
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

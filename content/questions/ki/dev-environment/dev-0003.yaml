@@ -15,7 +15,7 @@ answer:
 - 2
 explanation: Das Linux steckt in einer einzigen virtuellen Platte; OneDrive und die Windows-Sicherung sehen keine einzelnen Dateien darin. Git und wsl --export sind die richtigen Wege. wsl --unregister löscht die ganze Distribution unwiderruflich – das Gegenteil eines Neustarts (der heisst wsl --shutdown).
 source: dev-environment/vier-welten#backup-ist-deine-sache
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

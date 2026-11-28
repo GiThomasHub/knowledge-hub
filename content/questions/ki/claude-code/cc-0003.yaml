@@ -12,7 +12,7 @@ answer:
 - 1
 explanation: 'Falsch. Der Startordner ist eine Schreibgrenze, keine Lesegrenze: Nach einer Rückfrage kann Claude auch ausserhalb lesen, etwa ~/.ssh, und es läuft mit deinen Benutzerrechten. Echte Grenzen setzen Deny-Regeln, die Sandbox oder ein Container.'
 source: claude-code/agentic-loop#der-erste-start
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

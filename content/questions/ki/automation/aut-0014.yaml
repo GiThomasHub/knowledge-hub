@@ -15,7 +15,7 @@ rubric:
 - Datenschutz Schweiz (revDSG, Vertrag, Pseudonymisierung) berücksichtigt
 explanation: Ein Senior-Vorschlag leitet die Betriebsform aus Daten, Nutzern und Compliance ab und macht den unbeaufsichtigten Teil begrenzt, prüfbar und umkehrbar.
 source: automation/betriebsform#die-sechs-entscheidungsfragen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

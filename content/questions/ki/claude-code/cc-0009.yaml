@@ -7,15 +7,15 @@ type: scenario
 situation: 'Die CLAUDE.md eines Teams ist auf 340 Zeilen gewachsen: Code-Stil, Testregeln für *.test.ts und eine Deployment-Anleitung. Claude ignoriert zunehmend Regeln.'
 question: Was ist der beste nächste Schritt?
 options:
-- Wichtige Regeln mit WICHTIG markieren
-- 'Aufteilen: Testregeln in .claude/rules/ mit paths, Deployment in einen Skill, die CLAUDE.md auf das immer Gültige kürzen'
+- Die wichtigsten Regeln mit WICHTIG oder Grossbuchstaben hervorheben
+- Testregeln nach .claude/rules/ mit paths, Deployment in einen Skill
 - Die Teile per @-Import in eigene Dateien auslagern
 - Auf ein Modell mit grösserem Kontextfenster wechseln
 answer:
 - 1
 explanation: Pfadgebundene Regeln laden nur bei passenden Dateien, Skills nur bei Bedarf – die CLAUDE.md wird kurz und wieder befolgt. Viele WICHTIG-Markierungen heben sich gegenseitig auf. @-Importe ordnen nur, sie werden mitgeladen und sparen keinen Kontext. Ein grösseres Fenster ändert nichts daran, dass Regeln im Rauschen untergehen.
 source: claude-code/claude-md#auslagern-importe-regeln-skills
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

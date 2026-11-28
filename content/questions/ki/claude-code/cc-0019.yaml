@@ -17,7 +17,7 @@ answer:
 - 3
 explanation: Abräumen, gezielt verdichten und Nebenfragen aus dem Verlauf halten verringern den Kontext. Viele MCP-Server bringen viele Werkzeugdefinitionen in den Kontext, und erneutes Lesen der ganzen Codebasis füllt ihn zusätzlich.
 source: claude-code/kontext-und-subagents#gegensteuern
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

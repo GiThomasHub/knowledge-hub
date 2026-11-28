@@ -6,15 +6,15 @@ level: L2
 type: single
 question: Warum ist `api_key = os.getenv("API_KEY")` am Programmstart heikel?
 options:
-- os.getenv ist veraltet.
-- Fehlt die Variable, liefert es stillschweigend None; der Fehler zeigt sich erst viel später und schwer verständlich.
+- os.getenv gilt seit Python 3.12 als veraltet.
+- Fehlt die Variable, kommt still None – der Fehler zeigt sich erst viel später.
 - os.getenv liest keine .env-Dateien und ist deshalb unsicher.
-- Es macht das Programm langsam.
+- Jeder Aufruf liest die Umgebung neu und macht das Programm langsam.
 answer:
 - 1
 explanation: 'Ohne Prüfung läuft das Programm mit None weiter und scheitert später an unerwarteter Stelle. Besser: os.environ["API_KEY"] (wirft sofort einen Fehler) oder pydantic-settings mit Pflichtfeld (fail fast). os.getenv ist nicht veraltet und nicht langsam; dass es keine .env liest, ist keine Sicherheitsfrage.'
 source: dev-environment/config-und-secrets#typisiert-laden-statt-os-getenv-ueberall
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

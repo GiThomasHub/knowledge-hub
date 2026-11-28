@@ -12,7 +12,7 @@ options:
 - Modell antwortet mit Quellen
 explanation: Erst breit suchen, dann filtern, dann mit dem langsameren, genaueren Reranker verdichten, und erst dann antworten.
 source: ai-memory/rag-optimieren#die-pipeline-mit-ihren-hebeln
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

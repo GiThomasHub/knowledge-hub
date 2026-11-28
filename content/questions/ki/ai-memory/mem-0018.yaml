@@ -6,15 +6,15 @@ level: L4
 type: single
 question: Ein KMU mit 40 internen Richtlinien (zusammen rund 80 Seiten, selten geändert) will «ein RAG mit Vektordatenbank». Was empfiehlst du zuerst?
 options:
-- Qdrant-Cluster mit Reranking aufsetzen
-- Die Richtlinien direkt als Projektwissen bzw. im Prompt mit Caching bereitstellen und mit einem kleinen Testset prüfen, ob das reicht
-- Ein Knowledge Graph
-- Ein Modell auf die Richtlinien fine-tunen
+- Einen Qdrant-Cluster mit Hybrid-Suche und Reranking aufsetzen
+- Richtlinien als Projektwissen mit Caching bereitstellen und testen
+- Einen Knowledge Graph über alle Richtlinien und Begriffe aufbauen
+- Ein Modell auf die Richtlinien fine-tunen, damit es sie auswendig kennt
 answer:
 - 1
 explanation: Kleine, stabile Bestände passen direkt in den Kontext; mit Caching ist das günstig. Erst wenn ein Testset Lücken zeigt, lohnt sich Suchinfrastruktur. Graph und Fine-Tuning sind hier Überdimensionierung.
 source: ai-memory/wissensarchitektur#die-vier-bausteine
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

@@ -7,15 +7,15 @@ type: scenario
 situation: 'Ein Kunde lässt Claude Code im Devcontainer mit --dangerously-skip-permissions an einem internen Repo arbeiten. Ein Teamleiter sagt: «Im Container kann ja nichts passieren, Reviews der Agent-Änderungen brauchen wir nicht mehr.»'
 question: Welche Antwort ist fachlich richtig?
 options:
-- Stimmt, der Container schützt das Projekt vollständig.
-- Der Container schützt den Rest des Rechners, nicht den eingehängten Projektordner. Ohne Firewall ist zudem Datenabfluss möglich. Git, Reviews und eine Egress-Firewall bleiben nötig.
-- Stimmt, solange der Container nicht als root läuft.
-- Der Container ist überflüssig, weil --dangerously-skip-permissions ohnehin alle Prüfungen ersetzt.
+- Stimmt – der Container schützt Rechner und Projekt vollständig.
+- Falsch – das eingehängte Projekt ist ungeschützt; Git, Reviews, Firewall bleiben nötig.
+- Stimmt – solange der Container nicht als root läuft.
+- Falsch – der Container ist überflüssig, weil das Flag alle Prüfungen ersetzt.
 answer:
 - 1
-explanation: 'Der Bind Mount ist echt: Der Agent kann im Projekt alles ändern oder löschen, und ohne Firewall alles im Container Erreichbare nach aussen senden – laut Anthropic auch die Claude-Code-Zugangsdaten. Kein root ist eine Voraussetzung für das Flag, kein Schutz für das Projekt. Und das Flag schaltet Prüfungen ab, statt sie zu ersetzen.'
+explanation: 'Der Container schützt den Rest des Rechners, nicht den eingehängten Projektordner: Der Bind Mount ist echt, der Agent kann dort alles ändern oder löschen, und ohne Egress-Firewall alles im Container Erreichbare nach aussen senden – laut Anthropic auch die Claude-Code-Zugangsdaten. Kein root ist eine Voraussetzung für das Flag, kein Schutz für das Projekt. Und das Flag schaltet Prüfungen ab, statt sie zu ersetzen.'
 source: container/haerten-und-ki-agenten#wogegen-ein-container-nicht-schuetzt
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

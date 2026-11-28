@@ -6,15 +6,15 @@ level: L2
 type: single
 question: Was bedeutet Memory Poisoning?
 options:
-- Das Memory wird zu gross und langsam.
-- Eine eingeschleuste Anweisung landet im Memory und wirkt in jeder künftigen Sitzung weiter.
-- Zwei Einträge widersprechen sich.
-- Das Memory wird versehentlich gelöscht.
+- Das Memory wird so gross, dass jede Sitzung langsam und teuer wird.
+- Eine eingeschleuste Anweisung wird gespeichert und wirkt in jeder Sitzung weiter.
+- Zwei Einträge widersprechen sich, und Claude wählt zufällig einen aus.
+- Das Memory wird bei einem Update versehentlich gelöscht.
 answer:
 - 1
 explanation: 'Memory Poisoning ist ein Angriff: Prompt Injection, die gespeichert wird, wirkt dauerhaft. Gegenmittel sind Herkunftsmarkierung, keine Fremdtexte als Anweisung, begrenzte Schreibrechte und menschliche Freigabe bei Beförderungen.'
 source: ai-memory/claude-memory-pflegen#pflege-damit-memory-besser-statt-nur-groesser-wird
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

@@ -16,7 +16,7 @@ answer:
 - 3
 explanation: Parallelität, unabhängige Prüfung und zu grosse Aufgaben sprechen für mehrere Agenten. Bei eng gekoppelten Teilen ist ein einzelner Agent mit gutem Kontext besser und billiger – Multi-Agent-Läufe kosten ein Vielfaches.
 source: agents/muster#mehrere-agenten-wann-ja-wann-nein
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

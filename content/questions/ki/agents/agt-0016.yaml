@@ -12,7 +12,7 @@ answer:
 - 1
 explanation: Falsch. Ein Schema garantiert Form und Wertebereich, nicht inhaltliche Richtigkeit. Erst der Abgleich jeder genannten Zahl mit den Quelldaten bzw. den berechneten Kennzahlen stellt sicher, dass sie stimmt.
 source: agents/rechnen-vs-interpretieren#ausgaben-per-schema-erzwingen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

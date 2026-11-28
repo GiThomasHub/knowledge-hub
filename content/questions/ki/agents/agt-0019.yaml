@@ -6,15 +6,15 @@ level: L3
 type: single
 question: Warum rät Anthropic zur Vorsicht beim frühen Einsatz von Agenten-Frameworks?
 options:
-- Frameworks sind grundsätzlich unsicher.
-- Sie erzeugen Abstraktionsschichten, die Prompts und Antworten verdecken, das Debuggen erschweren und zu unnötiger Komplexität verleiten.
-- Sie funktionieren nur mit Modellen anderer Anbieter.
-- Sie sind immer teurer im Betrieb.
+- Frameworks gelten grundsätzlich als unsicher und sind für produktive Systeme ungeeignet.
+- Ihre Abstraktionen verdecken Prompts und Antworten und erschweren das Debuggen.
+- Sie funktionieren nur mit Modellen anderer Anbieter und nicht mit Claude.
+- Sie sind im Betrieb immer teurer als direkte API-Aufrufe, wegen zusätzlicher Tokens.
 answer:
 - 1
 explanation: Der Punkt ist Transparenz und Komplexität, nicht grundsätzliche Unsicherheit oder Kosten. Anthropic empfiehlt, mit direkten API-Aufrufen zu beginnen und zu verstehen, was ein Framework darunter tut.
 source: agents/frameworks#die-weiteren
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

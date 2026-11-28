@@ -11,7 +11,7 @@ options:
 - 'Prüfen: Tests erneut laufen lassen und Ausgabe lesen'
 explanation: Claude holt zuerst Kontext, handelt dann und prüft das Ergebnis. Ist es noch nicht gut, beginnt die nächste Runde – so lange, bis die Aufgabe erledigt ist.
 source: claude-code/agentic-loop#der-agentic-loop
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

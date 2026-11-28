@@ -17,7 +17,7 @@ answer:
 - 2
 explanation: Ein Volume bleibt, bis du es ausdrücklich löschst. down entfernt nur den Container, ein Neustart stoppt nur, prune -a lässt Volumes stehen. down -v und docker volume rm löschen das Volume bewusst – danach sind die Daten weg.
 source: container/alltag-und-fehler#was-ueberlebt-was
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

@@ -14,7 +14,7 @@ answer:
 - 1
 explanation: Die Felder sind Minute (17), Stunde (6), Tag im Monat (*), Monat (*), Wochentag (1 = Montag). Viele Planer interpretieren das in UTC. Die anderen Optionen verwechseln die Reihenfolge der Felder oder lesen 17 als Schrittweite (dafür bräuchte es */17).
 source: automation/trigger-und-cron#cron-lesen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

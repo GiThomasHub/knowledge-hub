@@ -15,7 +15,7 @@ rubric:
 - Messbares Ziel (frischer Klon läuft, Onboarding-Zeit)
 explanation: Ein Senior-Plan beginnt mit billigen Massnahmen mit grosser Wirkung, macht den Erfolg messbar und setzt den Devcontainer dort ein, wo heterogene Rechner und KI-Agenten ihn rechtfertigen.
 source: dev-environment/team-standards#drei-stufen-der-standardisierung
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

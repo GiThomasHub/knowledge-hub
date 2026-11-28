@@ -15,9 +15,9 @@ answer:
 - 0
 - 1
 - 3
-explanation: :ro, kein Netz und kein root nehmen dem Prozess genau das weg, was er nicht braucht. Das ganze Home zu mounten öffnet das Fenster in jedes Zimmer und macht den Container nutzlos. docker.sock gibt die Steuerung über Docker selbst und ist der Standardweg aus dem Container heraus.
+explanation: :ro, kein Netz und kein root nehmen dem Prozess genau das weg, was er nicht braucht. Das ganze Home zu mounten öffnet das Fenster in jedes Zimmer und macht den Container nutzlos. docker.sock gibt die Steuerung über Docker selbst und ist der bekannteste Ausbruchsweg aus einem Container.
 source: container/haerten-und-ki-agenten#fuenf-handgriffe-zum-haerten
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

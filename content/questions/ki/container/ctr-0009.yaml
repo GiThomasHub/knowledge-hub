@@ -14,7 +14,7 @@ answer:
 - 1
 explanation: 'Mounts von /mnt/c laufen über eine Übersetzungsschicht (9P); Datei-Watcher über die Windows/Linux-Grenze sind unzuverlässig. Fix: Projekt nach ~/projekte/… verschieben. Wenig RAM macht nicht gezielt Watcher unzuverlässig, root hat mit Geschwindigkeit nichts zu tun, und --build betrifft nur Image-Änderungen.'
 source: container/alltag-und-fehler#4-alles-ist-quaelend-langsam-windows-mit-wsl
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

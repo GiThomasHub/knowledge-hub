@@ -6,15 +6,15 @@ level: L3
 type: single
 question: Du willst wissen, wie das Auth-System Token erneuert, ohne dass Dutzende gelesene Dateien deinen Hauptkontext füllen. Was tust du?
 options:
-- «Lies alle Dateien in src/ und erkläre den Token-Refresh.»
-- «Nutze Subagenten, um herauszufinden, wie der Token-Refresh funktioniert, und fasse zusammen.»
-- Vorher /clear, dann alle Dateien lesen lassen
-- Auf ein grösseres Modell wechseln
+- «Lies alle Dateien in src/ und erkläre mir den Token-Refresh.»
+- «Untersuche mit Subagenten den Token-Refresh und fasse zusammen.»
+- Vorher /clear ausführen, dann alle Dateien lesen lassen
+- Auf ein grösseres Modell mit mehr Kontext wechseln
 answer:
 - 1
 explanation: Subagenten recherchieren in einem eigenen Kontextfenster und liefern nur die Zusammenfassung zurück. Alles selbst lesen zu lassen füllt den Hauptkontext auch nach /clear wieder, und ein grösseres Modell löst das Kontextproblem nicht.
 source: claude-code/kontext-und-subagents#subagenten
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

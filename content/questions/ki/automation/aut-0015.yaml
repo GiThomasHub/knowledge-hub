@@ -12,7 +12,7 @@ answer:
 - 1
 explanation: Falsch. In öffentlichen Repos deaktiviert GitHub geplante Workflows automatisch nach 60 Tagen ohne Repository-Aktivität – ohne Fehlermeldung. Darum braucht jeder geplante Lauf ein Lebenszeichen, dessen Ausbleiben auffällt.
 source: automation/trigger-und-cron#die-planer-im-vergleich
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

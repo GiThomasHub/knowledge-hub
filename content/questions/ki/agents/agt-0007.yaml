@@ -18,7 +18,7 @@ answer:
 - 3
 explanation: Ein prüfbares Ziel ist der Normalfall; Schrittzahl, Budget und Zeit sind die harten Ausgänge gegen Schleifen, Kosten und hängende Werkzeuge. «Zufrieden» ist kein prüfbares Kriterium.
 source: agents/agent-bauen#zuerst-wann-hoert-der-agent-auf
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

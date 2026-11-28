@@ -6,15 +6,15 @@ level: L3
 type: single
 question: Welche Einstellung gehört in die User-Settings statt in `.vscode/settings.json` des Team-Repos?
 options:
-- Formatierer für Python
-- Zeilenende LF
+- Der Formatierer für Python-Dateien
+- Das Zeilenende LF
 - Farbschema und Schriftgrösse
-- Pfad zum Projekt-Interpreter mit ${workspaceFolder}
+- Der Projekt-Interpreter mit ${workspaceFolder}
 answer:
 - 2
 explanation: Farbschema und Schriftgrösse sind persönlich und beeinflussen das Ergebnis nicht. Formatierer, Zeilenende und Interpreter-Pfad betreffen das Projekt und sollen für alle gleich sein – sie gehören in die Workspace-Settings.
 source: dev-environment/team-standards#user-oder-workspace-einstellung
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

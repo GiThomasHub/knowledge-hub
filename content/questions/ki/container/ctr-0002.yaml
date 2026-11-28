@@ -12,7 +12,7 @@ answer:
 - 1
 explanation: Falsch. Ein Bind Mount ist ein Fenster auf den echten Ordner, keine Kopie. Jede Änderung oder Löschung im Container wirkt sofort auf dem Host. Deshalb schützt der Container das eingehängte Projekt nicht – dafür braucht es Git.
 source: container/grundbausteine#daten-hinein-und-heraus-bind-mount-und-volume
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

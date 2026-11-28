@@ -6,15 +6,15 @@ level: L3
 type: single
 question: Ein Finanzbericht-Agent soll garantiert keine falsch berechnete Marge nennen. Was ist die richtige Lösung?
 options:
-- Im Prompt präzise anweisen, sorgfältig zu rechnen
-- Temperatur auf 0 setzen
-- Marge in Python berechnen, dem Modell nur den fertigen Wert geben und jede genannte Zahl gegen die Berechnung abgleichen
-- Ein grösseres Modell verwenden
+- Im Prompt präzise anweisen, jede Rechnung zweimal sorgfältig durchzuführen
+- Temperatur auf 0 setzen, damit das Modell deterministisch rechnet
+- Marge im Code berechnen und jede genannte Zahl dagegen prüfen
+- Ein grösseres Modell verwenden, das bei Arithmetik zuverlässiger ist
 answer:
 - 2
 explanation: Code rechnet, das Modell interpretiert – und eine Prüfung im Code fängt jede abweichende Zahl ab. Präzise Prompts und grössere Modelle verringern Fehler nur, garantieren nichts. Temperatur 0 macht Ausgaben gleichförmig, nicht richtig.
 source: agents/rechnen-vs-interpretieren#das-prinzip-in-vier-schichten
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

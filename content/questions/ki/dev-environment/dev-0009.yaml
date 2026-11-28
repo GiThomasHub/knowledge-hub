@@ -15,7 +15,7 @@ answer:
 - 2
 explanation: Ubuntu schützt sein System-Python (PEP 668), damit Pakete das Betriebssystem nicht beschädigen. Projektpakete gehören in die Projektumgebung (uv add), Werkzeuge in eigene Umgebungen (uv tool install). --break-system-packages und sudo pip umgehen den Schutz und erzeugen genau das Problem, vor dem er warnt.
 source: dev-environment/python-projekt-uv#typische-fehler
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

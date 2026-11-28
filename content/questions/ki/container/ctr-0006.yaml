@@ -13,7 +13,7 @@ options:
 - Container läuft mit beschreibbarer Schicht über dem Image
 explanation: Aus dem Dockerfile (Text) baut docker build ein Image. Aus dem Image startet docker run oder die Dev-Containers-Extension einen Container, über den Docker eine flüchtige, beschreibbare Schicht legt.
 source: container/grundbausteine#die-drei-grundbausteine
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

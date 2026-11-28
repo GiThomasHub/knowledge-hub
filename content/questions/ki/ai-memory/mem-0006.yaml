@@ -7,15 +7,15 @@ type: scenario
 situation: Ein Support-RAG mit reiner Vektorsuche findet bei der Frage «Was bedeutet Fehlercode XR-204?» nur allgemeine Abschnitte über Fehlercodes, nicht den Eintrag zu XR-204.
 question: Was ist die wahrscheinlichste Ursache und Abhilfe?
 options:
-- Das Sprachmodell ist zu klein – grösseres Modell nehmen.
-- Vektorsuche ist schwach bei exakten Zeichenfolgen – Volltextsuche (BM25) ergänzen, also Hybrid-Suche.
-- Der Index ist zu gross – Dokumente löschen.
-- Embeddings funktionieren nicht mit Zahlen – Codes ausschreiben.
+- Das Sprachmodell ist zu klein – ein grösseres Modell versteht Codes besser.
+- Vektorsuche ist schwach bei exakten Codes – Volltextsuche ergänzen (Hybrid).
+- Der Index ist zu gross – Dokumente löschen, damit die Suche fokussiert.
+- Embeddings funktionieren nicht mit Zahlen – Codes in Worten ausschreiben.
 answer:
 - 1
 explanation: Embeddings fassen Bedeutung, nicht exakte Codes. Volltextsuche findet genau XR-204, Hybrid kombiniert beides. Ein grösseres Modell sieht die richtige Stelle nie, wenn die Suche sie nicht findet.
 source: ai-memory/rag-und-embeddings#embeddings-eine-landkarte-der-bedeutungen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

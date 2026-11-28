@@ -6,15 +6,15 @@ level: L2
 type: single
 question: Zwei Teams erreichen mit demselben Modell auf einem Coding-Benchmark Werte, die über zehn Punkte auseinanderliegen. Was ist die plausibelste Erklärung?
 options:
-- Ein Messfehler
-- 'Unterschiedliche Harnesses: Werkzeuge, Schleife und Kontextpflege beeinflussen das Ergebnis stark'
-- Zufall bei der Temperatur
-- Eines der Teams hat ein anderes Modell genutzt
+- Ein Messfehler bei einem der Teams, der sich bei Wiederholung auflöst
+- Unterschiedliche Harnesses mit eigenen Werkzeugen, Schleifen und Kontextpflege
+- Zufall durch unterschiedliche Temperatur-Einstellungen der beiden Läufe
+- Eines der Teams hat in Wahrheit ein anderes Modell genutzt
 answer:
 - 1
 explanation: Agent = Modell + Harness. Derselbe Motor in verschiedenen Autos fährt unterschiedlich schnell; Harness-Unterschiede bewegen Benchmark-Werte oft stärker als ein Modellwechsel. Ein Messfehler oder reiner Zufall erklärt so grosse, wiederholbare Abstände kaum.
 source: agents/harness#die-komponenten-eines-harness
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

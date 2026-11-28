@@ -14,7 +14,7 @@ answer:
 - 2
 explanation: Faithfulness misst, ob jede Aussage durch die Quellen gedeckt ist. Context Recall, Context Precision und Recall@k bewerten die Suche – und die war hier in Ordnung.
 source: ai-memory/rag-messen#die-vier-kennzahlen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

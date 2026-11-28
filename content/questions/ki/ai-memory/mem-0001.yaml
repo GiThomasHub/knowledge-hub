@@ -6,15 +6,15 @@ level: L1
 type: single
 question: Was entspricht im Bild «Arbeitsspeicher und Festplatte» dem Kontextfenster?
 options:
-- Die Festplatte – dauerhaft und unbegrenzt
-- Der Arbeitsspeicher – schnell, begrenzt, flüchtig und bei jedem Aufruf bezahlt
-- Das Betriebssystem
-- Der Prozessor, der das Modell trainiert
+- Die Festplatte – dauerhaft gespeichert und praktisch unbegrenzt
+- Der Arbeitsspeicher – schnell, begrenzt und flüchtig
+- Das Betriebssystem, das alle Programme steuert
+- Der Prozessor, der das Modell beim Training berechnet
 answer:
 - 1
 explanation: Das Kontextfenster enthält nur, was diese Anfrage mitbringt, und ist nach der Sitzung weg. Memory ist die Festplatte, die zwischen Sitzungen bleibt. Training hat mit beidem nichts zu tun.
 source: ai-memory/kurz-und-langzeit#kurzzeit-und-langzeit
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

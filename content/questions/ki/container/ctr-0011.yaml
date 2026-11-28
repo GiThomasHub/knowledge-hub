@@ -6,15 +6,15 @@ level: L3
 type: single
 question: Warum ist `-v /var/run/docker.sock:/var/run/docker.sock` in einem Agenten-Container so gefährlich?
 options:
-- Es verlangsamt alle Container auf dem Host.
-- Der Prozess kann damit Docker steuern und einen neuen Container starten, der das ganze Host-Dateisystem als root mountet.
-- Es öffnet automatisch alle Ports nach aussen.
-- Es löscht beim Beenden alle Volumes.
+- Es verlangsamt alle Container auf dem Host spürbar.
+- Der Prozess kann Docker steuern und den Host als root mounten.
+- Es öffnet automatisch alle Ports des Hosts nach aussen.
+- Es löscht beim Beenden des Containers alle Volumes.
 answer:
 - 1
 explanation: Der Socket ist die Steuerleitung zu Docker. Wer ihn hat, kann beliebige Container mit beliebigen Mounts starten – also auch einen mit Zugriff auf alles. Mit Leistung, Ports oder Volumes hat das nichts zu tun.
 source: container/haerten-und-ki-agenten#die-eine-zeile-die-du-nie-schreibst
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

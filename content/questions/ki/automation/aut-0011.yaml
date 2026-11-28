@@ -6,15 +6,15 @@ level: L3
 type: single
 question: Wer sollte bei einem unbeaufsichtigten Lauf den Draft-PR öffnen oder den Bericht versenden?
 options:
-- Der Agent selbst, sobald er fertig ist
-- Das umgebende Skript, nachdem es Exit-Code, Schema und Tests geprüft hat
-- Niemand, die Ergebnisse bleiben im Log
-- Der Agent eines zweiten Laufs
+- Der Agent selbst, sobald er seine Arbeit für fertig hält
+- Das umgebende Skript, nach Prüfung von Exit-Code, Schema und Tests
+- Niemand – die Ergebnisse bleiben zur Sicherheit im Log
+- Der Agent eines zweiten Laufs, der den ersten kontrolliert
 answer:
 - 1
 explanation: Folgenreiche Schritte gehören ins Skript nach einer prüfbaren Kontrolle; der Agent bekommt nur umkehrbare Werkzeuge. Ergebnisse nur im Log versanden, und ein zweiter Lauf ist keine Kontrolle.
 source: automation/unbeaufsichtigt-absichern#folgenreiches-gehoert-ins-skript
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

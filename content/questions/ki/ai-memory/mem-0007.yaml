@@ -14,7 +14,7 @@ answer:
 - 1
 explanation: Geladen werden die ersten 200 Zeilen oder 25 KB; Themendateien liest Claude bei Bedarf. Darum ist MEMORY.md ein schlanker Index mit einer Zeile pro Eintrag.
 source: ai-memory/claude-memory-pflegen#claude-code-im-detail
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session
