@@ -1,0 +1,22 @@
+id: ml-0003
+topic: machine-learning
+competencies:
+- ki-ml-01
+level: L1
+type: multi
+question: Welche Aufgaben sind typisch für Unsupervised Learning? (mehrere richtig)
+options:
+- Kundinnen und Kunden ohne vorgegebene Kategorien in Segmente gruppieren
+- Auffällige Buchungen erkennen, ohne dass Betrugsfälle markiert sind
+- Den Umsatz des nächsten Monats aus historischen Umsätzen vorhersagen
+- Viele Merkmale auf wenige aussagekräftige Dimensionen verdichten
+answer:
+- 0
+- 1
+- 3
+explanation: Clustering, Anomalieerkennung ohne Labels und Dimensionsreduktion kommen ohne bekannte Antworten aus. Die Umsatzprognose ist Regression mit bekannten historischen Werten und damit Supervised Learning.
+source: machine-learning/lernparadigmen#die-lernparadigmen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

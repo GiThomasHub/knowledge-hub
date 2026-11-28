@@ -1,0 +1,21 @@
+id: ml-0005
+topic: machine-learning
+competencies:
+- ki-ml-02
+level: L2
+type: scenario
+situation: Ein Anbieter präsentiert ein Modell zur Erkennung von Maschinenausfällen mit 99,2 % Accuracy. In den Daten fallen 0,8 % der Maschinen tatsächlich aus.
+question: Wie beurteilst du die Zahl?
+options:
+- Hervorragend – 99,2 % ist fast perfekt
+- 'Nicht aussagekräftig: «nie Ausfall» erreicht bereits 99,2 % Accuracy; entscheidend sind Precision und Recall für die Klasse «Ausfall»'
+- Schlecht, weil Accuracy unter 99,5 % liegen muss
+- Nur der F1-Wert über alle Klassen zählt, die Klasse «Ausfall» spielt keine Rolle
+answer:
+- 1
+explanation: Bei 0,8 % Ausfällen liegt die Basislinie «immer kein Ausfall» genau bei 99,2 %. Das Modell könnte also keinen einzigen Ausfall erkennen. Aussagekräftig sind Precision und Recall für die seltene Klasse; eine feste Accuracy-Schwelle oder ein Mittelwert über alle Klassen verdecken genau dieses Problem.
+source: machine-learning/metriken-lesen#ein-durchgerechnetes-beispiel
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

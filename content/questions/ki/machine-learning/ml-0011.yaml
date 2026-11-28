@@ -1,0 +1,23 @@
+id: ml-0011
+topic: machine-learning
+competencies:
+- ki-ml-03
+level: L3
+type: multi
+question: Welche Situationen sind Data Leakage? (mehrere richtig)
+options:
+- Der Mittelwert für die Skalierung wird aus allen Daten inklusive Test berechnet
+- Ein Kündigungsmodell nutzt das Feld «Rückgabegerät erhalten», das erst nach der Kündigung gesetzt wird
+- Derselbe Kunde kommt mit mehreren Datensätzen in Training und Test vor
+- Das Modell wird mit 5-facher Cross-Validation innerhalb der Trainingsdaten abgestimmt
+- Eine Zeitreihe wird chronologisch geteilt
+answer:
+- 0
+- 1
+- 2
+explanation: In allen drei ersten Fällen fliessen Informationen ins Training, die zum Vorhersagezeitpunkt nicht vorlägen. Cross-Validation innerhalb der Trainingsdaten und ein chronologischer Split sind dagegen korrekte Vorgehensweisen.
+source: machine-learning/overfitting-und-leakage#data-leakage-die-unsichtbare-falle
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

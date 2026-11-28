@@ -1,0 +1,21 @@
+id: ml-0012
+topic: machine-learning
+competencies:
+- ki-ml-03
+level: L3
+type: scenario
+situation: Ein Analyst testet 100 Merkmale darauf, ob sie mit dem Aktienkurs eines Unternehmens zusammenhängen, und findet auf dem 5-%-Niveau sechs «signifikante» Merkmale, darunter das Wetter in einer weit entfernten Stadt.
+question: Wie gehst du mit dem Ergebnis um?
+options:
+- Alle sechs Merkmale ins Modell übernehmen, sie sind statistisch signifikant
+- 'Mit Skepsis: Bei 100 Tests sind rund fünf zufällige Treffer zu erwarten; nur fachlich begründbare Zusammenhänge weiterverfolgen und auf neuen, späteren Daten bestätigen'
+- Nur das Wetter-Merkmal verwenden, weil es überraschend ist
+- Das Signifikanzniveau auf 10 % erhöhen, um mehr Merkmale zu finden
+answer:
+- 1
+explanation: Bei 100 rein zufälligen Merkmalen erscheinen auf dem 5-%-Niveau im Schnitt fünf als signifikant. Sechs Treffer sind darum kaum mehr als Zufall. Fachliche Begründung und Bestätigung auf neuen Daten trennen echte von Scheinkorrelationen; ein lockereres Niveau verschärft das Problem.
+source: machine-learning/overfitting-und-leakage#scheinkorrelationen
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

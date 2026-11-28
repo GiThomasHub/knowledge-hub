@@ -1,0 +1,23 @@
+id: ml-0014
+topic: machine-learning
+competencies:
+- ki-ml-04
+level: L4
+type: multi
+question: Für welche Aufgaben ist eine feste Regel die passende Lösung? (mehrere richtig)
+options:
+- Ab einem Bestellwert von CHF 500 gibt es 5 % Rabatt
+- Prüfen, ob eine IBAN formal gültig ist
+- Das Kündigungsrisiko jedes Abonnenten schätzen
+- Frei formulierte Kundenbriefe nach Anliegen einordnen
+- Eine Zahlungsfrist von 30 Tagen ab Rechnungsdatum berechnen
+answer:
+- 0
+- 1
+- 4
+explanation: Rabatt, IBAN-Prüfung und Frist folgen einer bekannten, stabilen Logik und müssen exakt sein – dafür reicht eine Regel. Das Kündigungsrisiko ist ein Fall für klassisches ML mit historischen Daten, das Einordnen von Freitext ein Fall für ein Sprachmodell.
+source: machine-learning/regel-ml-oder-genai#beispiele-aus-der-praxis
+status: draft
+created: '2026-11-27'
+last_verified: '2026-11-27'
+author: claude-session

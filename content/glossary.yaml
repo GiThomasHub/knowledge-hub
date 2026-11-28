@@ -399,3 +399,60 @@
   definition: Modellaufbau, bei dem pro Token nur ein Teil der Parameter (einige «Experten») rechnet. Spart Rechenzeit, aber nicht Speicher, weil alle Gewichte geladen sein müssen.
   aliases: [MoE]
   lesson: lokale-llms/vram-und-quantisierung
+- term: Supervised Learning
+  definition: Lernen aus Beispielen mit bekannter Antwort (Label). Unterarten sind Regression (eine Zahl vorhersagen) und Klassifikation (eine Kategorie vorhersagen).
+  aliases: [Überwachtes Lernen]
+  lesson: machine-learning/lernparadigmen#die-lernparadigmen
+- term: Unsupervised Learning
+  definition: Lernen aus Daten ohne Label. Das Modell sucht selbst Struktur, etwa Gruppen (Clustering), Ausreisser oder wenige verdichtete Dimensionen.
+  aliases: [Unüberwachtes Lernen, Clustering]
+  lesson: machine-learning/lernparadigmen#die-lernparadigmen
+- term: Self-Supervised Learning
+  definition: Lernen, bei dem das Label aus den Rohdaten selbst entsteht, etwa das nächste Wort eines Satzes. Grundlage des Vortrainings von Sprachmodellen.
+  lesson: machine-learning/lernparadigmen#die-lernparadigmen
+- term: Reinforcement Learning
+  definition: Lernen durch Ausprobieren – ein Agent wählt Aktionen in einer Umgebung, erhält Belohnungen oder Strafen und passt seine Strategie an.
+  aliases: [Bestärkendes Lernen]
+  lesson: machine-learning/lernparadigmen#die-lernparadigmen
+- term: Konfusionsmatrix
+  definition: Tabelle, die richtig und falsch positive sowie richtig und falsch negative Vorhersagen eines Klassifikators zählt. Grundlage für Precision, Recall und Accuracy.
+  aliases: [Confusion Matrix]
+  lesson: machine-learning/metriken-lesen#die-konfusionsmatrix
+- term: Precision
+  definition: Anteil der positiven Vorhersagen, die stimmen – TP ÷ (TP + FP). Beantwortet die Frage, wie oft ein Alarm berechtigt ist.
+  lesson: machine-learning/metriken-lesen#die-konfusionsmatrix
+- term: Recall
+  definition: Anteil der tatsächlich positiven Fälle, die das Modell findet – TP ÷ (TP + FN). Auch Sensitivität oder Trefferquote genannt.
+  aliases: [Sensitivität]
+  lesson: machine-learning/metriken-lesen#die-konfusionsmatrix
+- term: Accuracy
+  definition: Anteil aller richtigen Vorhersagen. Bei seltenen Klassen irreführend, weil schon «immer die häufige Klasse» einen hohen Wert erreicht.
+  aliases: [Genauigkeit]
+  lesson: machine-learning/metriken-lesen#ein-durchgerechnetes-beispiel
+- term: F1-Score
+  definition: Harmonisches Mittel aus Precision und Recall. Sinnvoll, wenn beide Fehlerarten etwa gleich schwer wiegen.
+  aliases: [F1]
+  lesson: machine-learning/metriken-lesen#die-konfusionsmatrix
+- term: Overfitting
+  definition: Ein Modell lernt die Trainingsdaten samt Zufallsrauschen auswendig und versagt bei neuen Fällen. Erkennbar an guter Trainings- und deutlich schlechterer Testleistung.
+  aliases: [Überanpassung]
+  lesson: machine-learning/overfitting-und-leakage#overfitting-und-underfitting
+- term: Cross-Validation
+  definition: Mehrfache Aufteilung der Trainingsdaten in Lern- und Prüfteile, um die Leistung eines Modells stabiler zu schätzen als mit einem einzigen Split.
+  aliases: [Kreuzvalidierung]
+  lesson: machine-learning/overfitting-und-leakage#training-validierung-test
+- term: Data Leakage
+  definition: Informationen, die zum Zeitpunkt der Vorhersage nicht verfügbar wären, fliessen ins Training – etwa durch gemischte Zeitreihen oder Vorverarbeitung vor dem Split. Führt zu zu guten Testergebnissen.
+  aliases: [Datenleck]
+  lesson: machine-learning/overfitting-und-leakage#data-leakage-die-unsichtbare-falle
+- term: Scheinkorrelation
+  definition: Statistischer Zusammenhang ohne ursächliche Verbindung, zufällig oder durch einen gemeinsamen Dritten. Bei vielen getesteten Merkmalen fast unvermeidlich.
+  aliases: [Spurious Correlation]
+  lesson: machine-learning/overfitting-und-leakage#scheinkorrelationen
+- term: Drift
+  definition: Nachlassende Modellqualität im Betrieb, weil sich die Daten oder die Welt gegenüber dem Training verändert haben. Wird durch Überwachung erkannt und durch Nachtrainieren behoben.
+  aliases: [Distribution Shift, Modell-Drift]
+  lesson: machine-learning/overfitting-und-leakage#scheinkorrelationen
+- term: MLOps
+  definition: Disziplin, Machine-Learning-Modelle zuverlässig, versioniert und überwacht in den Betrieb zu bringen und dort zu pflegen.
+  lesson: machine-learning/regel-ml-oder-genai#was-neben-der-technik-entscheidet
