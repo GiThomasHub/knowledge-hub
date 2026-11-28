@@ -13,7 +13,7 @@ options:
 - Im Betrieb Drift überwachen und bei Bedarf nachtrainieren
 explanation: Zuerst wird zeitlich sortiert und die jüngste Periode als Test abgetrennt. Varianten werden nur auf älteren Daten verglichen, mit Vorverarbeitung in der Pipeline. Der Testsatz kommt einmal am Schluss zum Einsatz, danach folgt die Überwachung im Betrieb.
 source: machine-learning/overfitting-und-leakage#training-validierung-test
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

@@ -15,7 +15,7 @@ rubric:
 - Begründete Empfehlung Abo für Menschen, API für Automatisierung, Messpunkt
 explanation: Eine Senior-Schätzung ist nachvollziehbar, zeigt Bandbreiten statt einer Zahl und trennt Token- von Projekt- und Betriebskosten.
 source: modelle-kosten/kostenschaetzung-chf#schritt-1-mengengeruest-pro-anwendungsfall
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

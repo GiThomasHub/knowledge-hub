@@ -6,15 +6,15 @@ level: L1
 type: single
 question: Was sieht Claude von einem Werkzeug, das du definierst?
 options:
-- Den vollständigen Quellcode
-- Name, Beschreibung und Eingabeschema – und danach das Ergebnis
-- Nur den Namen
-- Die Datenbank, auf die das Werkzeug zugreift
+- Den vollständigen Quellcode des Werkzeugs
+- Name, Beschreibung, Eingabeschema und das Ergebnis
+- Nur den Namen des Werkzeugs
+- Direkt die Datenbank, auf die das Werkzeug zugreift
 answer:
 - 1
 explanation: Claude erhält nie die Implementierung, nur Schema und Beschreibung sowie das zurückgegebene Ergebnis. Darum entscheidet die Beschreibung, ob ein Werkzeug richtig genutzt wird. Direkten Zugriff auf Datenbanken hat das Modell nie.
 source: mcp-tools/tool-use-und-mcp#wie-ein-werkzeugaufruf-ablaeuft
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

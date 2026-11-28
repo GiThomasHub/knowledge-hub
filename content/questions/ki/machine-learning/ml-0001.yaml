@@ -14,7 +14,7 @@ answer:
 - 0
 explanation: Es gibt viele Beispiele mit bekannter Antwort, und vorhergesagt wird eine Kategorie – das ist Klassifikation im Supervised Learning. Clustering sucht Gruppen ohne Labels, Reinforcement Learning lernt aus Belohnungen in einer Umgebung, und Self-Supervised gewinnt das Label aus den Rohdaten selbst.
 source: machine-learning/lernparadigmen#die-lernparadigmen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

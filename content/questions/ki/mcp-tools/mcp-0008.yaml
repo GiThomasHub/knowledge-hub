@@ -6,15 +6,15 @@ level: L3
 type: single
 question: Ein Team will Claude Termine planen lassen. Welcher Tool-Zuschnitt ist für einen Agenten am besten?
 options:
-- Drei Tools list_users, list_events, create_event, die der Agent verkettet
-- Ein Tool schedule_meeting(teilnehmende, dauer, zeitraum), das freie Zeit sucht, Kalender prüft und den Termin anlegt
-- Ein Tool calendar_execute(action, payload) für alles
-- Die gesamte Kalender-REST-API eins zu eins freigeben
+- Drei Tools list_users, list_events und create_event, die der Agent verkettet
+- Ein Tool schedule_meeting, das freie Zeit sucht und den Termin anlegt
+- Ein Tool calendar_execute(action, payload) für alle Kalenderaktionen
+- Die gesamte Kalender-REST-API eins zu eins als Tools freigeben
 answer:
 - 1
 explanation: Ein Tool pro Arbeitsablauf spart Aufrufe, Kontext und Fehlerquellen. Einzelne Endpunkte zwingen den Agenten zum Verketten, ein Alles-Tool verhindert feine Rechte, und eine 1:1-API flutet den Kontext.
 source: mcp-tools/tools-entwerfen#vom-ablauf-her-nicht-vom-endpunkt
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

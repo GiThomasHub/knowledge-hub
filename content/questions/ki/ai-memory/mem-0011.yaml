@@ -6,15 +6,15 @@ level: L3
 type: single
 question: Was ist Contextual Retrieval?
 options:
-- Das Sprachmodell bekommt den ganzen Bestand in den Kontext.
-- Vor dem Indexieren wird jedem Abschnitt ein kurzer Kontext aus dem Gesamtdokument vorangestellt, der in Embedding und Volltextindex einfliesst.
-- Die Frage wird automatisch übersetzt.
-- Der Index wird jede Nacht neu berechnet.
+- Das Sprachmodell bekommt den ganzen Dokumentbestand in den Kontext.
+- Jedem Abschnitt wird vor dem Indexieren ein kurzer Dokumentkontext vorangestellt.
+- Die Frage wird vor der Suche automatisch in die Sprache der Dokumente übersetzt.
+- Der Index wird jede Nacht neu berechnet, damit er aktuell bleibt.
 answer:
 - 1
 explanation: Ein isolierter Abschnitt weiss dann, zu welchem Dokument, welcher Firma und welchem Zeitraum er gehört. Anthropic berichtet −49 % Fehlschläge, mit Reranking −67 %.
 source: ai-memory/rag-optimieren#4-contextual-retrieval
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

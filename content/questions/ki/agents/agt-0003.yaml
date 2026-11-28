@@ -15,7 +15,7 @@ answer:
 - 1
 explanation: Die Schritte sind bekannt, nur die Kategorie variiert – das ist Routing plus Kette, also ein Workflow. Ein Agent oder gar Multi-Agent bringt hier Kosten und Unvorhersehbarkeit ohne Mehrwert. Reine Regeln scheitern meist an der Vielfalt natürlicher Sprache beim Einordnen.
 source: agents/chatbot-workflow-agent#wann-lohnt-sich-ein-agent
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

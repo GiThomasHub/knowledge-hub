@@ -14,7 +14,7 @@ rubric:
 - Agenten nur Draft-PRs, Rollout in Etappen
 explanation: Ein Senior-Konzept trennt Anleitung und Durchsetzung, verteilt zentral, misst Kosten vor dem Budgetieren und führt in Etappen ein – statt jeden selbst konfigurieren zu lassen.
 source: claude-code/team-setup#rollout-in-etappen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

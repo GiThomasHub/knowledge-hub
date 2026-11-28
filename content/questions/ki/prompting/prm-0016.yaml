@@ -12,7 +12,7 @@ answer:
 - 0
 explanation: 'Wahr. Schreiben kostet das 1,25-Fache, Lesen höchstens das 0,1-Fache des Eingabepreises: 1,25 + 0,1 ist weniger als zweimal voll bezahlen (2,0).'
 source: prompting/kontext-gestalten#prompt-caching-stabiles-zuerst-spart-geld
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

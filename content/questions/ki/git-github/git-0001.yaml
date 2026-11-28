@@ -12,7 +12,7 @@ options:
 - Mit git push auf GitHub hochladen
 explanation: Arbeitsverzeichnis → Staging → lokales Repository → Remote. Erst der Push verlässt den Rechner; vorher existiert der Commit nur lokal.
 source: git-github/grundlagen#die-vier-stationen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

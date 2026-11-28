@@ -6,15 +6,15 @@ level: L2
 type: single
 question: 'Du sagst Claude: «Denk daran, wir nutzen immer pnpm.» Wo landet das standardmässig?'
 options:
-- In der Projekt-CLAUDE.md, für das ganze Team
-- In deinem Auto Memory unter ~/.claude/projects/<projekt>/memory/, nur auf deinem Rechner
-- In der .claude/settings.json
-- Nirgends, es gilt nur für diese Session
+- In der Projekt-CLAUDE.md, damit das ganze Team davon profitiert
+- In deinem Auto Memory – nur auf deinem Rechner
+- In der .claude/settings.json als neue Projekteinstellung
+- Nirgends, es gilt nur bis zum Ende dieser Session
 answer:
 - 1
-explanation: Auto Memory ist Claudes eigenes, maschinenlokales Gedächtnis pro Repository. Soll das Team profitieren, muss die Regel ausdrücklich in die CLAUDE.md und committet werden. settings.json enthält Einstellungen, keine solchen Notizen.
+explanation: Auto Memory ist Claudes eigenes, maschinenlokales Gedächtnis pro Repository (unter ~/.claude/projects/<projekt>/memory/). Soll das Team profitieren, muss die Regel ausdrücklich in die CLAUDE.md und committet werden. settings.json enthält Einstellungen, keine solchen Notizen, und ohne Memory wäre es tatsächlich nur für diese Session.
 source: claude-code/claude-md#auto-memory-was-claude-sich-selbst-merkt
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

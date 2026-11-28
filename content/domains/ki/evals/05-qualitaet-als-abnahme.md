@@ -34,7 +34,7 @@ Bei einem Haus wird nicht abgenommen, ob es «schön geworden» ist, sondern nac
 ## Schwellen ehrlich setzen
 
 - **Nicht 100 % versprechen** – ausser bei deterministisch prüfbarem Format. Ein Sprachmodell irrt irgendwann; die Frage ist, wie oft und was dann passiert.
-- **Genug Fälle:** Bei 30 Fällen schwankt eine Quote um rund ± 15 Prozentpunkte – eine Schwelle von 92 % lässt sich damit nicht seriös prüfen. Für Abnahmen eher **100–200 Fälle** oder die Schwelle auf die **Untergrenze des Vertrauensintervalls** beziehen.
+- **Genug Fälle:** Bei 30 Fällen und einer Quote um 92 % beträgt die Unsicherheit rund ± 10 Prozentpunkte; das 95-%-Vertrauensintervall reicht bei 28 von 30 richtigen Antworten von etwa 79 % bis 98 % – eine Schwelle von 92 % lässt sich damit nicht seriös prüfen. Für Abnahmen eher **100–200 Fälle** oder die Schwelle auf die **Untergrenze des Vertrauensintervalls** beziehen.
 - **pass^k statt pass@k**, wo Verlässlichkeit zählt: Bei Kundenkontakt muss es **jedes Mal** stimmen.
 - **Pro Kategorie** Mindestwerte, damit ein guter Durchschnitt keine Lücke verdeckt.
 - **Was bei Fehlern passiert**, gehört dazu: Prüfschritt durch Menschen, Rückfall, Eskalation.

@@ -7,15 +7,15 @@ type: scenario
 situation: Eine angemeldete Kundin ruft /rechnungen/1043 auf und sieht ihre Rechnung. Sie ändert die Zahl in der URL auf 1044 und sieht die Rechnung einer anderen Firma.
 question: Welche Schwachstelle liegt vor?
 options:
-- SQL-Injection
-- Kaputte Zugriffskontrolle (IDOR/BOLA) – der Server prüft nicht, ob das Objekt der angemeldeten Person gehört
-- Cross-Site Scripting
-- Geleaktes Secret
+- SQL-Injection über den URL-Parameter
+- Kaputte Zugriffskontrolle (IDOR/BOLA)
+- Cross-Site Scripting in der Rechnungsansicht
+- Ein geleaktes Secret im Frontend
 answer:
 - 1
-explanation: Der Server liefert ein Objekt nur anhand der ID aus, ohne die Berechtigung zu prüfen. Das ist der häufigste Fall von A01:2025 Broken Access Control. Mit Injection, XSS oder Secrets hat das nichts zu tun.
+explanation: Der Server liefert ein Objekt nur anhand der ID aus, ohne zu prüfen, ob es der angemeldeten Person gehört. Das ist der häufigste Fall von A01:2025 Broken Access Control (IDOR/BOLA). Mit Injection, XSS oder Secrets hat das nichts zu tun.
 source: secure-coding/haeufigste-schwachstellen#vier-klassiker
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

@@ -12,7 +12,7 @@ options:
 - 'Ohne Verschlechterung: Merge durch einen Menschen'
 explanation: Jede relevante Änderung läuft automatisch gegen die Baseline. Verschlechterungen blockieren; gemerged wird erst nach bestandener Suite – und durch einen Menschen.
 source: evals/qualitaet-als-abnahme#regression-gates
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

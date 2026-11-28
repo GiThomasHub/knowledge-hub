@@ -7,15 +7,15 @@ type: scenario
 situation: Eine Workstation hat eine Grafikkarte mit 24 GB. Zur Wahl stehen ein 70-Mrd.-Modell in Q4_K_M, das teilweise in den Arbeitsspeicher ausweicht, und ein 32-Mrd.-Modell in Q4_K_M, das samt 16 000 Tokens Kontext ganz in den Grafikspeicher passt. Die Anwendung soll interaktiv antworten.
 question: Welche Wahl ist für den Start sinnvoller?
 options:
-- Das 70-Mrd.-Modell, weil grössere Modelle immer besser sind
-- Das 32-Mrd.-Modell ganz im Grafikspeicher – und mit einem Testset prüfen, ob die Qualität reicht
-- Das 70-Mrd.-Modell in Q2, damit es passt
-- Beide gleichzeitig laden
+- Das 70-Mrd.-Modell, weil grössere Modelle immer bessere Antworten geben
+- Das 32-Mrd.-Modell ganz im Grafikspeicher, mit Testset geprüft
+- Das 70-Mrd.-Modell in Q2, damit es in den Grafikspeicher passt
+- Beide gleichzeitig laden und je nach Frage wählen
 answer:
 - 1
 explanation: Ein Modell, das in den Arbeitsspeicher ausweicht, wird 5- bis 30-mal langsamer und ist für interaktive Nutzung kaum brauchbar. Lieber das kleinere Modell ganz im Grafikspeicher, dessen Qualität am Testset bestätigt wird. Q2 verschlechtert Reasoning und Code spürbar, und zwei Modelle zugleich verschärfen das Speicherproblem.
 source: lokale-llms/vram-und-quantisierung#auswahl-in-vier-schritten
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

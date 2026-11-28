@@ -7,15 +7,15 @@ type: scenario
 situation: Nach Einführung von drei Beispielen beginnt jede Antwort des Kundenservice-Bots mit «Sehr geehrte Damen und Herren» – auch bei Kundinnen, die per Du schreiben.
 question: Was ist die wahrscheinlichste Ursache?
 options:
-- Das Modell ist zu klein für diese Aufgabe.
-- Alle drei Beispiele beginnen mit dieser Anrede; das Modell ahmt Beispiele eng nach.
+- Das Modell ist für eine so feine Tonalität zu klein.
+- Alle drei Beispiele beginnen mit dieser Anrede.
 - Die Temperatur ist zu hoch eingestellt.
-- Der System-Prompt ist zu lang.
+- Der System-Prompt ist zu lang und verwässert die Regeln.
 answer:
 - 1
 explanation: 'Beispiele werden eng kopiert, auch wiederkehrende Floskeln. Abhilfe: Beispiele variieren oder ein Negativbeispiel ergänzen. Mit der Modellgrösse oder der Prompt-Länge hat das wenig zu tun, und Sampling-Parameter sind in der aktuellen API-Version gar nicht mehr einstellbar.'
 source: prompting/beispiele#negativbeispiele-grenzen-schaerfen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

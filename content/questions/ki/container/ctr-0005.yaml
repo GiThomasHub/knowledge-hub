@@ -7,14 +7,14 @@ type: single
 question: Welche Reihenfolge im Dockerfile macht wiederholte Builds eines Node-Projekts am schnellsten?
 options:
 - COPY . . → RUN npm ci
-- COPY package.json package-lock.json ./ → RUN npm ci → COPY . .
+- COPY package*.json ./ → RUN npm ci → COPY . .
 - RUN npm ci → COPY package.json ./ → COPY . .
-- Die Reihenfolge spielt keine Rolle, Docker cacht alles.
+- Egal – Docker cacht unabhängig von der Reihenfolge
 answer:
 - 1
 explanation: Ab der ersten geänderten Schicht baut Docker alles danach neu. Wer zuerst nur die Abhängigkeitsliste kopiert und installiert, kann diese Schichten wiederverwenden, solange sich die Liste nicht ändert; der oft geänderte Code kommt zuletzt. Bei COPY . . zuerst invalidiert jede Codeänderung die Installation. npm ci vor dem Kopieren der Liste scheitert, und der Cache hängt sehr wohl von der Reihenfolge ab.
 source: container/alltag-und-fehler#dockerfiles-fuer-schnelle-builds
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

@@ -12,7 +12,7 @@ answer:
 - 1
 explanation: Falsch. Plugins lassen sich im Chat nutzen; ihre Skills, Befehle und Connectors funktionieren dort. Nur Hooks und Subagents laufen im Chat nicht. Ältere Anleitungen behaupten noch das Gegenteil.
 source: skills-plugins/skill-connector-plugin#wo-was-laeuft-stand-27-11-2026
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

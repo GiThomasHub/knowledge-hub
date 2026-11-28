@@ -14,7 +14,7 @@ answer:
 - 2
 explanation: Beim Orchestrator-Worker zerlegt der Orchestrator die Aufgabe erst zur Laufzeit und verteilt die Teile. Chaining setzt feste Schritte voraus, Routing ordnet Eingaben einer Kategorie zu, und Voting löst dieselbe Aufgabe mehrfach.
 source: agents/muster#die-fuenf-bausteine
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

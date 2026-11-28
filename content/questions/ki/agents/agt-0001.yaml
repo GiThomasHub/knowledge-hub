@@ -6,15 +6,15 @@ level: L1
 type: single
 question: Was unterscheidet einen Agenten von einem Workflow?
 options:
-- Ein Agent nutzt ein grösseres Modell.
-- Beim Agenten bestimmt das Modell selbst den nächsten Schritt, beim Workflow legt Code die Schritte fest.
-- Ein Workflow kann keine Werkzeuge aufrufen.
-- Ein Agent braucht kein Stoppkriterium.
+- Ein Agent nutzt immer ein grösseres, leistungsfähigeres Modell als ein Workflow.
+- Beim Agenten wählt das Modell den nächsten Schritt, beim Workflow der Code.
+- Ein Workflow kann keine Werkzeuge aufrufen, nur ein Agent darf das.
+- Ein Agent kommt ohne Stoppkriterium aus, weil er selbst merkt, wann er fertig ist.
 answer:
 - 1
 explanation: 'Der Kern ist, wer steuert: Workflows folgen vordefinierten Codepfaden, Agenten entscheiden ihren Ablauf und die Werkzeugnutzung selbst. Die Modellgrösse ist unabhängig davon, Workflows können Werkzeuge nutzen, und gerade ein Agent braucht ein Stoppkriterium.'
 source: agents/chatbot-workflow-agent#vier-stufen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

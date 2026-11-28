@@ -14,7 +14,7 @@ answer:
 - 1
 explanation: 'Bei überlappenden Mounts gewinnt der spezifischere Pfad: /app kommt vom Bind Mount (Code live editierbar), /app/node_modules vom Volume (Linux-Pakete). Unter Windows neu installieren erzeugt wieder Windows-Binaries. COPY . . nimmt dir das Live-Editieren. Windows-Container lösen das Problem nicht, sondern schaffen neue.'
 source: container/alltag-und-fehler#2-invalid-elf-header-bei-node
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

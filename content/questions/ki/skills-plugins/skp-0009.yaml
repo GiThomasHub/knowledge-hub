@@ -11,7 +11,7 @@ options:
 - Dateien aus references/ oder Ergebnisse aus scripts/ – wenn SKILL.md darauf verweist und sie gebraucht werden
 explanation: 'Progressive Disclosure: Zuerst nur die Visitenkarte, dann die Anleitung, dann bei Bedarf die Zusatzdateien. Darum kosten viele installierte Skills wenig Kontext.'
 source: skills-plugins/progressive-disclosure#die-drei-stufen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

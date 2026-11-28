@@ -12,7 +12,7 @@ answer:
 - 0
 explanation: Wahr. Stabiles oben, Veränderliches unten – das macht Prompts übersichtlich und erlaubt, den stabilen Teil per Prompt Caching günstig wiederzuverwenden.
 source: prompting/anatomie#system-prompt-und-user-prompt
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

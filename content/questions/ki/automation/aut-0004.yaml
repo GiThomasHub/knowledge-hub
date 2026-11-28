@@ -18,7 +18,7 @@ answer:
 - 4
 explanation: Ein Knopf zum Testen, eine harte Zeitgrenze, minimale Rechte und gesperrte Gleichzeitigkeit machen den Lauf testbar und sicher. Der Schlüssel gehört in die Repo-Secrets, nie ins YAML.
 source: automation/geplante-laeufe#weg-1-github-actions-mit-der-claude-code-action
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

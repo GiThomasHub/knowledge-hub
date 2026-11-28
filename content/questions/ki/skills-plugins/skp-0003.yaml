@@ -7,15 +7,15 @@ type: scenario
 situation: Eine Kollegin installiert ein Plugin in der Claude-App unter Customize › Plugins. Ein anderer installiert dasselbe Plugin in Claude Code mit /plugin install auf seinem Laptop.
 question: Wo stehen die Plugins danach zur Verfügung (Stand 27.11.2026)?
 options:
-- Beide nur auf dem jeweiligen Gerät
-- Das App-Plugin hängt am Konto und ist auch in Cowork und Claude Code verfügbar; das CLI-Plugin bleibt auf diesem Laptop
-- Beide werden automatisch in alle Konten der Organisation verteilt
+- Beide nur auf dem jeweiligen Gerät, auf dem installiert wurde
+- Das App-Plugin hängt am Konto, das CLI-Plugin bleibt auf dem Laptop
+- Beide werden automatisch an alle Konten der Organisation verteilt
 - Das CLI-Plugin synchronisiert ins Konto, das App-Plugin nicht
 answer:
 - 1
 explanation: Plugins aus der Claude-App werden im Konto gespeichert und folgen dir in Chat, Cowork und Claude Code. Per Kommandozeile installierte Plugins bleiben auf dem Rechner. Eine automatische Verteilung an alle gibt es nur, wenn Admins sie einrichten.
 source: skills-plugins/skill-connector-plugin#wo-was-laeuft-stand-27-11-2026
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

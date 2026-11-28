@@ -6,15 +6,15 @@ level: L3
 type: single
 question: Die Team-CLAUDE.md verlangt «immer Tests vor jedem Commit», trotzdem committet Claude manchmal ungetestet. Wie setzt du die Regel wirklich durch?
 options:
-- Die Regel in der CLAUDE.md fett schreiben
-- Einen Hook in der settings.json, der den Commit bei roten Tests mit Exit-Code 2 blockiert
+- Die Regel in der CLAUDE.md fett und in Grossbuchstaben schreiben
+- Einen Hook in der settings.json, der bei roten Tests blockiert
 - Die Regel zusätzlich in die CLAUDE.local.md schreiben
 - Einen Ordner .claude/hooks/ mit einem Testskript anlegen
 answer:
 - 1
 explanation: 'CLAUDE.md ist Anleitung, settings.json ist Durchsetzung: Ein registrierter Hook, der mit Exit-Code 2 blockiert, greift immer. Fettschrift und eine zweite Anweisungsdatei bleiben Bitten. Ein Skript in .claude/hooks/ wirkt nur, wenn es in der settings.json registriert ist.'
 source: claude-code/claude-ordner#wer-gewinnt-die-rangordnung
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

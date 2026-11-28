@@ -11,7 +11,7 @@ options:
 - 'Observe: das Ergebnis lesen'
 explanation: Reason → Act → Observe, dann wieder Reason – bis eine Antwort ohne Werkzeugaufruf entsteht oder ein Stoppkriterium greift.
 source: agents/chatbot-workflow-agent#die-react-schleife
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

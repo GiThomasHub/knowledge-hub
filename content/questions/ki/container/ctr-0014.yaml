@@ -15,7 +15,7 @@ rubric:
 - Benennt mindestens zwei Restrisiken (Projektordner veränderbar, Abfluss erreichbarer Zugangsdaten, geteilter Kern)
 explanation: Ein Senior-Vorschlag kombiniert Isolation, Netzbegrenzung und einen menschlichen Freigabeschritt – und verkauft den Container nicht als Allheilmittel, sondern nennt ehrlich, was er nicht abdeckt.
 source: container/haerten-und-ki-agenten#ki-agenten-im-container
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

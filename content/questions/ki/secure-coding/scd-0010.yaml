@@ -7,15 +7,15 @@ type: scenario
 situation: Claude schlägt vor, für ein PDF-Problem das Paket «pdfparser-pro-utils» zu installieren. Niemand im Team kennt es.
 question: Was ist das richtige Vorgehen?
 options:
-- Sofort installieren, Claude kennt die Pakete.
-- 'Vor der Installation prüfen: existiert das Paket, wer pflegt es, wie viele Downloads, Install-Skripte, Tippfehler-Namen – Modelle schlagen gelegentlich nicht existierende Namen vor, die Angreifer registrieren (Slopsquatting).'
-- Installieren und später mit pip-audit prüfen.
-- Paket in einem anderen Projekt testen und dann übernehmen.
+- Sofort installieren – Claude kennt die gängigen Pakete.
+- Vorher prüfen, ob es existiert, wer es pflegt und was es installiert.
+- Installieren und anschliessend mit pip-audit prüfen.
+- Das Paket zuerst in einem anderen Projekt testen.
 answer:
 - 1
-explanation: Neue Abhängigkeiten werden vor dem Hinzufügen geprüft. pip-audit findet bekannte Lücken, aber keinen frisch registrierten Schadcode; in einem anderen Projekt läuft der Schadcode genauso.
+explanation: 'Neue Abhängigkeiten werden vor dem Hinzufügen geprüft: Existiert das Paket, wer pflegt es, wie viele Downloads, gibt es Install-Skripte oder Tippfehler-Namen? Modelle schlagen gelegentlich nicht existierende Namen vor, die Angreifer registrieren (Slopsquatting). pip-audit findet bekannte Lücken, aber keinen frisch registrierten Schadcode, und in einem anderen Projekt läuft der Schadcode genauso.'
 source: secure-coding/secrets-und-lieferkette#die-lieferkette-absichern
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

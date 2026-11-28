@@ -16,7 +16,7 @@ answer:
 - 3
 explanation: Training ist die teure Lernphase beim Anbieter, Inferenz die Antwort auf jede Anfrage. Während der Nutzung lernt das Modell nicht dazu – du beeinflusst Ergebnisse über Anweisungen, Dokumente und Werkzeuge im Kontext.
 source: ki-grundlagen/begriffslandkarte#training-und-inferenz
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

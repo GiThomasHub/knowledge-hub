@@ -6,15 +6,15 @@ level: L3
 type: single
 question: Ein Recherche-Agent soll suchen, das Ergebnis bewerten, bei niedriger Konfidenz mit verfeinerten Begriffen erneut suchen und vor dem Versand eine menschliche Freigabe einholen. Welches Werkzeug passt?
 options:
-- Eine einfache LangChain-Kette
-- LangGraph mit Zyklus, Zustand und Human-in-the-Loop
-- Ein einzelner API-Aufruf
-- DSPy
+- Eine einfache LangChain-Kette mit festen Schritten
+- LangGraph mit Zyklus, Zustand und Freigabe
+- Ein einzelner API-Aufruf mit langem Prompt
+- DSPy, das die Prompts automatisch optimiert
 answer:
 - 1
 explanation: Schleifen, Zustand und Freigaben sind genau die Stärke von LangGraph (StateGraph, Conditional Edges, Checkpointer). Eine lineare Kette kennt keine Zyklen, ein einzelner Aufruf keine Schleife, und DSPy optimiert Prompts, steuert aber keine Abläufe.
 source: agents/frameworks#langchain-und-langgraph
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

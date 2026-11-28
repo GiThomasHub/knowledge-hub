@@ -40,7 +40,8 @@ Vollständige Anleitung: `CONTRIBUTING.md`. Kurzfassung:
 
 ## Fragen schreiben
 
-- Immer `status: draft`, `author: claude-weekly` (oder `claude-session`). **Nur ein Mensch setzt `reviewed`.**
+- Neue Fragen immer `status: draft`, `author: claude-weekly` (oder `claude-session`).
+- **`reviewed` setzt ein Mensch – oder Claude in einer interaktiven Sitzung, wenn der Mensch das Review ausdrücklich beauftragt.** Dann: jede Frage gegen ihre Lektion prüfen, formale Prüfungen (Antwortanzahl, keine Positionsbezüge, richtige Option nicht systematisch die längste, Wahr/Falsch ausgewogen), fragliche Fragen als `draft` lassen und im PR begründen. **Unbeaufsichtigte Wochen-Tasks setzen nie `reviewed`.**
 - Jede Frage: `competencies`, `source` (Lektion, möglichst mit Anker), Erklärung, warum richtig **und** warum die anderen falsch sind.
 - L1/L2: Wissen und Anwendung. L3: Abwägen. L4: Szenario (`scenario`) und Fallstudie (`case` mit `model_answer` und `rubric`).
 - Plausible Distraktoren, keine Trickfragen, keine «alle oben genannten».

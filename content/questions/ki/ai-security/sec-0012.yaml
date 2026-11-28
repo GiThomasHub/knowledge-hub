@@ -7,14 +7,14 @@ type: single
 question: Die Bash-Sandbox ist aktiv, sonst mit Standardwerten. Claude führt `cat ~/.ssh/id_ed25519` aus. Was passiert?
 options:
 - Der Befehl scheitert, weil die Sandbox das Home sperrt.
-- Der Befehl kann die Datei lesen – Lesen ist standardmässig fast überall erlaubt.
-- Der Befehl braucht Netzwerk und wird deshalb blockiert.
-- Die Sandbox fragt immer nach.
+- Die Datei ist lesbar – Lesen ist fast überall erlaubt.
+- Der Befehl braucht Netzwerk und wird darum blockiert.
+- Die Sandbox fragt bei jedem Lesezugriff nach.
 answer:
 - 1
 explanation: 'Defaults der Sandbox: Schreiben nur im Arbeitsordner, Netz nur über den Proxy – aber Lesen fast überall, inklusive ~/.ssh und ~/.aws/credentials. Lesesperren (`denyRead`) musst du selbst setzen.'
 source: ai-security/sandbox#die-defaults-und-warum-sie-nicht-reichen
 status: reviewed
 created: '2026-11-26'
-last_verified: '2026-11-26'
+last_verified: '2026-11-28'
 author: claude-setup

@@ -6,15 +6,15 @@ level: L1
 type: single
 question: Warum ist ein Befehl wie `pytest`, den Claude selbst ausführen kann, für gute Ergebnisse so wichtig?
 options:
-- Weil Claude ohne Tests keinen Code schreiben darf
-- Weil Claude aufhört, wenn die Arbeit fertig aussieht – ein klares bestanden/gescheitert schliesst die Prüfschleife
-- Weil Tests den Kontext verkleinern
-- Weil Claude Code sonst im Plan-Modus bleibt
+- Weil Claude Code ohne Testbefehl gar keinen Code schreiben darf
+- Weil ein klares bestanden/gescheitert die Prüfschleife schliesst
+- Weil Tests den Kontext verkleinern und Tokens sparen
+- Weil Claude Code ohne Tests im Plan-Modus stecken bleibt
 answer:
 - 1
 explanation: Ohne prüfbares Signal ist «sieht fertig aus» das einzige Kriterium, und du wirst zur Prüfschleife. Mit einem Test arbeitet Claude, prüft, liest das Ergebnis und bessert nach. Code schreiben darf Claude auch ohne Tests, Tests verkleinern den Kontext nicht, und mit dem Plan-Modus haben sie nichts zu tun.
 source: claude-code/agentic-loop#der-agentic-loop
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

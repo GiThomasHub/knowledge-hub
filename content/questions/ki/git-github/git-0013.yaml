@@ -16,7 +16,7 @@ answer:
 - 2
 explanation: PR-Pflicht, Pflicht-Checks und das Sperren von Force-Push und Löschen machen main zur Mauer. Für Notfälle gibt es benannte Ausnahmen (Bypass) für einzelne Personen; Admin-Rechte für alle würden das Ruleset aushebeln.
 source: git-github/repo-absichern-und-agenten#das-ruleset-fuer-main
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

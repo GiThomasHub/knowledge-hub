@@ -15,7 +15,7 @@ answer:
 - 1
 explanation: Esc unterbricht ohne Kontextverlust, Esc Esc bzw. /rewind setzt auf einen Checkpoint zurück. Checkpoints erfassen aber nur Änderungen über Claudes Datei-Werkzeuge, nicht über Bash, und ersetzen Git deshalb nicht.
 source: claude-code/befehle-und-modi#tastenkuerzel-und-eingaben
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

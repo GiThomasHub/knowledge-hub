@@ -7,14 +7,14 @@ type: single
 question: Was bedeutet der Cron-Ausdruck `17 6 * * 1`?
 options:
 - Am 17. jedes Monats um 06:01
-- Jeden Montag um 06:17 (in der Zeitzone des Planers)
-- Täglich um 17:06
+- Jeden Montag um 06:17
+- Täglich um 17:06 in der Zeitzone des Servers
 - Alle 17 Minuten zwischen 6 und 7 Uhr
 answer:
 - 1
-explanation: Die Felder sind Minute (17), Stunde (6), Tag im Monat (*), Monat (*), Wochentag (1 = Montag). Viele Planer interpretieren das in UTC. Die anderen Optionen verwechseln die Reihenfolge der Felder oder lesen 17 als Schrittweite (dafür bräuchte es */17).
+explanation: Die Felder sind Minute (17), Stunde (6), Tag im Monat (*), Monat (*), Wochentag (1 = Montag) – in der Zeitzone des Planers, oft UTC. Die anderen Optionen verwechseln die Reihenfolge der Felder oder lesen 17 als Schrittweite (dafür bräuchte es */17).
 source: automation/trigger-und-cron#cron-lesen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

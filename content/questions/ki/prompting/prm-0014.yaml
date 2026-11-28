@@ -13,7 +13,7 @@ options:
 - Aktuelle Frage und kritische Formatanweisungen
 explanation: Stabiles zuerst (Werkzeuge, System), dann das Material, dann der Verlauf, ganz unten das Veränderliche. Das stützt den Cache und stellt Frage und kritische Anweisungen dorthin, wo sie am stärksten beachtet werden.
 source: prompting/kontext-gestalten#reihenfolge-was-wohin-gehoert
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

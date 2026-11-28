@@ -14,7 +14,7 @@ answer:
 - 1
 explanation: Ohne Bremse poliert das System endlos. Der Bewerter braucht klare Kriterien und ist ein eigener Aufruf; Selbstbewertung im selben Aufruf bringt wenig. Ein grösseres Modell kann helfen, ersetzt aber die Abbruchbedingung nicht.
 source: agents/muster#die-details-die-den-unterschied-machen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

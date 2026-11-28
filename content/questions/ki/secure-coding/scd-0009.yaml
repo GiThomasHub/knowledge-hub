@@ -17,7 +17,7 @@ answer:
 - 2
 explanation: Secrets gehören ausserhalb des Codes. Private Repos werden geklont, geforkt und manchmal öffentlich; Notebooks landen schnell in Git oder Mails.
 source: secure-coding/secrets-und-lieferkette#secrets-richtig-ablegen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

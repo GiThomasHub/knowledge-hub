@@ -16,7 +16,7 @@ answer:
 - 2
 explanation: Hängen bis zum Timeout zeigt fehlende Grenzen, grüne CI trotz Abbruch zeigt Erfolgsauswertung über Text statt Exit-Code und Felder, ein befolgter Issue-Text zeigt fehlenden Schutz gegen Prompt Injection. Ein Bericht mit Kosten und offenen Punkten ist erwünscht.
 source: automation/unbeaufsichtigt-absichern#fehlerbilder
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

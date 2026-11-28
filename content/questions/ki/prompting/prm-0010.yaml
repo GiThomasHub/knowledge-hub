@@ -17,7 +17,7 @@ answer:
 - 3
 explanation: Tags trennen, machen austauschbar und erleichtern die Weiterverarbeitung. Gegen Prompt Injection sind sie nur eine erste Schicht, kein vollständiger Schutz. Feste, vorgeschriebene Tag-Namen gibt es nicht – sprechend und einheitlich sollen sie sein.
 source: prompting/xml-und-struktur#warum-tags-helfen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

@@ -7,14 +7,14 @@ type: single
 question: In einem 300-seitigen Prompt steht eine entscheidende Klausel auf Seite 150. Das Modell übersieht sie. Welche Massnahme hilft am meisten?
 options:
 - Ein Modell mit noch grösserem Kontextfenster wählen
-- Nur die relevanten Abschnitte mitgeben oder gezielt abrufen und die Frage ans Ende stellen
-- Die Klausel in Grossbuchstaben setzen
-- Die Temperatur erhöhen
+- Nur relevante Abschnitte mitgeben, Frage ans Ende stellen
+- Die Klausel im Text in Grossbuchstaben setzen
+- Die Temperatur erhöhen, damit das Modell breiter sucht
 answer:
 - 1
 explanation: 'Lost in the Middle und Context Rot: Informationen in der Mitte voller Kontexte werden schlechter gefunden. Weniger und gezielteres Material plus Frage am Ende hilft. Ein grösseres Fenster verschärft eher das Problem, Grossbuchstaben und Temperatur ändern nichts daran.'
 source: ki-grundlagen/typische-fehler#lost-in-the-middle
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

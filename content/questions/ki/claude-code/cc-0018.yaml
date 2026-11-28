@@ -14,7 +14,7 @@ answer:
 - 1
 explanation: Die tools-Liste nimmt dem Subagenten Write und Edit technisch weg. Eine Prompt-Anweisung ist nur Anleitung, der Auto-Modus erlaubt eher mehr als weniger, und das Modell bestimmt nicht die Rechte.
 source: claude-code/kontext-und-subagents#eigene-subagenten
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

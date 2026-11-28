@@ -7,15 +7,15 @@ type: scenario
 situation: Im Skill-Ordner liegt `scripts/validate.py`, das Offerten auf Pflichtfelder prüft. In der SKILL.md wird es nirgends erwähnt. Claude prüft die Offerten nie damit.
 question: Was ist die Ursache, und wie behebst du sie?
 options:
-- Python-Skripte werden in Skills nicht unterstützt; in Markdown umschreiben
-- 'Claude nutzt nur Dateien, die SKILL.md nennt – einen Schritt ergänzen: «Prüfe die fertige Offerte mit scripts/validate.py; bei Fehlern korrigieren und erneut prüfen.»'
-- Das Skript muss in references/ liegen
-- Claude Code neu installieren
+- Python-Skripte werden in Skills nicht unterstützt – in Markdown umschreiben
+- Claude nutzt nur Dateien, die die SKILL.md nennt – Prüfschritt ergänzen
+- Das Skript muss im Ordner references/ statt in scripts/ liegen
+- Claude Code neu installieren, damit Skripte erkannt werden
 answer:
 - 1
-explanation: Dateien im Skill-Ordner werden nur genutzt, wenn die SKILL.md sie nennt, am besten mit dem Wann. Skripte werden unterstützt und ausgeführt; references/ ist für Nachschlagewissen gedacht, nicht für Code, und eine Neuinstallation ändert nichts.
+explanation: 'Dateien im Skill-Ordner werden nur genutzt, wenn die SKILL.md sie nennt, am besten mit dem Wann – etwa: «Prüfe die fertige Offerte mit scripts/validate.py; bei Fehlern korrigieren und erneut prüfen.» Skripte werden unterstützt und ausgeführt; references/ ist für Nachschlagewissen gedacht, nicht für Code, und eine Neuinstallation ändert nichts.'
 source: skills-plugins/progressive-disclosure#nur-was-genannt-wird-wird-genutzt
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

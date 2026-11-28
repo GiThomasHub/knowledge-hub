@@ -4,15 +4,15 @@ competencies:
 - ki-mem-01
 level: L1
 type: true_false
-question: Ein sehr langer Chatverlauf ist bereits ein Langzeitgedächtnis, weil das Modell sich darin an alles erinnert.
+question: 'Ein langer Chatverlauf ist noch kein Langzeitgedächtnis: Eine neue Sitzung beginnt ohne ihn, ausser ein Memory-System legt Wichtiges hinein.'
 options:
 - Wahr
 - Falsch
 answer:
-- 1
-explanation: Falsch. Der Verlauf liegt nur im Kontextfenster dieser Sitzung und wird bei jedem Aufruf neu bezahlt. Eine neue Sitzung beginnt ohne ihn, ausser ein Memory-System legt Wichtiges hinein.
+- 0
+explanation: Wahr. Der Verlauf liegt nur im Kontextfenster dieser Sitzung und wird bei jedem Aufruf neu bezahlt. Langzeitgedächtnis entsteht erst, wenn ein Memory-System Wichtiges speichert und in neue Sitzungen lädt.
 source: ai-memory/kurz-und-langzeit#was-kein-memory-ist
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

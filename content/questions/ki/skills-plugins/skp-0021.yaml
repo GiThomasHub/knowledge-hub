@@ -8,14 +8,14 @@ situation: 'In einer Firma gibt es drei Skills, die alle MWST-Fragen beantworten
 question: Was empfiehlst du?
 options:
 - Alle drei behalten, damit Claude die beste Antwort wählen kann
-- Einen Eigentümer-Skill für MWST bestimmen, die anderen deaktivieren oder darauf verweisen lassen, mit Trigger-Eval in der echten Umgebung prüfen und im Katalog festhalten
-- Einen vierten, besseren Skill schreiben
-- Die Descriptions aller drei identisch machen
+- Einen Eigentümer-Skill bestimmen, Doppelte deaktivieren, nachmessen
+- Einen vierten, besseren MWST-Skill schreiben
+- Die Descriptions aller drei Skills identisch machen
 answer:
 - 1
-explanation: Überschneidende Descriptions machen die Auswahl zufällig, und Kopien laufen auseinander. Ein Eigentümer pro Thema, Deaktivieren der Doppelten und ein Trigger-Eval schaffen Klarheit. Ein weiterer Skill oder identische Descriptions verschärfen das Problem nur.
+explanation: Überschneidende Descriptions machen die Auswahl zufällig, und Kopien laufen auseinander. Ein Eigentümer-Skill pro Thema, Deaktivieren der Doppelten (oder Verweis darauf), ein Trigger-Eval in der echten Umgebung und ein Eintrag im Katalog schaffen Klarheit. Ein weiterer Skill oder identische Descriptions verschärfen das Problem nur.
 source: skills-plugins/skill-bibliothek#die-bibliothek-pflegen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

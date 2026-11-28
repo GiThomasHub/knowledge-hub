@@ -17,7 +17,7 @@ answer:
 - 3
 explanation: Fine-Tuning passt für Verhalten und lohnt sich bei engen, stabilen, häufigen Aufgaben. Es liefert keine Quellen und verhindert Halluzinationen nicht.
 source: ki-grundlagen/prompting-rag-finetuning#die-drei-wege-im-vergleich
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

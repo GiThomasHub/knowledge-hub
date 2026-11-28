@@ -6,15 +6,15 @@ level: L2
 type: single
 question: Welche Description ist für einen Offerten-Skill am besten?
 options:
-- «Hilft bei Offerten.»
-- «Offerten-Skill. IMMER VERWENDEN!»
-- «Erstellt Offerten für Treuhand-Mandate nach Firmenvorlage. Use when the user asks for an Offerte, ein Angebot, einen Kostenvoranschlag oder ‹was würde das kosten› für Buchhaltung, Lohn oder Steuern.»
-- «Dieser Skill enthält unsere gesamte Preisliste und alle Vorlagen.»
+- «Hilft bei allem rund um Offerten, Angebote und Preise.»
+- '«Erstellt Treuhand-Offerten nach Vorlage. Use when: Offerte, Angebot, Kostenvoranschlag.»'
+- «Offerten-Skill für das ganze Team. IMMER VERWENDEN, WENN MÖGLICH!»
+- «Dieser Skill enthält unsere gesamte Preisliste und alle Offertvorlagen.»
 answer:
 - 2
-explanation: Eine gute Description sagt was und wann, mit konkreten Auslösern in der Sprache der Nutzer. «Hilft bei Offerten» ist zu vage, Grossbuchstaben ersetzen keine Auslöser, und eine Inhaltsangabe sagt nicht, wann der Skill passt.
+explanation: Eine gute Description sagt, was der Skill tut und wann er passt – mit konkreten Auslösern in der Sprache der Nutzer (Offerte, Angebot, Kostenvoranschlag, «was würde das kosten»). «Hilft bei allem» ist zu vage, Grossbuchstaben ersetzen keine Auslöser, und eine Inhaltsangabe sagt nicht, wann der Skill passt.
 source: skills-plugins/skill-schreiben#die-description-visitenkarte-und-tuersteher
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

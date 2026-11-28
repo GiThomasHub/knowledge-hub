@@ -16,7 +16,7 @@ rubric:
 - Menschliche Prüfung der Berichte vorgesehen
 explanation: Ein Senior-Vorschlag nimmt die Datenschutzvorgabe ernst, ersetzt aber Annahmen durch Messung und Rechnung und prüft alle Datenwege – nicht nur das Modell.
 source: lokale-llms/lokal-oder-cloud#die-vier-kriterien
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

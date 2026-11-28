@@ -8,14 +8,14 @@ situation: 'Deine App im Container meldet «listening on 127.0.0.1:3000». In de
 question: Was ist die Ursache?
 options:
 - Das Port-Mapping ist falsch herum, es müsste "3000:80" heissen.
-- Die App lauscht nur auf Loopback des Containers; Docker leitet aber an dessen Netzwerkinterface weiter. Sie muss auf 0.0.0.0 lauschen.
-- Docker Desktop blockiert Port 3000 standardmässig.
-- EXPOSE 3000 fehlt im Dockerfile.
+- Die App lauscht nur auf Loopback; sie muss auf 0.0.0.0 lauschen.
+- Docker Desktop blockiert Port 3000 aus Sicherheitsgründen.
+- EXPOSE 3000 fehlt im Dockerfile, darum ist der Port zu.
 answer:
 - 1
 explanation: 127.0.0.1 heisst «nur Verbindungen von diesem Rechner» – und das ist aus Sicht der App der Container. Die weitergeleitete Verbindung kommt am Container-Interface an, wo niemand zuhört. Das Mapping 3000:3000 ist korrekt, Docker blockiert den Port nicht, und EXPOSE dokumentiert nur, es öffnet nichts.
 source: container/alltag-und-fehler#1-localhost-bleibt-tot-obwohl-die-logs-gut-aussehen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

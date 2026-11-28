@@ -16,7 +16,7 @@ answer:
 - 3
 explanation: restore verwirft endgültig (nicht committete Änderungen kennt auch der Reflog nicht), reset --soft behält die Änderungen im Staging, und revert -m 1 nimmt einen Merge zurück und behält die Seite von main. stash ignoriert neue Dateien, ausser mit -u.
 source: git-github/rettung#welcher-befehl-fuer-welche-lage
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

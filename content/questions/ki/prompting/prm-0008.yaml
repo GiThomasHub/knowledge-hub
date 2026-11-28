@@ -6,15 +6,15 @@ level: L2
 type: single
 question: Wofür eignet sich Self-Consistency (mehrfach fragen, Mehrheit nehmen)?
 options:
-- Für freie Texte wie Marketing-Mails
-- Für Aufgaben mit vergleichbarer Antwort wie Kategorie, Zahl oder kurzer Fakt
-- Nur, wenn man die Temperatur auf 0 setzt
-- Um Kosten zu senken
+- Für freie Texte wie Marketing-Mails oder Blogbeiträge
+- Für vergleichbare Antworten wie Kategorie, Zahl, kurzer Fakt
+- Nur in Kombination mit Temperatur 0
+- Um die Kosten pro Aufgabe zu senken
 answer:
 - 1
 explanation: Abstimmen geht nur, wenn Antworten vergleichbar sind; bei freien Texten entscheidet ein Prüfer. Die Kosten steigen linear mit der Zahl der Durchläufe, und Temperatur 0 würde gerade die Vielfalt verhindern (und ist in API-Version 2026-10-21 ohnehin nicht mehr zulässig).
 source: prompting/beispiele#mehrfach-fragen-self-consistency
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

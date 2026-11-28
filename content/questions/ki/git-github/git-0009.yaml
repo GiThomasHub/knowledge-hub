@@ -6,15 +6,15 @@ level: L2
 type: single
 question: Du willst zwei Claude-Code-Sessions parallel an zwei Features desselben Repos arbeiten lassen. Was ist das passende Werkzeug?
 options:
-- Zwei Terminals im selben Ordner
-- 'git worktree: ein zweites Arbeitsverzeichnis auf einem eigenen Branch'
-- git stash zwischen den Sessions
+- Zwei Terminals im selben Projektordner
+- git worktree mit eigenem Branch pro Session
+- git stash zwischen den beiden Sessions
 - Das Repo ein zweites Mal forken
 answer:
 - 1
 explanation: Ein Worktree ist ein zweiter Ordner desselben Repos auf einem anderen Branch – ohne zweites Klonen und ohne gegenseitiges Überschreiben. Im selben Ordner überschreiben sich die Sessions, stash ist zum Beiseitelegen, nicht für paralleles Arbeiten, und ein Fork ist für fremde Repos gedacht.
 source: git-github/branch-pr-review#parallele-claude-sessions-worktrees
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

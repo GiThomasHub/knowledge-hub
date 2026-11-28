@@ -6,15 +6,15 @@ level: L1
 type: single
 question: Was zeichnet ein Mixture-of-Experts-Modell (MoE) aus?
 options:
-- Es besteht aus mehreren getrennten Modellen, die nacheinander abstimmen
-- Es hat sehr viele Parameter, aktiviert pro Token aber nur einen Teil davon
-- Es braucht nur Speicher für die aktiven Parameter
-- Es läuft ausschliesslich in der Cloud
+- Es besteht aus mehreren getrennten Modellen, die über die Antwort abstimmen
+- Es hat sehr viele Parameter, nutzt pro Token aber nur einen Teil
+- Es braucht nur Speicher für die gerade aktiven Parameter
+- Es läuft ausschliesslich in der Cloud, nie auf eigener Hardware
 answer:
 - 1
 explanation: Ein MoE-Modell leitet jedes Token an wenige «Experten» weiter und rechnet dadurch schneller, als die Gesamtgrösse vermuten lässt. Im Speicher müssen trotzdem alle Gewichte liegen; es ist kein Abstimmungsverfahren mehrerer Modelle und läuft auch lokal.
 source: lokale-llms/warum-lokal#modellfamilien-stand-27-11-2026-aendert-sich-schnell
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

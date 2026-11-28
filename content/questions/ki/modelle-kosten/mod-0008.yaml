@@ -12,7 +12,7 @@ answer:
 - 0
 explanation: Wahr. Bis 100 000 Tokens Prompt gelten 0.10/0.50 USD pro Million, darüber 0.50/2.50 USD. Bei kleinen Modellen lohnt es sich deshalb, den Prompt kurz zu halten.
 source: modelle-kosten/modell-pro-aufgabe#max-tokens-die-obergrenze-der-ausgabe
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

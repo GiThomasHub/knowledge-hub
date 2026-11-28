@@ -7,15 +7,15 @@ type: scenario
 situation: Ein Vertragsauszug wird per Schema extrahiert. Das Feld kuendigungsfrist_tage ist gültig (90), im Vertrag stehen aber 30 Tage.
 question: Was lernst du daraus?
 options:
-- Das Schema ist falsch definiert.
-- Ein Schema garantiert Form und Wertebereich, nicht die Richtigkeit – es braucht zusätzlich Validatoren, Fundstellen und Prüfung gegen die Quelle.
-- Structured Outputs funktionieren nicht zuverlässig.
-- Man sollte das Feld als float statt int definieren.
+- Das Schema ist falsch definiert und muss enger werden.
+- Ein Schema sichert die Form, nicht die inhaltliche Richtigkeit.
+- Structured Outputs funktionieren generell nicht zuverlässig.
+- Das Feld sollte als float statt als int definiert sein.
 answer:
 - 1
-explanation: 'Das Schema hat seinen Job gemacht: Die Form stimmt. Inhaltliche Richtigkeit braucht Geschäftsregeln, Fundstellen und Vergleich mit der Quelle. Der Datentyp ändert daran nichts.'
+explanation: 'Das Schema hat seinen Job gemacht: Form und Wertebereich stimmen. Inhaltliche Richtigkeit braucht zusätzlich Validatoren, Fundstellen und den Vergleich mit der Quelle. Structured Outputs funktionieren hier ja korrekt, und der Datentyp ändert nichts am falschen Wert.'
 source: prompting/xml-und-struktur#antworte-in-json-ist-kein-vertrag
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

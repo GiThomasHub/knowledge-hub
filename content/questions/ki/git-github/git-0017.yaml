@@ -15,7 +15,7 @@ rubric:
 - Lokale Zusatzsperren oder begrenzte Lieferung pro Lauf
 explanation: Ein Senior-Konzept trennt Vorbereiten (Agent) und Freigeben (Mensch), setzt das serverseitig durch und härtet die Automatisierung selbst – statt sich auf Anweisungen allein zu verlassen.
 source: git-github/repo-absichern-und-agenten#team-workflow-mit-ki-agenten
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

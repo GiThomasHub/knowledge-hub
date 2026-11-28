@@ -8,14 +8,14 @@ situation: Ein verpasster Kartenbetrug kostet eine Bank im Schnitt CHF 2 000, di
 question: In welche Richtung sollte der Schwellenwert des Klassifikators verschoben werden?
 options:
 - Höher setzen, damit möglichst wenige Fehlalarme entstehen
-- Tiefer setzen, damit mehr Betrugsfälle gefunden werden (höherer Recall), auch wenn die Precision sinkt
+- Tiefer setzen – mehr Betrug finden, auch bei tieferer Precision
 - So setzen, dass die Accuracy maximal wird
-- Auf 50 % lassen, weil das neutral ist
+- Auf 50 % lassen, weil das der neutrale Standard ist
 answer:
 - 1
 explanation: Ein verpasster Betrug kostet hundertmal mehr als eine Abklärung, und die Kapazität reicht – also lohnt sich ein höherer Recall auf Kosten der Precision. Die Accuracy berücksichtigt die ungleichen Fehlerkosten nicht, und 50 % ist nur ein technischer Standardwert, keine Geschäftsentscheidung.
 source: machine-learning/metriken-lesen#den-schwellenwert-waehlen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

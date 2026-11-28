@@ -7,15 +7,15 @@ type: scenario
 situation: Ein Entwickler schickt alle Prompts und Antworten eines Kundensupport-Assistenten (mit Namen, Adressen, Vertragsdetails) ungefiltert an einen US-SaaS-Tracing-Dienst, ohne Löschfrist.
 question: Was ist das Problem, und was empfiehlst du?
 options:
-- Kein Problem, Traces sind technische Daten.
-- 'Traces sind eine Datensammlung mit Personendaten: Inhalte standardmässig schwärzen, nur Metadaten speichern, Inhalte nur begründet und kurz aufbewahren, Vertrag und Datenstandort prüfen oder selbst betreiben (z. B. Langfuse).'
-- Die Traces verschlüsseln reicht.
-- Tracing abschalten.
+- Kein Problem – Traces sind rein technische Daten.
+- Personendaten – schwärzen, kurz aufbewahren, Vertrag prüfen.
+- Die Traces verschlüsseln, dann ist alles geregelt.
+- Tracing ganz abschalten, um jedes Datenschutzrisiko zu vermeiden.
 answer:
 - 1
-explanation: Unter dem revDSG braucht diese Datensammlung Zweck, Vertrag, Zugriffsregeln und Frist. Verschlüsselung allein löst Zweck und Aufbewahrung nicht, und ganz ohne Tracing fehlt die Nachvollziehbarkeit.
+explanation: 'Traces mit Inhalten sind eine Datensammlung mit Personendaten. Unter dem revDSG braucht sie Zweck, Vertrag, Zugriffsregeln und Frist: Inhalte standardmässig schwärzen, nur Metadaten speichern, Inhalte nur begründet und kurz aufbewahren, Vertrag und Datenstandort prüfen oder selbst betreiben (z. B. Langfuse). Verschlüsselung allein löst Zweck und Aufbewahrung nicht, und ganz ohne Tracing fehlt die Nachvollziehbarkeit.'
 source: evals/tracing-im-betrieb#alarme-und-der-weg-zurueck-ins-testset
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

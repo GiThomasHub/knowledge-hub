@@ -6,15 +6,15 @@ level: L3
 type: single
 question: Version B erreicht auf 20 Aufgaben 75 %, Version A 70 %. Wie bewertest du das?
 options:
-- B ist klar besser.
-- Bei 20 Aufgaben liegt die Unsicherheit bei rund ± 19 Prozentpunkten – kein Beleg. Besser gepaart zählen, welche Aufgaben nur A oder nur B löst, und mehr Aufgaben ergänzen.
-- A ist besser, weil weniger Varianz.
+- B ist klar besser, fünf Prozentpunkte sind ein deutlicher Fortschritt.
+- Kein Beleg – bei 20 Aufgaben rund ± 19 Prozentpunkte; gepaart vergleichen.
+- A ist besser, weil die tiefere Quote auf weniger Varianz hindeutet.
 - Mehr Läufe pro Aufgabe machen das Ergebnis eindeutig.
 answer:
 - 1
-explanation: Kleine Testsets haben grosse Intervalle. Der gepaarte Vergleich ist aussagekräftiger. Mehr Läufe pro Aufgabe ersetzen nicht mehr verschiedene Aufgaben.
+explanation: Bei 20 Aufgaben liegt die Unsicherheit bei rund ± 19 Prozentpunkten. Aussagekräftiger ist der gepaarte Vergleich (welche Aufgaben löst nur A, welche nur B?) – und mehr Aufgaben. Mehr Läufe pro Aufgabe ersetzen nicht mehr verschiedene Aufgaben.
 source: evals/llm-judge-und-mehrere-laeufe#unsicherheit-richtig-lesen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

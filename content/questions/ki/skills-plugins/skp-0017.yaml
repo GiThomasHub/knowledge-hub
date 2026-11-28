@@ -6,15 +6,15 @@ level: L3
 type: single
 question: 'Ein Team-Plugin hat `"version": "1.2.0"` in plugin.json. Nach einer Skill-Änderung auf main meldet /plugin update «already at the latest version». Warum?'
 options:
-- Plugins lassen sich grundsätzlich nicht aktualisieren
-- Mit gesetzter Version gibt es ein Update erst, wenn die Version erhöht wird
-- Der Marketplace muss neu angelegt werden
-- Updates kommen nur über die Claude-App
+- Plugins lassen sich nach der Installation nicht mehr aktualisieren
+- Mit gesetzter Version gibt es ein Update erst nach Erhöhung
+- Der Marketplace muss nach jeder Änderung neu angelegt werden
+- Updates kommen nur über die Claude-App, nicht über die CLI
 answer:
 - 1
 explanation: Mit expliziter version dient diese als Schlüssel für den Cache; ohne Erhöhung sieht Claude Code keinen Grund zu aktualisieren. Ohne version-Feld würde bei Git-Quellen der Commit-SHA verwendet. Ein neuer Marketplace oder die App ändern daran nichts.
 source: skills-plugins/plugins-und-marketplaces#versionierung
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

@@ -17,7 +17,7 @@ answer:
 - 4
 explanation: Der Befehl prüft den Diff und filtert Härtungsthemen bewusst heraus. Laut Anthropic ist er nicht gegen Prompt Injection gehärtet, und er ersetzt weder Scanner noch Tests.
 source: secure-coding/security-review#security-review-in-claude-code
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

@@ -17,7 +17,7 @@ answer:
 - 2
 explanation: pyproject.toml ist die Quelle, uv.lock hält die exakten Versionen, .python-version die Python-Version – zusammen machen sie das Projekt reproduzierbar. .venv/ erzeugt uv auf jedem Rechner selbst, und .env enthält lokale Werte und Secrets.
 source: dev-environment/python-projekt-uv#wie-ein-projekt-aussieht
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

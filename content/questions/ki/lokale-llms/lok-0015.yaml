@@ -7,14 +7,14 @@ type: single
 question: Ein KMU verarbeitet monatlich wenige hundert interne Dokumente ohne besondere Geheimhaltungspflicht und hat keine eigene IT. Was ist die naheliegende Empfehlung?
 options:
 - Eine GPU-Workstation kaufen, weil lokal immer günstiger ist
-- Ein Cloud-Modell mit geklärter Datenfrage; die Tokenkosten liegen bei dieser Menge meist tief, und Betrieb und Absicherung übernimmt der Anbieter
-- Ein lokales Modell auf einem Büro-Laptop, offen im Netz freigegeben
-- Gar keine KI einsetzen
+- Ein Cloud-Modell mit geklärter Datenfrage und Vertrag
+- Ein lokales Modell auf einem Büro-Laptop, im Netz freigegeben
+- Vorerst gar keine KI einsetzen, bis eine eigene IT besteht
 answer:
 - 1
 explanation: Bei geringen Mengen und ohne strenge Geheimhaltung rechnet sich eigene Hardware samt Betrieb selten; ein seriöser Cloud-Anbieter mit Vertrag ist günstiger und oft sicherer als ein schlecht betriebener eigener Server. Ein offen freigegebener Ollama-Server ist ein Sicherheitsrisiko, und ein Verzicht ist ohne Grund nicht nötig.
 source: lokale-llms/lokal-oder-cloud#gesamtkosten-ehrlich-rechnen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

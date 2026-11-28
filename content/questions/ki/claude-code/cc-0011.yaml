@@ -12,7 +12,7 @@ options:
 - Commit mit beschreibender Nachricht und Draft-PR
 explanation: 'Explore → Plan → Code → Commit: erst verstehen, dann planen, dann umsetzen und prüfen, zuletzt sauber festhalten. So löst Claude das richtige Problem.'
 source: claude-code/arbeitsweise#explore-plan-code-commit
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

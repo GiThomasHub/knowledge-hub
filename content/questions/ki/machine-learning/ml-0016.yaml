@@ -16,7 +16,7 @@ rubric:
 - Erwartungsmanagement gegenüber der Geschäftsleitung
 explanation: Eine Senior-Empfehlung wählt das Werkzeug passend zu Daten und Risiko, ersetzt die Marketingzahl durch geschäftsrelevante Metriken und deckt Fairness, Recht und Betrieb ab.
 source: machine-learning/regel-ml-oder-genai#was-neben-der-technik-entscheidet
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

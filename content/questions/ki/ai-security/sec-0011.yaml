@@ -6,15 +6,15 @@ level: L3
 type: single
 question: Warum solltest du in VS Code `claudeCode.initialPermissionMode` ausdrücklich setzen?
 options:
-- Weil VS Code sonst gar keinen Modus kennt.
-- Weil VS Code für neue Konversationen sonst den zuletzt gewählten Modus übernimmt – auch einen einmal gewählten Auto Mode – und den Startmodus nie aus Projekt-Settings liest.
+- Weil VS Code ohne diesen Wert gar keinen Modus kennt.
+- Weil sonst der zuletzt gewählte Modus übernommen wird, auch Auto.
 - Weil Projekt-Settings in VS Code Vorrang vor allem anderen haben.
-- Weil sonst Hooks nicht laufen.
+- Weil sonst die Hooks in VS Code nicht ausgeführt werden.
 answer:
 - 1
-explanation: 'Reihenfolge in VS Code: zuerst `initialPermissionMode`, dann der zuletzt im Indikator gewählte Modus, dann `defaultMode` aus User/Managed. Ohne expliziten Wert bleibt ein einmal gewählter Auto Mode hängen.'
+explanation: 'Reihenfolge in VS Code: zuerst initialPermissionMode, dann der zuletzt im Indikator gewählte Modus, dann defaultMode aus User/Managed – den Startmodus liest VS Code nie aus Projekt-Settings. Ohne expliziten Wert bleibt ein einmal gewählter Auto Mode für neue Konversationen hängen.'
 source: ai-security/permissions#die-permission-modi
 status: reviewed
 created: '2026-11-26'
-last_verified: '2026-11-26'
+last_verified: '2026-11-28'
 author: claude-setup

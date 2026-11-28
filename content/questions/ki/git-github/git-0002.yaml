@@ -4,15 +4,15 @@ competencies:
 - ki-git-01
 level: L1
 type: true_false
-question: Nach `git commit` ist die Änderung auf GitHub gesichert und für das Team sichtbar.
+question: Nach `git commit` liegt die Änderung erst im lokalen Repository; für das Team sichtbar wird sie erst nach `git push`.
 options:
 - Wahr
 - Falsch
 answer:
-- 1
-explanation: Falsch. Ein Commit liegt nur im lokalen .git-Ordner. Erst git push lädt ihn auf GitHub hoch. Geht der Rechner vorher kaputt, ist der Commit weg.
+- 0
+explanation: Wahr. Ein Commit liegt nur im lokalen .git-Ordner. Erst git push lädt ihn auf GitHub hoch. Geht der Rechner vorher kaputt, ist der Commit weg.
 source: git-github/grundlagen#die-vier-stationen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

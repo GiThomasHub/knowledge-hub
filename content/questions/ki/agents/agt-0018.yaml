@@ -14,7 +14,7 @@ answer:
 - 1
 explanation: Das Agent SDK bringt die Bausteine von Claude Code – Datei- und Shell-Werkzeuge, Subagenten, Hooks, Rechte – als Bibliothek mit. Selbst bauen ginge, ist aber viel Aufwand. CrewAI ist auf Rollen-Teams ausgerichtet, LlamaIndex auf Dokument- und RAG-Pipelines.
 source: agents/frameworks#claude-agent-sdk
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

@@ -17,7 +17,7 @@ answer:
 - 2
 explanation: Warnung ab 10 000, Grenze 25 000 Tokens, grosse Texte in eine Datei. Tool Search betrifft Beschreibungen, nicht Antworten. Statt die Grenze hochzusetzen, sollte das Tool gefilterte, paginierte Antworten liefern.
 source: mcp-tools/kontext-schlank#ausgabegrenzen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

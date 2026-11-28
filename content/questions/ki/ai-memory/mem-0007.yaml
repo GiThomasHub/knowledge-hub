@@ -6,15 +6,15 @@ level: L2
 type: single
 question: Wie viel von MEMORY.md (Auto Memory in Claude Code) wird in jede Sitzung geladen (Stand 27.11.2026)?
 options:
-- Die ganze Datei, egal wie lang
-- Die ersten 200 Zeilen oder 25 KB, je nachdem, was zuerst erreicht ist
-- Nur die letzten 50 Zeilen
-- Gar nichts, Claude liest sie nur auf Nachfrage
+- Die ganze Datei, unabhängig von ihrer Länge
+- Die ersten 200 Zeilen oder 25 KB
+- Nur die letzten 50 Zeilen, also das Neueste
+- Gar nichts – Claude liest sie nur auf Nachfrage
 answer:
 - 1
-explanation: Geladen werden die ersten 200 Zeilen oder 25 KB; Themendateien liest Claude bei Bedarf. Darum ist MEMORY.md ein schlanker Index mit einer Zeile pro Eintrag.
+explanation: Geladen werden die ersten 200 Zeilen oder 25 KB, je nachdem, was zuerst erreicht ist; Themendateien liest Claude bei Bedarf. Darum ist MEMORY.md ein schlanker Index mit einer Zeile pro Eintrag.
 source: ai-memory/claude-memory-pflegen#claude-code-im-detail
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

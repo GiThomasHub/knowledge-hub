@@ -16,7 +16,7 @@ answer:
 - 3
 explanation: Clustering, Anomalieerkennung ohne Labels und Dimensionsreduktion kommen ohne bekannte Antworten aus. Die Umsatzprognose ist Regression mit bekannten historischen Werten und damit Supervised Learning.
 source: machine-learning/lernparadigmen#die-lernparadigmen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

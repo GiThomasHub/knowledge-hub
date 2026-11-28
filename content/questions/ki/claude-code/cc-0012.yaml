@@ -6,15 +6,15 @@ level: L2
 type: single
 question: Welcher Auftrag nutzt den grössten Hebel für ein korrektes Ergebnis?
 options:
-- «Behebe den Login-Fehler.»
-- «Nach Session-Timeout schlägt der Login fehl. Prüfe src/auth/, vor allem Token-Refresh. Schreibe zuerst einen fehlschlagenden Test, dann den Fix.»
-- «Mach den Login robuster und besser.»
-- «Schau dir den ganzen Code an und finde alle Fehler.»
+- «Behebe den Login-Fehler, er nervt die Kundschaft seit Tagen sehr.»
+- «Login scheitert nach Timeout. Prüfe src/auth/, erst ein Test.»
+- «Mach den Login robuster, sicherer und insgesamt viel besser.»
+- «Schau dir den ganzen Code an und finde alle Fehler im Login.»
 answer:
 - 1
-explanation: Der Auftrag nennt Symptom, Ort und einen Prüfschritt (fehlschlagender Test), an dem Claude den Erfolg selbst messen kann. Die anderen sind vage oder unbegrenzt und führen zu Korrekturschleifen oder endloser Exploration.
+explanation: Der Auftrag nennt Symptom (Login scheitert nach Session-Timeout), Ort (src/auth/, vor allem Token-Refresh) und einen Prüfschritt (zuerst ein fehlschlagender Test, dann der Fix), an dem Claude den Erfolg selbst messen kann. Die anderen sind vage oder unbegrenzt und führen zu Korrekturschleifen oder endloser Exploration.
 source: claude-code/arbeitsweise#der-groesste-hebel-ein-pruefschritt
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

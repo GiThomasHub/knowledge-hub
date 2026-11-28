@@ -18,7 +18,7 @@ answer:
 - 4
 explanation: Bandbreiten, Puffer, Währung und ein Messpunkt machen die Schätzung belastbar. Nur Tokenkosten zu zeigen ist irreführend, weil Entwicklung, Betrieb und Prüfung meist mehr kosten.
 source: modelle-kosten/kostenschaetzung-chf#schritt-3-szenarien-und-puffer
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

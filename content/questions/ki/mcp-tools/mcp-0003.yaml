@@ -17,7 +17,7 @@ answer:
 - 2
 explanation: MCP ist offen und anwendungsübergreifend; Server bieten Tools, Resources und Prompts; Connectors sind MCP-Server per Klick. Ein lokaler Server läuft dagegen als Prozess mit deinen Rechten, ausserhalb der Bash-Sandbox – und MCP ist gerade nicht an Claude gebunden.
 source: mcp-tools/tool-use-und-mcp#mcp-ein-stecker-fuer-alle
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

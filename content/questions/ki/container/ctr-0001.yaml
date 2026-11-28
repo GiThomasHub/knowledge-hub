@@ -6,15 +6,15 @@ level: L1
 type: single
 question: Welche Analogie beschreibt ein Docker-Image am treffendsten?
 options:
-- Der eingeschaltete PC, der gerade arbeitet
-- Eine fertig installierte, eingefrorene Festplatte (wie eine ISO-Datei)
+- Der eingeschaltete PC, der gerade Programme ausführt
+- Eine fertig installierte, eingefrorene Festplatte
 - Die Installationsanleitung als Textdatei
-- Der Startknopf für mehrere vernetzte PCs
+- Der Startknopf, der mehrere vernetzte PCs hochfährt
 answer:
 - 1
 explanation: Das Image ist das gebaute, unveränderliche Abbild – wie eine ISO, von der man beliebig viele PCs aufsetzen kann. Der laufende PC ist der Container, die Anleitung ist das Dockerfile, der Startknopf für mehrere PCs ist docker compose up.
 source: container/grundbausteine#die-drei-grundbausteine
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

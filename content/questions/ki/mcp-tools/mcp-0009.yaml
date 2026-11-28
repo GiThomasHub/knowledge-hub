@@ -18,7 +18,7 @@ answer:
 - 4
 explanation: Das Modell sieht nur die Beschreibung; sie muss Zweck, Abgrenzung, Parameter und Grenzen erklären wie für eine neue Kollegin. Ein Name allein reicht nicht – genau daran scheitern Tool-Wahl und Parameter.
 source: mcp-tools/tools-entwerfen#namen-beschreibungen-parameter
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

@@ -7,15 +7,15 @@ type: scenario
 situation: Ein Versicherer will, dass Mitarbeitende Fragen zu 15 000 Policen-Dokumenten stellen können. Die Bedingungen ändern sich monatlich, und Antworten müssen die Fundstelle nennen.
 question: Welcher Ansatz passt am besten?
 options:
-- Fine-Tuning auf alle Dokumente
-- 'RAG: relevante Abschnitte zur Laufzeit suchen und mit Quellenangabe antworten lassen'
+- Fine-Tuning auf alle Policen-Dokumente
+- RAG mit Suche zur Laufzeit und Quellenangabe
 - Alle 15 000 Dokumente bei jeder Anfrage in den Prompt
 - Ein grösseres Modell ohne Zusatzdaten
 answer:
 - 1
 explanation: Grosse, sich ändernde Wissensbestände mit Quellenpflicht sind der klassische RAG-Fall. Fine-Tuning veraltet und liefert keine Quellen, alles in den Prompt sprengt Kosten und Fenster, und ein grösseres Modell kennt die internen Dokumente trotzdem nicht.
 source: ki-grundlagen/prompting-rag-finetuning#die-entscheidungsfragen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

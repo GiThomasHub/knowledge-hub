@@ -13,7 +13,7 @@ options:
 - Mit ollama ps prüfen, ob das Modell ganz auf der GPU läuft
 explanation: Erst muss das Modell vorhanden und der Server mit genügend Kontext gestartet sein. Dann wird Claude Code über die Umgebungsvariablen auf die Anthropic-kompatible Schnittstelle von Ollama umgelenkt und gestartet; zum Schluss zeigt ollama ps, ob Modell und Kontext in den Grafikspeicher passen.
 source: lokale-llms/ollama-betreiben#die-schnittstellen-nutzen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

@@ -14,7 +14,7 @@ answer:
 - 1
 explanation: Der Scope project schreibt eine .mcp.json ins Projekt, die über Git geteilt wird. Ohne --scope landet der Server im Scope local (nur du, nur dieses Projekt), user gilt nur für dich in allen Projekten, und die CLAUDE.md ist keine MCP-Konfiguration.
 source: mcp-tools/mcp-einbinden#die-drei-scopes
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

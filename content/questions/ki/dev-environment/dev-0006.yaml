@@ -6,15 +6,15 @@ level: L1
 type: single
 question: Du öffnest ein unbekanntes Repo aus dem Internet. VS Code fragt, ob du den Autoren vertraust. Was ist das sinnvollste Vorgehen?
 options:
-- Sofort vertrauen, sonst funktionieren die Erweiterungen nicht.
-- Im eingeschränkten Modus bleiben, zuerst README, package.json bzw. pyproject.toml und .vscode/ lesen; für Ausführen einen Container nutzen.
-- Das Repo nach /mnt/c verschieben, dort ist es sicherer.
-- Die Frage abschalten, damit sie nicht stört.
+- Sofort vertrauen, sonst funktionieren die Erweiterungen nicht richtig.
+- Eingeschränkt bleiben, zuerst Konfiguration lesen, fremden Code isoliert ausführen.
+- Das Repo nach /mnt/c verschieben, weil Windows es dort besser überwacht.
+- Die Vertrauensfrage in den Einstellungen abschalten, damit sie nicht stört.
 answer:
 - 1
 explanation: Ein präparierter Ordner kann über Tasks oder Erweiterungs-Einstellungen Befehle ausführen, sobald du vertraust. Erst lesen, dann entscheiden – und fremden Code isoliert ausführen. /mnt/c bietet keinerlei Schutz, und die Frage abzuschalten entfernt die Schutzschicht.
 source: dev-environment/vs-code-mit-wsl#fremden-ordnern-nicht-blind-vertrauen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

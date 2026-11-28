@@ -7,14 +7,14 @@ type: single
 question: Was unterscheidet einen Container grundlegend von einer virtuellen Maschine?
 options:
 - Ein Container hat einen eigenen Betriebssystem-Kern, eine VM nicht.
-- Ein Container teilt den Betriebssystem-Kern mit dem Host und ist darum leicht und schnell.
+- Ein Container teilt den Kern mit dem Host und ist darum leicht.
 - Ein Container kann nur unter Linux laufen, eine VM überall.
 - Ein Container ist vollständig vom Host abgeschottet, eine VM nicht.
 answer:
 - 1
 explanation: Container teilen den Kern des Hosts; die Abschottung liegt nur oberhalb davon. Darum starten sie in Sekunden. Den eigenen Kern hat die VM, nicht der Container. Container laufen auch unter Windows und macOS (über eine Linux-VM bzw. WSL 2), und gerade der geteilte Kern macht sie weniger absolut abgeschottet als eine VM.
 source: container/grundbausteine#container-ist-keine-virtuelle-maschine
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

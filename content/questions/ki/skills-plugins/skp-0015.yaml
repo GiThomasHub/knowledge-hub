@@ -7,15 +7,15 @@ type: scenario
 situation: Du baust ein Plugin. Die Ordner skills/ und hooks/ liegen in `.claude-plugin/` neben `plugin.json`. Mit `claude --plugin-dir ./mein-plugin` erscheint das Plugin, aber kein Skill und kein Hook.
 question: Was ist falsch?
 options:
-- --plugin-dir lädt nur MCP-Server
-- In .claude-plugin/ gehört nur plugin.json; skills/ und hooks/ müssen in den Wurzelordner des Plugins
-- Hooks funktionieren nur in installierten Plugins
-- Das Manifest muss manifest.json heissen
+- --plugin-dir lädt nur MCP-Server, keine Skills
+- In .claude-plugin/ gehört nur plugin.json, der Rest in die Wurzel
+- Hooks funktionieren nur in fertig installierten Plugins
+- Das Manifest muss manifest.json statt plugin.json heissen
 answer:
 - 1
 explanation: Nur das Manifest liegt in .claude-plugin/; alle Komponenten liegen im Wurzelordner, sonst werden sie nicht geladen. --plugin-dir lädt das ganze Plugin, auch Hooks, und das Manifest heisst plugin.json.
 source: skills-plugins/plugins-und-marketplaces#aufbau-eines-plugins
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

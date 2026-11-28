@@ -7,15 +7,15 @@ type: scenario
 situation: Ein Treuhänder will mit Claude Code ein Skript für Lohnabrechnungen schreiben. Im Projektordner liegen echte Lohndaten von Mandanten.
 question: Welche Massnahme ist zuerst angezeigt?
 options:
-- Profil mittel aktivieren und loslegen.
-- Die echten Daten aus dem Projekt entfernen bzw. sperren und mit synthetischen Daten entwickeln; Profil streng mit kommerziellem Konto.
-- Im Bypass-Modus arbeiten, damit es schnell geht.
-- Einen Hook schreiben, der das Wort «Lohn» blockiert.
+- Profil mittel aktivieren und mit den echten Daten loslegen.
+- Echte Daten sperren, synthetisch entwickeln, Profil streng.
+- Im Bypass-Modus arbeiten, damit keine Rückfrage stört.
+- Einen Hook schreiben, der Befehle mit «Lohn» blockiert.
 answer:
 - 1
-explanation: 'Die Datenfrage kommt zuerst: Das Modell braucht die echten Daten nicht. Synthetisch entwickeln, echte Daten technisch sperren und später lokal ohne Modell verarbeiten. Bei Personen- und Geheimnisdaten Profil streng und nur ein kommerzielles Konto.'
+explanation: 'Die Datenfrage kommt zuerst: Das Modell braucht die echten Daten nicht. Echte Daten aus dem Projekt entfernen bzw. technisch sperren, mit synthetischen Daten entwickeln und später lokal ohne Modell verarbeiten. Bei Personen- und Geheimnisdaten Profil streng und nur ein kommerzielles Konto.'
 source: ai-security/sandbox-vs-permissions#die-vier-profile
 status: reviewed
 created: '2026-11-26'
-last_verified: '2026-11-26'
+last_verified: '2026-11-28'
 author: claude-setup

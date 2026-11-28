@@ -14,7 +14,7 @@ answer:
 - 1
 explanation: Precision = 400 ÷ 2 000 = 20 % der Alarme stimmen. Recall = 400 ÷ 500 = 80 % der echten Fälle wurden gefunden. Wer die beiden Werte vertauscht oder die falschen Nenner nimmt, kommt auf die anderen Zahlen.
 source: machine-learning/metriken-lesen#die-konfusionsmatrix
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

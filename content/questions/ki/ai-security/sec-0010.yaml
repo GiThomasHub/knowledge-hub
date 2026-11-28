@@ -8,14 +8,14 @@ situation: 'Ein Teammitglied hat in `.claude/settings.json` des Repos `"defaultM
 question: Was ist die zutreffende Einschätzung?
 options:
 - Ab sofort laufen für alle im Team alle Aktionen ohne Rückfrage.
-- 'Claude Code ignoriert `defaultMode: bypassPermissions` aus Projektdateien – genau damit sich ein Repo nicht selbst Rechte geben kann.'
-- Der Eintrag wirkt nur in VS Code.
-- Der Eintrag wirkt, aber nur für Datei-Tools.
+- Der Wert wird aus Projektdateien ignoriert – ein Repo gibt sich keine Rechte.
+- Der Eintrag wirkt nur in VS Code, nicht im Terminal.
+- Der Eintrag wirkt, aber nur für die Datei-Werkzeuge.
 answer:
 - 1
 explanation: '`defaultMode: "auto"` und `"bypassPermissions"` werden in Projekt-Settings ignoriert. Sicherheitsrelevantes gehört in User- oder Managed Settings; Bypass nur im isolierten Container.'
 source: ai-security/permissions#wo-die-regeln-stehen
 status: reviewed
 created: '2026-11-26'
-last_verified: '2026-11-26'
+last_verified: '2026-11-28'
 author: claude-setup

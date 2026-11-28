@@ -12,7 +12,7 @@ options:
 - Nur unsichere Fälle gehen an ein grösseres Modell oder höheren Aufwand
 explanation: Billiges zuerst, teuer nur, wo nötig. Voraussetzung ist eine verlässliche Prüfung, die unsichere Fälle erkennt.
 source: modelle-kosten/routing-aufwand-budget#kaskade-statt-grossmodell-fuer-alles
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

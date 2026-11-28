@@ -14,7 +14,7 @@ answer:
 - 1
 explanation: Sobald gepusht, ist das Token in der Historie lesbar – ein neuer Commit entfernt es nur aus dem aktuellen Stand. .gitignore wirkt nicht rückwirkend, und auf privat stellen hilft nicht gegen alle, die es schon gesehen oder geklont haben. Nur Sperren macht das Token wertlos; danach kann man die Historie bereinigen.
 source: git-github/grundlagen#was-nie-in-git-gehoert
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session
