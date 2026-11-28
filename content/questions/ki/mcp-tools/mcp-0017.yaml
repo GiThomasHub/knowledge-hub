@@ -7,15 +7,15 @@ type: scenario
 situation: Ein Recherche-Agent darf Webseiten abrufen, hat Lesezugriff auf das CRM und kann über ein Mail-Tool selbständig Nachrichten senden.
 question: Was ist das Hauptproblem, und was ist die wirksamste Massnahme?
 options:
-- Zu viele Tools – Tool Search aktivieren
-- Die Kombination aus privaten Daten, fremden Inhalten und Kanal nach aussen erlaubt Datenabfluss per Prompt Injection – mindestens eines davon entfernen, z. B. Senden nur mit Freigabe oder Recherche und CRM in getrennte Agenten
-- Das CRM ist zu langsam – Caching einbauen
-- Die Mail-Beschreibung ist zu kurz – präziser formulieren
+- Zu viele Tools im Kontext – Tool Search aktivieren
+- Daten, fremde Inhalte, Kanal nach aussen – trennen
+- Das CRM antwortet zu langsam – Caching einbauen
+- Die Mail-Beschreibung ist zu vage – präziser formulieren
 answer:
 - 1
-explanation: Eine präparierte Webseite kann den Agenten anweisen, CRM-Daten zu verschicken. Wirksam ist, die Kombination aufzubrechen. Tool Search, Caching oder bessere Beschreibungen ändern nichts an der Angriffsmöglichkeit.
+explanation: 'Private Daten, fremde Inhalte und ein Kanal nach aussen zusammen erlauben Datenabfluss per Prompt Injection: Eine präparierte Webseite kann den Agenten anweisen, CRM-Daten zu verschicken. Wirksam ist, mindestens eines davon zu entfernen – z. B. Senden nur mit Freigabe oder Recherche und CRM in getrennte Agenten. Tool Search, Caching oder bessere Beschreibungen ändern nichts an der Angriffsmöglichkeit.'
 source: mcp-tools/anbindung-bewerten#die-gefaehrliche-kombination
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

@@ -6,9 +6,9 @@ level: L1
 type: single
 question: 'Ein Modell antwortet: «Bitte rechnungen_suchen(status=offen) aufrufen.» Wer führt den Aufruf tatsächlich aus?'
 options:
-- Das Modell selbst
+- Das Modell selbst, direkt aus seiner Antwort heraus
 - Der Harness, nachdem er Rechte und Regeln geprüft hat
-- Der Nutzer von Hand
+- Die Nutzerin, die den Aufruf von Hand bestätigt und startet
 - Der Anbieter des Modells in seiner Cloud
 answer:
 - 1

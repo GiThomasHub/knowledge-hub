@@ -13,7 +13,7 @@ options:
 - Bericht mit Funden, fehlenden Bausteinen und nicht Geprüftem
 explanation: Erst verstehen, dann Abweichungen suchen, dann Datenfluss verfolgen, dann kritisch filtern und schliesslich ehrlich berichten.
 source: secure-coding/security-review#der-ablauf
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

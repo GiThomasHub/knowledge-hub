@@ -4,13 +4,13 @@ competencies:
 - ki-ml-01
 level: L1
 type: true_false
-question: Bei Tabellendaten wie Kundenstammdaten und Kennzahlen schneiden neuronale Netze in der Regel besser ab als Gradient Boosting.
+question: Bei Tabellendaten wie Kundenstammdaten und Kennzahlen schneiden Baum-Ensembles wie Gradient Boosting in der Regel besser ab als neuronale Netze.
 options:
 - Wahr
 - Falsch
 answer:
-- 1
-explanation: Falsch. Bei strukturierten Tabellendaten sind Baum-Ensembles wie Gradient Boosting (z. B. XGBoost, LightGBM) meist im Vorteil. Neuronale Netze glänzen bei Bildern, Audio und Text. Startpunkt ist immer das einfachste Modell als Basislinie.
+- 0
+explanation: Wahr. Bei strukturierten Tabellendaten sind Baum-Ensembles wie Gradient Boosting (z. B. XGBoost, LightGBM) meist im Vorteil. Neuronale Netze glänzen bei Bildern, Audio und Text. Startpunkt ist immer das einfachste Modell als Basislinie.
 source: machine-learning/lernparadigmen#die-wichtigsten-werkzeuge
 status: reviewed
 created: '2026-11-27'

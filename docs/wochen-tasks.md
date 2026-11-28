@@ -48,5 +48,5 @@ Grenzen: max. 1 neue Lektion, max. 10 Fragen, keine Änderungen an src/, scripts
 ## Review durch den Menschen
 
 1. Draft-PR öffnen, Vorschau lokal: `python scripts/build.py && python -m http.server -d dist 8000`.
-2. Fragen prüfen und bei guter Qualität `status: draft` → `reviewed` setzen (erst dann erscheinen sie in Daily 5 und Prüfung).
+2. Fragen prüfen und bei guter Qualität `status: draft` → `reviewed` setzen (erst dann erscheinen sie in Daily 5 und Prüfung). Alternativ in einer interaktiven Sitzung Claude mit dem Review beauftragen; die Wochen-Tasks selbst setzen nie `reviewed`.
 3. PR auf «Ready» stellen, CI grün abwarten, mergen. GitHub Pages veröffentlicht automatisch.

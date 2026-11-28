@@ -6,9 +6,9 @@ level: L2
 type: single
 question: Warum halluzinieren Sprachmodelle?
 options:
-- Weil sie Nutzende absichtlich täuschen wollen
-- Weil sie das plausibelste nächste Token vorhersagen, nicht das geprüft wahre
-- Weil ihr Kontextfenster für Fakten zu klein ist
+- Weil sie Nutzende absichtlich täuschen wollen, um zu gefallen
+- Weil sie das Plausible vorhersagen, nicht das geprüft Wahre
+- Weil ihr Kontextfenster für viele Fakten zu klein ist
 - Weil sie im Internet auf falsche Seiten stossen
 answer:
 - 1

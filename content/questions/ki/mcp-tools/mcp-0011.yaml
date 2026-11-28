@@ -14,7 +14,7 @@ answer:
 - 1
 explanation: Fehler als Anleitung ermöglichen dem Agenten, sich selbst zu korrigieren. Ein leeres Ergebnis täuscht Erfolg vor, ein gekürzter Stacktrace hilft kaum, und Wiederholen mit derselben falschen Eingabe scheitert erneut.
 source: mcp-tools/tools-entwerfen#antworten-und-fehler
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

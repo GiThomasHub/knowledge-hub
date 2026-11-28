@@ -6,15 +6,15 @@ level: L4
 type: single
 question: Ein Kunde will eine eigene Webanwendung bauen, die Dokumente automatisch mit Claude zusammenfasst, und fragt, ob er dafür ein Team-Abo kaufen soll. Was empfiehlst du?
 options:
-- Ja, ein Team-Abo pro Entwickler deckt die Anwendung ab.
-- Nein – eigene Anwendungen und automatisierte Abläufe laufen über die API mit Budgetgrenze; Abos sind für Menschen in den Claude-Apps und Claude Code gedacht.
-- Ein Pro-Abo reicht, weil es günstiger ist.
-- Weder noch, Claude kann nicht in eigene Anwendungen eingebunden werden.
+- Ja – ein Team-Abo pro Entwickler deckt auch die Anwendung ab.
+- Nein – eigene Anwendungen laufen über die API mit Budgetgrenze.
+- Ein Pro-Abo reicht, weil es günstiger ist als die API.
+- Weder noch – Claude lässt sich nicht in eigene Anwendungen einbinden.
 answer:
 - 1
-explanation: Abos decken die Nutzung durch Menschen in den Claude-Produkten ab, nicht den Betrieb eigener Software. Dafür ist die API da, abgerechnet pro Token und abgesichert mit Budgetgrenze. Eingebunden werden kann Claude sehr wohl – über die API.
+explanation: Abos decken die Nutzung durch Menschen in den Claude-Apps und Claude Code ab, nicht den Betrieb eigener Software. Dafür ist die API da, abgerechnet pro Token und abgesichert mit einer Budgetgrenze. Eingebunden werden kann Claude sehr wohl – eben über die API.
 source: modelle-kosten/kostenschaetzung-chf#abo-oder-api
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

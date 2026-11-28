@@ -6,15 +6,15 @@ level: L1
 type: single
 question: Warum wird ein Agent mit 40 Schritten pro Schritt teurer, obwohl jeder einzelne Auftrag kurz ist?
 options:
-- Weil das Modell mit der Zeit müde wird
-- Weil bei jedem Schritt der ganze bisherige Verlauf inklusive Werkzeugergebnisse erneut als Eingabe mitgeschickt wird
-- Weil die Preise pro Token steigen
-- Weil Ausgabe-Tokens sich ansammeln und erst am Ende verrechnet werden
+- Weil das Modell mit jedem Schritt mehr Denk-Tokens braucht
+- Weil der ganze bisherige Verlauf jedes Mal erneut als Eingabe zählt
+- Weil die Preise pro Token mit der Anzahl Aufrufe steigen
+- Weil Ausgabe-Tokens sich ansammeln und am Ende verrechnet werden
 answer:
 - 1
-explanation: Der Verlauf wächst und wird jedes Mal neu bezahlt. Die Preise pro Token bleiben gleich, Ermüdung gibt es nicht, und Ausgabe wird pro Aufruf verrechnet.
+explanation: Bei jedem Schritt wird der ganze bisherige Verlauf inklusive Werkzeugergebnisse erneut mitgeschickt – der Verlauf wächst und wird jedes Mal neu bezahlt. Die Preise pro Token bleiben gleich, die Denk-Tokens hängen vom Aufwand ab, nicht von der Schrittzahl, und Ausgabe wird pro Aufruf verrechnet.
 source: modelle-kosten/wie-kosten-entstehen#was-alles-zur-eingabe-zaehlt
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

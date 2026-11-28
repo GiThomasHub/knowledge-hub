@@ -16,7 +16,7 @@ answer:
 - 3
 explanation: Reasoning-Beispiele zeigen das Wie, Negativbeispiele schärfen Grenzen. Weil aktuelle Modelle selbst überlegen, bleiben die gezeigten Überlegungen kurz – lange Rechenwege helfen dann nicht.
 source: prompting/beispiele#reasoning-beispiele-das-wie-zeigen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

@@ -4,13 +4,13 @@ competencies:
 - ki-ctr-01
 level: L1
 type: true_false
-question: Ein Bind Mount ist eine Kopie deines Projektordners. Was der Container darin ändert, wirkt sich erst nach einem Sync auf dein Original aus.
+question: 'Ein Bind Mount ist ein Fenster auf den echten Ordner: Was der Container darin ändert oder löscht, wirkt sofort auf dein Original.'
 options:
 - Wahr
 - Falsch
 answer:
-- 1
-explanation: Falsch. Ein Bind Mount ist ein Fenster auf den echten Ordner, keine Kopie. Jede Änderung oder Löschung im Container wirkt sofort auf dem Host. Deshalb schützt der Container das eingehängte Projekt nicht – dafür braucht es Git.
+- 0
+explanation: Wahr. Ein Bind Mount ist keine Kopie. Jede Änderung oder Löschung im Container wirkt sofort auf dem Host. Deshalb schützt der Container das eingehängte Projekt nicht – dafür braucht es Git.
 source: container/grundbausteine#daten-hinein-und-heraus-bind-mount-und-volume
 status: reviewed
 created: '2026-11-27'

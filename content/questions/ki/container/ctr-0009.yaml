@@ -6,10 +6,10 @@ level: L2
 type: single
 question: Unter Windows mit WSL sind npm install und Git im Container quälend langsam, Vite erkennt Dateiänderungen nur sporadisch. Was ist die wahrscheinlichste Ursache?
 options:
-- Docker Desktop hat zu wenig RAM.
-- Das Projekt liegt unter /mnt/c/… statt im Linux-Dateisystem.
-- Der Container läuft nicht als root.
-- Es fehlt --build beim Start.
+- Docker Desktop hat zu wenig RAM zugewiesen.
+- Das Projekt liegt unter /mnt/c statt in Linux.
+- Der Container läuft nicht als root-Benutzer.
+- Beim Start fehlt die Option --build.
 answer:
 - 1
 explanation: 'Mounts von /mnt/c laufen über eine Übersetzungsschicht (9P); Datei-Watcher über die Windows/Linux-Grenze sind unzuverlässig. Fix: Projekt nach ~/projekte/… verschieben. Wenig RAM macht nicht gezielt Watcher unzuverlässig, root hat mit Geschwindigkeit nichts zu tun, und --build betrifft nur Image-Änderungen.'

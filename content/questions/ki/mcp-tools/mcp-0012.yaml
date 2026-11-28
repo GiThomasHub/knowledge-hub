@@ -6,15 +6,15 @@ level: L3
 type: single
 question: Was bewirkt Tool Search in Claude Code?
 options:
-- Es sucht im Internet nach neuen MCP-Servern.
-- Definitionen von MCP-Tools werden zurückgestellt und erst bei Bedarf über ein Such-Werkzeug geladen.
-- Es kürzt die Antworten von Tools.
-- Es ersetzt mehrere Tools durch eines.
+- Es sucht im Internet nach neuen, passenden MCP-Servern.
+- Tool-Definitionen werden erst bei Bedarf über eine Suche geladen.
+- Es kürzt die Antworten von Tools auf das Wesentliche.
+- Es fasst mehrere ähnliche Tools zu einem zusammen.
 answer:
 - 1
 explanation: Tool Search spart Kontext bei den Beschreibungen, indem es sie erst lädt, wenn sie gebraucht werden. Antworten kürzt es nicht – dafür gibt es Ausgabegrenzen und gutes Tool-Design –, und es entdeckt oder verschmilzt keine Server.
 source: mcp-tools/kontext-schlank#tool-search
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

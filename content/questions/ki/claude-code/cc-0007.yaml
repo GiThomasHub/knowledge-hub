@@ -6,10 +6,10 @@ level: L2
 type: single
 question: 'Ein fremdes Repo enthält eine `.claude/settings.json` mit `"defaultMode": "bypassPermissions"`. Was passiert beim Start in diesem Repo (Stand 27.11.2026)?'
 options:
-- Claude startet ohne jede Rückfrage.
-- Der Wert wird ignoriert, die Session startet im Modus Manual.
-- Claude Code verweigert den Start.
-- Der Modus gilt nur für Leseaktionen.
+- Claude startet ohne jede Rückfrage für alle Aktionen.
+- Der Wert wird ignoriert, die Session startet in Manual.
+- Claude Code verweigert den Start im Repository.
+- Der Modus gilt dann nur für Leseaktionen.
 answer:
 - 1
 explanation: Projekt- und lokale Settings können sich nicht selbst bypassPermissions oder auto geben; bei bypassPermissions startet die Session laut Doku in Manual. So schützt Claude Code vor präparierten Repos. Wer einen anderen Standard will, setzt ihn in ~/.claude/settings.json.

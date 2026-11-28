@@ -8,9 +8,9 @@ situation: Auf einem frischen Ubuntu tippt ein Kollege `pip install httpx` und e
 question: Was ist die richtige Reaktion?
 options:
 - pip install --break-system-packages httpx
-- sudo pip install httpx
-- Im Projekt uv add httpx verwenden; für globale Werkzeuge uv tool install
-- Ubuntu neu installieren
+- sudo pip install httpx für alle Benutzer
+- uv add httpx im Projekt, Werkzeuge mit uv tool
+- Ubuntu mit einer älteren Python-Version neu aufsetzen
 answer:
 - 2
 explanation: Ubuntu schützt sein System-Python (PEP 668), damit Pakete das Betriebssystem nicht beschädigen. Projektpakete gehören in die Projektumgebung (uv add), Werkzeuge in eigene Umgebungen (uv tool install). --break-system-packages und sudo pip umgehen den Schutz und erzeugen genau das Problem, vor dem er warnt.

@@ -12,7 +12,7 @@ answer:
 - 1
 explanation: Falsch. Die Freigabe-Rückfrage gibt es in interaktiven Sessions. In claude -p, im Agent SDK und in Cloud-Sessions werden Projekt-Server ohne Rückfrage geladen – in fremden Repos also Vorsicht.
 source: mcp-tools/mcp-einbinden#die-drei-scopes
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

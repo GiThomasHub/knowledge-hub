@@ -7,14 +7,14 @@ type: single
 question: Ein Anwalt möchte Mandantendokumente mit Claude zusammenfassen und nutzt dafür sein privates Max-Abo. Was ist die zutreffende Einschätzung?
 options:
 - Unproblematisch, da Max ein bezahltes Abo ist.
-- 'Ungeeignet: Max läuft unter Konsumentenbedingungen; Berufsgeheimnisse (Art. 321 StGB) nie über ein Konsumentenkonto – vorher Abklärung, kommerzielles Konto, Anonymisierung oder lokales Modell.'
+- Ungeeignet – Konsumentenkonto; Berufsgeheimnis braucht mehr.
 - Zulässig, solange der Auto Mode ausgeschaltet ist.
 - Zulässig, wenn die Dokumente in einem Devcontainer liegen.
 answer:
 - 1
-explanation: Pro und Max sind Konsumentenkonten, auch für Claude Code. Für Berufsgeheimnisse und Kundendaten braucht es mindestens ein kommerzielles Konto mit DPA und eine rechtliche Abklärung. Technische Isolation ändert nichts daran, was das Modell liest.
+explanation: 'Pro und Max sind Konsumentenkonten, auch für Claude Code. Berufsgeheimnisse (Art. 321 StGB) und Kundendaten gehören nie über ein Konsumentenkonto: vorher rechtlich abklären, mindestens ein kommerzielles Konto mit DPA, Anonymisierung oder ein lokales Modell. Technische Isolation ändert nichts daran, was das Modell liest.'
 source: ai-security/datenfrage-schweiz#der-entscheidungsweg
 status: reviewed
 created: '2026-11-26'
-last_verified: '2026-11-26'
+last_verified: '2026-11-28'
 author: claude-setup

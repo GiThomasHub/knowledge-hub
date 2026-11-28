@@ -6,15 +6,15 @@ level: L1
 type: single
 question: 'Ein Prompt lautet: «Du bist Treuhänder. Erkläre den Unterschied zwischen Einzelfirma und GmbH. Höchstens 150 Wörter, als Tabelle.» Welcher der fünf Hebel fehlt?'
 options:
-- Rolle
-- Kontext – für wen die Antwort ist und wozu sie dient
-- Aufgabe
-- Format
+- Rolle – wer antworten soll
+- Kontext – für wen und wozu
+- Aufgabe – was zu tun ist
+- Format – wie die Antwort aussieht
 answer:
 - 1
 explanation: Rolle (Treuhänder), Aufgabe (Unterschied erklären), Einschränkung (150 Wörter) und Format (Tabelle) sind da. Es fehlt, für wen und wozu – etwa eine Kundin ohne Buchhaltungswissen, die über eine Umwandlung entscheidet. Genau dieser Kontext steuert Ton und Detailtiefe.
 source: prompting/anatomie#die-fuenf-hebel
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

@@ -4,13 +4,13 @@ competencies:
 - ki-aut-01
 level: L1
 type: true_false
-question: Ein geplanter Workflow in einem öffentlichen GitHub-Repo läuft unbegrenzt weiter, auch wenn monatelang niemand etwas am Repo ändert.
+question: In öffentlichen GitHub-Repos deaktiviert GitHub geplante Workflows automatisch, wenn 60 Tage lang keine Aktivität im Repository stattfindet.
 options:
 - Wahr
 - Falsch
 answer:
-- 1
-explanation: Falsch. In öffentlichen Repos deaktiviert GitHub geplante Workflows automatisch nach 60 Tagen ohne Repository-Aktivität – ohne Fehlermeldung. Darum braucht jeder geplante Lauf ein Lebenszeichen, dessen Ausbleiben auffällt.
+- 0
+explanation: Wahr. In öffentlichen Repos werden geplante Workflows nach 60 Tagen ohne Repository-Aktivität deaktiviert – ohne Fehlermeldung. Darum braucht jeder geplante Lauf ein Lebenszeichen, dessen Ausbleiben auffällt.
 source: automation/trigger-und-cron#die-planer-im-vergleich
 status: reviewed
 created: '2026-11-27'

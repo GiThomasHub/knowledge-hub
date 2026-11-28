@@ -18,7 +18,7 @@ answer:
 - 4
 explanation: Prozess, Format, Fehlerbehandlung und Begründungen machen einen Skill verlässlich. Zeitabhängige Fakten wie Preise veralten still; sie werden zur Laufzeit nachgeschlagen oder in einem klar markierten Block gepflegt.
 source: skills-plugins/skill-schreiben#der-body-prozess-format-fehlerfaelle
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

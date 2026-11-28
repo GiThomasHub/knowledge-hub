@@ -6,15 +6,15 @@ level: L2
 type: single
 question: 'Wozu dient `"onFailure": "block"` bei einem Hook?'
 options:
-- Es blockiert jeden Werkzeugaufruf.
-- Absturz, Timeout, unerwarteter Exit-Code oder kaputtes JSON blockieren dann wie Exit 2 – statt dass der Befehl durchläuft.
+- Es blockiert grundsätzlich jeden Werkzeugaufruf.
+- Ein kaputter Hook blockiert – fail-closed statt fail-open.
 - Es verhindert, dass der Hook in Subagents läuft.
-- Es schaltet die Sandbox für den Hook ein.
+- Es schaltet für den Hook-Prozess die Sandbox ein.
 answer:
 - 1
-explanation: 'Ohne das Feld läuft der Befehl bei einem kaputten Hook (z. B. fehlendes jq) einfach durch – fail-open. Mit `onFailure: block` wird der Hook fail-closed.'
+explanation: 'Ohne das Feld läuft der Befehl bei einem kaputten Hook (z. B. fehlendes jq) einfach durch – fail-open. Mit onFailure: block blockieren Absturz, Timeout, unerwarteter Exit-Code oder kaputtes JSON wie Exit 2 – der Hook wird fail-closed.'
 source: ai-security/sandbox-vs-permissions#hooks-leitplanken-die-immer-greifen
 status: reviewed
 created: '2026-11-26'
-last_verified: '2026-11-26'
+last_verified: '2026-11-28'
 author: claude-setup

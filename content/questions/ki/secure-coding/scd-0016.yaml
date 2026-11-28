@@ -18,7 +18,7 @@ answer:
 - 4
 explanation: Durchgesetzte, prüfbare Standards wirken; ein Seminar allein ändert den Code nicht. Die Bausteine lassen sich auch in CLAUDE.md und eigenen Prüfbefehlen verankern.
 source: secure-coding/standards-und-vorfall#mindeststandards-fuer-das-team
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

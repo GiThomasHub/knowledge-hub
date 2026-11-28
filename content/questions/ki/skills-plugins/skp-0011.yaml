@@ -18,7 +18,7 @@ answer:
 - 4
 explanation: Schlanker Kern, Skripte für exakte Arbeit, Inhaltsverzeichnisse und Wichtiges oben (nach Kompaktierung bleiben je Skill nur die ersten 5000 Tokens). Referenzen sollen nur eine Ebene tief sein; Ketten lassen Claude den Faden verlieren.
 source: skills-plugins/progressive-disclosure#nur-was-genannt-wird-wird-genutzt
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

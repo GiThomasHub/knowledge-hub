@@ -12,7 +12,7 @@ answer:
 - 1
 explanation: Falsch. Denk-Tokens werden wie Ausgabe abgerechnet, auch wenn das Denken ausgeblendet oder nur zusammengefasst angezeigt wird. Die tatsächlichen Zahlen stehen im Feld usage.
 source: modelle-kosten/wie-kosten-entstehen#was-alles-zur-ausgabe-zaehlt
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

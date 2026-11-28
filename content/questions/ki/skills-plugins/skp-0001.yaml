@@ -14,7 +14,7 @@ answer:
 - 1
 explanation: Ein Connector verbindet Claude per MCP mit Daten und Werkzeugen wie Gmail, Drive oder GitHub – er liefert die Zutaten. Das Rezept ist der Skill, der Bausatz das Plugin, der Koch ist Claude.
 source: skills-plugins/skill-connector-plugin#die-drei-im-vergleich
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

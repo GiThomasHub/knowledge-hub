@@ -6,10 +6,10 @@ level: L2
 type: single
 question: 'In einer eigenen Schleife mit der Messages API: Woran erkennt dein Code, dass das Modell ein Werkzeug aufrufen will?'
 options:
-- Am Wort «Werkzeug» im Antworttext
-- An stop_reason == "tool_use" und Blöcken vom Typ tool_use
-- An einer HTTP-Statusmeldung 202
-- Daran, dass die Antwort leer ist
+- Am Wort «Werkzeug» oder dem Werkzeugnamen im Antworttext
+- An stop_reason "tool_use" und tool_use-Blöcken
+- An einer HTTP-Statusmeldung 202 «Accepted» der API
+- Daran, dass der Textteil der Antwort leer bleibt
 answer:
 - 1
 explanation: Die API meldet über stop_reason und tool_use-Blöcke (mit id, name und input), dass ein Werkzeug gewünscht ist. Das Ergebnis geht als tool_result mit derselben tool_use_id zurück. Text zu parsen ist unzuverlässig, und Statuscodes oder leere Antworten signalisieren das nicht.

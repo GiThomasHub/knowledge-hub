@@ -13,7 +13,7 @@ options:
 - Modell antwortet abschliessend oder bittet um den nächsten Aufruf
 explanation: Das Modell bittet, die Anwendung handelt. Die Schleife läuft so lange, bis das Modell ohne weiteren Werkzeugwunsch antwortet.
 source: mcp-tools/tool-use-und-mcp#wie-ein-werkzeugaufruf-ablaeuft
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

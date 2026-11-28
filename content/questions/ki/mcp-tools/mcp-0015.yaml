@@ -15,7 +15,7 @@ rubric:
 - Datenschutz (revDSG, Gesundheitsdaten, Ausland) als Voraussetzung
 explanation: Ein Senior-Vorschlag bewertet pro System, trennt die gefährliche Kombination auf und setzt die Entscheidung technisch durch – mit Gesundheitsdaten als besonders schützenswerte Personendaten im Blick.
 source: mcp-tools/anbindung-bewerten#die-fuenf-bewertungsfragen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

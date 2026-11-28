@@ -15,7 +15,7 @@ rubric:
 - Lessons learned als Mindeststandard; Hinweis keine Rechtsberatung
 explanation: Ein Senior-Vorgehen verbindet technische Sofortmassnahmen mit den rechtlichen Prüfpunkten und schliesst die Lücke dauerhaft über Standards und Tests.
 source: secure-coding/standards-und-vorfall#wenn-eine-luecke-gefunden-wird-die-ersten-stunden
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

@@ -7,15 +7,15 @@ type: scenario
 situation: 'Caching ist aktiviert, aber cache_read_input_tokens steht bei jedem Aufruf auf 0 und cache_creation_input_tokens ist jedes Mal hoch. Der System-Prompt beginnt mit «Anfrage-ID: {uuid}, Zeit: {jetzt}».'
 question: Was ist die Ursache?
 options:
-- Caching funktioniert nur im Batch.
-- Die wechselnde ID und Zeit am Anfang machen jeden Prompt einzigartig, darum wird jedes Mal neu geschrieben statt gelesen.
-- Der Cache ist zu gross.
-- Das Modell unterstützt kein Caching.
+- Prompt Caching funktioniert nur im Batch-Betrieb.
+- ID und Zeit am Anfang machen jeden Prompt einzigartig.
+- Der zu cachende Teil ist zu gross für den Cache.
+- Das verwendete Modell unterstützt kein Caching.
 answer:
 - 1
 explanation: Der Cache greift nur bei identischem Anfang. Veränderliche Werte gehören hinter die Cache-Grenze. Caching funktioniert auch ausserhalb von Batches und ist bei allen aktiven Claude-Modellen verfügbar.
 source: modelle-kosten/caching-und-batch#prompt-caching
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

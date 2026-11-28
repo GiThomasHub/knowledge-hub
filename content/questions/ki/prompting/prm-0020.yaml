@@ -15,7 +15,7 @@ rubric:
 - Anonymisierung der Beispiele und Pflege bei Modellwechsel
 explanation: Ein Senior-Vorschlag unterscheidet nach Fehlerfolge, macht Änderungen messbar und schützt Mandantendaten.
 source: prompting/prompt-standards-team#zwei-welten-zwei-regeln
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

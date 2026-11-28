@@ -71,7 +71,7 @@ model_answer: "nur bei case"
 rubric: ["nur bei case", "…"]
 explanation: "Warum richtig – und warum die anderen falsch sind."
 source: ai-security/sandbox#die-defaults-und-warum-sie-nicht-reichen
-status: draft           # draft → reviewed (nur Mensch) → retired
+status: draft           # draft → reviewed (Mensch oder beauftragtes Claude-Review, nie Wochen-Task) → retired
 created: 2026-11-26
 last_verified: 2026-11-26
 author: claude-weekly

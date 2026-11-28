@@ -6,15 +6,15 @@ level: L3
 type: single
 question: 'Ein Trigger-Eval ergibt: 9 von 12 Soll-Anfragen lösen aus, 3 von 12 Nicht-Soll-Anfragen ebenfalls. Wie ist das gegen die Zielwerte der Lektion zu bewerten?'
 options:
-- Beides erfüllt
-- Recall 0,75 knapp unter dem Ziel von 0,8; Fehlauslösung 0,25 deutlich über dem Ziel von 0,1 – vor allem abgrenzen
-- Recall erfüllt, Fehlauslösung erfüllt, aber zu wenige Fälle
-- Nicht bewertbar ohne Qualitäts-Eval
+- Beide Zielwerte sind erfüllt
+- Recall knapp unter Ziel, Fehlauslösung deutlich darüber
+- Beide erfüllt, aber zu wenige Fälle für eine Aussage
+- Ohne Qualitäts-Eval nicht bewertbar
 answer:
 - 1
-explanation: 9/12 = 0,75 liegt knapp unter 0,8; 3/12 = 0,25 liegt weit über 0,1. Dringender ist die Abgrenzung gegen Nachbarfälle. Der Qualitäts-Eval misst etwas anderes (ob der Skill gut liefert) und ist für diese Bewertung nicht nötig.
+explanation: 9/12 = 0,75 liegt knapp unter dem Ziel von 0,8; 3/12 = 0,25 liegt weit über dem Ziel von 0,1. Dringender ist darum die Abgrenzung gegen Nachbarfälle. Der Qualitäts-Eval misst etwas anderes (ob der Skill gut liefert) und ist für diese Bewertung nicht nötig.
 source: skills-plugins/triggering-und-evals#ein-trigger-eval-bauen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

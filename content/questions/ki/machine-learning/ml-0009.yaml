@@ -7,8 +7,8 @@ type: scenario
 situation: Ein Modell sagt den Tagesumsatz von Filialen voraus. Die Daten der letzten drei Jahre wurden zufällig in 80 % Training und 20 % Test aufgeteilt. Der Test zeigt einen sehr kleinen Fehler, im ersten Live-Monat liegen die Prognosen aber deutlich daneben.
 question: Was ist die wahrscheinlichste Ursache?
 options:
-- Underfitting – das Modell ist für die Daten zu einfach
-- Data Leakage – eine Zeitreihe wurde zufällig statt chronologisch geteilt
+- Underfitting – das Modell ist für diese Daten zu einfach
+- Data Leakage – Zeitreihe zufällig statt zeitlich geteilt
 - Der Testsatz war mit 20 % zu klein für eine Aussage
 - Die Metrik war falsch gewählt, R² statt RMSE
 answer:

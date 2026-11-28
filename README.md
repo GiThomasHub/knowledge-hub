@@ -56,7 +56,7 @@ Gespeichert werden nur E-Mail-Adresse und Lernstand. Ohne Konfiguration bleibt d
 ## Pflege
 
 - **Wochen-Tasks** (Inhalts-Review am Montag, Fragen und Abdeckung am Donnerstag): siehe [docs/wochen-tasks.md](docs/wochen-tasks.md). Sie erstellen nur Draft-PRs.
-- **Neue Fragen** kommen als `status: draft` und erscheinen in Daily 5 und Prüfung erst, wenn ein Mensch sie auf `reviewed` setzt.
+- **Neue Fragen** kommen als `status: draft` und erscheinen in Daily 5 und Prüfung erst, wenn sie auf `reviewed` stehen – gesetzt von einem Menschen oder von Claude in einer ausdrücklich beauftragten Review-Sitzung, nie von einem Wochen-Task.
 - Regeln für Claude: [CLAUDE.md](CLAUDE.md) · Schreibanleitung: [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## Herkunft

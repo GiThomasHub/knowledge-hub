@@ -6,15 +6,15 @@ level: L1
 type: single
 question: Welche Aussage beschreibt das Standardverhalten von Claude Code beim Zugriff auf Dateien am besten?
 options:
-- Lesen und Schreiben sind auf den Startordner beschränkt.
-- Schreiben im Startordner und darunter; Lesen auch ausserhalb nach Rückfrage möglich.
-- Lesen nur im Startordner; Schreiben überall nach Rückfrage.
-- Ohne Konfiguration kann Claude Code keine Dateien lesen.
+- Lesen und Schreiben sind fest auf den Startordner beschränkt.
+- Schreiben im Startordner, Lesen nach Rückfrage auch ausserhalb.
+- Lesen nur im Startordner, Schreiben überall nach Rückfrage.
+- Ohne eigene Konfiguration kann Claude Code gar keine Dateien lesen.
 answer:
 - 1
 explanation: Die Schreibgrenze liegt beim Arbeitsverzeichnis, die Lesegrenze nicht. Deshalb reicht `cd repo && claude` nicht, wenn z. B. der SSH-Schlüssel ausgeschlossen sein muss.
 source: ai-security/ueberblick#was-claude-code-standardmaessig-darf
 status: reviewed
 created: '2026-11-26'
-last_verified: '2026-11-26'
+last_verified: '2026-11-28'
 author: claude-setup

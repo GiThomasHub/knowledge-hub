@@ -18,7 +18,7 @@ answer:
 - 4
 explanation: Serverseitige Schema-Validierung mit Allowlist und Ablehnung unbekannter Felder ist wirksam. Prüfungen nur im Browser lassen sich mit direkten Requests umgehen.
 source: secure-coding/eingaben-und-injection#eingaben-validieren
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

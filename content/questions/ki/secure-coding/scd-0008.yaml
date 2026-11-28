@@ -12,7 +12,7 @@ options:
 - 'Schutz verbessern: gitleaks als pre-commit, Push Protection aktivieren'
 explanation: Zuerst unschädlich machen, dann Schaden prüfen, dann aufräumen, dann Wiederholung verhindern. Löschen aus der Historie allein macht den Schlüssel nicht ungültig – er kann längst kopiert sein.
 source: secure-coding/secrets-und-lieferkette#secrets-richtig-ablegen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

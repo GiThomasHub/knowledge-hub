@@ -8,14 +8,14 @@ situation: Auf 20 Testfällen erreicht der alte Prompt 70 %, der neue 75 %. Im g
 question: Wie bewertest du das Ergebnis?
 options:
 - Klar besser – sofort ausrollen
-- Kein belastbarer Unterschied; bei 20 Fällen ist die Unsicherheit gross, 2 gegen 1 kann Zufall sein
-- Schlechter, weil der neue einen Fall verliert
-- Das Testset ist ungültig, weil es nicht 100 Fälle hat
+- Kein belastbarer Unterschied – 2 gegen 1 kann Zufall sein
+- Schlechter, weil der neue Prompt einen Fall verliert
+- Ungültig, weil ein Testset mindestens 100 Fälle braucht
 answer:
 - 1
 explanation: Bei 20 Fällen liegt die Unsicherheit bei rund ±19 Prozentpunkten, und 2 gegen 1 im gepaarten Vergleich ist kein klares Signal. Ein einzelner verlorener Fall macht den Prompt nicht schlechter, und auch 20 Fälle sind ein brauchbarer Start, nur eben für grössere Unterschiede.
 source: prompting/prompts-testen#wie-viel-ist-besser
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

@@ -7,8 +7,8 @@ type: scenario
 situation: Eine Anwaltskanzlei nutzt ein lokales Llama-Modell über Ollama für Mandantenakten. Gleichzeitig greift eine Desktop-App mit Cloud-Modell per MCP auf denselben Aktenordner zu, und die Akten werden für die Suche bei einem Cloud-Dienst eingebettet.
 question: Wie beurteilst du die Aussage der Kanzlei «Unsere Akten bleiben im Haus, wir nutzen ja ein lokales Modell»?
 options:
-- Zutreffend – das Sprachmodell rechnet ja lokal
-- Unzutreffend – über die App mit Cloud-Modell und die Cloud-Embeddings gehen Akten hinaus
+- Zutreffend – das Sprachmodell rechnet ja lokal auf eigener Hardware
+- Unzutreffend – über App und Cloud-Embeddings gehen Akten hinaus
 - Zutreffend – solange die Desktop-App verschlüsselt kommuniziert
 - Unzutreffend – aber nur, wenn das Llama-Modell ein Cloud-Tag hat
 answer:

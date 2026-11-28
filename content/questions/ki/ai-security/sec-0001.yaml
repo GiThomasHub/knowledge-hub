@@ -7,14 +7,14 @@ type: single
 question: Du startest Claude Code mit `cd ~/projekte/app && claude`. Was bewirkt das `cd` aus Sicherheitssicht?
 options:
 - Claude kann nur noch Dateien in ~/projekte/app lesen und schreiben.
-- Es setzt das Arbeitsverzeichnis – der Prozess behält aber die Rechte deines Benutzers auf alles andere.
-- Es sperrt den Zugriff auf ~/.ssh automatisch.
-- Es startet Claude Code in einer Sandbox.
+- Es setzt das Arbeitsverzeichnis – die Benutzerrechte bleiben.
+- Es sperrt den Zugriff auf ~/.ssh und andere Schlüssel automatisch.
+- Es startet Claude Code in einer Sandbox rund um den Ordner.
 answer:
 - 1
-explanation: '`cd` ist eine Adresse, kein Zaun. Claude Code schreibt standardmässig zwar nur im Startordner, kann aber nach Rückfrage auch ausserhalb lesen. Echte Grenzen setzen Regeln, Sandbox oder Container.'
+explanation: '`cd` ist eine Adresse, kein Zaun: Es setzt das Arbeitsverzeichnis, der Prozess behält aber die Rechte deines Benutzers auf alles andere. Claude Code schreibt standardmässig zwar nur im Startordner, kann aber nach Rückfrage auch ausserhalb lesen. Echte Grenzen setzen Regeln, Sandbox oder Container.'
 source: ai-security/ueberblick#vom-chatbot-zum-agenten-was-sich-aendert
 status: reviewed
 created: '2026-11-26'
-last_verified: '2026-11-26'
+last_verified: '2026-11-28'
 author: claude-setup

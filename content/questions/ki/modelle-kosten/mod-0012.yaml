@@ -6,15 +6,15 @@ level: L3
 type: single
 question: 'Eine Pipeline schickt alle Aufrufe ohne Aufwandsangabe an die API: Router auf Haiku 5.5, Autor auf Sonnet 5.5. Was ist das Problem?'
 options:
-- Ohne Angabe gilt überall low.
-- Die Standardstufen sind je Modell verschieden (z. B. Sonnet 5.5 high, Haiku 5.5 medium) – Kosten und Verhalten sind dadurch unbeabsichtigt; der Aufwand gehört pro Rolle explizit gesetzt.
-- Ohne Angabe wird die Anfrage abgelehnt.
-- Es gibt kein Problem, die Standardwerte sind immer optimal.
+- Ohne Angabe gilt bei allen Modellen einheitlich low.
+- Die Standardstufen sind je Modell verschieden – pro Rolle setzen.
+- Ohne Angabe wird die Anfrage mit einem Fehler abgelehnt.
+- Kein Problem, die Standardwerte sind immer optimal gewählt.
 answer:
 - 1
-explanation: In der API startet Sonnet 5.5 auf high, Opus 5.5 und Haiku 5.5 auf medium. Wer nichts angibt, bekommt unterschiedliche Stufen, ohne es zu merken. Abgelehnt wird die Anfrage nicht, und optimal ist der Standard nur zufällig.
+explanation: In der API startet Sonnet 5.5 auf high, Opus 5.5 und Haiku 5.5 auf medium. Wer nichts angibt, bekommt unbeabsichtigt unterschiedliche Stufen und damit Kosten und Verhalten, die niemand gewählt hat; der Aufwand gehört pro Rolle explizit gesetzt. Abgelehnt wird die Anfrage nicht, und optimal ist der Standard nur zufällig.
 source: modelle-kosten/routing-aufwand-budget#aufwand-und-denken-in-kuerze
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

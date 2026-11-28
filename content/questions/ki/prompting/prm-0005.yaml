@@ -7,14 +7,14 @@ type: single
 question: Du willst Kundenfeedback klassifizieren und hast Platz für drei Beispiele. Welche Auswahl ist am besten?
 options:
 - Drei eindeutig positive Rückmeldungen, damit das Format klar ist
-- Ein positives, ein negatives und ein gemischtes Feedback in unterschiedlicher Länge
-- Die drei Fälle aus dem Testset, die bisher falsch klassifiziert wurden
+- Ein positives, ein negatives und ein gemischtes, verschieden lang
+- Die drei Testset-Fälle, die bisher falsch klassifiziert wurden
 - Drei sehr lange Rückmeldungen, damit das Modell genug Text sieht
 answer:
 - 1
 explanation: Wenige, verschiedene Beispiele inklusive Grenzfall lehren am meisten. Drei ähnliche Beispiele zeigen nur einen Fall. Testfälle als Beispiele zu verwenden verfälscht die Messung, und einseitig lange Beispiele lehren eine bestimmte Länge.
 source: prompting/beispiele#wie-gute-beispiele-aussehen
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

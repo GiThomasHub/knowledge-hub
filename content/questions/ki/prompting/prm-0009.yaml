@@ -6,15 +6,15 @@ level: L2
 type: single
 question: Eine Anwendung liest die Modellantwort als JSON ein. Im Prompt steht «Antworte NUR mit JSON!». Gelegentlich bricht der Parser ab. Was ist die robuste Lösung?
 options:
-- Den Satz in Grossbuchstaben wiederholen
-- Struktur per Schema erzwingen (Structured Outputs oder Tool Use mit strict) und mit einem Validator prüfen
-- Die Antwort mit einem Regex reparieren
-- Ein grösseres Modell nehmen
+- Den Satz zusätzlich in Grossbuchstaben am Ende wiederholen
+- Struktur per Schema erzwingen und mit Validator prüfen
+- Die Antwort vor dem Parsen mit einem Regex reparieren
+- Ein grösseres Modell nehmen, das Formate zuverlässiger einhält
 answer:
 - 1
-explanation: «Antworte in JSON» ist ein Wunsch, kein Vertrag. Erst ein erzwungenes Schema garantiert die Form, der Validator prüft Geschäftsregeln. Lautere Anweisungen, Regex-Reparaturen oder ein grösseres Modell senken die Fehlerrate höchstens.
+explanation: «Antworte in JSON» ist ein Wunsch, kein Vertrag. Erst ein erzwungenes Schema (Structured Outputs oder Tool Use mit strict) garantiert die Form, der Validator prüft Geschäftsregeln. Lautere Anweisungen, Regex-Reparaturen oder ein grösseres Modell senken die Fehlerrate höchstens.
 source: prompting/xml-und-struktur#antworte-in-json-ist-kein-vertrag
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

@@ -7,15 +7,15 @@ type: scenario
 situation: Deine App lässt Claude über die API SQL-Abfragen formulieren, die anschliessend direkt gegen die Produktionsdatenbank ausgeführt werden. Die Nutzereingaben stammen aus einem öffentlichen Webformular.
 question: Was ist das Kernproblem?
 options:
-- Die Antwort des Modells wird wie vertrauenswürdiger Code behandelt – sie ist untrusted Input und kann über das Formular manipuliert werden.
-- SQL ist für LLMs zu schwierig.
-- Die API ist nicht verschlüsselt.
-- Das Modell kennt das Datenbankschema nicht.
+- Die Modellantwort wird wie vertrauenswürdiger Code ausgeführt.
+- SQL ist für Sprachmodelle grundsätzlich zu schwierig.
+- Die Verbindung zur API ist nicht verschlüsselt.
+- Das Modell kennt das Datenbankschema nicht genau.
 answer:
 - 0
-explanation: 'Modellantworten sind untrusted Input: kein ungeprüftes SQL, kein eval, keine Pfade oder Shell-Befehle direkt aus der Antwort. Stattdessen striktes Schema, Validierung, Allowlist, minimale Datenbankrechte (nur lesen) – und Prompt Injection über das Formular einkalkulieren.'
+explanation: Die Antwort des Modells ist untrusted Input und kann über das öffentliche Formular per Prompt Injection manipuliert werden. Darum kein ungeprüftes SQL, kein eval, keine Pfade oder Shell-Befehle direkt aus der Antwort – stattdessen striktes Schema, Validierung, Allowlist und minimale Datenbankrechte (nur lesen).
 source: ai-security/ueberblick#prompt-injection-der-angriff-ueber-text
 status: reviewed
 created: '2026-11-26'
-last_verified: '2026-11-26'
+last_verified: '2026-11-28'
 author: claude-setup

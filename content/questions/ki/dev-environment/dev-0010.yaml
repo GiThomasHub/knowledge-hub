@@ -7,9 +7,9 @@ type: single
 question: Was gehört in die `.env.example`?
 options:
 - Eine Kopie der .env mit allen echten Werten
-- Alle Variablennamen mit Kommentar und Platzhalter, ohne echte Secrets
-- Nur die Secrets, damit man sie nicht vergisst
-- Gar nichts, sie ist veraltet
+- Alle Variablennamen mit Platzhaltern, ohne Secrets
+- Nur die Secrets, damit niemand sie vergisst
+- Gar nichts mehr, die Datei gilt als veraltet
 answer:
 - 1
 explanation: .env.example wird committet und zeigt Team und Agenten, welche Variablen nötig sind – ohne Werte. Echte Werte oder Secrets darin wären im Git veröffentlicht. Jede neue Variable kommt immer auch in die .env.example.

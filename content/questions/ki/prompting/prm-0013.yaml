@@ -7,15 +7,15 @@ type: scenario
 situation: Ein Team nutzt Prompt Caching, die Cache-Trefferquote bleibt aber bei null. Der System-Prompt beginnt mit «Heute ist der {datum}, Anfrage-ID {uuid}.», danach folgen 8000 Tokens feste Regeln.
 question: Was ist die wirksamste Korrektur?
 options:
-- Die Cache-Lebensdauer auf 1 Stunde erhöhen
-- Datum und ID hinter die festen Regeln (ans Ende bzw. in die User-Nachricht) verschieben
-- Die festen Regeln kürzen
-- Mehr Cache-Grenzen setzen
+- Die Cache-Lebensdauer auf eine Stunde erhöhen
+- Datum und ID hinter die festen Regeln verschieben
+- Die festen Regeln deutlich kürzen
+- Zusätzliche Cache-Grenzen setzen
 answer:
 - 1
-explanation: Der Cache greift nur, wenn jedes Zeichen bis zur Cache-Grenze identisch ist. Datum und ID ganz oben machen jeden Aufruf einzigartig. Längere Lebensdauer, kürzere Regeln oder zusätzliche Grenzen ändern daran nichts.
+explanation: Der Cache greift nur, wenn jedes Zeichen bis zur Cache-Grenze identisch ist. Datum und ID ganz oben machen jeden Aufruf einzigartig – sie gehören ans Ende bzw. in die User-Nachricht. Längere Lebensdauer, kürzere Regeln oder zusätzliche Grenzen ändern daran nichts.
 source: prompting/kontext-gestalten#prompt-caching-stabiles-zuerst-spart-geld
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session

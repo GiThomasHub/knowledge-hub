@@ -6,15 +6,15 @@ level: L2
 type: single
 question: Eine Rolle mit Aufwand high liefert regelmässig abgeschnittene JSON-Antworten mit stop_reason max_tokens. Was ist die wahrscheinlichste Ursache?
 options:
-- Das Modell kann kein JSON
+- Das Modell kann bei hohem Aufwand kein gültiges JSON erzeugen
 - max_tokens ist zu klein, weil es auch die Denk-Tokens enthält
-- Der Prompt ist zu kurz
-- Das Kontextfenster ist voll
+- Der Prompt ist zu kurz und lässt das Format offen
+- Das Kontextfenster ist voll und schneidet die Antwort ab
 answer:
 - 1
 explanation: max_tokens begrenzt die gesamte Ausgabe inklusive Denken. Bei hohem Aufwand bleibt dann zu wenig Platz für die Antwort. Ein volles Kontextfenster würde zu einem anderen Fehler führen.
 source: modelle-kosten/modell-pro-aufgabe#max-tokens-die-obergrenze-der-ausgabe
-status: draft
+status: reviewed
 created: '2026-11-27'
-last_verified: '2026-11-27'
+last_verified: '2026-11-28'
 author: claude-session
