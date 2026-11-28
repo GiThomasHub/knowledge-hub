@@ -456,3 +456,37 @@
 - term: MLOps
   definition: Disziplin, Machine-Learning-Modelle zuverlässig, versioniert und überwacht in den Betrieb zu bringen und dort zu pflegen.
   lesson: machine-learning/regel-ml-oder-genai#was-neben-der-technik-entscheidet
+- term: Human-in-the-Loop
+  definition: Ein Mensch bleibt bewusst am KI-Prozess beteiligt – vom Arbeiten mit KI-Hilfe über die Prüfung jedes Entwurfs bis zu Stichproben. Wie stark, richtet sich nach Fehlerkosten und Erkennbarkeit.
+  aliases: [HITL, Mensch in der Schleife]
+  lesson: ki-beratung/einfuehrung-in-stufen#human-in-the-loop-nach-risiko
+- term: Quick Win
+  definition: Erster, schnell umsetzbarer Use Case mit hohem Nutzen und hoher Machbarkeit, der in Wochen Erfahrung und Vertrauen schafft.
+  lesson: ki-beratung/use-case-bewerten#das-portfolio
+- term: Use-Case-Steckbrief
+  definition: Einseitige Beschreibung eines KI-Use-Cases mit Aufgabe, Nutzenden, heutigem Aufwand, Daten und Datenklasse, Erfolgskriterien, Risiken, Prüfschritt und verantwortlicher Person.
+  aliases: [Steckbrief]
+  lesson: ki-beratung/use-case-bewerten
+- term: Business Case
+  definition: Nachvollziehbare Gegenüberstellung von Nutzen und Kosten eines Vorhabens mit offenen Annahmen, Szenarien und Messgrössen.
+  lesson: ki-beratung/business-case-chf
+- term: Champion
+  definition: Power-User in einem Team, der mit reservierter Zeit Kolleginnen und Kollegen beim Einsatz von KI unterstützt, Beispiele sammelt und Probleme zurückmeldet.
+  aliases: [Champions-Netzwerk]
+  lesson: ki-beratung/change-und-erfolgsmessung#die-hebel
+- term: Datenklassen-Regel
+  definition: Tabelle, die festlegt, welche Datenklasse (z. B. öffentlich, intern, vertraulich, besonders schützenswert) in welches KI-Werkzeug und welchen Kontotyp darf.
+  aliases: [Datenklassifikation, Datenklasse]
+  lesson: ki-beratung/governance-und-regulierung#beispiel-einer-datenklassen-regel
+- term: EU AI Act
+  definition: KI-Verordnung der EU mit risikobasierten Pflichten. Gilt auch für Schweizer Firmen, die KI-Systeme in der EU anbieten oder deren Ergebnisse dort verwendet werden; Hochrisiko-Pflichten nach Anhang III ab 2. Dezember 2027 (Stand 28.11.2026).
+  aliases: [KI-Verordnung, AI Act]
+  lesson: ki-beratung/governance-und-regulierung#der-eu-ai-act-fuer-schweizer-unternehmen
+- term: KI-Kompetenz
+  definition: Wissen und Fähigkeiten, KI-Systeme sachkundig einzusetzen und ihre Chancen und Risiken einzuschätzen. Der EU AI Act (Art. 4) verlangt Massnahmen, die sie bei Mitarbeitenden fördern.
+  aliases: [AI Literacy]
+  lesson: ki-beratung/change-und-erfolgsmessung
+- term: Schatten-KI
+  definition: Nutzung von KI-Werkzeugen ohne Wissen oder Freigabe der Organisation, etwa private Konten für Firmendaten.
+  aliases: [Shadow AI]
+  lesson: ki-beratung/governance-und-regulierung

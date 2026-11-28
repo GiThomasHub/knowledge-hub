@@ -1,0 +1,22 @@
+id: ber-0017
+topic: ki-beratung
+competencies:
+- ki-ber-05
+level: L4
+type: case
+question: Ein Schweizer KMU (120 Mitarbeitende, Maschinenbau, Kunden in der EU) stellt fest, dass viele Mitarbeitende private KI-Konten für Offerten und technische Dokumentation nutzen. Die Geschäftsleitung will «das in den Griff bekommen, ohne alles zu verbieten». Entwirf eine schlanke Governance.
+model_answer: '**Bestandesaufnahme:** kurze, sanktionsfreie Umfrage, welche Werkzeuge wofür genutzt werden (Schatten-KI sichtbar machen). **Werkzeugentscheid:** ein freigegebenes Firmenkonto (Team oder Enterprise) mit SSO, zentraler Verwaltung und standardmässig ohne Training mit Inhalten; Privatkonten für interne und vertrauliche Daten verbieten. **Datenklassen-Regel auf einer Seite:** öffentlich, intern, vertraulich (Offerten, Kundendaten, Konstruktionsunterlagen), besonders schützenswert – je Werkzeug erlaubt, mit Auflagen oder verboten. **Freigabeweg:** neue Werkzeuge über IT und Datenschutz, neue produktive Use Cases mit Steckbrief ins Inventar. **Rollen:** Geschäftsleitung verantwortlich, KI-Verantwortliche koordiniert, Datenschutz berät, IT konfiguriert, Fachbereiche tragen Use Cases, Champions unterstützen. **Recht:** revDSG (Transparenz, Datensicherheit, Auslandbekanntgabe) und Geheimhaltungspflichten aus Kundenverträgen; Schweizer KI-Vorlage (erwartet Frühjahr 2027) beobachten;
+  EU AI Act prüfen, wo Ergebnisse in der EU verwendet werden (z. B. Produkte mit KI-Funktion, Anhang I ab 2. August 2028) und Massnahmen zur KI-Kompetenz einplanen; Fachpersonen beiziehen. **Befähigen statt verbieten:** Schulung an eigenen Aufgaben, Champions, Projekte und Skills für Offerten und Dokumentation. **Überprüfung:** halbjährlich Inventar und Regeln nachführen.'
+rubric:
+- Schatten-KI sanktionsfrei erfasst und durch freigegebenes Firmenkonto ersetzt
+- Datenklassen-Regel je Werkzeug mit Verbot von Privatkonten für interne/vertrauliche Daten
+- Freigabeweg und Use-Case-Inventar
+- Klare Rollen inkl. Fachbereich und Champions
+- 'Recht korrekt eingeordnet: revDSG, Schweizer Vorlage 2027, AI Act bei EU-Bezug, KI-Kompetenz; Hinweis auf Fachpersonen'
+- Befähigung und regelmässige Überprüfung statt reiner Verbote
+explanation: Eine Senior-Lösung macht die heutige Nutzung sichtbar, bietet eine sichere Alternative, regelt Daten und Verantwortung schlank und ordnet das Recht differenziert ein.
+source: ki-beratung/governance-und-regulierung#die-vier-bausteine
+status: draft
+created: '2026-11-28'
+last_verified: '2026-11-28'
+author: claude-session

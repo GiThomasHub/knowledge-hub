@@ -1,0 +1,22 @@
+id: ber-0004
+topic: ki-beratung
+competencies:
+- ki-ber-01
+level: L1
+type: multi
+question: Was unterscheidet Team- und Enterprise-Pläne von Einzelplänen? (mehrere richtig)
+options:
+- Zentrale Verwaltung und Single Sign-on
+- Standardmässig kein Training mit den Inhalten der Organisation
+- Firmenweit steuerbare Skills und Connectors
+- Nur sie erlauben den Zugriff über Web und Mobile
+answer:
+- 0
+- 1
+- 2
+explanation: Team und Enterprise bringen zentrale Verwaltung, SSO, standardmässig kein Training mit den Inhalten und Admin-Steuerung für Skills und Connectors. Web und Mobile gibt es auch in den Einzelplänen.
+source: ki-beratung/produktlandschaft#plaene-was-fuer-unternehmen-zaehlt
+status: draft
+created: '2026-11-28'
+last_verified: '2026-11-28'
+author: claude-session

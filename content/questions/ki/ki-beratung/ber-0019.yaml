@@ -1,0 +1,24 @@
+id: ber-0019
+topic: ki-beratung
+competencies:
+- ki-ber-06
+level: L4
+type: multi
+question: Welche Massnahmen fördern die Akzeptanz einer KI-Einführung wirksam? (mehrere richtig)
+options:
+- Champions pro Team mit reservierter Zeit
+- Schulung an den eigenen Aufgaben der Mitarbeitenden in kurzen, wiederholten Formaten
+- Offen kommunizieren, wohin die gewonnene Zeit fliesst
+- Eine einmalige Pflichtpräsentation für alle
+- Erfolgsgeschichten aus dem eigenen Haus teilen
+answer:
+- 0
+- 1
+- 2
+- 4
+explanation: Champions, alltagsnahe Schulung, Offenheit über die gewonnene Zeit und eigene Erfolgsgeschichten wirken. Eine einmalige Pflichtpräsentation verpufft erfahrungsgemäss schnell.
+source: ki-beratung/change-und-erfolgsmessung#die-hebel
+status: draft
+created: '2026-11-28'
+last_verified: '2026-11-28'
+author: claude-session
