@@ -283,6 +283,13 @@ def load_all():
     return data
 
 
+POSITIONAL = re.compile(
+    r"\b(erste|zweite|dritte|vierte|letzte)n?\s+(Option|Antwort|Möglichkeit)"
+    r"|\bOption\s+[A-D1-4]\b|\balle\s+(oben\s+)?genannten\b|\bkeine\s+der\s+genannten\b",
+    re.IGNORECASE,
+)
+
+
 def check_question_logic(q, where):
     t = q["type"]
     opts = q.get("options", [])
@@ -302,6 +309,22 @@ def check_question_logic(q, where):
     for a in ans:
         if t not in ("true_false", "case") and a >= len(opts):
             err(f"{where}: Antwortindex {a} ausserhalb der Optionen")
+    # Qualitätshinweise (nur Warnungen): Muster, die die richtige Antwort verraten
+    if t in ("single", "scenario") and len(ans) == 1 and ans[0] < len(opts) and len(opts) >= 3:
+        lens = [len(str(o)) for o in opts]
+        right = lens[ans[0]]
+        longest_other = max(l for i, l in enumerate(lens) if i != ans[0])
+        if right >= 40 and right > 1.3 * longest_other:
+            warn(f"{where}: richtige Option ist deutlich länger als alle anderen "
+                 f"({right} gegenüber {longest_other} Zeichen) – Begründung in die Erklärung verschieben")
+    if t == "multi" and opts and len(set(ans)) == len(opts):
+        warn(f"{where}: multi – alle Optionen sind richtig")
+    if t == "order" and ans:
+        warn(f"{where}: order braucht kein answer – die Reihenfolge der options ist die Lösung")
+    text = " ".join([str(q.get("question", "")), str(q.get("explanation", ""))] + [str(o) for o in opts])
+    m = POSITIONAL.search(text)
+    if m:
+        warn(f"{where}: Bezug auf Position oder Sammeloption («{m.group(0)}») – Optionen werden gemischt")
 
 
 def cross_check(data):

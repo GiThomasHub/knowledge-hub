@@ -79,6 +79,8 @@ author: claude-weekly
 
 Gute Fragen prüfen Verständnis, nicht Vokabeln. Distraktoren sind typische Missverständnisse. Auf L3/L4 überwiegen Szenarien und Fallstudien.
 
+Die richtige Option darf sich nicht durch ihre Form verraten: ähnlich lang wie die Distraktoren, Begründung in die `explanation`, keine Bezüge auf Positionen («die erste Option») – die App mischt die Optionen. Wahr/Falsch-Aussagen etwa je zur Hälfte wahr und falsch formulieren. `scripts/build.py` warnt, wenn die richtige Option mehr als 30 % länger ist als jeder Distraktor, bei Positionsbezügen und bei Mehrfachauswahl, in der alle Optionen stimmen.
+
 ## Ablauf
 
 1. Branch anlegen, Inhalte ändern.
