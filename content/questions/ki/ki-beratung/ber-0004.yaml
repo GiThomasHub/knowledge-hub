@@ -16,7 +16,7 @@ answer:
 - 2
 explanation: Team und Enterprise bringen zentrale Verwaltung, SSO, standardmässig kein Training mit den Inhalten und Admin-Steuerung für Skills und Connectors. Web und Mobile gibt es auch in den Einzelplänen.
 source: ki-beratung/produktlandschaft#plaene-was-fuer-unternehmen-zaehlt
-status: draft
+status: reviewed
 created: '2026-11-28'
 last_verified: '2026-11-28'
 author: claude-session

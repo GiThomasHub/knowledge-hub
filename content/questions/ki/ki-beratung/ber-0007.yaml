@@ -18,7 +18,7 @@ answer:
 - 4
 explanation: Unsichtbare teure Fehler, verbotene Datenklassen, fehlende Verantwortung und eine ausreichende Regel sind Ausschlussgründe. Textlastig und häufig spricht dagegen gerade für einen Use Case.
 source: ki-beratung/use-case-bewerten#ausschlussgruende
-status: draft
+status: reviewed
 created: '2026-11-28'
 last_verified: '2026-11-28'
 author: claude-session

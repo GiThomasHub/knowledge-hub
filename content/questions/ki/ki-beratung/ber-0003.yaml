@@ -14,7 +14,7 @@ answer:
 - 1
 explanation: Managed Agents ist ein fertiger Agenten-Rahmen in verwalteter Infrastruktur, gedacht für lange, asynchrone Aufgaben und zeitgesteuerte Läufe. Die Claude-App und Claude in Chrome werden von Menschen interaktiv genutzt, und ein Privatkonto ist für Firmenprozesse ungeeignet.
 source: ki-beratung/produktlandschaft#managed-agents-in-einem-satz
-status: draft
+status: reviewed
 created: '2026-11-28'
 last_verified: '2026-11-28'
 author: claude-session

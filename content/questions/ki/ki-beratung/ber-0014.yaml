@@ -8,14 +8,14 @@ situation: 'Ein Versicherer will Schadenmeldungen mit KI vorsortieren: 2 000 Mel
 question: Welche Form von Human-in-the-Loop passt?
 options:
 - Ein Mensch prüft jede einzelne Einordnung vor der Weiterleitung
-- Die KI ordnet ein, unsichere Fälle und Stichproben gehen an Menschen, Kennzahlen überwachen die Qualität
-- Keine Überwachung, da Fehler billig sind
-- Auf KI verzichten, weil Versicherungen Hochrisiko sind
+- KI ordnet ein, unsichere Fälle und Stichproben gehen an Menschen
+- Vollautomatisch ohne Überwachung, da Fehler billig sind
+- Auf KI verzichten, weil Versicherungen ein Hochrisiko-Bereich sind
 answer:
 - 1
-explanation: Hohes Volumen, gut erkennbare und günstige Fehler sprechen für Stichproben und Ausnahmen statt Prüfung jedes Falls, die bei 2 000 Meldungen zur blossen Unterschrift würde. Ganz ohne Überwachung bliebe Qualitätsverlust unbemerkt, und eine Vorsortierung ist kein automatischer Entscheid über Personen.
+explanation: Hohes Volumen und gut erkennbare, günstige Fehler sprechen für Stichproben und Ausnahmen statt Prüfung jedes Falls, die bei 2 000 Meldungen zur blossen Unterschrift würde; Kennzahlen überwachen die Qualität. Ganz ohne Überwachung bliebe Qualitätsverlust unbemerkt, und eine Vorsortierung ist kein automatischer Entscheid über Personen.
 source: ki-beratung/einfuehrung-in-stufen#human-in-the-loop-nach-risiko
-status: draft
+status: reviewed
 created: '2026-11-28'
 last_verified: '2026-11-28'
 author: claude-session

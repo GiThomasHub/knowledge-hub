@@ -7,15 +7,15 @@ type: scenario
 situation: In einem Workshop wählt die Geschäftsleitung als ersten Use Case einen Agenten, der alle Kundenanfragen selbständig beantwortet und Gutschriften auslöst. Die Kundendaten liegen verstreut in drei Systemen.
 question: Wie gehst du vor?
 options:
-- Zustimmen – ein ambitioniertes Projekt motiviert am meisten
-- Den Use Case als strategisches Projekt einordnen, wegen Datenlage und Risiko aber zuerst einen Quick Win (z. B. Antwortentwürfe mit menschlicher Freigabe) starten und die Erfahrungen nutzen
-- Den Use Case ablehnen, weil KI für Kundenanfragen ungeeignet ist
-- Sofort alle drei Systeme ersetzen
+- Zustimmen – ein ambitioniertes Projekt motiviert alle am meisten
+- Als strategisch einordnen, aber mit einem Quick Win beginnen
+- Ablehnen – KI ist für Kundenanfragen grundsätzlich ungeeignet
+- Zuerst alle drei Systeme durch eine neue Plattform ersetzen
 answer:
 - 1
-explanation: Hoher Nutzen, aber tiefe Machbarkeit, schwierige Datenlage und hohes Risiko machen den Agenten zum strategischen Projekt. Ein Quick Win mit Freigabe schafft Erfahrung und Vertrauen. Kundenanfragen sind kein grundsätzlich ungeeigneter Bereich, und ein Systemersatz ist unverhältnismässig.
+explanation: Hoher Nutzen, aber tiefe Machbarkeit, schwierige Datenlage und hohes Risiko machen den Agenten zum strategischen Projekt. Ein Quick Win – z. B. Antwortentwürfe mit menschlicher Freigabe – schafft Erfahrung und Vertrauen für später. Kundenanfragen sind kein grundsätzlich ungeeigneter Bereich, und ein Systemersatz ist unverhältnismässig.
 source: ki-beratung/use-case-bewerten#das-portfolio
-status: draft
+status: reviewed
 created: '2026-11-28'
 last_verified: '2026-11-28'
 author: claude-session

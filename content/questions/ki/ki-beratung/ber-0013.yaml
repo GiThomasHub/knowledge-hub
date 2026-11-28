@@ -12,7 +12,7 @@ options:
 - Plattform mit eigenen Agenten und firmenweiter Governance
 explanation: 'Jede Stufe baut auf den Erfahrungen und Regeln der vorherigen auf: zuerst Erfahrung im Kleinen, dann Breite im Team, dann Integration in Prozesse und zuletzt die Plattform für die ganze Organisation.'
 source: ki-beratung/einfuehrung-in-stufen#die-vier-stufen
-status: draft
+status: reviewed
 created: '2026-11-28'
 last_verified: '2026-11-28'
 author: claude-session

@@ -7,15 +7,15 @@ type: scenario
 situation: Sechs Monate nach dem Rollout an 200 Mitarbeitende nutzen nur 35 Personen Claude wöchentlich. Die Geschäftsleitung überlegt, auf ein anderes, «besseres» Modell zu wechseln.
 question: Was ist der sinnvollste nächste Schritt?
 options:
-- Sofort den Anbieter wechseln
-- Die Nutzung nach Teams aufschlüsseln, mit Nicht-Nutzenden sprechen und gezielt handeln – Anwendungsfälle zeigen, Regeln klären, Lernzeit und Champions einsetzen; ein Modellwechsel löst ein Nutzungsproblem nicht
-- Die Nutzung zur Pflicht machen und kontrollieren
+- Sofort den Anbieter wechseln, das Modell passt offenbar nicht
+- Nutzung nach Teams aufschlüsseln, nachfragen und gezielt handeln
+- Die Nutzung zur Pflicht machen und monatlich kontrollieren
 - Die Lizenzen kündigen, KI bringt offensichtlich nichts
 answer:
 - 1
-explanation: Das Problem liegt auf der Ebene Nutzung, nicht beim Modell. Ursachen wie fehlende Anwendungsfälle, Unsicherheit über Regeln oder Zeitmangel werden durch Aufschlüsseln und Nachfragen sichtbar. Zwang erzeugt Widerstand, und Kündigen verschenkt den möglichen Nutzen.
+explanation: 'Das Problem liegt auf der Ebene Nutzung, nicht beim Modell – ein Modellwechsel löst es nicht. Aufschlüsseln und Gespräche mit Nicht-Nutzenden zeigen die Ursachen; dann gezielt handeln: Anwendungsfälle zeigen, Regeln klären, Lernzeit und Champions einsetzen. Zwang erzeugt Widerstand, und Kündigen verschenkt den möglichen Nutzen.'
 source: ki-beratung/change-und-erfolgsmessung#wenn-die-nutzung-stagniert
-status: draft
+status: reviewed
 created: '2026-11-28'
 last_verified: '2026-11-28'
 author: claude-session
